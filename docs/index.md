@@ -39,42 +39,6 @@
 
 ---
 
-## Quick Download & Purchase
-
-<div class="grid cards" markdown>
-
--   :material-cart:{ .lg .middle } **XPF (Windows)**
-    
-    [:material-store: Store](https://quantumbitsolutions.com/purchase/?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-xpf-store){ .md-button } [:material-shopping: Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-xpf-shop){ .md-button .md-button--primary }
-    
-    [:octicons-book-24: Guide](products/xpf/user-guide.md) · [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md)
-
--   :material-android:{ .lg .middle } **Android Advanced**
-    
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-android-advanced){ .md-button .md-button--primary }
-    
-    [:octicons-book-24: Guide](products/android/advanced-guide.md) · [:octicons-server-24: Server Mode](products/android/advanced-guide.md#modbus-server-mode-slave)
-
--   :material-android:{ .lg .middle } **Android Free**
-    
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-android-free){ .md-button }
-    
-    [:octicons-book-24: Guide](products/android/free-guide.md)
-
--   :material-map:{ .lg .middle } **Mapper Pro**
-    
-    [:material-shopping: Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-mapper-shop){ .md-button .md-button--primary }
-    
-    [:octicons-book-24: Manual](products/mapper/user-manual.md) · [:octicons-rocket-24: Demo](products/mapper/quick-start.md)
-
-</div>
-
-<div class="admonition tip" markdown>
-Prefer **Shop** for bundles & promotions; **Store** for frictionless updates. All purchase links tagged for analytics.
-</div>
-
----
-
 <!-- Purchase CTA moved to dedicated page to keep help focus prominent -->
 
 ## Our Products
@@ -199,6 +163,42 @@ Learn about cloud integrations for all platforms:
 | **Features & Demo** | Feature overview, live demonstrations, use case examples | [:octicons-arrow-right-24: Features Demo](guides/features-demo.md) |
 | **Additional Resources** | Asset guides, real-time editing help, content migration | [:octicons-arrow-right-24: Assets Guide](guides/assets-guide.md) · [:octicons-arrow-right-24: Real-time Editing](guides/real-time-editing-help.md) |
 | **Getting Help** | FAQs, troubleshooting, community forum, contact support | [:octicons-arrow-right-24: FAQ](https://quantumbitsolutions.com/forums/) · [:octicons-arrow-right-24: Support](https://quantumbitsolutions.com/contact-us/) |
+
+---
+
+## Quick Download & Purchase
+
+<div class="grid cards" markdown>
+
+-   :material-cart:{ .lg .middle } **XPF (Windows)**
+    
+    [:material-store: Store](https://quantumbitsolutions.com/purchase/?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-xpf-store){ .md-button } [:material-shopping: Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-xpf-shop){ .md-button .md-button--primary }
+    
+    [:octicons-book-24: Guide](products/xpf/user-guide.md) · [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md)
+
+-   :material-android:{ .lg .middle } **Android Advanced**
+    
+    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-android-advanced){ .md-button .md-button--primary }
+    
+    [:octicons-book-24: Guide](products/android/advanced-guide.md) · [:octicons-server-24: Server Mode](products/android/advanced-guide.md#modbus-server-mode-slave)
+
+-   :material-android:{ .lg .middle } **Android Free**
+    
+    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-android-free){ .md-button }
+    
+    [:octicons-book-24: Guide](products/android/free-guide.md)
+
+-   :material-map:{ .lg .middle } **Mapper Pro**
+    
+    [:material-shopping: Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-mapper-shop){ .md-button .md-button--primary }
+    
+    [:octicons-book-24: Manual](products/mapper/user-manual.md) · [:octicons-rocket-24: Demo](products/mapper/quick-start.md)
+
+</div>
+
+<div class="admonition tip" markdown>
+Prefer **Shop** for bundles & promotions; **Store** for frictionless updates. All purchase links tagged for analytics.
+</div>
 
 ---
 

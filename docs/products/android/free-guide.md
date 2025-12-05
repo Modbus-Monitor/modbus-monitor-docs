@@ -11,7 +11,7 @@
 </figure>
 ## Overview
 
-The free Modbus Monitor Android app provides essential Modbus monitoring capabilities on mobile devices.
+The free Modbus Monitor Android app provides essential Modbus monitoring capabilities on mobile devices. The **Terminal Console** provides a clean, field-based interface to read and write data without memorizing complex address strings.
 
 **Perfect for:**
 
@@ -27,7 +27,7 @@ The free Modbus Monitor Android app provides essential Modbus monitoring capabil
 - **Modbus TCP** - Network connections (WiFi/Ethernet) using Modbus/TCP protocol
 - **Bluetooth & BLE** - Wireless connections using Modbus RTU protocol  
 - **USB Serial** - Direct cable connections using Modbus RTU protocol
-- **6-digit addressing scheme** - Industry standard format
+- **Form-based interface** - Simple fill-in fields, no complex syntax
 - **Read/write operations** - Single and multiple registers
 
 
@@ -90,13 +90,13 @@ flowchart LR
 
 ### Step 2: Select Communication Channel
 
-The app displays available communication channels in order:
+The app displays available communication channels in the list:
 
 1. **Modbus TCP** (always first) - For network connections
 2. **Bluetooth Paired Devices** - Previously paired BT devices  
-3. **Serial Devices** - Connected USB serial ports
+3. **Serial Devices** - Connected USB serial ports (when found)
 4. **Bluetooth Classic** - Connect to Bluetooth SPP (Serial Port Profile) devices
-5. **BLE Devices** - Bluetooth Low Energy devices
+5. **BLE Devices** - Bluetooth Low Energy devices (when found)
 
 !!! note "Protocol Selection"
     - **Modbus TCP channel** -> Uses **Modbus TCP** protocol
@@ -104,12 +104,11 @@ The app displays available communication channels in order:
 
 ### Step 3: Configure Your Connection
 
-Click the **three-dot menu** (...) in the top-right corner to configure:
+Click the **three-dot menu** (...) in the top-right corner to configure IP/Port (for TCP) or Baud Rate/Parity (for Serial).
 
 #### For Modbus TCP:
 - **IP Address** - Remote server IP address
 - **Port** - Usually 502 (default Modbus port)
-- **Station ID** - Device/slave address (usually 1)
 
 #### For Serial Connections:
 - **Baud Rate** - Communication speed (9600, 19200, etc.)
@@ -130,15 +129,70 @@ Click the **three-dot menu** (...) in the top-right corner to configure:
 - Select from "BLE Devices" list
 - BLE offers easier setup for newer devices
 
+## Using the Terminal Console
+
+The Terminal Console is designed for simplicity. Instead of typing long command strings, you simply fill in the fields.
+
+### Interface Controls
+
+| Field | Description |
+|-------|-------------|
+| **Device Address** | The Station ID (Slave ID) of the target device (1 - 247). |
+| **Function** | Select the Modbus function (e.g., Read Holding Registers, Write Single Coil). |
+| **Register** | The 1-based register address (e.g., 1 for the first register). |
+| **Qty** | The number of registers/coils to read. |
+| **Value (write)** | The value to send when performing a Write operation. |
+
+!!! tip "Screenshot Placeholder"
+    *[Image showing Terminal Console interface with labeled fields will be added here]*
+
+### Reading Data
+
+![Modbus Monitor Read](../../assets/screenshots/modbus-monitor-read.webp){.screenshot-center loading="lazy" width="300" }
+
+To read data from a device:
+
+1. **Device Address**: Enter the Slave ID (default is 1).
+2. **Function**: Select a "Read" function from the dropdown (e.g., **03 Read Holding Registers**).
+3. **Register**: Enter the starting register number (e.g., **100**).
+4. **Qty**: Enter the number of registers to read (e.g., **1** or **10**).
+5. **Action**: Tap the **READ** button.
+
+The response will appear in the large text area at the top of the screen.
+
+**Example: Reading temperature from register 100**
+
+- Device Address: `1`
+- Function: `03 Read Holding Registers`
+- Register: `100`
+- Qty: `1`
+- Tap **READ**
+
+### Writing Data
+
+To write data to a device:
+
+1. **Device Address**: Enter the Slave ID.
+2. **Function**: Select a "Write" function (e.g., **06 Write Single Register**).
+3. **Register**: Enter the target register number.
+4. **Value (write)**: Enter the numeric value you wish to send.
+5. **Action**: Tap the **WRITE** button.
+
+**Example: Writing value 551 to register 1**
+
+- Device Address: `1`
+- Function: `06 Write Single Register`
+- Register: `1`
+- Value (write): `551`
+- Tap **WRITE**
+
+### Clearing the Screen
+
+If the response area becomes too cluttered, tap the **CLEAR** button to wipe the history.
+
 ## Understanding Modbus Addresses
 
-The app uses the **6-digit addressing scheme** "Xnnnnnn":
-
-- **First digit (X)** - Register type identifier (NOT function code)
-- **5 digits (nnnnn)** - Register number (1-based addressing)
-
-!!! warning "Common Confusion"
-    The first digit is a **register type indicator**, not the Modbus function code. Many users confuse these concepts!
+The app automatically calculates the 6-digit address for you based on the **Function** and **Register** you select. You will see this displayed in blue text below the input fields (e.g., `6-digit address: 400001`).
 
 ### Address Format Breakdown
 
@@ -152,6 +206,9 @@ The app uses the **6-digit addressing scheme** "Xnnnnnn":
      |              |
 Holding Register   Register #1
 ```
+
+!!! info "Auto-Calculated for You"
+    You don't need to manually calculate 6-digit addresses anymore! The Terminal Console does this automatically based on your Function and Register selections.
 
 ### Register Type Reference:
 
@@ -182,40 +239,6 @@ Holding Register   Register #1
     - [Modbus Monitor YouTube Channel](https://www.youtube.com/watch?v=eesPvKslLV8)
     - [Wikipedia Modbus Article](https://en.wikipedia.org/wiki/Modbus)
 
-## Reading Data
-
-### Single Register Read
-
-1. **Enter 6-digit address** (e.g., `400001`)
-2. **Click the arrow button** (→) 
-3. **View results** - Data displays in integer format
-
-Example: `400001` reads the first holding register
-
-### Multiple Register Read
-
-Use separators to read multiple consecutive registers:
-
-| Separator | Example | Description |
-|-----------|---------|-------------|
-| `#` | `400001#5` | Read 5 registers starting at address 1 |
-| `.` | `400001.5` | Read 5 registers starting at address 1 |
-| `,` | `400001,5` | Read 5 registers starting at address 1 |
-
-## Writing Data  
-
-### Single Register Write
-
-Use any of these separators between address and value:
-
-| Separator | Example | Description |
-|-----------|---------|-------------|
-| `*` (Star) | `400001*995` | Write 995 to register 1 |
-| `-` (Dash) | `400001-995` | Write 995 to register 1 |
-| ` ` (Space) | `400001 995` | Write 995 to register 1 |
-
-All examples above write the value **995** to holding register **1**.
-
 ## Troubleshooting
 
 ### Connection Issues
@@ -234,27 +257,28 @@ All examples above write the value **995** to holding register **1**.
 ### Communication Errors
 
 **No response from device:**
-- Verify station/slave ID is correct
+- Verify **Device Address** (Station ID) is correct
 - Check communication parameters (baud rate, parity, etc.)
 - Ensure correct protocol (TCP vs RTU)
 - Test with known-good Modbus client
 
 **Address errors:**
-- Use 6-digit format (e.g., 400001, not 40001)
-- Verify function code supports your operation
+- Verify the **Function** code supports your operation
 - Check device documentation for supported addresses
+- Ensure **Register** number is within device's supported range
 
 ## Advanced Tips
 
 ### Efficient Monitoring
-- **Use multiple reads** (`400001#10`) instead of single reads for efficiency
+- **Use multiple reads** - Set **Qty** to 10 or more to read multiple registers at once
 - **Monitor key registers** that indicate system status
-- **Document working addresses** for future reference
+- **Document working configurations** - Note Device Address, Function, and Register numbers
 
 ### Best Practices
-- **Start with simple reads** to verify communication
+- **Start with simple reads** - Use Function 03 or 04 to verify communication
 - **Test with manufacturer examples** when available  
-- **Keep notes** of working configurations for different devices
+- **Keep notes** of working Device/Register combinations for different devices
+- **Use the helper tips** displayed at the bottom of the Terminal Console
 
 ## Getting the App
 
