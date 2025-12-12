@@ -827,6 +827,8 @@ The **List Group** provides essential tools for managing your Monitor Points (al
 
 Change the background colors of the Value cell based on the High, Low, and Nominal Limits. **Quickly validate the value from the Modbus device and test to see if it is within the valid range.**
 
+See [Evaluate Group Details](#evaluate-group-1) for comprehensive configuration options, workflows, and color-coding reference.
+
 ![Evaluate Settings](../../assets/screenshots/xpf/xpf-evaluate-limits.webp){ .screenshot-shadow loading="lazy" }
 
 ##### Log Group
@@ -1525,16 +1527,16 @@ Change the background colors of the Value cell based on the High, Low, and Nomin
 
 | Control | Type | ToolTip | Use When | Status Color |
 |---------|------|---------|----------|--------------|
-| **Show** | Toggle Button | "Show/hide all other Evaluate options and controls" | You want to access High/Low/Nominal/Auto filters | - |
-| **High Filter** | Toggle Button | "Filter: Show only rows where value has exceeded the High Limit. Red status indicates out-of-range high condition." | Testing upper bounds or identifying overhigh values | Red |
-| **Nominal Filter** | Toggle Button | "Filter: Show only rows where value is between Low Limit and High Limit (normal operating range). Green status indicates normal condition." | Monitoring normal operation or quality control pass tests | Green |
-| **Low Filter** | Toggle Button | "Filter: Show only rows where value is below the Low Limit. Blue status indicates out-of-range low condition." | Testing lower bounds or identifying underlow values | Blue |
-| **Auto Toggle** | Toggle Button | "Auto-evaluate: When enabled, filter updates automatically after each scan cycle without manual intervention. When disabled, manually toggle filters to refresh." | You want automatic status updates as data arrives | - |
-| **Test/Evaluate** | Toggle Button | "Toggle evaluation ON/OFF. When ON, each register's limit status (High/Nominal/Low) is calculated and displayed with color coding. When OFF, no evaluation occurs. Status indicator shows current mode." | You want to enable or disable all evaluation color coding | Gray (off) / Color (on) |
-| **Save as High Limit (current row)** | Menu Button | "Saves the currently selected row's value as its High Limit. Use when a single register reaches its maximum safe operating value." | You want to capture the highest observed value as the threshold for only the selected register | - |
-| **Save as Low Limit (current row)** | Menu Button | "Saves the currently selected row's value as its Low Limit. Use when a single register reaches its minimum safe operating value." | You want to capture the lowest observed value as the threshold for only the selected register | - |
-| **Save as High Limit (all rows)** | Menu Button | "Saves the currently selected row's value as the High Limit for all register rows in the list. Use when you want to apply the same high threshold across all equipment parameters." | You want to apply the same high threshold value to all registers at once | - |
-| **Save as Low Limit (all rows)** | Menu Button | "Saves the currently selected row's value as the Low Limit for all register rows in the list. Use when you want to apply the same low threshold across all equipment parameters." | You want to apply the same low threshold value to all registers at once | - |
+| **Show** | Toggle Button | Show/hide all other Evaluate options and controls | You want to access High/Low/Nominal/Auto filters | - |
+| **High Filter** | Toggle Button | Filter: Show only rows where value has exceeded the High Limit. Red status indicates out-of-range high condition." | Testing upper bounds or identifying overhigh values | Red |
+| **Nominal Filter** | Toggle Button | Filter: Show only rows where value is between Low Limit and High Limit (normal operating range). Green status indicates normal condition. | Monitoring normal operation or quality control pass tests | Green |
+| **Low Filter** | Toggle Button | Filter: Show only rows where value is below the Low Limit. Blue status indicates out-of-range low condition. | Testing lower bounds or identifying underlow values | Blue |
+| **Auto Toggle** | Toggle Button | Auto-evaluate: When enabled, filter updates automatically after each scan cycle without manual intervention. When disabled, manually toggle filters to refresh. | You want automatic status updates as data arrives | - |
+| **Test/Evaluate** | Toggle Button | Toggle evaluation ON/OFF. When ON, each register's limit status (High/Nominal/Low) is calculated and displayed with color coding. When OFF, no evaluation occurs. Status indicator shows current mode. | You want to enable or disable all evaluation color coding | Gray (off) / Color (on) |
+| **Save as High Limit (current row)** | Menu Button | Saves the currently selected row's value as its High Limit. Use when a single register reaches its maximum safe operating value." | You want to capture the highest observed value as the threshold for only the selected register | - |
+| **Save as Low Limit (current row)** | Menu Button | Saves the currently selected row's value as its Low Limit. Use when a single register reaches its minimum safe operating value." | You want to capture the lowest observed value as the threshold for only the selected register | - |
+| **Save as High Limit (all rows)** | Menu Button | Saves the currently selected row's value as the High Limit for all register rows in the list. Use when you want to apply the same high threshold across all equipment parameters. | You want to apply the same high threshold value to all registers at once | - |
+| **Save as Low Limit (all rows)** | Menu Button | Saves the currently selected row's value as the Low Limit for all register rows in the list. Use when you want to apply the same low threshold across all equipment parameters. | You want to apply the same low threshold value to all registers at once | - |
 
 
 **How Evaluation Works:**
