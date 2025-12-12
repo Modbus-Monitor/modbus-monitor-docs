@@ -827,7 +827,7 @@ The **List Group** provides essential tools for managing your Monitor Points (al
 
 Change the background colors of the Value cell based on the High, Low, and Nominal Limits. **Quickly validate the value from the Modbus device and test to see if it is within the valid range.**
 
-See [Evaluate Group Details](#evaluate-group-1) for comprehensive configuration options, workflows, and color-coding reference.
+See [Evaluate Group Details](#evaluate-group-details) for comprehensive configuration options, workflows, and color-coding reference.
 
 ![Evaluate Settings](../../assets/screenshots/xpf/xpf-evaluate-limits.webp){ .screenshot-shadow loading="lazy" }
 
@@ -1506,7 +1506,7 @@ The **List Group** provides essential tools for managing your Monitor Points (al
     Result: All alarm-related points from device 2 only
     ```
 
-#### Evaluate Group
+#### Evaluate Group Details
 
 **Value Validation and Testing** - Validate register values against configurable limits with automatic color coding. Set pass/fail thresholds for quality control testing or equipment health monitoring.
 
