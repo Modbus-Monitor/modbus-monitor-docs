@@ -4,6 +4,17 @@ uploads/
 # YouTube API Key (local, never commit)
 .youtube-api-key
 
+# Internal documentation (local development only, not for public site)
+CLOUDFLARE-*.md
+MIGRATION-GUIDE.md
+PAGE-RULE-FORM-GUIDE.md
+QUICK-START-CLOUDFLARE.md
+VERSION-MANAGEMENT.md
+VS-CODE-SETUP.md
+WORKFLOW-GUIDE.md
+AI_*.md
+*KNOWLEDGE*.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
