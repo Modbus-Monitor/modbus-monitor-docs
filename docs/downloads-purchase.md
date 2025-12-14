@@ -8,19 +8,19 @@ Focused access to installers, store listings, licensing, activation steps and pr
 <div class="grid cards" markdown>
 
 -   :material-cart: **Buy / Bundles**  
-    [:material-shopping: Online Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=cta-shop-button){ .md-button .md-button--primary }
+    [:material-shopping: Online Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=shop-button){ .md-button .md-button--primary }
 
 -   :material-store: **Microsoft Store (XPF)**  
-    [:material-store: Store Purchase](https://quantumbitsolutions.com/purchase/?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=cta-store-button){ .md-button }
+    [:material-store: Store Purchase](ms-windows-store://pdp/?productid=9PG862WL5HSM){ .md-button }
 
 -   :material-google-play: **Android Advanced**  
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=cta-android-advanced){ .md-button }
+    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=android-advanced){ .md-button }
 
 -   :material-google-play: **Android Free Console**  
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=cta-android-free){ .md-button }
+    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=android-free){ .md-button }
 
 -   :material-map: **Mapper Pro**  
-    [:material-shopping: Purchase](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=cta-mapper-shop){ .md-button }
+    [:material-shopping: Purchase](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=mapper-pro){ .md-button }
 
 </div>
 
@@ -47,11 +47,27 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
 
 **Purpose:** Professional Modbus TCP/RTU/ASCII monitoring, logging, analytics & cloud.
 
+### Latest Release: v4.4.0.0 (December 14, 2025)
+
+!!! info "Direct Download Available"
+    Skip the store and download directly from our GitHub releases.
+
+#### Installers (Recommended)
+- [:octicons-download-24: Windows ARM64 Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe) - 60.6 MB
+- [:octicons-download-24: Windows x64 Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x64.exe) - 65.8 MB
+- [:octicons-download-24: Windows x86 Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x86.exe) - 61.1 MB
+
+#### Portable Versions
+- [:octicons-download-24: Windows ARM64 Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe) - 80.7 MB
+- [:octicons-download-24: Windows x64 Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe) - 84.3 MB
+- [:octicons-download-24: Windows x86 Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe) - 79.1 MB
+
+#### Purchase Options
 | Action | Link |
 |--------|------|
-| Microsoft Store (easy updates) | [Store Purchase](https://quantumbitsolutions.com/purchase/?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=xpf-store){ .md-button } |
-| Online Shop (bundles, promos) | [Online Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=xpf-shop){ .md-button .md-button--primary } |
-| Direct Download | [GitHub Releases](releases/index.md){ .md-button } |
+| Microsoft Store (easy updates) | [Store Purchase](ms-windows-store://pdp/?productid=9PG862WL5HSM){ .md-button } |
+| Online Shop (bundles, promos) | [Online Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=xpf-section&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button .md-button--primary } |
+| View All Releases | [GitHub Releases](releases/index.md){ .md-button } |
 | User Guide | [User Guide](products/xpf/user-guide.md){ .md-button } |
 | Quick Start | [Quick Start](products/xpf/quick-start.md){ .md-button } |
 
