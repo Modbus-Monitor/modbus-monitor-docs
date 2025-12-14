@@ -119,9 +119,9 @@ Beyond this user guide, additional resources are available:
 
 === "Direct Download from Web"
 
-    **Install from the Web - Portable or Installer Options**
+    **Install from GitHub Releases - Portable or Installer Options**
     
-    Visit QuantumBitSolutions.com Download or Shop pages to download or purchase the application.
+    Download the latest version from our [GitHub Releases](../../releases/index.md) page.
     
     **Portable Version:**
     - The software is a **portable version**, meaning it can be **run from any location without requiring installation**
@@ -133,17 +133,19 @@ Beyond this user guide, additional resources are available:
 
     | Architecture | Installer (Permanent Setup) | Portable (No Install) |
     |-------------|------------------------------|------------------------|
-    | **64-bit** *(Recommended for modern systems)* | [:material-download: x64 Installer](https://quantumbitsolutions.com/download/ModbusMonitor_XPF_x64_Installer.zip){ .md-button } | [:material-download: x64 Portable](https://quantumbitsolutions.com/download/Modbus_Monitor_XPFx64.zip){ .md-button } |
-    | **32-bit** *(Older systems only)* | [:material-download: x86 Installer](https://quantumbitsolutions.com/download/ModbusMonitor_XPF_x86_Installer.zip){ .md-button } | [:material-download: x86 Portable](https://quantumbitsolutions.com/download/Modbus_Monitor_XPFx86.zip){ .md-button } |
+    | **ARM64** *(Windows on ARM)* | [:material-download: ARM64 Installer](../../releases/v4.4.0.0.md#installers-recommended){ .md-button } | [:material-download: ARM64 Portable](../../releases/v4.4.0.0.md#portable-versions){ .md-button } |
+    | **64-bit** *(Recommended for modern systems)* | [:material-download: x64 Installer](../../releases/v4.4.0.0.md#installers-recommended){ .md-button } | [:material-download: x64 Portable](../../releases/v4.4.0.0.md#portable-versions){ .md-button } |
+    | **32-bit** *(Older systems only)* | [:material-download: x86 Installer](../../releases/v4.4.0.0.md#installers-recommended){ .md-button } | [:material-download: x86 Portable](../../releases/v4.4.0.0.md#portable-versions){ .md-button } |
 
     **Additional Download Locations:**
-    - [:material-download: Download Page](https://quantumbitsolutions.com/purchase/) - All versions available
+    - [:material-download: Releases Page](../../releases/index.md) - All versions available
     - [:material-cart: Shop Page](https://quantumbitsolutions.com/shop/) - Purchase with download links
     
     **What's the difference?**
     
     - **Installer:** Creates shortcuts, integrates with Windows, faster startup
     - **Portable:** No installation needed, run from USB drives, good for field work
+    - **ARM64:** For Windows on ARM devices (Surface Pro X, etc.)
     - **64-bit:** Works on modern Windows (2010+), handles large datasets better  
     - **32-bit:** Only needed for older Windows systems or embedded PCs
 

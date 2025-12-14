@@ -51,6 +51,7 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
 |--------|------|
 | Microsoft Store (easy updates) | [Store Purchase](https://quantumbitsolutions.com/purchase/?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=xpf-store){ .md-button } |
 | Online Shop (bundles, promos) | [Online Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=xpf-shop){ .md-button .md-button--primary } |
+| Direct Download | [GitHub Releases](releases/index.md){ .md-button } |
 | User Guide | [User Guide](products/xpf/user-guide.md){ .md-button } |
 | Quick Start | [Quick Start](products/xpf/quick-start.md){ .md-button } |
 
