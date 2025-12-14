@@ -5,22 +5,15 @@ Focused access to installers, store listings, licensing, activation steps and pr
 ---
 ## Downloads & Purchase CTA
 
+
 <div class="grid cards" markdown>
 
--   :material-cart: **Buy / Bundles**  
-    [:material-shopping: Online Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=shop-button){ .md-button .md-button--primary }
-
--   :material-store: **Microsoft Store (XPF)**  
-    [:material-store: Store Purchase](ms-windows-store://pdp/?productid=9PG862WL5HSM){ .md-button }
-
--   :material-google-play: **Android Advanced**  
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=android-advanced){ .md-button }
-
--   :material-google-play: **Android Free Console**  
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=android-free){ .md-button }
-
--   :material-map: **Mapper Pro**  
-    [:material-shopping: Purchase](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=mapper-pro){ .md-button }
+- [:material-download: **XPF (Windows) Direct Download**](releases/v4.4.0.0.md){ .md-button .md-button--primary }
+- [:material-store: **Microsoft Store (XPF)**](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button }
+- [:material-shopping: **Online Shop**](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=shop-button){ .md-button }
+- [:material-google-play: **Android Advanced**](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=android-advanced){ .md-button }
+- [:material-google-play: **Android Free Console**](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=android-free){ .md-button }
+- [:material-map: **Mapper Pro**](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=downloads-purchase&utm_content=mapper-pro){ .md-button }
 
 </div>
 
@@ -62,7 +55,7 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
 #### Purchase Options
 | Action | Link |
 |--------|------|
-| Microsoft Store (easy updates) | [Store Purchase](ms-windows-store://pdp/?productid=9PG862WL5HSM){ .md-button } |
+| Microsoft Store (easy updates) | [Store Purchase](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
 | Online Shop (bundles, promos) | [Online Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=xpf-section&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button .md-button--primary } |
 | View All Releases | [GitHub Releases](releases/index.md){ .md-button } |
 | User Guide | [User Guide](products/xpf/user-guide.md){ .md-button } |
