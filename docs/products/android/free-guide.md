@@ -282,7 +282,7 @@ Holding Register   Register #1
 
 ## Getting the App
 
-[:material-google-play: Download Free Version](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble){ .md-button .md-button--primary }
+[:material-google-play: Download Free Version](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole){ .md-button .md-button--primary }
 
 ## Upgrade Path
 

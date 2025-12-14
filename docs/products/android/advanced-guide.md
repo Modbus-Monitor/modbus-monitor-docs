@@ -5,7 +5,7 @@
 ![Modbus Monitor Advanced on Mobile](../../assets/screenshots/android-advanced/mma-modbus-monitor-android.webp){ .screenshot-center loading="lazy" }
 
 !!! success "Get Started Today"
-    [:material-google-play: **Download Modbus Monitor Advanced**](https://play.google.com/store/apps/details?id=com.Bhavan.Galex){ .md-button .md-button--primary } [:material-rocket-launch-outline: **Quick Start (3 Steps)**](#quick-start-3-steps){ .md-button }
+    [:material-google-play: **Download Modbus Monitor Advanced**](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor){ .md-button .md-button--primary } [:material-rocket-launch-outline: **Quick Start (3 Steps)**](#quick-start-3-steps){ .md-button }
     
     Professional mobile Modbus monitoring with unlimited monitor points, sensor publishing, cloud integration, and priority support.
     

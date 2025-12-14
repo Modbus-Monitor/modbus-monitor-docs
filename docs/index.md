@@ -172,25 +172,25 @@ Learn about cloud integrations for all platforms:
 
 -   :material-cart:{ .lg .middle } **XPF (Windows)**
     
-    [:material-store: Store](https://quantumbitsolutions.com/purchase/?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-xpf-store){ .md-button } [:material-shopping: Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-xpf-shop){ .md-button .md-button--primary }
+    [:material-download: Direct Download](../../downloads-purchase.md#windows-modbus-monitor-xpf){ .md-button } [:material-shopping: Shop & Store](../../downloads-purchase.md#downloads-purchase-cta){ .md-button .md-button--primary }
     
     [:octicons-book-24: Guide](products/xpf/user-guide.md) · [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md)
 
 -   :material-android:{ .lg .middle } **Android Advanced**
     
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-android-advanced){ .md-button .md-button--primary }
+    [:material-google-play: Install](../../downloads-purchase.md#downloads-purchase-cta){ .md-button .md-button--primary }
     
     [:octicons-book-24: Guide](products/android/advanced-guide.md) · [:octicons-server-24: Server Mode](products/android/advanced-guide.md#modbus-server-mode-slave)
 
 -   :material-android:{ .lg .middle } **Android Free**
     
-    [:material-google-play: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-android-free){ .md-button }
+    [:material-google-play: Install](../../downloads-purchase.md#downloads-purchase-cta){ .md-button }
     
     [:octicons-book-24: Guide](products/android/free-guide.md)
 
 -   :material-map:{ .lg .middle } **Mapper Pro**
     
-    [:material-shopping: Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=cta&utm_campaign=download-hub&utm_content=home-mapper-shop){ .md-button .md-button--primary }
+    [:material-shopping: Shop](../../downloads-purchase.md#downloads-purchase-cta){ .md-button .md-button--primary }
     
     [:octicons-book-24: Manual](products/mapper/user-manual.md) · [:octicons-rocket-24: Demo](products/mapper/quick-start.md)
 

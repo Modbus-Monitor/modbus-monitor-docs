@@ -231,9 +231,9 @@ plugins:
 For connection issues, see [Error Codes](error-codes.md#connection-errors).
 ```
 
-**External Links** (To WordPress)
+**External Links** (To Documentation Site)
 ```markdown
-Download the latest version from our [official download page](https://quantumbitsolutions.com/download/).
+Download the latest version from our [downloads and purchase page](https://docs.quantumbitsolutions.com/downloads-purchase/).
 ```
 
 **Bidirectional References**
