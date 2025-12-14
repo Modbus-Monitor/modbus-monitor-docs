@@ -49,18 +49,15 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
 
 ### Latest Release: v4.4.0.0 (December 14, 2025)
 
-!!! info "Direct Download Available"
-    Skip the store and download directly from our GitHub releases.
+!!! tip "Direct Download Available"
+    **Skip the store** and download immediately from our GitHub releases. All files are code-signed and verified.
 
-#### Installers (Recommended)
-- [:octicons-download-24: Windows ARM64 Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe) - 60.6 MB
-- [:octicons-download-24: Windows x64 Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x64.exe) - 65.8 MB
-- [:octicons-download-24: Windows x86 Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x86.exe) - 61.1 MB
+[:octicons-download-24: **Download Latest XPF v4.4.0.0**](releases/v4.4.0.0.md){ .md-button .md-button--primary }
 
-#### Portable Versions
-- [:octicons-download-24: Windows ARM64 Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe) - 80.7 MB
-- [:octicons-download-24: Windows x64 Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe) - 84.3 MB
-- [:octicons-download-24: Windows x86 Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe) - 79.1 MB
+**Quick Download Options:**
+- **Windows x64** (Most Common): [Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x64.exe) • [Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe)
+- **Windows x86** (Legacy): [Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x86.exe) • [Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe)
+- **Windows ARM64**: [Installer](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe) • [Portable](https://github.com/quantumbitsolutions/modbus-monitor-xpf/releases/download/v4.4.0.0/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe)
 
 #### Purchase Options
 | Action | Link |
