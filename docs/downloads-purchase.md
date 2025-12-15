@@ -16,7 +16,7 @@ Choose your preferred Modbus toolkit below. All products include free trial acce
     
     [Download Now](#windows-modbus-monitor-xpf){ .md-button .md-button--primary } [Learn More](#quick-product-guides){ .md-button }
 
-- [:material-phone: **Android Advanced**](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-advanced)
+- [:material-phone: **Android Advanced**](https://play.google.com/store/apps/details?id=com.Bhavan.Galex&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-advanced)
 
     Full-featured mobile Modbus client with server mode, cloud add-ons & real-time monitoring.
     
@@ -164,7 +164,7 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
   
     Install directly from Play Store with auto-updates & 1-tap permissions.
     
-    [Install Now](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-advanced){ .md-button .md-button--primary }
+    [Install Now](https://play.google.com/store/apps/details?id=com.Bhavan.Galex&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-advanced){ .md-button .md-button--primary }
 
 </div>
 
@@ -203,7 +203,7 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
   
     Completely free, no ads, open-source inspired.
     
-    [Install Now](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-free){ .md-button .md-button--primary }
+    [Install Now](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-free){ .md-button .md-button--primary }
 
 </div>
 
@@ -212,7 +212,7 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
 | Resource | Link |
 |----------|------|
 | **User Guide** | [Learn the Basics](products/android/free-guide.md){ .md-button } |
-| **Upgrade to Advanced** | [Unlock More Features](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor){ .md-button } |
+| **Upgrade to Advanced** | [Unlock More Features](https://play.google.com/store/apps/details?id=com.Bhavan.Galex){ .md-button } |
 
 ---
 

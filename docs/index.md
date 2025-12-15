@@ -74,7 +74,7 @@
     - Cloud integration (MQTT, Sheets, ThingSpeak)
 
     **Core Guides:**  
-    [:octicons-book-24: User Guide](products/android/advanced-guide.md) · [:octicons-download-24: Play Store](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor)
+    [:octicons-book-24: User Guide](products/android/advanced-guide.md) · [:octicons-download-24: Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex)
 
     **Add-ons:**  
     [:octicons-arrow-right-24: MQTT](guides/android-mqtt-addon.md) · [:octicons-arrow-right-24: Google Sheets](guides/android-sheets-addon.md) · [:octicons-arrow-right-24: ThingSpeak](guides/thingspeak-overview.md)
@@ -91,7 +91,7 @@
     - No cost, no ads
 
     **Guides:**  
-    [:octicons-book-24: User Guide](products/android/free-guide.md) · [:octicons-download-24: Play Store](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole)
+    [:octicons-book-24: User Guide](products/android/free-guide.md) · [:octicons-download-24: Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble)
 
 -   :material-map:{ .lg .middle } **Modbus Mapper Pro**
 
@@ -116,8 +116,8 @@
 | Platform | Get Started | Advanced Setup | Cloud Integration |
 |----------|-------------|-----------------|-------------------|
 | **Windows (XPF)** | [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md) | [:octicons-book-24: Full Guide](products/xpf/user-guide.md) | [:octicons-arrow-right-24: MQTT](guides/mqtt-addon.md) · [:octicons-arrow-right-24: ThingSpeak](guides/thingspeak-addon-windows.md) |
-| **Android Advanced** | [:octicons-download-24: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusmonitor) | [:octicons-book-24: Full Guide](products/android/advanced-guide.md) | [:octicons-arrow-right-24: MQTT](guides/android-mqtt-addon.md) · [:octicons-arrow-right-24: Sheets](guides/android-sheets-addon.md) · [:octicons-arrow-right-24: ThingSpeak](guides/android-thingspeak-addon.md) |
-| **Android Free** | [:octicons-download-24: Install](https://play.google.com/store/apps/details?id=com.quantumbitsolutions.modbusconsole) | [:octicons-book-24: User Guide](products/android/free-guide.md) | Cloud not available |
+| **Android Advanced** | [:octicons-download-24: Install](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) | [:octicons-book-24: Full Guide](products/android/advanced-guide.md) | [:octicons-arrow-right-24: MQTT](guides/android-mqtt-addon.md) · [:octicons-arrow-right-24: Sheets](guides/android-sheets-addon.md) · [:octicons-arrow-right-24: ThingSpeak](guides/android-thingspeak-addon.md) |
+| **Android Free** | [:octicons-download-24: Install](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) | [:octicons-book-24: User Guide](products/android/free-guide.md) | Cloud not available |
 | **Mapper Pro** | [:octicons-rocket-24: Quick Demo](products/mapper/quick-start.md) | [:octicons-book-24: Full Manual](products/mapper/user-manual.md) | N/A |
 
 ---
