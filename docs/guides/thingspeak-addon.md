@@ -230,7 +230,7 @@ Yes, but coordinate Channel ID and API Key. Data merges chronologically.
 ThingSpeak → Data Import/Export → Download CSV/JSON
 
 **Can I analyze data with MATLAB?**  
-Yes. ThingSpeak has built-in MATLAB integration. See [Overview Guide - MATLAB Analytics](thingspeak-overview.md#matlab-analytics)
+Yes. ThingSpeak has built-in MATLAB integration. See the [Overview Guide](thingspeak-overview.md) or [ThingSpeak documentation](https://thingspeak.com/docs) for MATLAB integration details.
 
 **What if I have >8 monitor points?**  
 Only first 8 upload. Solutions:

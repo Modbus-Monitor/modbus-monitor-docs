@@ -137,9 +137,9 @@ One-stop hub for all Modbus Monitor software. Fast downloads, clear purchasing o
 
 === "❓ I Have Questions"
 
-    - [How do I activate my license?](#activation-steps)
-    - [What's the difference between Microsoft Store and Shop?](#shop-vs-store)
-    - [Can I transfer my license to another PC?](#license-faq)
+    - [How do I activate my license?](#-activation--licensing)
+    - [What's the difference between Microsoft Store and Shop?](#shop-vs-store-which-should-you-choose)
+    - [Can I transfer my license to another PC?](#can-i-transfer-my-license-to-another-pc)
     - [More FAQs](support/faq.md){ .md-button }
 
 ---

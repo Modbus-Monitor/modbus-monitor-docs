@@ -143,7 +143,7 @@ Yes, but coordinate Channel ID and API Key. Data from all sources merges chronol
 ThingSpeak → Data Import/Export → Download as CSV/JSON
 
 **Can I analyze data with MATLAB?**  
-Yes: ThingSpeak has built-in MATLAB integration. See [Overview Guide](thingspeak-overview.md#matlab-analytics)
+Yes: ThingSpeak has built-in MATLAB integration. See the [Overview Guide](thingspeak-overview.md) or [ThingSpeak documentation](https://thingspeak.com/docs) for MATLAB integration details.
 
 **Do I need paid ThingSpeak?**  
 Free tier works for most uses. Limits:

@@ -335,8 +335,8 @@ Inline math: The power calculation $P = V \times I \times \cos(\phi)$ where $\ph
 
 ## 🔗 Cross-References and Links
 
-- See [Installation Guide](installation-guide.md) for setup instructions
-- Refer to [Configuration](xpf-users-guide.md#configuration) section
+- See [Installation Guide](../products/xpf/quick-start.md) for setup instructions
+- Refer to [Configuration](../products/xpf/user-guide.md#7-monitor-points-configuration) section
 - Check [Troubleshooting](#troubleshooting-steps) above
 - External link: [Modbus Specification](https://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf)
 

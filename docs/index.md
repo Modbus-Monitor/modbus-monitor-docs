@@ -93,10 +93,6 @@
 
 ## Feature Comparison
 
----
-
-## Feature Comparison
-
 | Feature | XPF (Windows) | Advanced (Android) | Free (Android) | Mapper Pro |
 |---------|:-------------:|:------------------:|:--------------:|:----------:|
 | Real-time Monitoring | ✅ | ✅ | ✅ | ✅ |
