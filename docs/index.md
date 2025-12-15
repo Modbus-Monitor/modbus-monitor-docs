@@ -1,204 +1,97 @@
-# 📚 Quantum Bit Solutions - Documentation Hub
+# 📚 Modbus Monitor Documentation
 
-!!! info "Welcome to QBS Documentation"
-    **Complete guides** for all Quantum Bit Solutions products and services.  
-    **Professional Modbus tools** for automation engineers, OEMs, and testing teams.
-
----
-
-## Quick Navigation
-
-[**Get Started**](#start-here) · [**Products**](#our-products) · [**Platform Links**](#platform-quick-links) · [**Cloud**](#cloud--add-ons) · [**Technical**](#technical-guides--references) · [**Comparison**](#feature-comparison) · [**Quick Use Cases**](#quick-start-by-use-case) · [**Support**](#need-help) · [**Download & Purchase**](downloads-purchase.md)
+**Professional Modbus tools for automation engineers, OEMs, and testing teams.**  
+*Complete guides, quick starts, and technical references.*
 
 ---
 
-## Start Here
+## 🚀 Choose Your Path
 
-<div class="grid cards" markdown>
+<div class="grid" markdown>
 
--   :material-lifebuoy:{ .lg .middle } **Top Fixes**
+=== "⬇️ I Want to Download"
 
-    ---
+    Ready to get started?
+    
+    [🪟 Get XPF (Windows)](downloads-purchase.md#quick-download-xpf){ .md-button .md-button--primary }
+    
+    [📱 Get Android App](downloads-purchase.md#modbus-monitor-advanced-android){ .md-button }
+    
+    [🔍 Get Mapper Pro](downloads-purchase.md#mapper-pro-windows){ .md-button }
 
-    Quick access to the most‑visited help topics.
+=== "📖 I Want to Learn"
 
-    - [:octicons-alert-24: Error Codes](guides/error-codes.md)
-    - [:material-usb: USB‑OTG Serial & Adapters](guides/android-hardware.md#usb-otg-serial-adapters)
-    - [:octicons-server-24: Android Server Mode](products/android/advanced-guide.md#modbus-server-mode-slave)
-    - [:octicons-device-camera-video-24: Sensor Server](products/android/advanced-guide.md#sensor-server-mode)
+    New to Modbus Monitor?
+    
+    [XPF Quick Start (5 min)](products/xpf/quick-start.md){ .md-button }
+    
+    [Android Guide](products/android/advanced-guide.md){ .md-button }
+    
+    [All Guides →](#guides-by-product){ .md-button }
 
--   :material-compass:{ .lg .middle } **Popular Guides**
+=== "🆘 I Need Help"
 
-    ---
+    Stuck or have a problem?
+    
+    [Error Codes & Fixes](guides/error-codes.md){ .md-button }
+    
+    [Hardware Guide](guides/android-hardware.md){ .md-button }
+    
+    [FAQ & Support](support/faq.md){ .md-button }
 
-    - [:octicons-book-24: Arduino Modbus RTU Server](technical/arduino-server.md)
-    - [:octicons-file-24: Import & Export](guides/import-export.md)
-    - [:octicons-question-24: FAQ](support/faq.md)
+=== "🔄 I'm Upgrading"
 
+    Moving from another tool?
+    
+    [Feature Comparison](#feature-comparison){ .md-button }
+    
+    [Import/Export Guide](guides/import-export.md){ .md-button }
+    
+    [Cloud Integration](guides/thingspeak-overview.md){ .md-button }
+
+</div>
+
+<div class="admonition success" markdown>
+**✅ Pro Tip:** 14-day free trial for XPF (all features, no credit card). Android apps are completely free.
 </div>
 
 ---
 
-<!-- Purchase CTA moved to dedicated page to keep help focus prominent -->
+## Our Products {#guides-by-product}
 
-## Our Products
+**Choose the tool that fits your workflow:**
 
-<div class="grid cards" markdown>
-
--   :material-monitor-dashboard:{ .lg .middle } **Modbus Monitor XPF**
-
-    ---
-
-    **Professional Windows application** for Modbus monitoring, logging, and analysis.
-
-    - Real-time TCP/RTU/ASCII monitoring
-    - Advanced data visualization & trending
-    - Network diagnostics & logging
-    - MQTT & ThingSpeak cloud integration
-
-    **Core Guides:**  
-    [:octicons-book-24: User Guide](products/xpf/user-guide.md) · [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md)
-
-    **Add-ons:**  
-    [:octicons-arrow-right-24: MQTT Add-on](guides/mqtt-addon.md) · [:octicons-arrow-right-24: ThingSpeak Add-on](guides/thingspeak-overview.md)
-
--   :material-android:{ .lg .middle } **Modbus Monitor Advanced**
-
-    ---
-
-    **Full-featured Android client** for mobile Modbus monitoring and cloud integration.
-
-    - TCP/IP, USB Serial, Bluetooth channels
-    - Professional data logging & analysis
-    - Field-ready diagnostics
-    - Cloud integration (MQTT, Sheets, ThingSpeak)
-
-    **Core Guides:**  
-    [:octicons-book-24: User Guide](products/android/advanced-guide.md) · [:octicons-download-24: Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex)
-
-    **Add-ons:**  
-    [:octicons-arrow-right-24: MQTT](guides/android-mqtt-addon.md) · [:octicons-arrow-right-24: Google Sheets](guides/android-sheets-addon.md) · [:octicons-arrow-right-24: ThingSpeak](guides/thingspeak-overview.md)
-
--   :material-android:{ .lg .middle } **Modbus Console (Free)**
-
-    ---
-
-    **Basic Android testing tool** for quick Modbus verification and troubleshooting.
-
-    - Simple read/write operations
-    - TCP and Serial support
-    - Perfect for quick tests
-    - No cost, no ads
-
-    **Guides:**  
-    [:octicons-book-24: User Guide](products/android/free-guide.md) · [:octicons-download-24: Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble)
-
--   :material-map:{ .lg .middle } **Modbus Mapper Pro**
-
-    ---
-
-    **Protocol sniffer and network analyzer** for Modbus systems and troubleshooting.
-
-    - Live traffic analysis & decode
-    - Protocol verification
-    - Device discovery & mapping
-    - Communication troubleshooting
-
-    **Guides:**  
-    [:octicons-book-24: User Manual](products/mapper/user-manual.md) · [:octicons-rocket-24: Quick Demo](products/mapper/quick-start.md)
-
-</div>
-
----
-
-## Platform Quick Links
-
-| Platform | Get Started | Advanced Setup | Cloud Integration |
-|----------|-------------|-----------------|-------------------|
-| **Windows (XPF)** | [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md) | [:octicons-book-24: Full Guide](products/xpf/user-guide.md) | [:octicons-arrow-right-24: MQTT](guides/mqtt-addon.md) · [:octicons-arrow-right-24: ThingSpeak](guides/thingspeak-addon-windows.md) |
-| **Android Advanced** | [:octicons-download-24: Install](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) | [:octicons-book-24: Full Guide](products/android/advanced-guide.md) | [:octicons-arrow-right-24: MQTT](guides/android-mqtt-addon.md) · [:octicons-arrow-right-24: Sheets](guides/android-sheets-addon.md) · [:octicons-arrow-right-24: ThingSpeak](guides/android-thingspeak-addon.md) |
-| **Android Free** | [:octicons-download-24: Install](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) | [:octicons-book-24: User Guide](products/android/free-guide.md) | Cloud not available |
-| **Mapper Pro** | [:octicons-rocket-24: Quick Demo](products/mapper/quick-start.md) | [:octicons-book-24: Full Manual](products/mapper/user-manual.md) | N/A |
+| Product | What It Does | Get Started |
+|---------|--------------|-------------|
+| **🪟 Modbus Monitor XPF** (Windows) | Professional monitoring, logging, diagnostics & cloud integration | [📖 Guide](products/xpf/user-guide.md) · [⚡ Quick Start](products/xpf/quick-start.md) · [⬇️ Download](downloads-purchase.md) |
+| **📱 Modbus Advanced** (Android) | Full-featured mobile client with server mode & cloud connectivity | [📖 Guide](products/android/advanced-guide.md) · [📥 Install Free](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) |
+| **📱 Modbus Console** (Android Free) | Lightweight testing tool for quick verification & troubleshooting | [📖 Guide](products/android/free-guide.md) · [📥 Install Free](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) |
+| **🔍 Mapper Pro** (Windows) | Protocol analyzer & network explorer for device discovery | [📖 Manual](products/mapper/user-manual.md) · [🛒 Shop](downloads-purchase.md) |
 
 ---
 
 ## Cloud & Add-ons
 
-### Android Add-ons
-
-Extend Modbus Monitor Advanced with cloud connectivity:
-
-| Add-on | What It Does | Guide |
-|--------|--------------|-------|
-| **MQTT** | Publish data to any MQTT broker (HiveMQ, AWS IoT, Azure) | [:octicons-book-24: MQTT Guide](guides/android-mqtt-addon.md) |
-| **Google Sheets** | Log data directly to spreadsheets | [:octicons-book-24: Sheets Guide](guides/android-sheets-addon.md) |
-| **ThingSpeak** | Cloud charts, MATLAB analytics, real-time alerts | [:octicons-book-24: ThingSpeak Setup](guides/android-thingspeak-addon.md) |
-
-### Windows Add-ons
-
-Extend Modbus Monitor XPF with cloud connectivity:
-
-| Add-on | What It Does | Guide |
-|--------|--------------|-------|
-| **MQTT** | Publish data to any MQTT broker | [:octicons-book-24: MQTT Guide](guides/mqtt-addon.md) |
-| **ThingSpeak** | Cloud charts, MATLAB analytics, real-time alerts | [:octicons-book-24: ThingSpeak Setup](guides/thingspeak-addon-windows.md) |
-
-### Cloud Platform Guides
-
-Learn about cloud integrations for all platforms:
-
-| Platform | Description | Guide |
-|----------|-------------|-------|
-| **ThingSpeak Overview** | Concepts, use cases, MATLAB integration, best practices | [:octicons-book-24: ThingSpeak Guide](guides/thingspeak-overview.md) |
+| Platform | Available Add-ons | Get Started |
+|----------|------------------|-------------|
+| **Android** | MQTT · Google Sheets · ThingSpeak | [MQTT Setup](guides/android-mqtt-addon.md) · [Sheets](guides/android-sheets-addon.md) · [ThingSpeak](guides/android-thingspeak-addon.md) |
+| **Windows (XPF)** | MQTT · ThingSpeak | [MQTT Setup](guides/mqtt-addon.md) · [ThingSpeak](guides/thingspeak-addon-windows.md) · [Full Guide](guides/thingspeak-overview.md) |
+| **Getting Started** | Overview & Best Practices | [ThingSpeak Overview](guides/thingspeak-overview.md) · [MQTT Basics](guides/mqtt-addon.md) · [Data Export](guides/import-export.md) |
 
 ---
 
 ## Technical Guides & References
 
-| Topic | Description | Guides |
-|-------|-------------|--------|
-| **Hardware Integration** | USB Serial adapters, Bluetooth modules, network equipment | [:octicons-arrow-right-24: Hardware Guides](guides/android-hardware.md) |
-| **Modbus Protocol** | Address formatting (6-digit), error codes, protocol specifications | [:octicons-arrow-right-24: Addressing](guides/6-digit-addressing.md) · [:octicons-arrow-right-24: Error Codes](guides/error-codes.md) |
-| **Data Integration** | Import/Export configurations, Google Sheets, custom scripting | [:octicons-arrow-right-24: Import/Export](guides/import-export.md) |
-| **Features & Demo** | Feature overview, live demonstrations, use case examples | [:octicons-arrow-right-24: Features Demo](guides/features-demo.md) |
-| **Additional Resources** | Asset guides, real-time editing help, content migration | [:octicons-arrow-right-24: Assets Guide](guides/assets-guide.md) · [:octicons-arrow-right-24: Real-time Editing](guides/real-time-editing-help.md) |
-| **Getting Help** | FAQs, troubleshooting, community forum, contact support | [:octicons-arrow-right-24: FAQ](https://quantumbitsolutions.com/forums/) · [:octicons-arrow-right-24: Support](https://quantumbitsolutions.com/contact-us/) |
+| Topic | Resources |
+|-------|-----------|
+| **🔌 Hardware & Adapters** | [USB-OTG Serial](guides/android-hardware.md#usb-otg-serial-adapters) · [Bluetooth](guides/android-hardware.md) · [Network Equipment](guides/android-hardware.md) |
+| **🌐 Modbus Protocol** | [6-Digit Addressing](guides/6-digit-addressing.md) · [Error Codes](guides/error-codes.md) · [Protocol Reference](technical/index.md) |
+| **📊 Data & Integration** | [Import/Export](guides/import-export.md) · [Google Sheets](guides/android-sheets-addon.md) · [CSV Management](guides/import-export.md) |
+| **🎓 Learning & Demos** | [Features Demo](guides/features-demo.md) · [Arduino Server](technical/arduino-server.md) · [Use Cases](guides/features-demo.md) |
 
 ---
 
-## Quick Download & Purchase
-
-<div class="grid cards" markdown>
-
--   :material-cart:{ .lg .middle } **XPF (Windows)**
-    
-    [:material-download: Direct Download](../../downloads-purchase.md#windows-modbus-monitor-xpf){ .md-button } [:material-shopping: Shop & Store](../../downloads-purchase.md#downloads-purchase-cta){ .md-button .md-button--primary }
-    
-    [:octicons-book-24: Guide](products/xpf/user-guide.md) · [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md)
-
--   :material-android:{ .lg .middle } **Android Advanced**
-    
-    [:material-google-play: Install](../../downloads-purchase.md#downloads-purchase-cta){ .md-button .md-button--primary }
-    
-    [:octicons-book-24: Guide](products/android/advanced-guide.md) · [:octicons-server-24: Server Mode](products/android/advanced-guide.md#modbus-server-mode-slave)
-
--   :material-android:{ .lg .middle } **Android Free**
-    
-    [:material-google-play: Install](../../downloads-purchase.md#downloads-purchase-cta){ .md-button }
-    
-    [:octicons-book-24: Guide](products/android/free-guide.md)
-
--   :material-map:{ .lg .middle } **Mapper Pro**
-    
-    [:material-shopping: Shop](../../downloads-purchase.md#downloads-purchase-cta){ .md-button .md-button--primary }
-    
-    [:octicons-book-24: Manual](products/mapper/user-manual.md) · [:octicons-rocket-24: Demo](products/mapper/quick-start.md)
-
-</div>
-
-<div class="admonition tip" markdown>
-Prefer **Shop** for bundles & promotions; **Store** for frictionless updates. All purchase links tagged for analytics.
-</div>
+## Feature Comparison
 
 ---
 
@@ -217,25 +110,26 @@ Prefer **Shop** for bundles & promotions; **Store** for frictionless updates. Al
 
 ## Quick Start by Use Case
 
-| What I Want to Do | Guide |
-|-------------------|-------|
-| Monitor Modbus devices | [:octicons-arrow-right-24: XPF User Guide](products/xpf/user-guide.md) or [:octicons-arrow-right-24: Android Guide](products/android/advanced-guide.md) |
-| Upload data to the cloud | [:octicons-arrow-right-24: ThingSpeak Overview](guides/thingspeak-overview.md) or [:octicons-arrow-right-24: MQTT Setup](guides/mqtt-addon.md) |
-| Analyze network traffic | [:octicons-arrow-right-24: Modbus Mapper Pro](products/mapper/user-manual.md) |
-| Find hardware compatibility | [:octicons-arrow-right-24: Hardware Guide](guides/android-hardware.md) |
-| Troubleshoot errors | [:octicons-arrow-right-24: Error Codes](guides/error-codes.md) |
-| Understand Modbus addressing | [:octicons-arrow-right-24: 6-Digit Addressing](guides/6-digit-addressing.md) |
+| I Want to... | Start with... |
+|-------------|-----------------|
+| **Monitor Modbus devices** | [XPF Quick Start](products/xpf/quick-start.md) or [Android Guide](products/android/advanced-guide.md) |
+| **Send data to cloud** | [ThingSpeak](guides/thingspeak-overview.md) or [MQTT](guides/mqtt-addon.md) |
+| **Analyze network traffic** | [Mapper Pro](products/mapper/user-manual.md) |
+| **Find hardware** | [Hardware Guide](guides/android-hardware.md) |
+| **Fix errors** | [Error Codes](guides/error-codes.md) |
+| **Understand Modbus** | [6-Digit Addressing](guides/6-digit-addressing.md) |
 
 ---
 
-## Need Help?
+## 💬 Need Help?
 
-!!! tip "Support Options"
-    
-    - **[Community Forum](https://quantumbitsolutions.com/forums/)** - Ask questions and share experiences
-    - **[Contact Support](https://quantumbitsolutions.com/contact-us/)** - Direct support for licensing and issues
-    - **[Email](mailto:support@quantumbitsolutions.com)** - support@quantumbitsolutions.com
-    - **[Live Chat](https://quantumbitsolutions.com/)** - Available during business hours
+| Problem | Solution |
+|---------|----------|
+| **Not working?** | [Error Codes & Fixes](guides/error-codes.md) · [Hardware Issues](guides/android-hardware.md) · [FAQ](support/faq.md) |
+| **Questions?** | [Community Forum](https://quantumbitsolutions.com/forums/) · [📧 Email Support](mailto:support@quantumbitsolutions.com) · [Contact Page](https://quantumbitsolutions.com/contact-us/) |
+| **Want to explore?** | [All Guides](technical/index.md) · [Features Demo](guides/features-demo.md) · [Download & Purchase](downloads-purchase.md) |
 
-!!! note "Documentation Status"
-    This documentation is continuously updated to match our products. All guides are current as of **November 2025**.
+---
+
+!!! success "✅ Current Documentation"
+    Updated December 2025. Can't find what you need? [Contact support →](mailto:support@quantumbitsolutions.com)
