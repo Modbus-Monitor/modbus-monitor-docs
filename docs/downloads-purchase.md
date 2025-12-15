@@ -79,15 +79,15 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
 
 - **Windows x64** (Most Common)
   
-    [Installer](../release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary } [Portable](../release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button }
+    [Installer](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary } [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button }
 
 - **Windows x86** (Legacy)
   
-    [Installer](../release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary } [Portable](../release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button }
+    [Installer](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary } [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button }
 
 - **Windows ARM64**
   
-    [Installer](../release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary } [Portable](../release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button }
+    [Installer](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary } [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button }
 
 </div>
 
@@ -111,7 +111,7 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
   
     View version history, release notes, previous builds.
     
-    [All Files](../release/){ .md-button }
+    [All Files](https://github.com/Modbus-Monitor/modbus-monitor-docs/tree/main/release){ .md-button }
 
 </div>
 
