@@ -122,7 +122,6 @@ copyright: |
 nav:
   - Home: index.md
   - Downloads & Purchase: downloads-purchase.md
-  - Releases: releases/index.md
 
   - Technical Resources:
     - Overview: technical/index.md

@@ -1,295 +1,389 @@
 # Downloads & Purchase
 
-Focused access to installers, store listings, licensing, activation steps and product guides. Use this page for fast onboarding and conversion.
+One-stop hub for all Modbus Monitor software. Fast downloads, clear purchasing options, and flexible licensing.
 
 ---
 
-## Get Started Today
-
-Choose your preferred Modbus toolkit below. All products include free trial access.
+## All Products at a Glance
 
 <div class="grid cards" markdown>
 
-- [:material-download: **XPF (Windows)**](releases/v4.4.0.0.md)
+- **🪟 Modbus Monitor XPF** – Windows  
+  Professional monitoring, logging & cloud integration (v4.4.0.0)  
+  [⬇️ Download Free Trial](#download-v4400){ .md-button .md-button--primary } [🏪 Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } [🛒 Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button }
 
-    Professional Modbus monitoring, logging & cloud integration for Windows (x86, x64, ARM64).
-    
-    [Download Now](#windows-modbus-monitor-xpf){ .md-button .md-button--primary } [Learn More](#quick-product-guides){ .md-button }
+- **📱 Modbus Advanced** – Android 10+  
+  Full-featured mobile client with server mode & cloud  
+  [Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex&utm_source=docs&utm_campaign=downloads-purchase){ .md-button .md-button--primary } [Learn More](#modbus-monitor-advanced-android){ .md-button }
 
-- [:material-phone: **Android Advanced**](https://play.google.com/store/apps/details?id=com.Bhavan.Galex&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-advanced)
+- **📱 Modbus Console** – Android 10+  
+  Lightweight free testing & diagnostics  
+  [Play Store (Free)](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble&utm_source=docs&utm_campaign=downloads-purchase){ .md-button .md-button--primary } [Upgrade to Advanced](https://play.google.com/store/apps/details?id=com.Bhavan.Galex){ .md-button }
 
-    Full-featured mobile Modbus client with server mode, cloud add-ons & real-time monitoring.
-    
-    [Install from Play Store](#android-modbus-monitor-advanced){ .md-button .md-button--primary } [Details](#android-modbus-monitor-advanced){ .md-button }
+- **🔍 Mapper Pro** – Windows  
+  Advanced network analyzer & device discovery  
+  [Shop](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-shop){ .md-button .md-button--primary } [View Bundle](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-bundle){ .md-button }
 
-- [:material-map: **Mapper Pro**](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=mapper-pro)
-
-    Network traffic analyzer & Modbus map builder for rapid device discovery.
-    
-    [Buy Now](#mapper-pro){ .md-button .md-button--primary } [Learn More](#mapper-pro){ .md-button }
-
-</div>
-
-<div class="admonition tip" markdown>
-**Shop vs Store:** Use *Shop* for bundles, promotions & custom invoices. Use *Store* for frictionless Windows updates with auto-licensing.
 </div>
 
 ---
-## Quick Product Guides
 
-| Product | Purpose | Core Guide | Quick Start / Demo |
-|---------|---------|------------|--------------------|
-| **XPF (Windows)** | Professional monitoring & logging | [:octicons-book-24: User Guide](products/xpf/user-guide.md){ .md-button } | [:octicons-rocket-24: Quick Start](products/xpf/quick-start.md){ .md-button } |
-| **Android Advanced** | Mobile monitoring + cloud add‑ons | [:octicons-book-24: Guide](products/android/advanced-guide.md){ .md-button } | [:octicons-server-24: Server Mode](products/android/advanced-guide.md#modbus-server-mode-slave){ .md-button } |
-| **Android Free Console** | Lightweight testing | [:octicons-book-24: Guide](products/android/free-guide.md){ .md-button } | N/A |
-| **Mapper Pro** | Network traffic analysis & mapping | [:octicons-book-24: Manual](products/mapper/user-manual.md){ .md-button } | [:octicons-rocket-24: Demo](products/mapper/quick-start.md){ .md-button } |
+## ⚡ Quick Download XPF (v4.4.0.0)
+
+<div class="grid" markdown>
+
+=== "🪟 Windows x64"
+
+    **Most Common** – Most modern computers
+    
+    [📥 Installer](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary }
+    
+    [💾 Portable (No Install)](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button }
+    
+    [ℹ️ More Options](#download-v4400){ .md-button }
+
+=== "🪟 Windows x86"
+
+    **Legacy** – Older computers (pre-2010)
+    
+    [📥 Installer](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary }
+    
+    [💾 Portable (No Install)](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button }
+    
+    [ℹ️ More Options](#download-v4400){ .md-button }
+
+=== "🪟 Windows ARM64"
+
+    **New** – Newer ARM-based Windows devices
+    
+    [📥 Installer](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary }
+    
+    [💾 Portable (No Install)](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button }
+    
+    [ℹ️ More Options](#download-v4400){ .md-button }
+
+=== "❓ Not Sure?"
+
+    **Need Help Choosing?**
+    
+    Most computers are **x64** (Windows 10/11). Choose that unless:
+    
+    - **x86** – Computer is very old (pre-2010) or shows 32-bit in System Settings
+    - **ARM64** – Newer Surface X or Copilot+ PC with ARM processor
+    
+    [📖 Full Comparison](#download-v4400){ .md-button } [💬 Get Help](support/faq.md#which-version-should-i-download){ .md-button }
+
+</div>
+
+<div class="admonition success" markdown>
+**✅ Tip:** Unsure between **Installer** vs **Portable**? Use **Installer** (most people). Use **Portable** if you want to run from USB stick or don't have admin rights.
+</div>
+
+---
 
 <div class="admonition info" markdown>
-Start with the relevant **User Guide**, then proceed to Quick Start / Demo for hands‑on setup. Return here for purchasing once you confirm feature fit.
+**🎁 Start Here:** Download above, or try **Android apps** (free). 14 days full features, no credit card needed.
 </div>
 
 ---
 
-## Windows: Modbus Monitor XPF
+## Quick Links: Choose Your Path
 
-**Professional Modbus TCP/RTU/ASCII monitoring, logging, analytics & cloud integration for Windows.**
+=== "👨‍💻 I Want to Learn First"
 
-### Version 4.4.0.0 (December 14, 2025)
+    **Modbus Monitor XPF**
+    
+    - [User Guide - Full Documentation](products/xpf/user-guide.md){ .md-button }
+    - [Quick Start - 5 Minutes](products/xpf/quick-start.md){ .md-button }
+    - [Feature Comparison](products/xpf/user-guide.md#features){ .md-button }
+    
+    **Android Advanced**
+    
+    - [Complete User Guide](products/android/advanced-guide.md){ .md-button }
+    - [Server Mode Tutorial](products/android/advanced-guide.md#modbus-server-mode-slave){ .md-button }
+    - [Sensor Server Setup](products/android/advanced-guide.md#sensor-server-mode){ .md-button }
+    
+    **Mapper Pro**
+    
+    - [User Manual](products/mapper/user-manual.md){ .md-button }
+    - [Video Demo](products/mapper/quick-start.md){ .md-button }
+    - [Use Cases](products/mapper/use-cases.md){ .md-button }
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 8px; color: white; margin: 20px 0;">
+=== "⚡ I Want to Download Now"
 
-**Key Features:**    
+    **XPF v4.4.0.0**
+    
+    | Platform | Installer | Portable |
+    |----------|-----------|----------|
+    | Windows x64 (Most Common) | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button } |
+    | Windows x86 (Legacy) | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button } |
+    | Windows ARM64 (New) | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button } |
+    
+    **All Previous Versions**: [📁 View Release History](releases/index.md){ .md-button }
 
-  - ✅ Advanced Modbus Client & Server (Master/Slave)
-  - ✅ Supports TCP, RTU, ASCII over TCP/UDP & RS232/RS485
-  - ✅ Real-time charting & CSV data export
-  - ✅ IoT cloud integration (ThingSpeak, Azure)
-  - ✅ 60+ value converters (String, Float, DateTime, etc.)
-  - ✅ Modbus Wizard for easy setup
-  - ✅ Multi-device & multi-protocol support
-  - ✅ Dark/Light themes, customizable UI
+=== "💳 I'm Ready to Buy"
+
+    **Microsoft Store** (Easiest)
+    
+    - Auto-updates, linked to Microsoft account, no activation needed
+    - [Get Modbus Monitor XPF →](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button .md-button--primary }
+    
+    **Online Shop** (Flexible)
+    
+    - Bundles, promotions, custom invoices, lifetime licensing options
+    - [XPF License →](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button }
+    - [Mapper Pro →](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-shop){ .md-button }
+    - [XPF + Mapper Bundle →](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-bundle){ .md-button }
+
+=== "❓ I Have Questions"
+
+    - [How do I activate my license?](#activation-steps)
+    - [What's the difference between Microsoft Store and Shop?](#shop-vs-store)
+    - [Can I transfer my license to another PC?](#license-faq)
+    - [More FAQs](support/faq.md){ .md-button }
+
+---
+
+## Modbus Monitor XPF (Windows)
+
+**Professional Modbus TCP/RTU/ASCII monitoring, logging, analytics & cloud integration.**
+
+**Current Version:** v4.4.0.0 (December 14, 2025) | **Trial:** 14 days full features, no credit card
+
+### Why Choose XPF?
+
+✅ **Client & Server** – Master/Slave modes  
+✅ **All Protocols** – TCP, UDP, RTU, ASCII, RS232/RS485  
+✅ **Real-time Charts** – Live data visualization  
+✅ **Cloud Ready** – ThingSpeak, Azure, MQTT integration  
+✅ **Data Tools** – 60+ value converters, CSV export  
+✅ **Easy Setup** – Modbus Wizard walkthrough  
+✅ **Professional UI** – Dark/Light themes, multi-language
+
+### Download v4.4.0.0 {#download-v4400}
+
+<div class="grid" markdown>
+
+=== "Windows x64"
+
+    **Most Common**
+    
+    [📥 Installer](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary }
+    
+    [💾 Portable](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button }
+
+=== "Windows x86"
+
+    **Legacy Systems**
+    
+    [📥 Installer](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary }
+    
+    [💾 Portable](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button }
+
+=== "Windows ARM64"
+
+    **New ARM Processors**
+    
+    [📥 Installer](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary }
+    
+    [💾 Portable](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button }
+
+=== "All Versions"
+
+    **Previous Releases**
+    
+    [📁 View Release History](releases/index.md){ .md-button .md-button--primary }
 
 </div>
 
-### Download Options
+### Buy License
 
-**Quick Download (Latest v4.4.0.0):**
+<div class="grid" markdown>
 
-| Platform | Details | Installer | Portable |
-|----------|---------|-----------|----------|
-| **Windows x64** | Most Common | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button } |
-| **Windows x86** | Legacy Systems | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button } |
-| **Windows ARM64** | New ARM Processors | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button } |
+=== "🏪 Microsoft Store"
 
-### Purchase & Licensing
-
-<div class="grid cards" markdown>
-
-- **Microsoft Store**
-  
-    Simplified install, auto-updates, direct MS account linking.
+    **Easiest Option**
     
-    [Purchase](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button .md-button--primary }
-
-- **Online Shop**
-  
-    Bundles, promotions, custom invoices, multi-license discounts.
+    - Auto-updates
+    - Linked to Microsoft account
+    - No activation needed
     
-    [Shop Now](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=xpf-section&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button .md-button--primary }
+    [Get XPF](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button .md-button--primary }
 
-- **All Releases**
-  
-    View version history, release notes, previous builds.
+=== "🛒 Online Shop"
+
+    **Most Flexible**
     
-    [All Files](https://github.com/Modbus-Monitor/modbus-monitor-docs/tree/main/release){ .md-button }
+    - Bundles & discounts
+    - Custom invoices
+    - Lifetime licenses
+    
+    [Buy XPF License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button .md-button--primary }
 
 </div>
 
-### Activation Steps (Shop License)
+### Activation (Takes 2 Minutes)
 
-1. **Install XPF** from direct download or Microsoft Store.
-2. **Launch** and navigate to License / Activation dialog.
-3. **Paste** license key from your purchase email.
-4. **Activate** (requires internet). Offline: generate request file → send to support → apply response file.
-5. **Restart** app if prompted.
+**Online:** Launch app → License menu → Paste key → Activate  
+**Offline:** Generate request file → Email support → Apply response  
 
-**Transfer to New PC:** Deactivate on old PC → Activate with same key on new PC. Contact support if hardware lock issues arise.
+[Full activation guide →](products/xpf/user-guide.md#licensing){ .md-button }
 
-### Resources
+### Getting Started
 
-| Resource | Link |
-|----------|------|
-| User Guide | [Full Documentation](products/xpf/user-guide.md){ .md-button } |
-| Quick Start | [Get Up & Running in 5 Min](products/xpf/quick-start.md){ .md-button } |
-| Troubleshooting | [Common Issues & Fixes](support/faq.md){ .md-button } |
-| Licensing FAQ | [License Questions](support/faq.md#licensing){ .md-button } |
-
-!!! tip "Free Trial Available"
-    All features available during 14-day evaluation. No credit card required. [Download now](#download-options).
+- [📖 User Guide](products/xpf/user-guide.md){ .md-button }
+- [⚡ Quick Start (5 min)](products/xpf/quick-start.md){ .md-button }
+- [🔧 Troubleshooting](support/faq.md){ .md-button }
 
 ---
 
 ---
 
-## Android: Modbus Monitor Advanced
+## Modbus Monitor Advanced (Android)
 
 **Full-featured mobile Modbus client with server mode, cloud integration & real-time monitoring.**
 
-### Key Features
+**Platform:** Android 10+ | **Price:** Free with pro features | **Rating:** ⭐⭐⭐⭐⭐
 
-- ✅ TCP/IP, UDP, USB-OTG Serial, Bluetooth support
-- ✅ Modbus Server (Slave) mode with multiple stations
-- ✅ Real-time data monitoring & charting
-- ✅ Cloud sync: ThingSpeak, Google Sheets, MQTT
-- ✅ Sensor Server: convert device sensors to Modbus
-- ✅ Offline data logging & export
-- ✅ Multi-device connections
-- ✅ Ad-free professional experience
+### What You Get
 
-### Download & Install
+✅ **Client Mode** – TCP/IP, UDP, USB-OTG Serial, Bluetooth  
+✅ **Server Mode** – Run Modbus slave on your phone  
+✅ **Cloud Integration** – ThingSpeak, Google Sheets, MQTT  
+✅ **Sensor Server** – Convert phone sensors to Modbus registers  
+✅ **Real-time Charts** – Live data visualization  
+✅ **Offline Logging** – Data export to CSV  
+✅ **Multi-Device** – Connect multiple servers  
+✅ **Ad-Free** – Professional experience
 
-<div class="grid cards" markdown>
+### Get Started
 
-- **Google Play Store**
-  
-    Install directly from Play Store with auto-updates & 1-tap permissions.
+<div class="grid" markdown>
+
+=== "📱 Install"
+
+    Ready to download?
     
-    [Install Now](https://play.google.com/store/apps/details?id=com.Bhavan.Galex&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-advanced){ .md-button .md-button--primary }
+    [Install from Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex&utm_source=docs&utm_campaign=downloads-purchase){ .md-button .md-button--primary }
+
+=== "📖 Learn"
+
+    Want to learn more?
+    
+    [Complete User Guide](products/android/advanced-guide.md){ .md-button }
+    
+    [Server Mode Tutorial](products/android/advanced-guide.md#modbus-server-mode-slave){ .md-button }
+    
+    [Sensor Server Guide](products/android/advanced-guide.md#sensor-server-mode){ .md-button }
 
 </div>
 
-### Documentation & Features
+---
 
-| Feature | Link |
-|---------|------|
-| **User Guide** | [Complete Guide](products/android/advanced-guide.md){ .md-button } |
-| **Server Mode** | [Run Modbus Server on Mobile](products/android/advanced-guide.md#modbus-server-mode-slave){ .md-button } |
-| **Sensor Server** | [Convert Phone Sensors to Modbus](products/android/advanced-guide.md#sensor-server-mode){ .md-button } |
-| **MQTT Add-on** | [Real-time Cloud Sync](guides/android-mqtt-addon.md){ .md-button } |
-| **Google Sheets** | [Auto-Log to Sheets](guides/android-sheets-addon.md){ .md-button } |
-| **ThingSpeak** | [IoT Cloud Logging](guides/android-thingspeak-addon.md){ .md-button } |
+## Modbus Console (Android) – Free
 
-!!! tip "USB-OTG Tips"
-    Use a reliable OTG adapter with powered hub for multiple serial devices. Accept permission prompts for serial port access.
+**Lightweight testing app. No frills, just Modbus.**
+
+**Platform:** Android 10+ | **Price:** FREE | **Perfect For:** Testing, learning, field diagnostics
+
+[Install Free →](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble&utm_source=docs&utm_campaign=downloads-purchase){ .md-button .md-button--primary }
+
+[📖 Quick Guide](products/android/free-guide.md){ .md-button } [⬆️ Upgrade to Advanced](https://play.google.com/store/apps/details?id=com.Bhavan.Galex){ .md-button }
 
 ---
 
-## Android: Modbus Console (Free)
-
-**Lightweight, no-frills Modbus testing & quick monitoring for Android.**
-
-### Perfect For
-
-- Quick Modbus device testing
-- Learning Modbus basics
-- Field diagnostics & troubleshooting
-- Testing before buying Advanced version
-
-### Download & Install
-
-<div class="grid cards" markdown>
-
-- **Google Play Store**
-  
-    Completely free, no ads, open-source inspired.
-    
-    [Install Now](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble&utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=android-free){ .md-button .md-button--primary }
-
-</div>
-
-### Resources
-
-| Resource | Link |
-|----------|------|
-| **User Guide** | [Learn the Basics](products/android/free-guide.md){ .md-button } |
-| **Upgrade to Advanced** | [Unlock More Features](https://play.google.com/store/apps/details?id=com.Bhavan.Galex){ .md-button } |
-
----
-
-## Mapper Pro
+## Mapper Pro (Windows)
 
 **Advanced Modbus network analyzer & device discovery for rapid industrial mapping.**
 
-### Key Features
+**Status:** Available | **License:** Standalone or XPF bundle
 
-- ✅ Network traffic capture & analysis
-- ✅ Automatic Modbus device discovery
-- ✅ Map building from device responses
-- ✅ Protocol analysis & diagnostics
-- ✅ Export to CSV & standard formats
-- ✅ Multi-device support
-- ✅ Real-time monitoring
-- ✅ Integration with XPF
+### What It Does
 
-### Purchase & Bundles
+✅ **Network Capture** – Monitor Modbus traffic in real-time  
+✅ **Auto-Discovery** – Find all Modbus devices on network  
+✅ **Device Mapping** – Build register maps from responses  
+✅ **Protocol Analysis** – Debug communication issues  
+✅ **Data Export** – CSV, JSON, and standard formats  
+✅ **Integration** – Works seamlessly with XPF  
 
-<div class="grid cards" markdown>
+### Get Started
 
-- **Online Shop**
-  
-    Individual license, bundles with XPF, multi-license discounts, custom quotes.
+<div class="grid" markdown>
+
+=== "💳 Buy"
+
+    Ready to purchase?
     
-    [Buy Mapper Pro](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=mapper-shop){ .md-button .md-button--primary }
-
-- **Bundle Deals**
-  
-    XPF + Mapper Pro bundles at discounted rates.
+    [Single License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-shop){ .md-button .md-button--primary }
     
-    [View Bundles](https://quantumbitsolutions.com/shop?utm_source=docs&utm_medium=card&utm_campaign=downloads-purchase&utm_content=mapper-bundle){ .md-button }
+    [XPF + Bundle (Save 20%)](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-bundle){ .md-button }
+
+=== "📖 Learn"
+
+    Want to learn more?
+    
+    [User Manual](products/mapper/user-manual.md){ .md-button }
+    
+    [Quick Demo (5 min)](products/mapper/quick-start.md){ .md-button }
+    
+    [Real-World Use Cases](products/mapper/use-cases.md){ .md-button }
 
 </div>
 
-### Documentation & Demo
+---
 
-| Resource | Link |
-|----------|------|
-| **User Manual** | [Full Documentation](products/mapper/user-manual.md){ .md-button } |
-| **Quick Demo** | [5-Min Tutorial](products/mapper/quick-start.md){ .md-button } |
-| **Use Cases** | [Real-World Examples](products/mapper/use-cases.md){ .md-button } |
+## Shop vs Microsoft Store: Which Should You Choose?
+
+| You Want... | Choose | Why |
+|------------|--------|-----|
+| **Auto-updates** | Microsoft Store | Automatic updates, no hassle |
+| **Bundle & Save** | Online Shop | XPF + Mapper Pro = 20% discount |
+| **Custom Invoice** | Online Shop | For business/tax purposes |
+| **Easy License Transfer** | Microsoft Store | Linked to Microsoft account |
+| **One-time Purchase** | Online Shop | Own forever, no expiry |
 
 ---
-## Choosing Store vs Shop
 
-| Scenario | Recommended | Rationale |
-|----------|-------------|-----------|
-| Single Windows license needed | Microsoft Store | Simplified install & updates |
-| Bundle (XPF + Mapper Pro) | Online Shop | Discount & combined fulfillment |
-| Need invoice customization | Online Shop | Detailed billing fields |
-| Fast reinstall on multiple PCs | Microsoft Store | Auto-linked to MS account |
+## FAQ & Troubleshooting
+
+### 🔐 Activation & Licensing
+
+**Q: How do I activate my XPF license?**  
+A: Launch app → License menu → Paste key → Click Activate. Internet required for first activation. [Full guide →](products/xpf/user-guide.md#licensing)
+
+**Q: Can I transfer my license to another PC?**  
+A: Yes. Deactivate on old PC (License menu → Deactivate) → Activate with same key on new PC.
+
+**Q: What if I lost my license key?**  
+A: Check your purchase email (spam folder too). Or log into your shop account and view your orders. [Contact support →](mailto:support@quantumbitsolutions.com)
+
+**Q: Does my license expire?**  
+A: Microsoft Store: Auto-renews with subscription. Online Shop: Choose 1-year or lifetime at purchase.
+
+### 📥 Downloads & Trials
+
+**Q: Can I try before buying?**  
+A: Yes! Download the 14-day free trial (all features included, no credit card). [Download XPF →](#modbus-monitor-xpf-windows)
+
+**Q: Where do I find older versions?**  
+A: [View all releases →](releases/index.md)
+
+**Q: What if the installer doesn't work?**  
+A: Try the **Portable** version (no installation needed). [Troubleshooting →](support/faq.md)
+
+### 🛍️ Purchases & Refunds
+
+**Q: What's your refund policy?**  
+A: Microsoft Store: Follow their policy. Online Shop: See checkout terms. Contact support for special cases (accidental duplicate, activation issues).
+
+**Q: Can I buy a bundle and save?**  
+A: Yes! XPF + Mapper Pro bundle is 20% off. [View bundle →](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-bundle)
+
+### ❓ Still Have Questions?
+
+[📖 Full FAQ →](support/faq.md){ .md-button } [💬 Email Support →](mailto:support@quantumbitsolutions.com){ .md-button } [🏠 Community Forum →](https://quantumbitsolutions.com/forums/){ .md-button }
 
 ---
-## Common Purchase Questions
 
-### Refund Policy
-See shop terms presented at checkout; contact support for edge cases (accidental duplicate purchase, activation issues).
-
-### Lost License Key
-Check original email, spam folder, or shop account dashboard. Fallback: contact support with order ID.
-
-### Upgrades & Renewals
-Renewal extends update/maintenance window; application continues functioning after expiry—new versions may require renewal.
-
----
-## Quick Troubleshooting Before Purchase
-
-| Issue | Self-check |
-|-------|-----------|
-| Unsure edition | Read Feature Comparison on index page |
-| Activation doubts | Review XPF User Guide licensing section |
-| Need trial | Use Android Free or request limited evaluation via support |
-| Hardware uncertainty | Check Hardware Guides (USB, Bluetooth) |
-
----
-## Post-Purchase Checklist (XPF)
-1. Activate license.
-2. Set up initial Modbus connection (TCP or serial).
-3. Import / build point map.
-4. Configure logging & retention.
-5. Optional: enable MQTT or ThingSpeak integration.
-6. Review Error Codes guide for quick diagnostics.
-
----
-## Still Need Help?
-See the [FAQ](support/faq.md) or contact [support@quantumbitsolutions.com](mailto:support@quantumbitsolutions.com).
-
-*Last updated: December 14, 2025*
+*Last updated: December 15, 2025*
