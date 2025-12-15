@@ -75,21 +75,11 @@ Start with the relevant **User Guide**, then proceed to Quick Start / Demo for h
 
 **Quick Download (Latest v4.4.0.0):**
 
-<div class="grid cards" markdown>
-
-- **Windows x64** (Most Common)
-  
-    [Installer](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary } [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button }
-
-- **Windows x86** (Legacy)
-  
-    [Installer](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary } [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button }
-
-- **Windows ARM64**
-  
-    [Installer](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary } [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/raw/main/release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button }
-
-</div>
+| Platform | Details | Installer | Portable |
+|----------|---------|-----------|----------|
+| **Windows x64** | Most Common | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x64-portable.exe){ .md-button } |
+| **Windows x86** | Legacy Systems | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-x86-portable.exe){ .md-button } |
+| **Windows ARM64** | New ARM Processors | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64.exe){ .md-button .md-button--primary } | [Download](https://docs.quantumbitsolutions.com/release/Modbus-Monitor-XPF-v4.4.0.0-arm64-portable.exe){ .md-button } |
 
 ### Purchase & Licensing
 
