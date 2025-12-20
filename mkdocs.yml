@@ -50,7 +50,7 @@ theme:
       accent: teal
   icon:
     logo: material/book-open-page-variant
-  favicon: images/favicon.png
+    favicon: images/favicon.png
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -122,11 +122,9 @@ copyright: |
 nav:
   - Home: index.md
   - Downloads & Purchase: downloads-purchase.md
-
   - Technical Resources:
-    - Overview: technical/index.md
-
+      - Overview: technical/index.md
   - Support & Help:
-    - Help Center: support/index.md
-    - FAQ: support/faq.md
-    - Community Forum: https://quantumbitsolutions.com/forums/
+      - Help Center: support/index.md
+      - FAQ: support/faq.md
+      - Community Forum: https://quantumbitsolutions.com/forums/
