@@ -12,7 +12,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-N7VJZYC4XW
+    property: G-3C1Y42YDPV
 
 theme:
   name: material
