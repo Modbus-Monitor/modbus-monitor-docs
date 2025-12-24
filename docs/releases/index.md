@@ -1,48 +1,33 @@
 # Releases
 
-All official releases of Modbus Monitor products with download links, release notes, and installation guides.
+All official releases of Modbus Monitor XPF with download links and release notes.
 
 ## Latest Release
 
-### Modbus Monitor XPF v4.4.0.0
+### Modbus Monitor XPF v4.4.1.0
 
-**Release Date:** December 14, 2025  
+**Release Date:** December 23, 2025  
 **Status:** Latest Stable
 
-[:octicons-download-24: Download v4.4.0.0](v4.4.0.0.md){ .md-button .md-button--primary }
+[:octicons-download-24: Download v4.4.1.0](https://github.com/Modbus-Monitor/releases/tag/v4.4.1.0){ .md-button .md-button--primary }
+
+[📖 Release Notes](../release/CHANGELOG-XPF.md){ .md-button } [🏪 Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button }
 
 ---
 
-## Previous Releases
+## All Releases
 
-| Version | Date | Status | Downloads |
-|---------|------|--------|-----------|
-| [v4.4.0.0](v4.4.0.0.md) | 2025-12-14 | Latest | [:octicons-download-24: Direct] |
-
----
-
-## Release Channels
-
-### Stable Releases
-Production-ready releases with full testing and documentation.
-
-### Beta Releases  
-Pre-release versions for testing new features. Available on request.
-
-### Development Builds
-Nightly builds for developers and advanced users.
+| Version | Date | Status | GitHub Release |
+|---------|------|--------|---|
+| v4.4.1.0 | 2025-12-23 | Latest | [Download](https://github.com/Modbus-Monitor/releases/tag/v4.4.1.0){ .md-button .md-button--primary } |
+| v4.4.0.0 | 2025-12-14 | Archive | [Download](https://github.com/Modbus-Monitor/releases/tag/v4.4.0.0){ .md-button } |
 
 ---
 
-## Download Instructions
+## Quick Links
 
-1. Choose your platform and architecture
-2. Download the appropriate installer or portable version
-3. Verify file integrity using SHA256 checksums
-4. Follow the installation guide for your chosen version
+[📥 Quick Download](../downloads-purchase.md){ .md-button .md-button--primary } [📖 Full Changelog](../release/CHANGELOG-XPF.md){ .md-button } [🛒 Buy License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=releases){ .md-button }
 
-!!! info "GitHub Releases"
-    All releases are hosted on GitHub for reliable, fast downloads with no size restrictions.
+---
 
-!!! tip "Checksum Verification"
-    Always verify downloads using the provided SHA256 checksums to ensure file integrity.
+All releases are hosted on [GitHub Releases](https://github.com/Modbus-Monitor/releases) with unlimited storage and version history.
