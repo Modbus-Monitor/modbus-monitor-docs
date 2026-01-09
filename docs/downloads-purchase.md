@@ -44,7 +44,7 @@ Professional Modbus monitoring software for Windows and mobile devices.
 
 **Full-featured mobile Modbus client with server mode & cloud integration.**
 
-✅ TCP/IP, UDP, Serial, Bluetooth | ✅ Server & Sensor modes | ✅ Real-time charts | ✅ CSV export
+✅ TCP/IP, UDP, Serial, Bluetooth | ✅ Server & Sensor modes | ✅ Cloud Connectors | ✅ CSV export
 
 [Install from Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex&utm_source=docs&utm_campaign=downloads-purchase){ .md-button .md-button--primary } [User Guide](products/android/advanced-guide.md){ .md-button }
 
@@ -63,6 +63,17 @@ Professional Modbus monitoring software for Windows and mobile devices.
 **Advanced Modbus network analyzer & device discovery.**
 
 ✅ Real-time traffic capture | ✅ Auto-discovery | ✅ Device mapping | ✅ Protocol analysis
+
+### Quick Download
+
+| Platform | Portable |
+|----------|----------|
+| **Windows x64** (Most Common) | [💾 Download](https://docs.quantumbitsolutions.com/release/Modbus-Mapper-Pro-v1.0.0-x64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=v1.0.0&utm_content=mapper-x64-portable){ .md-button .md-button--primary } |
+| **Windows x86** (Legacy, pre-2010) | [💾 Download](https://docs.quantumbitsolutions.com/release/Modbus-Mapper-Pro-v1.0.0-x86-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=v1.0.0&utm_content=mapper-x86-portable){ .md-button .md-button--primary } |
+
+**Not sure which version?** Use **x64** (for ~98% of users).
+
+### Buy License
 
 [Single License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-shop){ .md-button .md-button--primary } [User Manual](products/mapper/user-manual.md){ .md-button }
 

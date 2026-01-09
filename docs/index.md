@@ -64,9 +64,9 @@
 | Product | What It Does | Get Started |
 |---------|--------------|-------------|
 | **🪟 Modbus Monitor XPF** (Windows) | Professional monitoring, logging, diagnostics & cloud integration | [📖 Guide](products/xpf/user-guide.md) · [⚡ Quick Start](products/xpf/quick-start.md) · [⬇️ Download](downloads-purchase.md) |
-| **📱 Modbus Advanced** (Android) | Full-featured mobile client with server mode & cloud connectivity | [📖 Guide](products/android/advanced-guide.md) · [📥 Install Free](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) |
-| **📱 Modbus Console** (Android Free) | Lightweight testing tool for quick verification & troubleshooting | [📖 Guide](products/android/free-guide.md) · [📥 Install Free](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) |
-| **🔍 Mapper Pro** (Windows) | Protocol analyzer & network explorer for device discovery | [📖 Manual](products/mapper/user-manual.md) · [🛒 Shop](downloads-purchase.md) |
+| **📱 Modbus Advanced** (Android) | Full-featured mobile client with server mode & cloud connectivity | [📖 Guide](products/android/advanced-guide.md) · [📥 Get it on Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) |
+| **📱 Modbus Console** (Android Free) | Lightweight testing tool for quick verification & troubleshooting | [📖 Guide](products/android/free-guide.md) · [📥 Get it on Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) |
+| **🔍 Mapper Pro** (Windows) | Protocol analyzer & network explorer for device discovery | [📖 Manual](products/mapper/user-manual.md) · [⬇️ Download](downloads-purchase.md) · [🛒 Shop](downloads-purchase.md) |
 
 ---
 
