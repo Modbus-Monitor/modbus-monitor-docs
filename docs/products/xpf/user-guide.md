@@ -133,9 +133,9 @@ Beyond this user guide, additional resources are available:
 
     | Architecture | Installer (Permanent Setup) | Portable (No Install) |
     |-------------|------------------------------|------------------------|
-    | **ARM64** *(Windows on ARM)* | [:material-download: ARM64 Installer](../../releases/v4.4.0.0.md#installers-recommended){ .md-button } | [:material-download: ARM64 Portable](../../releases/v4.4.0.0.md#portable-versions){ .md-button } |
-    | **64-bit** *(Recommended for modern systems)* | [:material-download: x64 Installer](../../releases/v4.4.0.0.md#installers-recommended){ .md-button } | [:material-download: x64 Portable](../../releases/v4.4.0.0.md#portable-versions){ .md-button } |
-    | **32-bit** *(Older systems only)* | [:material-download: x86 Installer](../../releases/v4.4.0.0.md#installers-recommended){ .md-button } | [:material-download: x86 Portable](../../releases/v4.4.0.0.md#portable-versions){ .md-button } |
+    | **ARM64** *(Windows on ARM)* | [:material-download: ARM64 Installer](../../releases/v5.0.0.0.md#installers-recommended){ .md-button } | [:material-download: ARM64 Portable](../../releases/v5.0.0.0.md#portable-versions){ .md-button } |
+    | **64-bit** *(Recommended for modern systems)* | [:material-download: x64 Installer](../../releases/v5.0.0.0.md#installers-recommended){ .md-button } | [:material-download: x64 Portable](../../releases/v5.0.0.0.md#portable-versions){ .md-button } |
+    | **32-bit** *(Older systems only)* | [:material-download: x86 Installer](../../releases/v5.0.0.0.md#installers-recommended){ .md-button } | [:material-download: x86 Portable](../../releases/v5.0.0.0.md#portable-versions){ .md-button } |
 
     **Additional Download Locations:**
     - [:material-download: Releases Page](../../releases/index.md) - All versions available
