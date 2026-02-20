@@ -1,34 +1,67 @@
-# Release Process
+# Release Process (Final)
 
-## For v5.1.0.0 and beyond:
+This is the final, working flow using the scripts in `ModbusMonitorXPF/DoRelease`.
 
-1. Build 6 EXEs (x86/x64/arm64 setup + portable)
-2. Place in `release/` folder
-3. `git add . && git push` 
-4. Go to GitHub → Create Release
-   - Tag: `v5.1.0.0`
-   - Title: `Modbus Monitor XPF v5.1.0.0`
-   - Upload 6 EXEs + SHA256SUMS.txt
-   - Publish
-5. Delete EXEs from `release/` folder
-6. `git add . && git commit -m "Clean up release folder after v5.1.0.0"`
-7. `git push`
-8. Update docs/releases/v5.1.0.0.md with changelog
-9. Update docs/releases/index.md to mark as latest
-10. `git push` (MkDocs auto-deploys)
+## Windows PowerShell (recommended)
 
+### 0) Build and publish EXEs
 
+```powershell
+cd C:\Users\prati\source\repos\Modbus-Monitor\ModbusMonitorXPF\DoRelease
+.\DoRelease.ps1
+```
 
-## Options
+### 1) Publish EXEs to GitHub Release (from XPF output)
 
-# Option 1: Keep it manual (simpler)
+```powershell
+cd C:\Users\prati\source\repos\Modbus-Monitor\ModbusMonitorXPF\DoRelease
+pwsh
+.\Publish-GitHubRelease.ps1 -GenerateSha256 -UploadSha256 -Verbose
+```
 
-You manually create releases on GitHub (like you just did for v5.0.0.0)
-MkDocs workflow handles docs auto-build only
-Just follow: Build EXEs → push to release/ folder → create GitHub release manually → delete local files → push cleanup
+Optional (explicit tag):
 
-# Option 2: Fully automated (one tag push = everything)
+```powershell
+cd C:\Users\prati\source\repos\Modbus-Monitor\ModbusMonitorXPF\DoRelease
+pwsh .\Publish-GitHubRelease.ps1 -Tag v5.0.1.0 -GenerateSha256 -UploadSha256 -Verbose
+```
 
-Create a separate GitHub Actions workflow that listens for tag pushes (v*.*.*)
-On tag: automatically creates GitHub release + uploads EXEs from release folder
-No manual GitHub web UI clicks needed
+### 2) Update docs download buttons + release docs, then publish MkDocs
+
+```powershell
+cd C:\Users\prati\source\repos\Modbus-Monitor\ModbusMonitorXPF\DoRelease
+pwsh .\Update-DocsDownloadLinks.ps1 -Commit -Push -Verbose
+```
+
+### 3) Optional validation-only docs run (no commit/push)
+
+```powershell
+cd C:\Users\prati\source\repos\Modbus-Monitor\ModbusMonitorXPF\DoRelease
+pwsh .\Update-DocsDownloadLinks.ps1 -Verbose
+```
+
+## WSL equivalent
+
+```bash
+cd /mnt/c/Users/prati/source/repos/Modbus-Monitor/ModbusMonitorXPF/DoRelease
+bash ./Publish-GitHubRelease.sh --generate-sha256 --upload-sha256 --verbose
+bash ./Update-DocsDownloadLinks.sh --commit --push --verbose
+```
+
+## Important notes
+
+- `Publish-GitHubRelease.ps1` reads release files from `C:\Publish\XPF` by default.
+- Release assets remain versioned (for example: `Modbus-Monitor-XPF-5.0.1.0-x64-setup.exe`).
+- `Update-DocsDownloadLinks.ps1 -Commit -Push` commits in `modbus-monitor-docs` and pushing triggers MkDocs deploy.
+
+## If push is rejected (non-fast-forward)
+
+If docs push fails because remote `main` is ahead and you have local unstaged changes:
+
+```powershell
+$repo = "C:\Users\prati\source\repos\Modbus-Monitor\modbus-monitor-docs"
+git -C $repo stash push -m "temp-stash-before-rebase-docs-push"
+git -C $repo pull --rebase origin main
+git -C $repo push origin main
+git -C $repo stash pop
+```
