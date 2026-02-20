@@ -11,7 +11,7 @@ All official releases of Modbus Monitor XPF with download links and release note
 
 [:octicons-download-24: Download v5.0.1.0](https://github.com/Modbus-Monitor/ModbusMonitorXPF/releases/tag/v5.0.1.0){ .md-button .md-button--primary }
 
-[📖 Release Notes](../releases/v5.0.1.0.md){ .md-button } [🏪 Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button }
+[Release Notes](../releases/v5.0.1.0.md){ .md-button } [Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button }
 
 ---
 
@@ -33,3 +33,5 @@ All official releases of Modbus Monitor XPF with download links and release note
 ---
 
 Current XPF releases are hosted on [GitHub Releases](https://github.com/Modbus-Monitor/ModbusMonitorXPF/releases) with version history.
+
+
