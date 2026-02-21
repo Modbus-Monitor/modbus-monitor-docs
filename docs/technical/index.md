@@ -576,7 +576,7 @@ Scaled Value = (Raw Value × Multiplier) + Offset
 | **Device Scanner** | ✅ | ❌ | ✅ |
 | **Price** | $49.99 | $2.99 + Add-ons | $149.99 |
 
-[:octicons-arrow-right-24: Compare All Products](../products/index.md)
+[:octicons-arrow-right-24: Compare All Products](../downloads-purchase.md)
 
 ---
 

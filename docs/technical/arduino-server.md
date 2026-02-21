@@ -270,8 +270,8 @@ Add a register for each Modbus Address in the Arduino Program:
 
 ## Compatible Modbus Clients
 
-- **Modbus Monitor XPF** (Windows) - [Download](../../products/xpf/user-guide.md)
-- **Modbus Monitor Advanced** (Android) - [Download](../../products/android/advanced-guide.md)
+- **Modbus Monitor XPF** (Windows) - [Download](../products/xpf/user-guide.md)
+- **Modbus Monitor Advanced** (Android) - [Download](../products/android/advanced-guide.md)
 - Any standard Modbus RTU client
 
 ---
@@ -312,6 +312,6 @@ Post your questions in the **Arduino Server** section of our forum!
 ## Related Resources
 
 - [Modbus Protocol Overview](../index.md)
-- [Serial Port Configuration](serial-ports.md)
-- [Error Codes Reference](error-codes.md)
-- [Hardware Setup Guide](hardware.md)
+- [Serial Port Configuration](index.md)
+- [Error Codes Reference](../guides/error-codes.md)
+- [Hardware Setup Guide](index.md)

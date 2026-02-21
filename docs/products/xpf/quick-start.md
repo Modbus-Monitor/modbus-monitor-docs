@@ -8,10 +8,11 @@
 ## 🎯 What You'll Accomplish
 
 By the end of this guide, you'll have:
-- ✅ **Installed** Modbus Monitor XPF
-- ✅ **Connected** to your first Modbus device  
-- ✅ **Monitored** real-time data
-- ✅ **Configured** basic monitoring points
+
+    ✅ **Installed** Modbus Monitor XPF
+    ✅ **Connected** to your first Modbus device  
+    ✅ **Monitored** real-time data
+    ✅ **Configured** basic monitoring points
 
 ## ⚡ Step 1: Install XPF (2 minutes)
 
@@ -121,6 +122,8 @@ Now that you have basic monitoring working:
 1. **📊 [Add More Points](user-guide.md#monitor-points-configuration)** - Monitor additional registers
 2. **📈 [Enable Charting](user-guide.md#chart-visualization)** - See data trends over time
 3. **💾 [Save Configuration](user-guide.md#file-operations)** - Preserve your setup
+4. **🧩 [Use HMI Widgets](hmi-widget-management.md)** - Build HMI dashboard layouts
+5. **📘 [Widget Reference](widget-reference.md)** - Configure all 9 widgets
 
 ### Advanced Features to Explore  
 - **🧙‍♂️ [Advanced Wizard](user-guide.md#modbus-wizard)** - Complex configurations

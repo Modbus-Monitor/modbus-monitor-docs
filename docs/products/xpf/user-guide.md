@@ -1,5 +1,3 @@
-
-
 # Modbus Monitor XPF - User Guide
 
 **A practical guide for controls engineers and technicians**
@@ -119,35 +117,24 @@ Beyond this user guide, additional resources are available:
 
 === "Direct Download from Web"
 
-    **Install from GitHub Releases - Portable or Installer Options**
-    
-    Download the latest version from our [GitHub Releases](../../releases/index.md) page.
-    
-    **Portable Version:**
-    - The software is a **portable version**, meaning it can be **run from any location without requiring installation**
-    - **First launch note:** Slight delay is normal as the application unpacks files to a temporary location
-    - Perfect for USB drives or systems without admin rights
-    - Keep it with your field equipment for on-site troubleshooting
-    
-    **Choose your architecture and installation type:**
+    **Install from QuantumBit Solutions Downloads Page**
 
-    | Architecture | Installer (Permanent Setup) | Portable (No Install) |
-    |-------------|------------------------------|------------------------|
-    | **ARM64** *(Windows on ARM)* | [:material-download: ARM64 Installer](../../releases/v5.0.0.0.md#installers-recommended){ .md-button } | [:material-download: ARM64 Portable](../../releases/v5.0.0.0.md#portable-versions){ .md-button } |
-    | **64-bit** *(Recommended for modern systems)* | [:material-download: x64 Installer](../../releases/v5.0.0.0.md#installers-recommended){ .md-button } | [:material-download: x64 Portable](../../releases/v5.0.0.0.md#portable-versions){ .md-button } |
-    | **32-bit** *(Older systems only)* | [:material-download: x86 Installer](../../releases/v5.0.0.0.md#installers-recommended){ .md-button } | [:material-download: x86 Portable](../../releases/v5.0.0.0.md#portable-versions){ .md-button } |
+    Download the latest version of Modbus Monitor XPF directly from our Downloads Page.  This page provides all available versions, including portable and installer options for ARM64, x64, and x86 architectures.
 
-    **Additional Download Locations:**
-    - [:material-download: Releases Page](../../releases/index.md) - All versions available
-    - [:material-cart: Shop Page](https://quantumbitsolutions.com/shop/) - Purchase with download links
-    
-    **What's the difference?**
-    
-    - **Installer:** Creates shortcuts, integrates with Windows, faster startup
-    - **Portable:** No installation needed, run from USB drives, good for field work
-    - **ARM64:** For Windows on ARM devices (Surface Pro X, etc.)
-    - **64-bit:** Works on modern Windows (2010+), handles large datasets better  
-    - **32-bit:** Only needed for older Windows systems or embedded PCs
+    - [Downloads & Purchase Page](../../downloads-purchase.md)   
+      
+        - **Installer**: Creates shortcuts, integrates with Windows, faster startup
+        - **Portable**: No installation needed, run from USB drives, good for field work
+        - **ARM64**: For Windows on ARM devices (Surface Pro X, etc.)
+        - **64-bit**: Works on modern Windows (2010+), handles large datasets better  
+        - **32-bit**: Only needed for older Windows systems or embedded PCs
+
+
+   
+
+    !!! note "Recommendation"
+        For most users, the **64-bit version** is recommended for modern systems. Portable versions are ideal for field work or systems without admin rights.
+
 
 === "Enterprise Purchase"
 
@@ -169,8 +156,8 @@ Beyond this user guide, additional resources are available:
     - Company policy requires 32-bit applications
     
     **Installer vs Portable:**
-    - **Installer:** Better for permanent desk setups, adds shortcuts and file associations
-    - **Portable:** Better for field work, USB drives, or systems without admin rights
+    - **Installer**: Better for permanent desk setups, adds shortcuts and file associations
+    - **Portable**: Better for field work, USB drives, or systems without admin rights
 
 ### License Activation
 
@@ -480,9 +467,9 @@ When you launch Modbus Monitor XPF for the first time, the **License window appe
     
     ### Still Having Issues?
     
-    **Email Support:** support@quantumbitsolutions.com  
-    **Community Forum:** [quantumbitsolutions.com/forums](https://quantumbitsolutions.com/forums/)  
-    **Knowledge Base:** [Technical Resources](../../technical/index.md)
+    **Email Support**: support@quantumbitsolutions.com  
+    **Community Forum**: [quantumbitsolutions.com/forums](https://quantumbitsolutions.com/forums/)  
+    **Knowledge Base**: [Technical Resources](../../technical/index.md)
 
 **License Comparison:**
 
@@ -496,7 +483,7 @@ When you launch Modbus Monitor XPF for the first time, the **License window appe
 | **Offline Use** | Yes | Yes | Yes (special activation) |
 | **Price** | Free | [View pricing](https://quantumbitsolutions.com/shop/) | Contact sales |
 
-## 3. Understanding the Interface
+## 3. GUI - Understanding the App Interface 
 
 ### Application Window
 
@@ -582,6 +569,8 @@ Below the Quick Access Toolbar, you'll find multiple tabs that organize all appl
 | **Client** | Modbus Client (Master) | Interface selection, timeouts, write functions, scanner, charts, poll controls |
 | **Server** | Modbus Server (Slave) | Interface config, Modbus TCP Server, Modbus RTU Server, traffic capture, simulation |
 | **IoT** | Cloud integration | ThingSpeak logging, MQTT messaging, cloud-to-device communication |
+| **HMI** | HMI dashboard design | Widget-based operator dashboard authoring and runtime view. See [6A. HMI Tab and Widgets (v5.0.0.0+)](#hmi-tab-widgets) |
+
 
 **Contextual Tabs (Appear Dynamically):**
 
@@ -772,13 +761,13 @@ The **Modbus Wizard** provides a streamlined interface for configuring monitor p
 | Field | Purpose | Options/Format |
 |-------|---------|----------------|
 | **Register Name** | Descriptive identifier | Text field - name your monitor point |
-| **Modbus Function** | Register type and access | See [6-Digit Addressing Scheme Guide](../../guides/6-digit-addressing.md) for complete details |
+| **Modbus Function** | Register type and access | See [Address Field - 6-Digit Format](#2-address-field-6-digit-format) in Monitor Points Configuration |
 | **Sub-Function** | Function variant *(FC8 only)* | Appears for FC8 Diagnostics - e.g., "0 (0x0) Return Query Data" |
 | **Device ID** | Device identification type *(FC43-14 only)* | Appears for FC43-14 - e.g., "01 Get Basic Device ID (stream)" |
 | **Object ID** | MEI object identifier *(FC43-14 only)* | Appears for FC43-14 - Object number (00-FF hexadecimal) |
 | **CustomQ** | Custom Modbus Packet | Add PDU part of the Modbus Command to send any command  |
 | **Data Request** | Request address/value | Address or data value for the request |
-| **Address** |  Modbus Address | Zero or One based Modbus Address (see [6-digit addressing guide](../../guides/6-digit-addressing.md)) |
+| **Address** |  Modbus Address | Zero or One based Modbus Address (see [6-digit format](#2-address-field-6-digit-format)) |
 | **Data Type** | Data interpretation | See [Data Type Options](#6-data-type-data-interpretation) in Monitor Points Configuration |
 | **Poll Rate Control** | Update frequency | NONE, SKIP, ONCE, INTERVAL (Adjust Poll Rate value) |
 | **Bit Field** | Extract specific bit | 0-15 for 16-bit registers - selects individual bit |
@@ -1358,6 +1347,8 @@ The **Modbus Wizard** provides a streamlined interface for configuring monitor p
     - **[Address Format](#2-address-field-6-digit-format)** - 6-digit addressing explained with examples
     - **[Data Types](#6-data-type-data-interpretation)** - All supported data types and their usage
     - **[Custom Commands](#10-customq-custom-modbus-command)** - Send raw Modbus PDU commands
+    - **[Chart Options](#11-chart-enable-charting)** - Real-time data visualization
+    - **[Simulate Mode](#13-simulate-simulation-mode)** - Generate test data patterns
 
 **How to Use:**
 
@@ -1469,7 +1460,6 @@ The **List Group** provides essential tools for managing your Monitor Points (al
 | **4** | **Clear Filter**| Clears the text filter and shows all rows in the list. |
 | **5** | **Clear ID** | Clears the ID filter and shows all rows in the list. |
 | **6** | **ID Dropdown** | Select **Unit ID** (Slave ID or Station ID) to filter by device. Combine with text filter for precise results. |
-
 
 !!! tip "How Filtering Works"
     **Text Search:**
@@ -1752,7 +1742,9 @@ All log controls in one comprehensive table. Labels **1**, **2**, **3a-3h**, and
 - **Recent entries appear at bottom** - Scroll down to see latest events
 - **Filtering reduces clutter** - Use Errors toggle (4) to hide successful transactions
 - **Text search narrows focus** - Type in Filter box (4) to find specific device, register, or error type
-- **Copy for analysis** - Click Copy All (3) to export all visible entries to clipboard
+- **Copy for analysis** - Click Copy All (3) to export, or **Save** (3d) for continuous file backup
+- **Clear between test runs** - Click Clear (3c) to remove old entries
+- **Close to return to Monitor Points** - Click Close (3e) or **Show** (1) again to return to Monitor Points
 
 ##### Understanding Log View Toggle
 
@@ -1763,7 +1755,7 @@ All log controls in one comprehensive table. Labels **1**, **2**, **3a-3h**, and
 
 **View Behavior:**
 
-- **Click Show**: Monitor Points table → Event Log display (button stays pressed)
+- **Click Show**: Monitor Points table → Event Log display (button stays pressed/highlighted)
 - **Click Show Again**: Event Log → Monitor Points table (button released)
 - **Shared Portal**: Both views occupy the same Window Portal Area
 - **Data Preserved**: Switching views doesn't lose Monitor Points or Log data
@@ -1877,7 +1869,7 @@ graph TB
 !!! warning "Performance Impact"
     **Resource Considerations:**
     
-    - Event logging consumes **CPU cycles** and **memory** to capture high-speed communication
+    - **Event logging consumes** **CPU cycles** and **memory** to capture high-speed communication
     - **High poll rates** (many registers per second) increase logging overhead significantly
     - **Disable logging** when not actively troubleshooting for optimal performance
     - **Clear logs periodically** during long sessions to free memory
@@ -1997,7 +1989,7 @@ Users can upload their own custom Modbus Maps to share with the community or sto
     
     | Control | Options | Function |
     |---------|---------|----------|
-    | **Interface Type** | TCP, UDP, Serial | Selects physical connection method |
+    | **Interface** | TCP, UDP, Serial | Selects physical connection method |
     | **Protocol Options** | Default, RTU, ASCII | Chooses Modbus protocol variant |
     | **One Based** | Checkbox | Switches between 0-based and 1-based addressing |
     
@@ -2051,7 +2043,7 @@ Users can upload their own custom Modbus Maps to share with the community or sto
     **Scanner Process:**
     1. Configure parameters above
     2. Click "Start" to begin systematic polling
-    3. Valid responses automatically added to monitor points
+    3. Valid responses automatically added to monitor points list
     4. Invalid addresses skipped
     5. Results appear in main monitor points list
 
@@ -2061,7 +2053,7 @@ Users can upload their own custom Modbus Maps to share with the community or sto
     
     | Control | Function | Usage |
     |---------|----------|-------|
-    | **Auto Save** | CSV data logging | Automatically saves every scan to timestamped CSV files |
+    | **Auto Save** | CSV data logging | Automatically saves every scan to timestamped CSV files in `My Documents` folder |
     | **Restore** | Upload values | Writes current monitor point values back to remote devices |
     | **Write** | Single write | Writes selected monitor point value once |
     | **Read** | Single poll | Polls all monitor points once and stops |
@@ -2314,8 +2306,8 @@ Refer to [Modbus Client Operations](#modbus-client-operations) on locations of C
    | **2** | **Chart Plot Area**| Main display | Time-series visualization <br> Delta Measurement | Multi-colored trend lines with dual Y-axes support <br> Multiple crosshair sets as overlay |
    | **3** | **Location Info** | Right Top | Selection Info | Show XY value of selection inside Plot Area |
    | **4** | **Trend Lines** | Within plot area | Data visualization | Color-coded lines representing each monitor point's values over time |
-   | **5** | **Left Y-Axis** | Left vertical edge | Primary scale <br> (Axis 0) | Default axis for most monitor points (e.g., Temperature, Flow) |
-   | **6** | **Right Y-Axis** | Right vertical edge | Secondary scale <br>  (Axis 1) | Alternative axis for different value ranges (e.g., Pressure, Current) |
+   | **5** | **Left Y-Axis** | Left vertical edge | Primary scale <br> (Axis 0) | Default axis for most monitor points (e.g., Temperature, Flow, Level, Percentage) |
+   | **6** | **Right Y-Axis** | Right vertical edge | Secondary scale <br>  (Axis 1) | Alternative axis for different value ranges (e.g., Pressure, Current, Power, Voltage) |
    | **7** | **Legend Area** | Right side panel | Series identification | Shows monitor point names, colors, and current values for each trend line |
    
 
@@ -2361,19 +2353,19 @@ The control toolbar contains all chart operation controls. Each button provides 
 !!! tip "Chart Control Best Practices"
     **Optimize chart performance for different scenarios:**
     
-    **Real-Time Monitoring:**
+    **Real-Time Monitoring (≤100ms poll rate):**
     - **Save Toggle**: ON (auto-save for audit trail)
     - **Samples**: 1000-5000 (manageable buffer size)
     - **Start/Pause**: Started (continuous updates)
     - **Crosshairs**: Use for spot measurements
     
-    **Data Analysis:**
+    **Data Analysis (1-10 second poll rate):**
     - **Save Toggle**: ON (capture complete dataset)
     - **Samples**: 0 (unlimited for complete history)
     - **Start/Pause**: Paused (freeze for analysis)
     - **Fit**: Use frequently to optimize view
     
-    **Performance Testing:**
+    **Performance Testing (High-speed capture):**
     - **Save Toggle**: ON (document test results)
     - **Samples**: 10000+ (capture complete test)
     - **Clear**: Reset between test runs
@@ -2562,22 +2554,28 @@ Axis 1 (Right) - Electrical Variables:
     **Optimize for your monitoring needs:**
     
     **High-Speed Monitoring (≤100ms poll rate):**
-    - Limit to 5-10 chart points maximum
-    - Use buffer size 500-1000 samples
-    - Single axis preferred
-    - Export data frequently
+    - **Save Toggle**: ON (auto-save for audit trail)
+    - **Samples**: 1000-5000 (manageable buffer size)
+    - **Start/Pause**: Started (continuous updates)
+    - **Crosshairs**: Use for spot measurements
     
     **Process Monitoring (1-10 second poll rate):**
-    - Up to 20 chart points manageable
-    - Buffer size 1000-5000 samples  
-    - Dual axis effective
-    - Combine with Auto Save
+    - **Save Toggle**: ON (capture complete dataset)
+    - **Samples**: 0 (unlimited for complete history)
+    - **Start/Pause**: Paused (freeze for analysis)
+    - **Fit**: Use frequently to optimize view
     
-    **Long-Term Trending (≥30 second poll rate):**
-    - Unlimited chart points
-    - Large buffer (10000+ samples)
-    - Full dual-axis utilization
-    - Regular CSV exports for archival
+    **Long-term Trending (≥30 second poll rate):**
+    - **Save Toggle**: ON (auto-save for audit trail)
+    - **Samples**: 0 (unlimited for complete history)
+    - **Start/Pause**: Paused (freeze for analysis)
+    - **Fit**: Use frequently to optimize view
+    
+    **High-speed Capture (50-100ms poll rate):**
+    - **Save Toggle**: ON (document test results)
+    - **Samples**: 10000+ (capture complete test)
+    - **Clear**: Reset between test runs
+    - **Crosshairs**: Mark critical events
 
 !!! example "Memory Usage Calculation"
     **Estimate memory requirements:**
@@ -2838,7 +2836,7 @@ Restore solves a critical industrial automation challenge: **efficiently configu
 |-------|----------------------|----------------------|---------|
 | **TCP** | **Interface:** TCP/UDP<br>**Port:** 502 (configurable)<br>**Protocol:** Default/RTU/ASCII | Six protocol combinations • IPv4/IPv6/Both/Loopback binding • Concurrent TCP OR UDP (not both) | [TCP Details ↓](#detailed-group-breakdown) |
 | **Serial** | **Ports:** Multiple simultaneous<br>**Rates:** 300-921600 bps<br>**Protocol:** RTU/ASCII | Independent settings per COM port • Mixed protocol support • USB-serial scaling | [Serial Details ↓](#detailed-group-breakdown) |
-| **Capture** | **Mode:** On/Off<br>**Fill:** Auto Value/Default Value | Automatic map building from client requests • Live traffic analysis • Reverse engineering capability | [Capture Details ↓](#detailed-group-breakdown) |
+| **Capture** | **Mode:** On/Off<br>**Fill:** Auto Value/Default Value | Automatically build Modbus maps from client requests • Live traffic analysis • Reverse engineering capability | [Capture Details ↓](#detailed-group-breakdown) |
 | **Simulate** | **Timing:** Ts(1-65535ms), Freq(0.01-1000Hz)<br>**Patterns:** Mathematical functions | Sine/Ramp/Random/Static/Step waves • Per-point control • Data type aware simulation | [Simulate Details ↓](#detailed-group-breakdown) |
 | **Server** | **Operation:** Start/Stop all servers<br>**Stats:** TX/RX counters<br>**Monitor:** Connection count | Multi-threaded architecture • Concurrent TCP+Serial operation • Performance monitoring | [Server Details ↓](#detailed-group-breakdown) |
 
@@ -2884,8 +2882,8 @@ Restore solves a critical industrial automation challenge: **efficiently configu
     | **Data Bits** | 7, 8 | Character size (8 for RTU, 7/8 for ASCII) |
     | **Parity** | None, Even, Odd, Mark, Space | Error detection method |
     | **Stop Bits** | None, One, Two, 1.5 | Character termination |
-    | **Protocol** | Default/RTU, ASCII | Serial Modbus protocol variant |
-    
+    | **Protocol** | Default/RTU, ASCII | **Default**: Start Modbus RTU server on selected COM Port<br>**RTU**: Same as default (binary protocol)<br>**ASCII**: Modbus ASCII server on selected COM Port |
+
     **Multiple COM Port Support:**
     - **Simultaneous Servers** - Enable multiple COM ports concurrently
     - **Individual Settings** - Each COM port has independent baud/parity/stop bit settings
@@ -2906,9 +2904,9 @@ Restore solves a critical industrial automation challenge: **efficiently configu
     
     | Feature | Mode | Behavior |
     |---------|------|----------|
-    | **Capture Toggle** | On/Off | Enable automatic Modbus map creation from incoming requests |
-    | **Value Assignment** | Auto Value | Use register address as initial value (e.g., register 400001 = value 400001) |
-    | **Value Assignment** | Default Value | Fill new monitor points with zero/false values |
+    | **Capture Toggle** | On/Off | Enable the addition of Modbus Monitoring points based on Modbus Requests. **Note**: The server must be running for this feature to work. |
+    | **Default Value 0** | Fill with zero | Fill **"0"** as the value into the newly created Modbus Map entries |
+    | **Auto Value** | Fill with address | Use the **Modbus Register address as the fill value** for newly created entries |
     
     **How Capture Works:**
     1. **Server Running** - Capture only works when server is active
@@ -2918,10 +2916,29 @@ Restore solves a critical industrial automation challenge: **efficiently configu
     5. **Map Building** - Build complete device map from observed traffic
     
     **Use Cases:**
-    - **Reverse Engineering** - Discover what registers a client application needs
-    - **Device Simulation** - Build maps by observing real device communication
-    - **System Analysis** - Understand existing Modbus network traffic patterns
-    - **Documentation** - Generate register maps from undocumented systems
+    - **Reverse Engineering**: When you don't have documentation for a Modbus device   
+      - Start XPF Server on same network/port
+      - Let existing client connect and communicate
+      - XPF captures all register accesses automatically
+      - Result: Complete Modbus map discovered from live traffic
+
+    - **System Analysis**: Understanding existing Modbus networks   
+      - Place XPF between client and server (monitoring mode)
+      - Capture reveals which registers are actually used
+      - Identify active vs. unused registers
+
+    - **Protocol Validation**: Testing client implementations   
+      - Enable capture while your client polls the server
+      - Verify client is requesting correct registers
+      - Check function codes and access patterns
+
+    !!! tip "Capture Best Practices"
+
+    - **Start with clean list**: Clear monitor points before enabling capture
+    - **Use Default Value 0**: Easier to identify newly captured points
+    - **Let it run**: Allow all client operations to complete for full map
+    - **Review results**: Captured points may need refinement (names, data types)
+    - **Save immediately**: Export captured map before making changes
 
 === "Simulate Group"
 
@@ -2936,277 +2953,20 @@ Restore solves a critical industrial automation challenge: **efficiently configu
     | **Max/Default/Min** | Actions | Set all simulated values to maximum/default/minimum ranges |
     
     **Simulation Patterns Available:**
-    - **Sine Wave** - `Value = Amplitude × sin(2π × Freq × time)`
+    - **Sine Wave** - `Value = Amplitude × sin(2π × Freq × t)`
     - **Ramp** - Linear increase/decrease over time
     - **Random** - Random values within data type range
     - **Static** - User-defined constant values
     - **Step** - Square wave patterns
     
     **Advanced Features:**
-    - **Nyquist Rate** - Values update twice per sample time for accurate waveforms
+    - **Nyquist Rate** - Values update twice per sample time for accurate waveform generation and anti-aliasing
     - **Per-Point Control** - Enable simulation individually via monitor point checkboxes
     - **Data Type Aware** - Simulation respects INT16, UINT32, FLOAT32 ranges automatically
-    - **Real-Time Updates** - Clients see live changing data for dynamic testing
-
-=== "Server Group"
-
-    **Main operational control and monitoring**
-    
-    | Display | Function | Information |
-    |---------|----------|-------------|
-    | **TX/RX Counter** | Statistics | Shows total messages processed (requests + responses) |
-    | **Connection Count** | Active Clients | Number of currently connected TCP clients |
-    | **Start/Stop Button** | Master Control | Starts/stops all enabled servers simultaneously |
-    
-    **Server Operation:**
-    - **Simultaneous Start** - All enabled servers (TCP + Serial) start together
-    - **Independent Protocols** - Each server operates with its configured protocol
-    - **Connection Monitoring** - Track active TCP connections in real-time
-    - **Performance Stats** - Monitor message throughput and response times
-    - **Clean Shutdown** - Proper disconnection of all clients and COM ports
-
-### Powerful Multi-Server Architecture - Revolutionary Time & Hardware Savings
-
-**Game-Changing Feature:** XPF's most powerful capability is running **one network server (TCP or UDP) plus multiple serial servers simultaneously** - a revolutionary approach that **saves significant time and eliminates the need for extra hardware**.
-
-**Traditional Approach vs. XPF Multi-Server:**
-
-| Traditional Method | XPF Multi-Server Approach | Savings |
-|-------------------|---------------------------|---------|
-| Multiple PCs/devices needed | **Single XPF instance** | **Hardware cost elimination** |
-| Separate software licenses | **One XPF license** | **Licensing cost reduction** |
-| Complex setup coordination | **Unified configuration** | **Setup time reduction (hours → minutes)** |
-| Multiple maintenance points | **Single point of control** | **Maintenance simplification** |
-
-**What XPF Can Run Simultaneously:**
-
-=== "Network Servers (TCP or UDP)"
-
-    **Single Network Interface - Choose TCP OR UDP:**
-    
-    ```yaml
-    # Choose ONE network interface per XPF instance:
-    TCP Server:       Port 502 (Standard Modbus TCP)
-    OR
-    UDP Server:       Port 502 (Standard Modbus UDP)
-    
-    # With protocol variants:
-    TCP + RTU:        Port 502 (Modbus RTU over TCP)
-    TCP + ASCII:      Port 502 (Modbus ASCII over TCP)
-    UDP + RTU:        Port 502 (Modbus RTU over UDP)  
-    UDP + ASCII:      Port 502 (Modbus ASCII over UDP)
-    ```
-    
-    **Network Interface Limitation:**
-    - **TCP OR UDP**: Cannot run TCP and UDP servers simultaneously in single XPF instance
-    - **Protocol Options**: Can select Default, RTU, or ASCII over chosen interface
-    - **Multiple Instances**: Use separate XPF instances for TCP and UDP if both needed
-    - **Development efficiency** - switch protocols without hardware changes
-
-=== "Serial Servers (COM Ports)"
-
-    **Multiple COM Ports, Independent Settings:**
-    
-    ```yaml
-    # All running simultaneously:
-    COM1: 9600 baud,   8,N,1 (Standard RTU - Legacy devices)
-    COM3: 19200 baud,  8,N,1 (High-speed RTU - Modern PLCs)
-    COM4: 115200 baud, 8,N,1 (Ultra-fast RTU - Performance testing)
-    COM5: 1200 baud,   7,E,1 (ASCII protocol - Historical systems)
-    ```
-    
-    **Hardware Elimination:**
-    - **No multiple test devices** needed
-    - **No serial multiplexers** required  
-    - **No additional COM port expansion cards**
-    - **USB-to-serial adapters** provide unlimited COM ports
-
-=== "Mixed Interface Deployment"
-
-    **Network + Serial Simultaneously:**
-    
-    ```yaml
-    # Single XPF instance supports:
-    TCP Server:    Port 502    (Ethernet clients)
-    AND
-    COM1 RTU:      9600 baud   (Legacy serial devices)
-    COM3 RTU:      19200 baud  (Modern serial devices)
-    COM5 ASCII:    1200 baud   (ASCII protocol testing)
-    
-    # OR alternatively:
-    UDP Server:    Port 502    (UDP clients)
-    AND  
-    COM1 RTU:      9600 baud   (Legacy serial devices)
-    COM3 RTU:      19200 baud  (Modern serial devices)
-    ```
-    
-    **Interface Capabilities:**
-    - **One Network + Multiple Serial** - TCP OR UDP plus multiple COM ports
-    - **Network Choice** - Select either TCP or UDP (not both simultaneously)
-    - **Unlimited Serial** - Support for multiple COM ports with independent settings
-    - **Protocol Flexibility** - Mix RTU and ASCII on different COM ports
-
-**Massive Time and Cost Savings:**
-
-!!! success "Quantified Benefits"
-
-    **Hardware Savings:**
-    ```
-    Traditional Setup:
-    - 4 Industrial Modbus devices = $1,200-$4,500
-        (PLCs: $300-$800 each, I/O modules: $150-$400 each, 
-         VFDs: $250-$600 each, HMIs: $500-$1,200 each)
-      - Multi-port serial cards = $75-$250
-      - Ethernet switches/media converters = $150-$450
-      - RS485 repeaters/isolators = $100-$300
-      - Cables and terminators = $50-$200
-      - Total Hardware: $1,575-$5,700
-    
-    XPF Approach:
-      - Single PC with XPF = $0 extra hardware
-      - USB-to-RS485/RS232 adapters = $25-$150
-      - Basic Ethernet switch (if needed) = $30-$80
-      - Total Hardware: $55-$230
-    
-    Savings: $1,520-$5,470 (87-96% reduction)
-    ```
-    
-    **Time Savings:**
-    ```
-    Traditional Setup Time:
-    - Device procurement: 2-4 weeks
-    - Individual configuration: 4-8 hours  
-    - Integration testing: 8-16 hours
-    - Total Time: 3-5 weeks
-    
-    XPF Setup Time:
-    - Download and install: 15 minutes
-    - Configure all servers: 30-60 minutes
-    - Start testing: Immediate
-    - Total Time: 1-2 hours
-    
-    Savings: 99% faster deployment
-    ```
-
-**Enterprise-Level Capabilities:**
-
-- **Development Teams**: Simulate entire Modbus networks on developer laptops
-- **System Integration**: Test complex multi-protocol systems without physical devices  
-- **Training Centers**: Provide complete Modbus learning environments per student
-- **Field Service**: Carry comprehensive test environment on portable devices
-- **Quality Assurance**: Validate client software against all protocol combinations
-
-### Server Capabilities - Multi-Interface Support
-
-**Technical Implementation:** XPF's **multi-threaded server architecture** enables true concurrent operation across all interfaces with **independent protocol stacks** for each server instance.
-
-!!! example "Complete Multi-Server Configuration"
-    XPF supports one network interface plus multiple serial interfaces:
-    
-    **Single Instance Configuration:**
-    - **Modbus TCP server** running on Port 502 (OR UDP server)
-    - **Modbus RTU on COM10** at 9600 baud  
-    - **Modbus RTU on COM11** at 19200 baud
-    - **Modbus RTU on COM12** at 115200 baud
-    
-    **Network + Serial run simultaneously** with independent settings!
-
-### TCP/UDP Server Configuration
-
-| Setting | Options | Description |
-|---------|---------|-------------|
-| **Interface** | TCP / UDP | Two interface types available:<br>**TCP**: Modbus TCP server started on the port when enabled<br>**UDP**: Modbus UDP server started on the port when enabled |
-| **Protocol Options** | Default / RTU / ASCII | Six Modbus Protocols available:<br>**Default**: Modbus TCP or Modbus UDP (selected by interface)<br>**RTU**: Modbus RTU over TCP or Modbus RTU over UDP<br>**ASCII**: Modbus ASCII over TCP or Modbus ASCII over UDP |
-| **Server Port** | Number | Port number for Modbus Server. **Default Port 502** (standard Modbus port) |
-| **Server IP** | IPv4/IPv6/Both/Loopback | **IPv4**: Create server on IPv4 address range<br>**IPv6**: Create server in IPv6 address range<br>**Both**: Create server supporting both IPv4 and IPv6<br>**Loopback**: Enable to use local loopback address automatically ("127.0.0.1" or "localhost" for IPv4, "::1" for IPv6) Uncheck to specify your own address |
-| **Enable** | Checkbox | **Enable**: Start Modbus TCP or UDP server<br>**Disable**: Don't start on TCP or UDP interfaces |
-
-**Six Modbus Varieties for Server Mode** based on combination of Interface and Protocol Options:
-
-1. Modbus TCP (Interface=TCP, Protocol=Default)
-2. Modbus RTU over TCP (Interface=TCP, Protocol=RTU)
-3. Modbus ASCII over TCP (Interface=TCP, Protocol=ASCII)
-4. Modbus UDP (Interface=UDP, Protocol=Default)
-5. Modbus RTU over UDP (Interface=UDP, Protocol=RTU)
-6. Modbus ASCII over UDP (Interface=UDP, Protocol=ASCII)
-
-### Serial (RTU/ASCII) Server Configuration
-
-| Parameter | Options | Description |
-|-----------|---------|-------------|
-| **COM Port** | Available COM ports | Select the COM Port to run the Modbus RTU Server on. **Note**: Multiple COM Ports are supported, each with different communication settings. Enable all COM ports that need a server. |
-| **Baud Rate** | 1200-115200 bps | Communication speed for serial connection |
-| **Data Bits** | 7 / 8 bits | Character size (typically 8 bits for RTU) |
-| **Parity** | None / Even / Odd | Error detection method |
-| **Stop Bits** | 1 / 2 bits | Character termination |
-| **Protocol** | Default/RTU/ASCII | **Default**: Start Modbus RTU server on selected COM Port<br>**RTU**: Same as default (binary protocol)<br>**ASCII**: Modbus ASCII server on selected COM Port |
-
-### Advanced Server Features
-
-#### Capture - Modbus Map Traffic Sniffer
-
-**Effortlessly sniff Modbus Map traffic from connected clients and automatically build Modbus Maps.** This feature is invaluable when Modbus Maps are unknown or unavailable from manufacturers, providing a way to discover the addresses the Modbus Master is using.
-
-**How It Works:**
-
-When enabled, the Capture feature monitors incoming Modbus requests from clients and automatically creates monitor points based on those requests. This "learns" the Modbus map by observing real communication.
-
-**Capture Settings:**
-
-| Setting | Options | Description |
-|---------|---------|-------------|
-| **On** | Enable | Enable the addition of Modbus Monitoring points based on Modbus Requests. **Note**: The server must be running for this feature to work. |
-| **Off** | Disable | Disable the Capture or Modbus Traffic sniffer |
-| **Default Value 0** | Fill with zero | Fill **"0"** as the value into the newly created Modbus Map entries |
-| **Auto Value** | Fill with address | Use the **Modbus Register address as the fill value** for newly created entries |
-
-**Use Cases:**
-
-1. **Reverse Engineering**: When you don't have documentation for a Modbus device   
-      - Start XPF Server on same network/port
-      - Let existing client connect and communicate
-      - XPF captures all register accesses automatically
-      - Result: Complete Modbus map discovered from live traffic
-
-2. **System Analysis**: Understanding existing Modbus networks   
-      - Place XPF between client and server (monitoring mode)
-      - Capture reveals which registers are actually used
-      - Identify active vs. unused registers
-
-3. **Protocol Validation**: Testing client implementations   
-      - Enable capture while your client polls the server
-      - Verify client is requesting correct registers
-      - Check function codes and access patterns
-
-!!! tip "Capture Best Practices"
-
-    - **Start with clean list**: Clear monitor points before enabling capture
-    - **Use Default Value 0**: Easier to identify newly captured points
-    - **Let it run**: Allow all client operations to complete for full map
-    - **Review results**: Captured points may need refinement (names, data types)
-    - **Save immediately**: Export captured map before making changes
-
-#### Simulate - Advanced Waveform Generator & Client Testing Engine
-
-**XPF's unmatched waveform generator provides the ability to test your Modbus client, capture performance data, and validate system behavior with precision-engineered mathematical patterns.** This advanced simulation engine transforms XPF into the ultimate Modbus testing platform, generating sophisticated dynamic data that no physical device can match.
-
-**Revolutionary Testing Capabilities:**
-
-- **Unmatched Precision**: Generate mathematically perfect waveforms impossible to achieve with physical devices
-- **Comprehensive Client Testing**: Stress-test your Modbus clients with predictable, repeatable data patterns
-- **Performance Benchmarking**: Measure client response times, polling efficiency, and data processing capabilities
-- **Data Capture Integration**: Combine simulation with XPF's capture and logging features for complete test documentation
-- **Advanced Pattern Generation**: Seven distinct mathematical patterns provide comprehensive test coverage
-- **Real-World Simulation**: Replicate complex industrial processes without expensive hardware
-
-**Why XPF's Simulation is Unmatched:**
-
-- **Mathematical Perfection**: Generate ideal sine waves, exponential curves, and complex patterns with floating-point precision
-- **Simultaneous Multi-Pattern Testing**: Run hundreds of different waveforms concurrently for comprehensive system validation
-- **Performance Analytics**: Built-in data capture and charting reveal client performance characteristics
-- **Zero Hardware Dependency**: Complete testing environment requires only software - no physical devices needed
-- **Repeatable Test Conditions**: Identical test patterns ensure consistent, comparable results across test runs
-- **Dynamic Load Testing**: Variable frequency and amplitude patterns test client adaptability under changing conditions
+    - **Real-Time Updates** - Clients see live changing data with microsecond precision timing
+    - **Performance Optimized** - Efficient multi-threaded calculations support hundreds of simultaneous simulations
+    - **Deterministic Behavior** - Reproducible waveforms ensure consistent test results across multiple runs
+    - **Dynamic Range Control** - Automatic amplitude scaling prevents data type overflow while maintaining pattern integrity
 
 ##### Simulation Control Groups
 
@@ -3215,7 +2975,7 @@ When enabled, the Capture feature monitors incoming Modbus requests from clients
 | Control | Function | Range/Options | Purpose |
 |---------|----------|---------------|---------|
 | **Ts (Sample Time)** | Update Rate | 1-1000000ms | How often simulation values update (Nyquist rate: values change twice per Ts period) |
-| **Freq (Frequency)** | Waveform Frequency | 0.01-1000000 Hz | Frequency of generated waveforms (e.g., 60Hz for power simulation) |
+| **Freq (Frequency)** | Waveform Frequency | 0.01-1000000 Hz | Sine wave frequency for dynamic simulation |
 | **Sample Button** | Add Sample Point | Action | Creates a sample monitor point with sine wave pattern for testing |
 | **Toggle Button** | Global Enable/Disable | On/Off | Enable or disable simulation on   monitor points simultaneously |
 | **Max Button** | Set Maximum Values | Action | Sets all simulated monitor points to their maximum data type values |
@@ -3576,498 +3336,18 @@ Each instance:
 
 Both IoT features require separate license purchases to unlock full functionality. Access feature configuration through the IoT Tab groups after licensing.
 
-## 7. Monitor Points Configuration
+## 6A. HMI Tab and Widgets (v5.0.0.0+) { #hmi-tab-widgets }
 
-**Monitor Points** are similar to PLC tags - each one represents a specific data point you want to read or write on a Modbus device. Just as PLC tags map to memory addresses in a controller, Monitor Points map to Modbus registers and coils with all the configuration needed to access and interpret the data correctly.
+The HMI tab provides a widget-based dashboard surface for building operator-friendly runtime views directly in XPF.
 
-This section explains everything you need to know about configuring Monitor Points, including address formats, data types, scaling options, and advanced features. Whether you're setting up a simple temperature sensor or complex multi-register data structures, understanding these configuration options is essential for effective Modbus communication.
-| **DER** | `.der`, `.cer` | Binary certificate format (less common) |
+- Design dashboards with reusable widgets and layouts
+- Bind widget values to monitor points for live updates
+- Use this when you need an at-a-glance operational screen during testing or commissioning
 
-!!! warning "Certificate Security"
-    - **Protect private keys**: Never share client certificate private keys
-    - **Validate certificates**: Verify broker certificate before trusting
-    - **Use strong passwords**: Protect PFX/P12 files with strong passwords
-    - **Check expiration**: Monitor certificate expiration dates
+For detailed workflows and screenshot references:
 
-### Topic Management
+- [HMI Widget Management](hmi-widget-management.md)
 
-MQTT uses hierarchical topics for organizing messages. XPF supports subscribing to multiple topics with wildcard support.
-
-**Topic Field and Controls:**
-
-| Control | Function | Usage |
-|---------|----------|-------|
-| **Topic ComboBox** | Enter/select topics | Type topic names or select from history |
-| **Add Button** | Add to subscription list | Adds current topic to active subscriptions |
-| **Remove Button** | Remove from list | Removes selected topic from subscriptions |
-| **Subscribe Button** | Subscribe to all topics | Activates subscriptions for all topics in list |
-| **Unsubscribe Button** | Unsubscribe from all | Clears all active subscriptions |
-
-**MQTT Topic Wildcards:**
-
-| Wildcard | Symbol | Description | Example |
-|----------|--------|-------------|---------|
-| **Single-level** | `+` | Matches one topic level | `devices/+/status` matches `devices/plc1/status`, `devices/sensor2/status` |
-| **Multi-level** | `#` | Matches all remaining levels | `sensors/#` matches `sensors/temp`, `sensors/temp/zone1`, `sensors/pressure/tank3` |
-
-**Topic Examples:**
-
-```
-# Specific topics (no wildcards)
-factory/line1/plc/register1
-building/hvac/temperature
-
-# Single-level wildcards
-devices/+/status              # All device statuses
-sensors/temperature/+         # All temperature zones
-
-# Multi-level wildcards
-factory/#                     # Everything under factory
-devices/+/data/#             # All data from all devices
-
-# Combined wildcards
-site/+/equipment/#           # All equipment data from all sites
-```
-
-**Topic Best Practices:**
-
-- **Hierarchical Structure**: Use logical hierarchy (site/building/equipment/measurement)
-- **Lowercase**: Stick to lowercase for consistency
-- **Descriptive**: Use clear, self-documenting topic names
-- **Avoid Spaces**: Use underscores or hyphens instead (`device_1` not `device 1`)
-- **Limit Depth**: Keep hierarchy under 7 levels for manageability
-
-!!! tip "Testing Topics"
-    Subscribe to `#` (all topics) temporarily to see all broker activity, but remove this before production use as it consumes bandwidth and memory.
-
-### Publishing Messages
-
-Send test messages or publish data to MQTT topics.
-
-**Publish Controls:**
-
-1. **Select Topic**: Enter or select target topic in Topic ComboBox
-2. **Click Send**: Publishes a test message to the selected topic
-3. **Verify**: Check Console or external MQTT client to confirm message receipt
-
-**Publishing Workflow:**
-
-```
-Step 1: Enter topic     → test/modbusmonitor
-Step 2: Click Send      → Message published
-Step 3: Verify Console  → Confirm TX count increased
-```
-
-!!! note "Message Content"
-    The **Send** button publishes a sample/test message. For publishing actual Modbus data to MQTT topics, configure topic mapping in the main application settings.
-
-### Console and Debug Logging
-
-Monitor MQTT communication and diagnose connection issues with the built-in console and logging features.
-
-**Two Types of Logging Available:**
-
-1. **General Communication Log** (Home Tab > Log > Show)
-   - Overall application communication status
-   - All protocol communications (Modbus, MQTT, etc.)
-   - General connection and error information
-
-2. **MQTT-Specific Debug Log** (IoT Tab > MQTT Group > Debug Log Button)
-   - Detailed MQTT-only information
-   - Connection handshake details, TLS certificate validation
-   - MQTT protocol-specific messages and authentication
-   - Message publishing/subscription confirmation
-
-**Console Features:**
-
-| Button/Control | Location | Function | Purpose |
-|----------------|----------|----------|---------|
-| **Console Button** | IoT Tab > MQTT | Open MQTT console | View incoming/outgoing messages in real-time |
-| **Log Toggle** | Home Tab > Log | Enable/disable general logging | Overall communication troubleshooting |
-| **Debug Log Button** | IoT Tab > MQTT Group | Enable MQTT-specific debug logging | Detailed MQTT protocol troubleshooting |
-| **Message Display** | Console window | Timestamped entries | Shows TX (transmitted) and RX (received) messages |
-
-**What Gets Logged:**
-
-**General Log (Home Tab > Log):**
-- Overall application status and errors
-- General connection events across all protocols
-- Basic MQTT connection status ("Connected", "Disconnected")
-
-**MQTT Debug Log (IoT Tab > MQTT Group > Debug Log):**
-- **Connection Events**: Connected, disconnected, reconnection attempts with detailed handshake
-- **TLS/SSL Information**: Certificate validation, encryption protocol details
-- **Authentication**: Username/password validation, certificate authentication
-- **Published Messages**: Topics and payloads sent (TX) with timestamps
-- **Received Messages**: Topics and payloads received (RX) with confirmation
-- **Protocol Details**: MQTT configuration, QoS levels, keep-alive status
-- **Errors**: Connection failures, authentication errors, timeouts with specific error codes
-
-**Debug Log Usage:**
-
-**For General Troubleshooting:**
-1. Enable **Home Tab** > **Log** > **Show** and click **Start**
-2. Monitor overall application communication status
-
-**For MQTT-Specific Issues:**
-1. Enable **IoT Tab** > **MQTT Group** > **Debug Log** and click **Start**
-2. Perform MQTT operations (connect, subscribe, publish)
-3. Review detailed MQTT protocol information including TLS handshake and authentication
-4. Monitor message publishing confirmation and subscription status
-5. Disable logging after troubleshooting to reduce overhead
-
-!!! tip "When to Use Each Log"
-    - **General Log**: Use for overall connectivity issues, basic status monitoring
-    - **MQTT Debug Log**: Use for MQTT-specific problems like TLS issues, authentication failures, message delivery problems
-
-### Connection Status and Counters
-
-Monitor MQTT connection health and message statistics.
-
-**Status Indicators:**
-
-| Indicator | Location | Information Displayed |
-|-----------|----------|----------------------|
-| **Counter Label** | Top of panel | Shows TX/RX/Error counts in format `TX: 123 / RX: 456 / Err: 0` |
-| **Connection Button** | Bottom of panel | Shows connection state with icon (connected/disconnected/error) |
-| **Subscribe Button** | Middle section | Background color indicates subscription count |
-
-**Counter Information:**
-
-- **TX (Transmitted)**: Number of messages published
-- **RX (Received)**: Number of messages received from subscriptions
-- **Error**: Number of communication errors encountered
-
-**Double-Click Counter**: Double-click the counter label for additional statistics and details.
-
-### MQTT Broker Examples
-
-#### Example 1: Public Broker (No TLS)
-
-Connect to HiveMQ public broker for testing.
-
-**Configuration:**
-
-```yaml
-Host: broker.hivemq.com
-Port: 1883
-KeepAlive: 60
-Client ID: ModbusMonitor-MyPC-01
-Username: (leave empty)
-Password: (leave empty)
-TLS/SSL: Unchecked
-WebSocket: Unchecked
-```
-
-**Steps:**
-
-1. Enter settings above
-2. Add topic: `test/modbusmonitor`
-3. Click **Subscribe**
-4. Click **Send** to publish test message
-5. Verify message in Console
-
-#### Example 2: TLS Broker with Client Certificate
-
-Connect to secure broker with mutual TLS authentication.
-
-**Configuration:**
-
-```yaml
-Host: mqtt.example.com
-Port: 8883
-Client ID: ModbusMonitor-Site1-PLC1
-Username: deviceuser
-Password: (your password)
-TLS/SSL: Checked
-CA: ca.crt (broker CA certificate)
-Client: client.pfx (client cert with private key)
-WebSocket: Unchecked
-```
-
-**Steps:**
-
-1. Check **TLS/SSL** checkbox
-2. Click **CA** button, select `ca.crt`
-3. Click **Client** button, select `client.pfx`
-4. Enter username/password
-5. Add topics and subscribe
-6. Verify connection status shows "Connected"
-
-#### Example 3: AWS IoT Core Connection
-
-Connect to AWS IoT Core with certificate-based authentication.
-
-**Configuration:**
-
-```yaml
-Host: your-endpoint.iot.region.amazonaws.com
-Port: 8883
-Client ID: ModbusMonitor-AWS-Client1
-TLS/SSL: Checked
-CA: AmazonRootCA1.pem
-Client: device-certificate.pfx (contains cert + key)
-```
-
-**AWS-Specific Notes:**
-
-- Client ID must match AWS IoT policy
-- Use X.509 certificates from AWS IoT console
-- Topics must match AWS IoT policy permissions
-
-#### Example 4: Azure IoT Hub Connection
-
-Connect to Azure IoT Hub using SAS token authentication.
-
-**Configuration:**
-
-```yaml
-Host: your-hub.azure-devices.net
-Port: 8883
-Client ID: your-device-id
-Username: your-hub.azure-devices.net/your-device-id/?api-version=2021-04-12
-Password: (SAS token)
-TLS/SSL: Checked
-```
-
-**Azure-Specific Notes:**
-
-- Username format specific to Azure IoT Hub
-- Password is SharedAccessSignature (SAS) token
-- Generate SAS tokens from Azure portal or CLI
-
-### Troubleshooting
-
-#### Connection Issues
-
-**Cannot Connect to Broker:**
-
-| Problem | Solution |
-|---------|----------|
-| Hostname not resolving | Verify DNS resolution, try IP address instead |
-| Connection timeout | Check firewall rules, verify broker is running, increase timeout value |
-| Port blocked | Verify network allows outbound traffic on MQTT ports (1883, 8883) |
-| Wrong protocol | Match protocol version to broker (3.1.1 vs 5.0) |
-
-**Quick Test:**
-
-```powershell
-# Test basic connectivity (Windows PowerShell)
-Test-NetConnection broker.hivemq.com -Port 1883
-
-# Test with telnet
-telnet broker.hivemq.com 1883
-```
-
-#### Authentication Failures
-
-**Username/Password Rejected:**
-
-- Verify credentials are correct (check for typos, case sensitivity)
-- Confirm broker requires authentication (try without credentials first)
-- Check broker logs for specific auth failure reasons
-
-**Certificate Authentication Failed:**
-
-- Verify certificate files are correct format (PEM, PFX)
-- Check certificate hasn't expired
-- Ensure certificate CN/SAN matches broker hostname
-- Verify client certificate is authorized by broker CA
-- Check file permissions (can application read certificate files?)
-
-#### Message Delivery Issues
-
-**Messages Not Arriving:**
-
-| Issue | Check |
-|-------|-------|
-| Wrong topic | Verify subscribed topic matches published topic |
-| Wildcard mismatch | Check wildcard usage (+, #) matches topic structure |
-| QoS mismatch | Verify broker/client QoS settings compatible |
-| Not connected | Ensure connection status shows "Connected" |
-| Buffer overflow | Check if too many messages overwhelming client |
-
-**Subscription Problems:**
-
-- Confirm subscriptions active (Subscribe button clicked after adding topics)
-- Check subscription count indicator on Subscribe button
-- Verify topic names (no trailing spaces, correct case)
-- Review broker logs for subscription rejections
-
-#### Console Issues
-
-**Console Empty or Not Updating:**
-
-- Enable **Log** toggle to see debug information
-- Verify messages are actually being sent/received (check broker logs)
-- Click **Console** button to ensure window is visible
-- Check filter settings if console view is filtered
-
-### Common Use Cases
-
-#### Use Case 1: Remote Monitoring
-
-**Scenario**: Monitor industrial equipment from remote locations via cloud MQTT broker.
-
-**Setup:**
-
-1. Configure XPF to poll Modbus devices locally
-2. Connect to cloud MQTT broker (AWS IoT, Azure IoT Hub)
-3. Map Modbus register values to MQTT topics
-4. Publish data at regular intervals
-5. Subscribe remote dashboard/mobile app to same topics
-
-**Benefits:**
-- Real-time remote visibility
-- Historical data collection
-- Alert notifications
-- Multi-site monitoring
-
-#### Use Case 2: Data Aggregation
-
-**Scenario**: Collect data from multiple factory sites to central analytics platform.
-
-**Architecture:**
-
-```
-Site 1: Modbus → XPF → MQTT → Cloud Broker
-Site 2: Modbus → XPF → MQTT → Cloud Broker
-Site 3: Modbus → XPF → MQTT → Cloud Broker
-                                    ↓
-                          Analytics Platform
-```
-
-#### Use Case 3: Bi-directional Control
-
-**Scenario**: Monitor Modbus devices and receive control commands from cloud.
-
-**Topics:**
-
-- **Publish**: `factory/line1/plc/data` (sensor readings)
-- **Subscribe**: `factory/line1/plc/commands` (setpoint changes)
-
-**Workflow:**
-
-1. XPF polls Modbus devices, publishes data to MQTT
-2. Cloud application analyzes data
-3. Cloud publishes control commands to command topics
-4. XPF receives commands, writes to Modbus devices
-
-### FAQ
-
-**Q: What MQTT versions are supported?**  
-A: Select from the Version dropdown: 3.1, 3.1.1 (most common), and 5.0 (latest). Use 3.1.1 unless your broker specifically requires a different version.
-
-**Q: Do I need to provide a Client ID?**  
-A: Yes, always use a unique Client ID for each connected instance. Some brokers accept empty IDs and generate temporary IDs, but using unique IDs prevents connection conflicts and enables persistent sessions.
-
-**Q: What certificate formats are accepted?**  
-A: Common formats include PEM (`.crt`, `.pem`) for CA certificates, and PFX/PKCS12 (`.pfx`, `.p12`) for client certificates with private keys. Some brokers also support separate certificate and key files.
-
-**Q: Can I connect to multiple brokers simultaneously?**  
-A: The current implementation supports one broker connection at a time. To connect to multiple brokers, run multiple instances of XPF or use a broker bridge/federation.
-
-**Q: How do I map Modbus data to MQTT topics?**  
-A: Topic mapping configuration is available in the IoT tab settings. Detailed documentation for topic mapping will be added in a future update.
-
-**Q: What happens if the connection drops?**  
-A: XPF automatically attempts to reconnect using the configured timeout and keep-alive settings. Check the connection status indicator and console logs for reconnection activity.
-
-**Q: Is there a message size limit?**  
-A: MQTT protocol supports up to 256MB per message, but practical limits depend on your broker configuration and network. Most implementations limit messages to 1-10MB.
-
-**Q: Can I use wildcards when publishing?**  
-A: No, wildcards (`+`, `#`) are only supported for subscriptions. Publishing requires a specific topic without wildcards.
-
-### IoT Features Overview
-
-**XPF IoT Features extend the core Modbus functionality with specialized IoT integrations and cloud connectivity.** These features are built into XPF but require separate license purchases to unlock full functionality for platform connectivity, data logging, and IoT capabilities.
-
-!!! info "Core vs IoT Features"
-    **Core Features** (included with XPF base license):
-    - Modbus TCP/RTU/ASCII communication
-    - Monitor Points management and data visualization
-    - Basic charting, logs, scanning, and device simulation
-    - Standard file import/export capabilities
-    
-    **IoT Features** (require separate license purchase):
-    - **ThingSpeak Feature**: Specialized ThingSpeak cloud platform integration with Publish controls
-    - **MQTT Feature**: Advanced MQTT broker connectivity with enterprise features
-    - Additional cloud platform integrations (future releases)
-
-### ThingSpeak Feature (Cloud Logging)
-
-**ThingSpeak Feature provides dedicated cloud logging and visualization capabilities.** This feature requires a separate license and includes the ThingSpeak Group and Publish Group in the IoT Tab, specifically designed for ThingSpeak platform integration with automatic field mapping.
-
-**Key Benefits:**
-- **Automatic Cloud Logging**: Direct data transmission to ThingSpeak channels
-- **Automatic Field Mapping**: Row-based mapping (Row 1→field1, Row 2→field2, etc.)
-- **Integrated Publish Controls**: Publish Group provides publishing settings and controls
-- **Professional Dashboards**: Real-time visualization accessible from anywhere
-- **MATLAB Integration**: Advanced analytics and machine learning capabilities
-- **Historical Analysis**: Long-term data storage and trend analysis
-- **Alert Systems**: Automated notifications based on data thresholds
-
-**Quick Setup:**
-1. **Purchase License**: ThingSpeak Feature license (ThingSpeak account also required)
-2. **Configure**: Create ThingSpeak channel and configure XPF feature settings
-3. **Map Data**: Link monitor points to ThingSpeak fields automatically using Publish controls
-4. **Verify**: Start logging and confirm data flow
-
-!!! info "Complete ThingSpeak Feature Guide"
-    **📖 [Comprehensive ThingSpeak Feature Setup](../../guides/thingspeak-addon.md)**
-    
-    **Includes:**
-    - 4-step add-on setup workflow (Purchase → Configure → Map → Verify)
-    - Step-by-step channel creation (from Chrome recorder)
-    - Complete XPF add-on configuration walkthrough
-    - Automatic field mapping (Row 1→field1) strategies
-    - Advanced visualization and analytics setup
-    - Troubleshooting guide and optimization tips
-    
-    **Perfect for:** First-time setup, troubleshooting, and advanced configuration
-
-### MQTT Feature (Advanced Broker Connectivity)
-
-**MQTT Feature provides enhanced MQTT broker connectivity with advanced features for IoT integration.** This feature requires a separate license and provides the MQTT Group in the IoT Tab with specialized broker management, advanced security, and enterprise-grade features.
-
-**Key Benefits:**
-- **Multi-Broker Support**: Connect to multiple MQTT brokers simultaneously
-- **Advanced Security**: Enterprise TLS/SSL, client certificates, and authentication
-- **Topic Management**: Advanced topic mapping and dynamic topic generation
-- **Quality of Service**: Comprehensive QoS 0, 1, and 2 support with persistence
-- **Cloud Integration**: Pre-configured templates for AWS IoT, Azure IoT, HiveMQ
-- **Message Persistence**: Offline message queuing and automatic reconnection
-
-**Quick Setup:**
-1. **Purchase License**: MQTT Feature license (enhanced functionality)
-2. **Configure**: Connect to MQTT brokers with advanced security
-3. **Map Topics**: Configure topic publishing and subscription patterns
-4. **Verify**: Test connectivity and message flow
-
-!!! info "Complete MQTT Feature Guide"
-    **📖 [Comprehensive MQTT Feature Setup](../../guides/mqtt-addon.md)**
-    
-    **Includes:**
-    - 4-step feature setup workflow (Purchase → Configure → Map → Verify)
-    - Multi-broker configuration and management
-    - Advanced security setup (TLS/SSL, certificates)
-    - Topic mapping strategies and best practices
-    - Cloud platform integration (AWS IoT, Azure IoT, HiveMQ)
-    - Troubleshooting guide and performance optimization
-    
-    **Perfect for:** Enterprise IoT deployments, multi-broker environments, and advanced security requirements
-
-**Choosing Between Licensed Features:**
-
-| Scenario | Recommended Feature | Reason |
-|----------|-------------------|--------|
-| **ThingSpeak cloud logging** | ThingSpeak Feature | Automatic field mapping, integrated Publish controls |
-| **Multiple MQTT cloud platforms** | MQTT Feature | Multi-broker support, flexible topic mapping |
-| **Enterprise IoT deployment** | MQTT Feature | Advanced security, persistence, QoS management |
-| **AWS IoT / Azure IoT** | MQTT Feature | Pre-configured cloud templates |
-| **Professional MQTT connectivity** | MQTT Feature | Enterprise-grade MQTT with advanced features |
-| **Cloud analytics and visualization** | ThingSpeak Feature | Professional dashboards and MATLAB integration |
 
 ## 7. Monitor Points Configuration
 
@@ -4389,8 +3669,8 @@ graph LR
 - **First digit (0, 1, 3, or 4)**: Indicates **register type** (not function code directly)
 - **Last five digits (00000–65535)**: The **actual register address**
 - **Zero-based vs One-based**: Devices may start counting from 0 or 1
-  - **Zero-based:** First register = 0 (e.g., `400000`)
-  - **One-based:** First register = 1 (e.g., `400001`)
+  - **Zero-based**: First register = 0 (e.g., `400000`)
+  - **One-based**: First register = 1 (e.g., `400001`)
 
 !!! example "Address Examples - Understanding the Format"
     
