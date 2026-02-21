@@ -122,6 +122,9 @@ copyright: |
 nav:
   - Home: index.md
   - Downloads & Purchase: downloads-purchase.md
+  - Products:
+    - XPF:
+      - User Guide: products/xpf/user-guide.md
   - Technical Resources:
       - Overview: technical/index.md
   - Support & Help:
