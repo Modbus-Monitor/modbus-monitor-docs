@@ -1,5 +1,5 @@
 !!! note "Navigation"
-    **📚 [Documentation Home](../index.md) → [Guides](index.md) → ThingSpeak Overview**
+    **📚 [Documentation Home](../index.md) → [Guides](../index.md) → ThingSpeak Overview**
 
 # ThingSpeak Overview Guide
 

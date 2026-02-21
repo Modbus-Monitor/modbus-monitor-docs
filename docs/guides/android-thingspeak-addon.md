@@ -1,5 +1,5 @@
 !!! note "Navigation"
-    **📚 [Documentation Home](../index.md) → [Guides](index.md) → ThingSpeak for Android**
+    **📚 [Documentation Home](../index.md) → [Guides](../index.md) → ThingSpeak for Android**
 
 # ThingSpeak Add-on for Android
 

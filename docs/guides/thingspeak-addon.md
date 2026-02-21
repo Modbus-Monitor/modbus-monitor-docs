@@ -1,5 +1,5 @@
 !!! note "Navigation"
-    **📚 [Documentation Home](../index.md) → [Guides](index.md) → ThingSpeak for Windows XPF**
+   **📚 [Documentation Home](../index.md) → [Guides](../index.md) → ThingSpeak for Windows XPF**
 
 # ThingSpeak Add-on for Windows XPF
 
@@ -274,8 +274,8 @@ Free tier works for most uses:
 - **[ThingSpeak Overview](thingspeak-overview.md)** - Platform-agnostic concepts and use cases
 - **[Android ThingSpeak Setup](android-thingspeak-addon.md)** - Mobile implementation
 - **[MQTT Add-on](mqtt-addon.md)** - Alternative cloud connectivity
-- **[Main Guides](index.md)** - All documentation
+- **[Main Guides](../index.md)** - All documentation
 
 ---
 
-[:octicons-arrow-left-24: Back to Guides Home](index.md)
+[:octicons-arrow-left-24: Back to Guides Home](../index.md)

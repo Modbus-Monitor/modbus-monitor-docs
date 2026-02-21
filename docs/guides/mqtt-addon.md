@@ -1,5 +1,5 @@
 !!! note "Navigation"
-    **[Documentation Home](../../) > [XPF User Guide](../products/xpf/user-guide.md) > MQTT Add-on**
+  **[Documentation Home](../index.md) > [XPF User Guide](../products/xpf/user-guide.md) > MQTT Add-on**
 
 # MQTT Add-on
 
@@ -1312,7 +1312,7 @@ Subscription Topics:
 
 **Recommended for production** - Secure, reliable, free tier available.
 
-![XPF MQTT Configuration - TLS Setup](../../assets/screenshots/xpf/xpf-mqtt-tls-setup.webp){ loading="lazy" }
+![XPF MQTT Configuration - TLS Setup](../assets/screenshots/xpf/xpf-mqtt-tls-setup.webp){ loading="lazy" }
 
 #### Step 1: Set Up HiveMQ Cloud Account
 
@@ -1353,7 +1353,7 @@ Subscription Topics:
       - **Client Certificate**: Leave empty (username/password auth)
       - **Verify Hostname**: Checked
 
-![XPF TLS Configuration](../../assets/screenshots/xpf/xpf-mqtt-secure.webp){ loading="lazy" }
+![XPF TLS Configuration](../assets/screenshots/xpf/xpf-mqtt-secure.webp){ loading="lazy" }
 
 #### Step 3: Configure Production Topics
 

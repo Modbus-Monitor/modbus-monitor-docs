@@ -1,5 +1,5 @@
 !!! note "Navigation"
-    **📚 [Documentation Home](../index.md) → [Guides](index.md) → ThingSpeak for Windows XPF**
+    **📚 [Documentation Home](../index.md) → [Guides](../index.md) → ThingSpeak for Windows XPF**
 
 # ThingSpeak Add-on for Windows XPF
 
@@ -185,4 +185,4 @@ Free tier works for most uses. Limits: 8 fields per channel, 15-second minimum i
 
 ---
 
-[:octicons-arrow-left-24: Back to Guides](index.md)
+[:octicons-arrow-left-24: Back to Guides](../index.md)
