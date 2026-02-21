@@ -119,9 +119,9 @@ Beyond this user guide, additional resources are available:
 
     **Install from QuantumBit Solutions Downloads Page**
 
-    Download the latest version of Modbus Monitor XPF directly from our Downloads Page.  This page provides all available versions, including portable and installer options for ARM64, x64, and x86 architectures.
+    Download the latest version of Modbus Monitor XPF directly from our Downloads Page. This page provides all available versions, including portable and installer options for ARM64, x64, and x86 architectures.
 
-    - [Downloads & Purchase Page](../../downloads-purchase.md)   
+    [:material-download: Downloads & Purchase Page](../../downloads-purchase.md){ .md-button .md-button--primary }
       
         - **Installer**: Creates shortcuts, integrates with Windows, faster startup
         - **Portable**: No installation needed, run from USB drives, good for field work
@@ -1888,7 +1888,7 @@ graph TB
     
     **File Location:** Check your Windows Documents folder for auto-saved log files (typically named with timestamp).
 
-#### Online Maps
+#### Online Maps { #online-maps-feature }
 
 **Cloud-Based Modbus Maps** - View and Download Online Modbus Maps from either **(1) factory-released maps** by Modbus Monitor or **(2) community-uploaded maps** from users. Toggle the **Online** button in the File group located in the Home tab to activate this feature. **An internet connection is required** to use this feature.
 
@@ -1942,7 +1942,7 @@ Users can upload their own custom Modbus Maps to share with the community or sto
     
     Your contributions help the entire community!
 
-## 4. Modbus Client Operations
+## 4. Modbus Client Operations { #modbus-client-operations }
 
 **Client Mode Overview:** XPF operates as a Modbus Master (Client) when you want to read data from or write data to remote Modbus devices. In this mode, XPF initiates all communication by sending requests to Modbus Server devices (PLCs, drives, meters, sensors) and processes their responses. You can simultaneously connect to multiple devices using different interfaces and protocols.
 
@@ -1965,7 +1965,7 @@ Users can upload their own custom Modbus Maps to share with the community or sto
 
 ![Modbus Monitor XPF Client](../../assets/screenshots/xpf/xpf-client-tab.webp){ loading="lazy" }
 
-### Client Tab Groups & Features
+### Client Tab Groups & Features { #client-tab-groups--features }
 
 **Complete reference for all Client tab ribbon groups and their functionality:**
 
@@ -1981,7 +1981,7 @@ Users can upload their own custom Modbus Maps to share with the community or sto
 | **Chart** | Data Visualization | Chart Button | Switch to real-time charting view for trending analysis of tagged monitor points - see [Charts - Data Trends Visualization](#charts---data-trends-visualization) for complete setup |
 | **Client Poll** | Operation Control | Auto Save, Restore, Write, Read, Statistics, Start/Stop | Main operational controls for polling, data collection, and client status monitoring |
 
-**Detailed Group Breakdown:**
+#### Detailed Group Breakdown { #detailed-group-breakdown }
 
 === "Interface Group"
 
@@ -2180,7 +2180,7 @@ Control how XPF handles value changes in the Value column:
 - **Function 15 (0x0F)**: Write Multiple Coils
 - **Function 16 (0x10)**: Write Multiple Registers
 
-### Scanner - Modbus Address Discovery Tool
+### Scanner - Modbus Address Discovery Tool { #scanner-group }
 
 **Poll remote server to discover new Modbus Addresses or build Modbus Map for devices without public Modbus Maps.** This is invaluable when Modbus Maps are unknown or unavailable from manufacturers.
 
@@ -2296,6 +2296,8 @@ Refer to [Modbus Client Operations](#modbus-client-operations) on locations of C
 ![Modbus Monitor XPF Chart](../../assets/screenshots/xpf/xpf-client-charts.webp){ loading="lazy" }
 *Complete chart window showing dual-axis trending*
 
+##### Step 4: Chart Controls & Options { #step-4-chart-controls--options }
+
 **Complete Chart Interface Reference**:
 
    **Main Chart Interface Components:**
@@ -2325,7 +2327,7 @@ Refer to [Modbus Client Operations](#modbus-client-operations) on locations of C
 | **Pan Navigation** | Right-click Mouse Drag on Chart Plot | Scroll through historical data | Updated time range display | Review past trends when buffer is limited |
 | **Zoom Control** | Mouse Wheel on Chart Plot | Zoom in/out on time axis | Focused time period view | Examine specific time intervals in detail |
 
-**Control Toolbar Breakdown (Reference Label 1 from interface above):**
+**Control Toolbar Breakdown (Reference Label 1 from interface above):** { #control-toolbar-breakdown-reference-label-1-from-interface-above }
 
 The control toolbar contains all chart operation controls. Each button provides specific functionality:
 
@@ -3338,7 +3340,12 @@ Both IoT features require separate license purchases to unlock full functionalit
 
 ## 6A. HMI Tab and Widgets (v5.0.0.0+) { #hmi-tab-widgets }
 
+
+
 The HMI tab provides a widget-based dashboard surface for building operator-friendly runtime views directly in XPF.
+
+![HMI Dashboard Demo](../../assets/screenshots/xpf/xpf-hmi-demo.webp){ loading="lazy" }
+*Example HMI dashboard layout in XPF*
 
 - Design dashboards with reusable widgets and layouts
 - Bind widget values to monitor points for live updates
@@ -3391,7 +3398,7 @@ Each row in the Monitor Points table represents a single Modbus register or grou
 
 ### Detailed Field Descriptions
 
-#### 1. Name Field - Enhanced with Magic Codes
+#### 1. Name Field - Enhanced with Magic Codes { #1-name-field-enhanced-with-magic-codes }
 
 The Name field supports special **Magic Key Codes** to enhance functionality:
 
@@ -3611,7 +3618,7 @@ Example: System_Status@-1:31.5
 Effect: Poll once (@-1), 32 registers (:31), bit 5 (.5)
 ```
 
-#### 2. Address Field - 6-Digit Format
+#### 2. Address Field - 6-Digit Format { #2-address-field-6-digit-format }
 
 !!! info "Complete 6-Digit Addressing Guide"
     **For comprehensive explanations, troubleshooting, and examples:** See the [**6-Digit Addressing Scheme Guide**](../../guides/6-digit-addressing.md)
@@ -3772,7 +3779,7 @@ Add or subtract a constant from the scaled value: **`Y = (Gain * X) + Offset`**
 
 **Processing Order:** Raw Value → Gain (multiply) → Offset (add) → Display
 
-#### 6. Data Type (Data Interpretation)
+#### 6. Data Type (Data Interpretation) { #3-data-type-options }
 
 Defines how to interpret the raw Modbus register data.
 
@@ -3800,7 +3807,7 @@ Defines how to interpret the raw Modbus register data.
 - **FLOAT32**: 32-bit floating point - for decimal precision
 - **STRING**: Text data - use with `:xx` magic code for length
 
-#### 7. Swap Type (Byte/Word Order)
+#### 7. Swap Type (Byte/Word Order) { #4-swap-type-for-multi-register-data }
 
 Controls byte ordering for multi-register data (32-bit, 64-bit values spanning multiple registers).
 
@@ -3840,7 +3847,7 @@ Click the **three dots (...)** button at the end of each row to access extended 
 - **Chart**:Enable charting for this monitor point to display value trends over time
 - **Simulate**:Simulation mode
 
-#### 10. CustomQ (Custom Modbus Command)
+#### 10. CustomQ (Custom Modbus Command) { #custom-commands-customq }
 
 Send raw Modbus PDU commands in hexadecimal format for special function codes or manufacturer-specific commands.
 

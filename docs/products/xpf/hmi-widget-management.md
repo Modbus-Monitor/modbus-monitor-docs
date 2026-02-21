@@ -4,6 +4,9 @@ This page explains how to use the HMI tab and manage widgets on the dashboard ca
 
 Use this page for workflow and operations. For widget-by-widget behavior and settings, see [Widget Reference](widget-reference.md).
 
+![HMI Dashboard Demo](../../assets/screenshots/xpf/xpf-hmi-demo.webp){ .screenshot-shadow loading="lazy" }
+*Example HMI dashboard layout in XPF*
+
 ## 1) Open the HMI Dashboard
 
 1. Open the **HMI** tab in the top ribbon.
@@ -11,6 +14,7 @@ Use this page for workflow and operations. For widget-by-widget behavior and set
 3. Toggle **Edit** to **On** in the Widgets group to enable design operations.
 
 <!-- Screenshot placeholder: xpf-hmi-01-tab-overview.png -->
+> Image coming soon...
 <!-- Suggested capture: HMI tab selected, Widgets group visible, Edit toggle highlighted -->
 
 ## 2) Ribbon Groups in HMI Tab
@@ -46,6 +50,7 @@ Use this page for workflow and operations. For widget-by-widget behavior and set
 | Close | Exit HMI dashboard and return to main view |
 
 <!-- Screenshot placeholder: xpf-hmi-02-ribbon-groups.png -->
+> Image coming soon...
 <!-- Suggested capture: Widgets + Clipboard + Controls groups with labels -->
 
 ## 3) Add, Select, Move, Resize, Remove
@@ -76,6 +81,7 @@ Use this page for workflow and operations. For widget-by-widget behavior and set
 - Click **Delete All** to remove every widget.
 
 <!-- Screenshot placeholder: xpf-hmi-03-selection-resize.png -->
+> Image coming soon...
 <!-- Suggested capture: selected widget showing selection outline and resize handle -->
 
 ## 4) Configure Widget Properties
@@ -103,6 +109,7 @@ Recommended configuration sequence:
 - Button and Slider widgets require write permissions to function.
 
 <!-- Screenshot placeholder: xpf-hmi-04-property-editor.png -->
+> Image coming soon...
 <!-- Suggested capture: selected widget + property panel + Monitoring Point row -->
 
 ## 5) Copy and Paste Widgets
@@ -126,6 +133,7 @@ Recommended configuration sequence:
 - Position (offset to avoid overlap)
 
 <!-- Screenshot placeholder: xpf-hmi-05-copy-paste.png -->
+> Image coming soon...
 <!-- Suggested capture: one widget selected, Copy clicked, pasted duplicate visible offset -->
 
 ## 6) Save and Load Dashboard Files
@@ -151,6 +159,7 @@ Save your dashboard layout to reuse it across sessions or share with your team.
 - Keep backup copies before making major layout changes.
 
 <!-- Screenshot placeholder: xpf-hmi-06-save-load.png -->
+> Image coming soon...
 <!-- Suggested capture: Save As flow and resulting .hmi file near .csv -->
 
 ## Related Documentation

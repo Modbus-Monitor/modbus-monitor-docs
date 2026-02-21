@@ -19,6 +19,7 @@ Use this page for widget-specific details. For HMI tab operations (edit/add/remo
 | 9 | Trend | Required | Real-time trend/chart visualization | Typically advanced tier |
 
 <!-- Screenshot placeholder: xpf-hmi-10-widget-gallery-all-9.png -->
+> Image coming soon...
 <!-- Suggested capture: Add Widget gallery open, all 9 items visible -->
 
 ## Quick Capability Matrix
@@ -34,6 +35,22 @@ Use this page for widget-specific details. For HMI tab operations (edit/add/remo
 | MultiState Indicator | Yes | Yes | Yes | Discrete/zone status |
 | Bar Graph | Yes | Yes | Yes | Tank/level/load bars |
 | Trend | Yes | Yes | Yes | Time-series monitoring |
+
+## Gauge Arc Presets (Quick Setup)
+
+Use these presets when configuring arc-based gauges. This gives users a fast starting point without trial-and-error on angles.
+
+| Gauge Type / Arc Style | StartAngle | SweepAngle | Visual Gap Location | Typical Use | Sample Picture |
+|---|---:|---:|---|---|---|
+| Full circle | 0 | -360 | No gap (continuous circle) | 360° meter style, compact KPI dials | _(add image)_ |
+| Bottom gap (270° arc) | 225 | -270 | Gap at ~6 o'clock | Classic industrial gauge with open bottom | _(add image)_ |
+| North-facing 180° | 180 | -180 | Gap at 6 o'clock | Top semicircle dashboards | _(add image)_ |
+| South-facing 180° | 0 | -180 | Gap at 12 o'clock | Bottom semicircle panels | _(add image)_ |
+| East-facing 180° | 270 | -180 | Gap at 9 o'clock | Right-side semicircle layouts | _(add image)_ |
+| West-facing 180° | 90 | -180 | Gap at 3 o'clock | Left-side semicircle layouts | _(add image)_ |
+
+!!! tip "Direction Note"
+	Negative sweep values draw clockwise in these presets. Keep the same sign convention for consistent orientation across dashboards.
 
 ## Per-Widget Details
 
@@ -60,6 +77,7 @@ Displays a single numeric value with customizable formatting and color-coded sta
 - **State Ranges**: Assign colors to value zones (optional but recommended)
 
 <!-- Screenshot placeholder: xpf-hmi-11-widget-numeric.png -->
+> Image coming soon...
 
 ### 2) Button
 
@@ -86,6 +104,7 @@ Interactive control for sending write commands to a Modbus register.
 **Important:** Button widgets require write permissions. Verify your license tier and runtime configuration support write operations.
 
 <!-- Screenshot placeholder: xpf-hmi-12-widget-button.png -->
+> Image coming soon...
 
 ### 3) Dial180
 
@@ -110,6 +129,7 @@ Semi-circular analog-style gauge providing intuitive visual indication of value 
 - **Orientation**: Some variants support left/center/right needle starting positions
 
 <!-- Screenshot placeholder: xpf-hmi-13-widget-dial180.png -->
+> Image coming soon...
 
 ### 4) Text Label
 
@@ -135,6 +155,7 @@ Flexible text display for adding context, instructions, or dynamic values to you
 - **Alignment**: Left, center, or right
 
 <!-- Screenshot placeholder: xpf-hmi-14-widget-text-label.png -->
+> Image coming soon...
 
 ### 5) Clock
 
@@ -158,6 +179,7 @@ Displays system time without requiring Modbus configuration.
 - **Position**: Typically placed at top or corner of dashboard
 
 <!-- Screenshot placeholder: xpf-hmi-15-widget-clock.png -->
+> Image coming soon...
 
 ### 6) Slider
 
@@ -184,6 +206,7 @@ Interactive control that both displays current value and allows operator adjustm
 **Important:** Slider widgets require write permissions. Confirm license tier and write mode are enabled.
 
 <!-- Screenshot placeholder: xpf-hmi-16-widget-slider.png -->
+> Image coming soon...
 
 ### 7) MultiState Indicator
 
@@ -208,6 +231,7 @@ Visual indicator that changes color or image based on which value range the curr
 - **Images** (optional): Assign custom images per state
 
 <!-- Screenshot placeholder: xpf-hmi-17-widget-multistate.png -->
+> Image coming soon...
 
 ### 8) Bar Graph
 
@@ -234,6 +258,7 @@ Vertical or horizontal fill-level indicator with optional color zones and imager
 - **State Ranges**: Color zones (e.g., red=low, yellow=medium, green=full)
 
 <!-- Screenshot placeholder: xpf-hmi-18-widget-bargraph.png -->
+> Image coming soon...
 
 ### 9) Trend
 
@@ -260,6 +285,7 @@ Real-time scrolling chart displaying historical values over time.
 - **State Ranges**: Highlight operating zones on chart background
 
 <!-- Screenshot placeholder: xpf-hmi-19-widget-trend.png -->
+> Image coming soon...
 
 ## Widget Availability by License Tier
 
