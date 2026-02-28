@@ -8,6 +8,10 @@ All releases of Modbus Monitor XPF with features, bug fixes, and improvements.
 
 **Status:** Development Snapshot | **Compatibility:** Windows 10/11 (x86, x64, ARM64)
 
+### New Features
+- Added Line widget for HMI dashboard design.
+- Added Rounded Square widget for HMI dashboard design.
+
 ### Bug Fixes
 - Fixed Z5 crash path in HMI property editing by using stable ComboBox behavior in the property editor panel.
 - Added drag/selection guard in dashboard widget selection flow to prevent property editor updates during active interaction.

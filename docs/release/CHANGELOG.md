@@ -6,6 +6,8 @@ Latest releases of Modbus Monitor XPF with features, bug fixes, and download inf
 
 ### [Unreleased (main branch) - February 28, 2026](CHANGELOG-XPF.md#unreleased-main-branch--february-28-2026)
 
+- Added Line widget for HMI dashboard design
+- Added Rounded Square widget for HMI dashboard design
 - Z5 crash fix merged to `main`
 - HMI property editor stability improvements during drag/selection
 - Non-fatal XAML parse exceptions handled safely
