@@ -4,6 +4,20 @@ All releases of Modbus Monitor XPF with features, bug fixes, and improvements.
 
 ---
 
+## Unreleased (main branch) — February 28, 2026
+
+**Status:** Development Snapshot | **Compatibility:** Windows 10/11 (x86, x64, ARM64)
+
+### Bug Fixes
+- Fixed Z5 crash path in HMI property editing by using stable ComboBox behavior in the property editor panel.
+- Added drag/selection guard in dashboard widget selection flow to prevent property editor updates during active interaction.
+- Suppressed non-fatal XAML parse exception handling path to prevent crash-level interruption during transient UI state changes.
+
+### Notes
+- Changes were merged from the `copilot/fix-z5-crash-issue` branch into `main` and validated by successful Debug build.
+
+---
+
 ## v4.4.1.0 — December 23, 2025
 
 **Status:** Latest Stable | **Compatibility:** Windows 10/11 (x86, x64, ARM64)

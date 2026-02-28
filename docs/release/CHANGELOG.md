@@ -2,6 +2,16 @@
 
 Latest releases of Modbus Monitor XPF with features, bug fixes, and download information.
 
+## Development Update
+
+### [Unreleased (main branch) - February 28, 2026](CHANGELOG-XPF.md#unreleased-main-branch--february-28-2026)
+
+- Z5 crash fix merged to `main`
+- HMI property editor stability improvements during drag/selection
+- Non-fatal XAML parse exceptions handled safely
+
+---
+
 ## Current Release
 
 ### [v4.4.1.0 - December 23, 2025](CHANGELOG-XPF.md#v4411-december-23-2025)
