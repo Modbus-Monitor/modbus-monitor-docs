@@ -1,6 +1,6 @@
 # Widget Reference (v5.0.0.0+)
 
-This page documents the 9 widgets available from the HMI tab gallery.
+This page documents the 15 widgets available from the HMI tab gallery.
 
 Use this page for widget-specific details. For HMI tab operations (edit/add/remove/copy/start/save), see [HMI Tab and Widget Management](hmi-widget-management.md).
 
@@ -17,10 +17,16 @@ Use this page for widget-specific details. For HMI tab operations (edit/add/remo
 | 7 | MultiState Indicator | Required | State color/image by value range | No |
 | 8 | Bar Graph | Required | Directional fill level visualization | No |
 | 9 | Trend | Required | Real-time trend/chart visualization | Typically advanced tier |
+| 10 | Line | Optional | Linear shape/pipe style indicator | No |
+| 11 | Rounded Rectangle | Optional | Rounded shape with configurable radii | No |
+| 12 | Arrow | Optional | Directional shape indicator | No |
+| 13 | Triangle | Optional | Triangular shape indicator | No |
+| 14 | Polygon | Optional | Regular polygon (4-8 sides) | No |
+| 15 | Arc | Optional | Arc/sector shape indicator | No |
 
-<!-- Screenshot placeholder: xpf-hmi-10-widget-gallery-all-9.png -->
+<!-- Screenshot placeholder: xpf-hmi-10-widget-gallery-all-15.png -->
 > Image coming soon...
-<!-- Suggested capture: Add Widget gallery open, all 9 items visible -->
+<!-- Suggested capture: Add Widget gallery open, all 15 items visible -->
 
 ## Quick Capability Matrix
 
@@ -35,6 +41,23 @@ Use this page for widget-specific details. For HMI tab operations (edit/add/remo
 | MultiState Indicator | Yes | Yes | Yes | Discrete/zone status |
 | Bar Graph | Yes | Yes | Yes | Tank/level/load bars |
 | Trend | Yes | Yes | Yes | Time-series monitoring |
+| Line | Yes | Yes | Yes | Pipe/run state indication |
+| Rounded Rectangle | Yes | Yes | Yes | Zone/area status tile |
+| Arrow | Yes | Yes | Yes | Directional flow/state cue |
+| Triangle | Yes | Yes | Yes | Compact shape status cue |
+| Polygon | Yes | Yes | Yes | Multi-sided zone/status marker |
+| Arc | Yes | Yes | Yes | Arc/sector state indication |
+
+Ellipse helper text (using Rounded Rectangle):
+- Add a **Rounded Rectangle** widget.
+- Set **Width** and **Height** to your target oval size.
+- Set **RadiusX = Width / 2** and **RadiusY = Height / 2**.
+- If corners are still visible, increase RadiusX/RadiusY slightly until the outline looks fully elliptical.
+
+Quick examples:
+- Circle: Width=120, Height=120, RadiusX=60, RadiusY=60
+- Horizontal oval: Width=180, Height=100, RadiusX=90, RadiusY=50
+- Vertical oval: Width=100, Height=180, RadiusX=50, RadiusY=90
 
 ## Gauge Arc Presets (Quick Setup)
 
@@ -287,6 +310,30 @@ Real-time scrolling chart displaying historical values over time.
 <!-- Screenshot placeholder: xpf-hmi-19-widget-trend.png -->
 > Image coming soon...
 
+### 10) Line
+
+Linear shape indicator with optional register binding and state-based color/image styling.
+
+### 11) Rounded Rectangle
+
+Rounded rectangle with independent `RadiusX`/`RadiusY`, plus optional register-driven state styling.
+
+### 12) Arrow
+
+Directional shape widget with configurable head/shaft proportions and optional state styling.
+
+### 13) Triangle
+
+Triangle shape widget with orientation and rotation controls, optional state styling.
+
+### 14) Polygon
+
+Regular polygon shape widget with side count from 4 to 8, optional state styling.
+
+### 15) Arc
+
+Arc/sector widget with start angle and sweep control, optional register-driven state styling.
+
 ## Widget Availability by License Tier
 
 Some widgets require higher license tiers to use.
@@ -304,6 +351,12 @@ Some widgets require higher license tiers to use.
 **Requires Pro license or higher:**
 - Button (write operations)
 - Slider (write operations)
+- Line
+- Rounded Rectangle
+- Arrow
+- Triangle
+- Polygon
+- Arc
 
 **Requires advanced licensing:**
 - Trend (typically Enterprise tier)

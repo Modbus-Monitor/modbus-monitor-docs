@@ -24,10 +24,26 @@ Use this page for workflow and operations. For widget-by-widget behavior and set
 | Control | Function | Notes |
 |---|---|---|
 | Edit | Toggle edit mode | Must be On to add, remove, or modify widgets |
-| Add Widget | Open widget gallery | Choose from all 9 widget types |
+| Add Widget | Open widget gallery | Choose from all 15 widget types |
 | Add | Add default widget | Quick-add action without opening gallery |
 | Remove | Delete selected widget | Only active when a widget is selected |
 | Delete All | Clear entire dashboard | Removes all widgets from canvas |
+
+Current gallery widget types:
+- Numeric, Button, Dial180, Text Label, Clock, Slider
+- MultiState Indicator, Bar Graph, Trend
+- Line, Rounded Rectangle, Arrow, Triangle, Polygon, Arc
+
+Ellipse helper text (using Rounded Rectangle):
+- Add a **Rounded Rectangle** widget.
+- Set **Width** and **Height** to your target oval size.
+- Set **RadiusX = Width / 2** and **RadiusY = Height / 2**.
+- If corners are still visible, increase RadiusX/RadiusY slightly until the outline looks fully elliptical.
+
+Quick examples:
+- Circle: Width=120, Height=120, RadiusX=60, RadiusY=60
+- Horizontal oval: Width=180, Height=100, RadiusX=90, RadiusY=50
+- Vertical oval: Width=100, Height=180, RadiusX=50, RadiusY=90
 
 ### Clipboard Group
 
