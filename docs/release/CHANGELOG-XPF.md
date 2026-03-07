@@ -4,6 +4,42 @@ All releases of Modbus Monitor XPF with features, bug fixes, and improvements.
 
 ---
 
+## v5.0.2.0 — March 7, 2026
+
+**Status:** Latest Candidate | **Compatibility:** Windows 10/11 (x86, x64, ARM64)
+
+### 🚀 New Features
+- **Line Widget for HMI Dashboard Design** — Add connecting lines and visual separators to HMI dashboards for improved layout and organization.
+- **Rounded Square Widget for HMI Dashboard Design** — Enhanced widget palette with rounded corner support for modern UI aesthetics.
+- **HMI Dashboard Save/Load Service** — Dead-simple pack/unpack strategy for dashboard persistence with embedded image support.
+  - Save dashboards with embedded sensor images to `.hmi` files
+  - Load dashboards from file with automatic image extraction
+  - Portable/USB-friendly with relative path support
+  - Automatic cleanup of temporary extracted files
+- **Manual Release Update Check** — New "Check for Updates" button in About page to manually verify newer versions.
+
+### ⚡ Performance Improvements
+- **Modbus TCP Throughput:** +182.78% (33.98 → 96.09 txn/sec)
+- **Client Packet Rate:** +182.65% (68.01 → 192.23 frames/sec)  
+- **Latency Reduction:** -22.50% (0.200 → 0.155 ms)
+- Optimized connection pooling and resource management
+- Improved multi-channel transaction handling
+
+### 🔧 Bug Fixes & Improvements
+- **Fixed Z5 Crash in HMI Property Editing** — Stabilized ComboBox behavior in property editor panel.
+- **Improved Dashboard Widget Selection** — Added drag/selection guard to prevent unintended property editor updates.
+- **XAML Parse Exception Handling** — Suppressed non-fatal exceptions to prevent crash-level interruption during UI state transitions.
+- **License Admin Console Stability** — Enhanced robustness and added proper hide command implementation.
+- **Release Notification Bell Icon** — Uses dynamic theme color (Fluent.Ribbon.Brushes.Text) instead of hardcoded DarkRed.
+
+### ✅ Quality Assurance
+- All 348+ existing test cases pass
+- Backward compatible with v5.0.1.0 configurations
+- Verified across x86, x64, and ARM64 architectures
+- Wireshark-validated performance improvements
+
+---
+
 ## Unreleased (main branch) — February 28, 2026
 
 **Status:** Development Snapshot | **Compatibility:** Windows 10/11 (x86, x64, ARM64)
