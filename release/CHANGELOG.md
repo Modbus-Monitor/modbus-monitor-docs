@@ -1,19 +1,20 @@
-## Changelog v5.0.1.0
+## Changelog v5.0.2.0
 
 ### NEW
-- Added row insert/add/paste-before-selected behavior.
-- Added progress bar on file load.
+- Added New Widgets with States: Line, Rounded Square, Triangle, Polygon, Arc, Arrow
 
 ### IMPROVED
-- Improved HMI/Dashboard layout and styling.
-- Improved widget selection and gain behavior.
-- Improved bar graph behavior, including bipolar support, center behavior, and clamping behavior.
-- Internal improvements for security and performance enhancement.
-
+- Automatic cleanup of temporary extracted files
+- Performance Improvements for TCP/IP
+- Improved Dashboard Widget Selection 
+- HMI Dashboard file Save/Load improvements with embedded image support.
+- Load dashboards from file with automatic image extraction
+- Enhanced robustness of property editor interactions during widget configuration.
+- 
 ### FIXED
 - Fixed register scaling and precision behavior.
 - Decimal places no longer set register gain and offset precision/display.
-
+- Stability Bug Fixes 
 
 
 ## Notes
