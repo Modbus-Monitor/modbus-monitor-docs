@@ -1,4 +1,4 @@
-## Changelog v5.0.2.0
+## Changelog v5.0.3.0
 
 ### NEW
 - Added New Widgets with States: Line, Rounded Square, Triangle, Polygon, Arc, Arrow
