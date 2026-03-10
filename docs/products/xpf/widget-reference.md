@@ -310,6 +310,7 @@ Widget visibility depends on your active license tier. The gallery shows only wi
 ## Choosing the Right Widget
 
 Use this quick guide when building a dashboard:
+
 - Use `Numeric` for exact values (temperature, pressure, speed).
 - Use `Dial180` or `Bar Graph` for fast visual status.
 - Use `MultiState Indicator` when you need clear state colors or images.
