@@ -1,69 +1,63 @@
-# HMI Tab and Widget Management (v5.0.0.0+)
+# HMI Dashboard Management (v5.0.3.0+)
 
-This page explains how to use the HMI tab and manage widgets on the dashboard canvas.
-
-Use this page for workflow and operations. For widget-by-widget behavior and settings, see [Widget Reference](widget-reference.md).
+Use this page to create, edit, and run HMI dashboards in XPF. For widget properties, defaults, and min/max ranges, see [Widget Reference](widget-reference.md).
 
 ![HMI Dashboard Demo](../../assets/screenshots/xpf/xpf-hmi-demo.webp){ .screenshot-shadow loading="lazy" }
 *Example HMI dashboard layout in XPF*
 
-## 1) Open the HMI Dashboard
+## What You Can Do on This Page
 
-1. Open the **HMI** tab in the top ribbon.
-2. The app navigates to the HMI Dashboard page.
-3. Toggle **Edit** to **On** in the Widgets group to enable design operations.
+- Create dashboards with drag-and-drop widgets.
+- View live values and state colors.
+- Save reusable `.hmi` dashboard files.
+- Load existing dashboards for repeat jobs.
+
+## 1) Launch the HMI Workspace
+
+1. Open the **HMI** tab from the top ribbon.
+2. XPF opens the dashboard canvas.
+3. Toggle **Edit** to **On** to unlock design mode.
 
 <!-- Screenshot placeholder: xpf-hmi-01-tab-overview.png -->
 > Image coming soon...
 <!-- Suggested capture: HMI tab selected, Widgets group visible, Edit toggle highlighted -->
 
-## 2) Ribbon Groups in HMI Tab
+## 2) Ribbon Controls
 
 ### Widgets Group
 
-| Control | Function | Notes |
+| Control | What It Does | Notes |
 |---|---|---|
-| Edit | Toggle edit mode | Must be On to add, remove, or modify widgets |
-| Add Widget | Open widget gallery | Choose from all 15 widget types |
-| Add | Add default widget | Quick-add action without opening gallery |
-| Remove | Delete selected widget | Only active when a widget is selected |
-| Delete All | Clear entire dashboard | Removes all widgets from canvas |
+| Edit | Turns design mode on/off | Required to add, remove, or modify widgets |
+| Add Widget | Opens the full gallery | Choose from all 15 widget types |
+| Add | Adds a default widget | Quick way to start layout |
+| Remove | Deletes selected widget | Removes only current selection |
+| Delete All | Clears the canvas | Removes all widgets |
 
 Current gallery widget types:
 - Numeric, Button, Dial180, Text Label, Clock, Slider
 - MultiState Indicator, Bar Graph, Trend
 - Line, Rounded Rectangle, Arrow, Triangle, Polygon, Arc
 
-Ellipse helper text (using Rounded Rectangle):
-- Add a **Rounded Rectangle** widget.
-- Set **Width** and **Height** to your target oval size.
-- Set **RadiusX = Width / 2** and **RadiusY = Height / 2**.
-- If corners are still visible, increase RadiusX/RadiusY slightly until the outline looks fully elliptical.
-
-Quick examples:
-- Circle: Width=120, Height=120, RadiusX=60, RadiusY=60
-- Horizontal oval: Width=180, Height=100, RadiusX=90, RadiusY=50
-- Vertical oval: Width=100, Height=180, RadiusX=50, RadiusY=90
-
 ### Clipboard Group
 
-| Control | Function | Notes |
+| Control | What It Does | Shortcut |
 |---|---|---|
-| Copy | Copy selected widget | Keyboard: Ctrl+C |
-| Paste | Paste widget at offset position | Keyboard: Ctrl+V |
+| Copy | Copies selected widget and settings | `Ctrl+C` |
+| Paste | Creates duplicate at offset position | `Ctrl+V` |
 
 ### Controls Group
 
-| Control | Function | Notes |
+| Control | What It Does | Typical Use |
 |---|---|---|
-| Refresh | Reload current values | Use after importing data or configuration changes |
-| Start/Stop | Control monitoring engine | Dashboard updates when monitoring is active |
+| Refresh | Reloads current values | After data import or map changes |
+| Start/Stop | Starts or stops monitoring engine | Live update control during testing |
 
 ### Close
 
-| Control | Function |
+| Control | What It Does |
 |---|---|
-| Close | Exit HMI dashboard and return to main view |
+| Close | Exits HMI dashboard and returns to main view |
 
 <!-- Screenshot placeholder: xpf-hmi-02-ribbon-groups.png -->
 > Image coming soon...
@@ -71,58 +65,58 @@ Quick examples:
 
 ## 3) Add, Select, Move, Resize, Remove
 
-### Add
+### Add Widgets
 
 1. Turn **Edit** ON.
-2. Click **Add Widget** and pick a type.
-3. Widget is placed on canvas (default position and size).
+2. Click **Add Widget**.
+3. Pick a widget type from the gallery.
 
-### Select
+### Select Widgets
 
 - Click a widget to select it.
-- Selected widget is the target for Remove, Copy, and property editing.
+- Selection activates **Remove**, **Copy**, and property editing.
 
 ### Move and Resize
 
-- Drag selected widget to move it.
-- Use resize handle to change width/height.
+- Drag to move.
+- Use resize handles to adjust width and height.
 
-### Remove
+### Remove Widgets
 
-- Click **Remove** (selected widget only), or
-- Press **Delete** key in Edit mode.
+- Click **Remove** for selected widget, or
+- Press `Delete` in Edit mode.
 
-### Clear Dashboard
+### Clear Entire Dashboard
 
-- Click **Delete All** to remove every widget.
+- Click **Delete All**.
 
 <!-- Screenshot placeholder: xpf-hmi-03-selection-resize.png -->
 > Image coming soon...
 <!-- Suggested capture: selected widget showing selection outline and resize handle -->
 
-## 4) Configure Widget Properties
+## 4) Configure Widgets (Simple Order)
 
-When **Edit** is On, selecting a widget opens the property editor panel on the right.
+When **Edit** is On, selecting a widget opens the property editor panel.
 
-Recommended configuration sequence:
+Recommended sequence:
 
-1. **Monitoring Point**: Select the Modbus register to bind (required for most widgets).
-2. **Display Options**: Set labels, titles, and formatting.
-3. **Value Range**: Configure minimum/maximum values and units.
-4. **Visual Style**: Choose colors, fonts, and layout options.
-5. **State Ranges**: Define value-based color zones (for display widgets).
-6. **Test**: Toggle Edit off to preview runtime behavior.
+1. **Monitoring Point**: choose the Modbus register binding.
+2. **Range Setup**: define `Minimum` and `Maximum` where applicable.
+3. **Display Format**: set labels, units, and value formatting.
+4. **Visual Style**: apply colors, fonts, and layout sizing.
+5. **State Ranges**: set Low/Normal/High thresholds (if supported).
+6. **Runtime Validation**: turn Edit off and verify live behavior.
 
-**Example**: To configure a Numeric widget for a temperature sensor:
-- Set Monitoring Point to register 40001
-- Set Label to "Tank Temperature"
-- Set Min: 0, Max: 100
-- Set Format to "0.0 °C"
-- Add state ranges: Blue (0-50), Yellow (50-80), Red (80-100)
+Example: Numeric widget for temperature
+- Monitoring Point: `400001`
+- Widget Label: `Tank Temperature`
+- Min/Max: `0` to `100`
+- Format: `0.0`
+- State ranges: Blue (`0-50`, `Low`), Green (`50-80`,`Normal`), Red (`80-100`,`High`)
 
-**Notes:**
-- Text Label and Clock widgets work without register binding.
-- Button and Slider widgets require write permissions to function.
+Notes:
+- `Clock` and `Text Label` can operate without register binding.
+- `Button` and `Slider` are write-capable widgets and require write permission.
 
 <!-- Screenshot placeholder: xpf-hmi-04-property-editor.png -->
 > Image coming soon...
@@ -130,23 +124,24 @@ Recommended configuration sequence:
 
 ## 5) Copy and Paste Widgets
 
-**To copy a widget:**
-1. Ensure Edit mode is On.
-2. Select the widget you want to duplicate.
-3. Click **Copy** or press Ctrl+C.
+To copy:
 
-**To paste:**
-1. With Edit mode still On, click **Paste** or press Ctrl+V.
-2. The new widget appears at an offset position with all properties copied.
+1. Keep Edit mode On.
+2. Select source widget.
+3. Click **Copy** or press `Ctrl+C`.
 
-**What gets copied:**
-- All property settings and values
-- Visual appearance and styling configuration
-- Register bindings and state ranges
+To paste:
 
-**What changes:**
-- Widget ID (automatically assigned)
-- Position (offset to avoid overlap)
+1. Click **Paste** or press `Ctrl+V`.
+2. New widget appears with offset position.
+
+What is copied:
+- Property values and style configuration
+- Register binding and state ranges
+
+What changes automatically:
+- Widget ID
+- Canvas position offset
 
 <!-- Screenshot placeholder: xpf-hmi-05-copy-paste.png -->
 > Image coming soon...
@@ -154,31 +149,65 @@ Recommended configuration sequence:
 
 ## 6) Save and Load Dashboard Files
 
-Save your dashboard layout to reuse it across sessions or share with your team.
+File formats:
+- `.hmi`: packaged dashboard plus image assets
+- `.json`: layout data only
 
-**File formats:**
-- `.hmi` — Packaged dashboard including all widgets and image assets
-- `.json` — Dashboard layout data only
+Auto-pair load behavior:
+- If a `.hmi` file and a `.csv` file are in the same folder and share the same base name, XPF automatically finds and loads both.
+- Example: `line-a.hmi` and `line-a.csv`.
 
-**To save:**
-1. Configure your dashboard with all desired widgets.
-2. Use the save command (implementation varies by version).
-3. Choose a location and descriptive filename.
+Save workflow:
 
-**To load:**
-- Drag and drop an `.hmi` or `.json` file onto the canvas, or
-- Use the load command from the ribbon.
+1. Finalize your dashboard.
+2. Trigger save command (version-specific UI path).
+3. Choose descriptive filename and folder.
 
-**Best practices:**
-- Save dashboard files alongside your Modbus register maps (`.csv`).
-- Use consistent naming: `project-name.hmi` + `project-name.csv`.
-- Keep backup copies before making major layout changes.
+Load workflow:
+
+- Drag and drop a `.hmi` file directly onto the HMI background/canvas (XPF loads the dashboard, and auto-loads matching `.csv` when present).
+- Drag and drop `.json` onto the canvas, or
+- Use ribbon load command.
+
+Best practices:
+- Keep `.hmi` beside corresponding register map `.csv`.
+- Name pairs consistently: `line-a.hmi` and `line-a.csv`.
+- Create backup checkpoints before major redesign.
 
 <!-- Screenshot placeholder: xpf-hmi-06-save-load.png -->
 > Image coming soon...
 <!-- Suggested capture: Save As flow and resulting .hmi file near .csv -->
 
+## Shape Tip: Create an Ellipse Using Rounded Rectangle
+
+- Add **Rounded Rectangle**.
+- Set `Width` and `Height` to target ellipse size.
+- Set `RadiusX = Width / 2` and `RadiusY = Height / 2`.
+- If corners remain visible, increase radius values slightly.
+
+Quick examples:
+- Circle: `Width=120`, `Height=120`, `RadiusX=60`, `RadiusY=60`
+- Horizontal oval: `Width=180`, `Height=100`, `RadiusX=90`, `RadiusY=50`
+- Vertical oval: `Width=100`, `Height=180`, `RadiusX=50`, `RadiusY=90`
+
+## How This Helps in Daily Use
+
+You can use the HMI page as one working area for common tasks:
+- Test live device values.
+- Simulate states and alarms.
+- Build operator dashboards with widgets.
+- Save layouts and reload them for the next shift or project.
+
+Typical workflow:
+1. Connect and start monitoring.
+2. Add widgets for key registers.
+3. Set ranges, labels, and colors.
+4. Validate values in runtime mode.
+5. Save the dashboard as `.hmi`.
+
+This keeps testing, monitoring, and visualization in one place.
+
 ## Related Documentation
 
-- [Widget Reference](widget-reference.md) — Detailed properties and capabilities for each widget type
-- [User Guide](user-guide.md) — Complete XPF documentation including tabs, features, and workflows
+- [Widget Reference](widget-reference.md) - Widget properties, defaults, and min/max ranges
+- [User Guide](user-guide.md) - Complete XPF documentation
