@@ -123,7 +123,9 @@ nav:
   - Home: index.md
   - Downloads & Purchase: downloads-purchase.md
   - Products:
+    - Overview: products/index.md
     - XPF:
+      - HMI Guide: products/xpf/hmi.md
       - User Guide: products/xpf/user-guide.md
   - Technical Resources:
       - Overview: technical/index.md

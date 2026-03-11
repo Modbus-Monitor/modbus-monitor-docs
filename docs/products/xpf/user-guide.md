@@ -569,7 +569,7 @@ Below the Quick Access Toolbar, you'll find multiple tabs that organize all appl
 | **Client** | Modbus Client (Master) | Interface selection, timeouts, write functions, scanner, charts, poll controls |
 | **Server** | Modbus Server (Slave) | Interface config, Modbus TCP Server, Modbus RTU Server, traffic capture, simulation |
 | **IoT** | Cloud integration | ThingSpeak logging, MQTT messaging, cloud-to-device communication |
-| **HMI** | HMI dashboard design | Widget-based operator dashboard authoring and runtime view. See [6A. HMI Tab and Widgets (v5.0.0.0+)](#hmi-tab-widgets) |
+| **HMI** | HMI dashboard design | Widget-based operator dashboard authoring and runtime view. See [HMI Guide](hmi.md) and [6A. HMI Tab and Widgets (v5.0.0.0+)](#hmi-tab-widgets) |
 
 
 **Contextual Tabs (Appear Dynamically):**
@@ -626,7 +626,7 @@ Each view provides relevant information for the specific task being performed.
 
 This section provides comprehensive coverage of all ribbon tabs and their functionality. Each tab contains groups of related commands organized by function.
 
-#### File Tab
+#### File Tab { #file-operations }
 
 The **File Tab** provides access to the backstage view containing essential file operations, application settings, license management, and resources. Click the **File** tab to enter this full-screen view.
 
@@ -749,7 +749,7 @@ The **Home Tab** contains the most frequently used commands for essential operat
 | **Copy** | `Ctrl+C` | Copy selected single or multiple row(s) to clipboard. Multiple sequential rows can be selected with Shift+Click's first and last row. Multiple rows in any order using Control+Click. |
 | **Cut** | `Ctrl+X` | Copy the content of the current item to clipboard and delete the item from the list. |
 
-##### Modbus Wizard Group
+##### Modbus Wizard Group { #modbus-wizard }
 
 The **Modbus Wizard** provides a streamlined interface for configuring monitor points without manually editing the table. Access it by clicking the **Dialog Launcher** (small arrow) in the Modbus Wizard group corner.
 
@@ -1638,7 +1638,7 @@ Click the **three dots (...)** button at the end of any monitor point row to ope
     - Set High Limit = Low Limit = "RUNNING", Nominal Color = Green
     - Any other status shows as error color
 
-#### Log Group
+#### Log Group { #events-and-communication-log }
 
 **Communication Monitoring and Logging** - View and record all Modbus communication traffic for troubleshooting. Filter errors, export logs to file, and timestamp all events for accurate diagnostics.
 
@@ -1942,6 +1942,7 @@ Users can upload their own custom Modbus Maps to share with the community or sto
     
     Your contributions help the entire community!
 
+<a id="4-modbus-client-operations"></a>
 ## 4. Modbus Client Operations { #modbus-client-operations }
 
 **Client Mode Overview:** XPF operates as a Modbus Master (Client) when you want to read data from or write data to remote Modbus devices. In this mode, XPF initiates all communication by sending requests to Modbus Server devices (PLCs, drives, meters, sensors) and processes their responses. You can simultaneously connect to multiple devices using different interfaces and protocols.
@@ -2213,7 +2214,8 @@ Control how XPF handles value changes in the Value column:
     
     Scanner will poll 400001 through 400100, adding responsive registers to your monitor points list automatically.
 
-### Charts - Data Trends Visualization
+<a id="charts---data-trends-visualization"></a>
+### Charts - Data Trends Visualization { #chart-visualization }
 
 **Modbus charting is essential for anyone working with industrial automation and control systems.** With Modbus Monitor XPF, you can effortlessly visualize your Modbus data through time series, making it easier to analyze trends and patterns.
 
@@ -2327,7 +2329,8 @@ Refer to [Modbus Client Operations](#modbus-client-operations) on locations of C
 | **Pan Navigation** | Right-click Mouse Drag on Chart Plot | Scroll through historical data | Updated time range display | Review past trends when buffer is limited |
 | **Zoom Control** | Mouse Wheel on Chart Plot | Zoom in/out on time axis | Focused time period view | Examine specific time intervals in detail |
 
-**Control Toolbar Breakdown (Reference Label 1 from interface above):** { #control-toolbar-breakdown-reference-label-1-from-interface-above }
+<a id="control-toolbar-breakdown-reference-label-1-from-interface-above"></a>
+**Control Toolbar Breakdown (Reference Label 1 from interface above):**
 
 The control toolbar contains all chart operation controls. Each button provides specific functionality:
 
@@ -2796,7 +2799,8 @@ Restore solves a critical industrial automation challenge: **efficiently configu
 | **Start/Stop** | Master control | Begins/ends continuous polling operation |
 
 
-## 5. Modbus Server Operations
+<a id="5-modbus-server-operations"></a>
+## 5. Modbus Server Operations { #modbus-server-operations }
 
 **Server Mode Overview:** XPF operates as a Modbus Server (Slave) when you want to simulate Modbus devices or provide data to Modbus Client applications. In this mode, XPF responds to requests from Modbus Master devices (SCADA systems, HMIs, PLCs) by serving data from your configured monitor points. This is invaluable for development, testing, and device simulation without requiring physical hardware.
 
@@ -3340,23 +3344,23 @@ Both IoT features require separate license purchases to unlock full functionalit
 
 ## 6A. HMI Tab and Widgets (v5.0.0.0+) { #hmi-tab-widgets }
 
-
-
 The HMI tab provides a widget-based dashboard surface for building operator-friendly runtime views directly in XPF.
 
 ![HMI Dashboard Demo](../../assets/screenshots/xpf/xpf-hmi-demo.webp){ loading="lazy" }
 *Example HMI dashboard layout in XPF*
 
-- Design dashboards with reusable widgets and layouts
-- Bind widget values to monitor points for live updates
-- Use this when you need an at-a-glance operational screen during testing or commissioning
+- Use the HMI feature to build live dashboards with widgets, monitor points, trends, and operator controls.
+- Use it when you need a simple screen for commissioning, monitoring, or operator use.
 
-For detailed workflows and screenshot references:
+Open the dedicated HMI guide:
 
-- [HMI Widget Management](hmi-widget-management.md)
+- [HMI Guide](hmi.md)
+- [HMI Dashboard Management Section](hmi.md#hmi-dashboard-management)
+- [HMI Widget Reference Section](hmi.md#widget-reference)
 
 
-## 7. Monitor Points Configuration
+<a id="7-monitor-points-configuration"></a>
+## 7. Monitor Points Configuration { #monitor-points-configuration }
 
 **Monitor Points** are similar to PLC tags - each one represents a specific data point you want to read or write on a Modbus device. Just as PLC tags map to memory addresses in a controller, Monitor Points map to Modbus registers and coils with all the configuration needed to access and interpret the data correctly.
 
@@ -3779,6 +3783,7 @@ Add or subtract a constant from the scaled value: **`Y = (Gain * X) + Offset`**
 
 **Processing Order:** Raw Value → Gain (multiply) → Offset (add) → Display
 
+<a id="6-data-type-data-interpretation"></a>
 #### 6. Data Type (Data Interpretation) { #3-data-type-options }
 
 Defines how to interpret the raw Modbus register data.
@@ -3807,6 +3812,7 @@ Defines how to interpret the raw Modbus register data.
 - **FLOAT32**: 32-bit floating point - for decimal precision
 - **STRING**: Text data - use with `:xx` magic code for length
 
+<a id="7-swap-type-byteword-order"></a>
 #### 7. Swap Type (Byte/Word Order) { #4-swap-type-for-multi-register-data }
 
 Controls byte ordering for multi-register data (32-bit, 64-bit values spanning multiple registers).
@@ -3847,6 +3853,7 @@ Click the **three dots (...)** button at the end of each row to access extended 
 - **Chart**:Enable charting for this monitor point to display value trends over time
 - **Simulate**:Simulation mode
 
+<a id="10-customq-custom-modbus-command"></a>
 #### 10. CustomQ (Custom Modbus Command) { #custom-commands-customq }
 
 Send raw Modbus PDU commands in hexadecimal format for special function codes or manufacturer-specific commands.
