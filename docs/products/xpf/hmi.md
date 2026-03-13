@@ -17,8 +17,8 @@ Use the HMI feature when you need:
 - a quick way to test values, states, and controls together
 
 <!-- Screenshot placeholder: xpf-hmi-guide-01-overview.png -->
-> Image coming soon...
-<!-- Suggested capture: HMI page open with one complete sample dashboard -->
+![docs/products/xpf/hmi.md](../../assets/screenshots/xpf/xpf-hmi-guide-01-overview.webp){ .screenshot-shadow loading="lazy" }
+ 
 
 ## What You Can Build
 
@@ -66,7 +66,7 @@ Use these widgets for trends, time display, layout, and visual grouping:
 Jump to [Widget Reference](#widget-reference).
 
 <!-- Screenshot placeholder: xpf-hmi-guide-02-widget-categories.png -->
-> Image coming soon...
+![> Image coming soon...](../../assets/screenshots/xpf/xpf-hmi-guide-02-widget-categories.webp){ .screenshot-shadow loading="lazy" }
 <!-- Suggested capture: one dashboard showing numeric, state, trend, button, and shape widgets together -->
 
 ## Basic Dashboard Workflow
@@ -112,7 +112,7 @@ When loading dashboards:
 This makes it easier to reopen complete dashboard and register-map pairs.
 
 <!-- Screenshot placeholder: xpf-hmi-guide-03-save-load.png -->
-> Image coming soon...
+![.hmi file drag and drop to load file ](../../assets/screenshots/xpf/xpf-hmi-guide-03-save-load.webp){ .screenshot-shadow loading="lazy" }
 <!-- Suggested capture: dragging a .hmi file onto the canvas and loaded dashboard result -->
 
 ## Recommended First Dashboard
@@ -219,8 +219,8 @@ License note:
 
 ### State Ranges (Property Window) { #state-ranges-property-window }
 
-> Image coming soon...
 <!-- Suggested capture: Property panel showing State Ranges table with Add/Remove/Delete All and Color actions -->
+![State Ranges](../../assets/screenshots/xpf/xpf-hmi-guide-04-state-ranges-table.webp){ .screenshot-shadow loading="lazy" }
 
 Use **State Ranges** in the property panel for widgets that converts values into the colors, names, and images. For example the `MultiState Indicator` takes the numberical value and changes the widget background to color `red`, name `running`, image `red LED`).
 
@@ -311,31 +311,28 @@ If a widget supports image-backed states, image paths are included in HMI packag
 ### Per-Widget Details
 
 #### Numeric
-
-> Image coming soon...
 <!-- Suggested capture: Numeric widget showing value, label, and state color -->
+![XPF Numeric Widget](../../assets/screenshots/xpf/xpf-hmi-numeric-widget.webp) 
 
 - Purpose: compact numeric value display bound to one monitoring point.
 - Typical setup: `DisplayFormat`, `MinValue`, `MaxValue`, label/text settings.
-- Capabilities: range-configurable, JSON persistence.
+- Capabilities: Preset Write Value, Input Value Text Box Visibility, Min/Max Value
 
 #### Button
-
-> Image coming soon...
 <!-- Suggested capture: Button widget with write value and click action in runtime -->
+![XPF Button Widget](../../assets/screenshots/xpf/xpf-hmi-button-widget.webp)
 
-- Purpose: one-click write command to a bound register.
+- Purpose: one-click write command to a bound register with preset value.
 - Typical setup: `WriteValue` with optional min/max validation and label.
-- Capabilities: write-controllable, JSON persistence.
+- Capabilities: write-controllable.
 
 #### Dial180
-
-> Image coming soon...
 <!-- Suggested capture: Dial180 with needle, ticks, and configured min/max arc -->
+![Dial Guage 270 degree sweep](../../assets/screenshots/xpf/xpf-hmi-guage-270-sweep.webp) ![Dial Guage 180 degree sweep](../../assets/screenshots/xpf/xpf-hmi-guage-180-sweep.webp) 
 
 - Purpose: analog-style needle gauge with configurable arc.
 - Typical setup: `Minimum`/`Maximum`, `StartAngle`/`SweepAngle`, major/minor ticks.
-- Capabilities: range-configurable, JSON persistence.
+- Capabilities: range-configurable, Scale Visibility, Start Angle, Sweep Angle, Gauge Min/Max, Operating Min/Max.
 
 #### Text Label
 
@@ -344,7 +341,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: static text or optional bound text value.
 - Typical setup: `DisplayText`, font/color, optional write enable in advanced use.
-- Capabilities: optional write support, JSON persistence.
+- Capabilities: optional write support, persistence.
 
 #### Clock
 
@@ -353,7 +350,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: live clock widget with no register binding required.
 - Typical setup: `DisplayMode` (Digital/Analog), `TimeFormat` (12h/24h), `ShowSeconds`, timezone.
-- Capabilities: JSON persistence.
+- Capabilities: persistence.
 
 #### Slider
 
@@ -362,7 +359,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: setpoint adjustment by dragging value to write.
 - Typical setup: `MinValue`, `MaxValue`, step behavior and visual dimensions.
-- Capabilities: write-controllable, JSON persistence.
+- Capabilities: write-controllable,  persistence.
 
 #### MultiState Indicator
 
@@ -371,7 +368,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: state display using color/image by value range or boolean mode.
 - Typical setup: `StateRanges`, `DefaultStateColor`, label/value visibility.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Bar Graph
 
@@ -380,7 +377,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: fill-level visualization for one bound register.
 - Typical setup: `Minimum`, `Maximum`, `Orientation` (`North`/`South`/`East`/`West`), optional bipolar center.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Trend
 
@@ -389,7 +386,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: real-time value history charting.
 - Typical setup: `MaxDataPoints`, `RenderStyle`, `Minimum`/`Maximum`, sample interval.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Line
 
@@ -398,7 +395,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: directional/flow line shape with optional data-driven state styling.
 - Typical setup: `LineThickness`, orientation, angle, optional state ranges.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Rounded Rectangle
 
@@ -407,7 +404,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: shape/zone panel for grouping and status indication.
 - Typical setup: `RadiusX`, `RadiusY`, stroke and rotation.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Arrow
 
@@ -416,7 +413,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: directional indicator for process flow and motion.
 - Typical setup: head/shaft proportions, stroke, rotation.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Triangle
 
@@ -425,7 +422,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: compact directional marker.
 - Typical setup: orientation (`Up`/`Down`/`Left`/`Right`), stroke, rotation.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Polygon
 
@@ -434,7 +431,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: multi-sided marker or status zone.
 - Typical setup: `SideCount`, stroke, rotation.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 #### Arc
 
@@ -443,7 +440,7 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 - Purpose: arc/sector indicator for partial-scale visuals.
 - Typical setup: `StartAngle`, `SweepAngle`, stroke thickness, rotation.
-- Capabilities: range-configurable, image support, JSON persistence.
+- Capabilities: range-configurable, image support,  persistence.
 
 ### Choosing the Right Widget
 
