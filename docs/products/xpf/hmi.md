@@ -554,14 +554,14 @@ This ensures displayed and written values always align with the tick marks.
 
 #### MultiState Indicator
 
-> Image coming soon...
+![Mutli-State Widget with Image as State showing Off state](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-LED.webp){height=107}![Mutli-State Widget showing Off state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-plain.webp){height=107}![Mutli-State Widget with LED Image as State showing  Normal state](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-LED.webp){height=107} ![Mutli-State Widget with Image as State showing Normal state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-plain.webp){height=107} ![Mutli-State Widget with Image as State showing High state](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-LED.webp){height=107}![Mutli-State Widget as State showing High state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-plain.webp){height=107}
 <!-- Suggested capture: MultiState indicator with Low/Normal/High ranges and state label -->
 
 - Purpose: state display using color/image by value range or boolean mode.
 - Binding: required.
-- Main properties: `Monitoring Point`, `Boolean Mode`, `Custom Label`, `Show Label`, `Show State Name`, `Show Value`, `Show Border`, `Font Size`, `Text Color`, `Default State Color`.
-- Ranges and limits: each range uses inclusive `MinValue` and `MaxValue`; first matching range wins; default fallback color is gray when no range matches; legacy boolean mode treats `0` as false and non-zero as true; can only display one color at a time; state ranges are user-configurable via the Range Editor.
-- Notes: this is the clearest widget for alarm, run/stop, health, or traffic-light style state display. Use state ranges to define multi-state boundaries.
+- Main properties: `Monitoring Point`, `Boolean Mode`, `Custom Label`, `Show Label`, `Show State Name`, `Show Value`, `Font Size`, `Text Color`, `Show Border`, `Default State Color`.
+- Ranges and limits: each range uses inclusive bounds (`Min <= Value <= Max`); if `Max` is set below `Min`, it is normalized up to `Min`; first matching range wins when ranges overlap; default fallback color is RGB(200,200,200) (`#FFC8C8C8`) when no range matches.
+- Notes: each state range can carry both `Color` and optional `Image`; when an active range has an image path, the image is shown on top of the background state color.
 
 ##### MultiState Configuration Modes
 
@@ -573,11 +573,22 @@ Two modes control how values are interpreted:
    - First match wins; gaps fall back to default color
    - Example: `0-20` = Gray (Low), `21-60` = Green (Normal), `61-100` = Red (High)
 
-2. **Boolean Mode (Legacy, `Boolean Mode = true`)**
-   - Treats value as `0` (false) or non-zero (true)
-   - Value `0` → default color
-   - Value `1+` → green (or custom)
-   - Used for backward compatibility with V1 HMI files
+2. **Boolean Mode (Legacy Toggle, `Boolean Mode = true`)**
+   - Property exists and is persisted for compatibility with older HMI files.
+   - In current code path, state selection is still range-driven via `StateRanges` matching.
+   - Practical use: configure two ranges (for example `0-0` and `1-1` or `1-100`) to implement on/off behavior.
+
+##### State Ranges Grid (Matches Property Panel)
+
+| Column | Purpose | Code-Backed Behavior |
+|---|---|---|
+| `MIN` | Lower inclusive bound | Value matches when `CurrentValue >= Min` |
+| `MAX` | Upper inclusive bound | Value matches when `CurrentValue <= Max`; if set below `MIN`, it is auto-normalized to `MIN` |
+| `NAME` | Display name of active state | Rendered by `CurrentStateName` when `Show State Name = true` |
+| `COLOR` | State background color | Applied to widget background as `CurrentStateColor` |
+| `IMAGE` | Optional image path per state | When non-empty on active state, shown as overlay (`CurrentStateImagePath`) |
+
+State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`, `Copy All`, `Color`, `Clear Color`) operate on these same `StateRanges` rows.
 
 ##### MultiState Indicator Recipe Table
 
@@ -597,16 +608,16 @@ Two modes control how values are interpreted:
 | Property | Purpose | Default | Validated Behavior in Code |
 |---|---|---|---|
 | `Monitoring Point` | Modbus register to monitor | — | Required; changed register clears indicator state |
-| `Boolean Mode` | Toggle boolean vs. range mode | `false` | When true, treats 0=false, 1+=true |
+| `Boolean Mode` | Legacy mode toggle | `false` | Property is exposed and persisted; current state matching still uses `StateRanges` evaluation |
 | `Custom Label` | Optional display label | blank | Falls back to register name if empty |
 | `Show Label` | Display label text | `true` | Toggled directly in property editor |
 | `Show State Name` | Display current state name | `true` | Toggled directly in property editor |
 | `Show Value` | Display numeric value | `false` | Toggled directly in property editor |
-| `Default State Color` | Color when out of range | Gray | Used when no state range matches or in boolean mode for 0 |
+| `Default State Color` | Color when out of range | `#FFC8C8C8` | Used when no state range matches or when no register is bound |
 | `Font Size` | Size of displayed text | `14` | Numeric input |
 | `Text Color` | Color of label/value text | `#FF000000` (black) | Hex color picker |
 | `Show Border` | 3D border/shadow | `true` | Toggled directly in property editor |
-| State Ranges | Min/Max/Color/Name | 3 default | Add/Remove/Edit via Range Editor in property panel |
+| `State Ranges` | `Min`/`Max`/`Name`/`Color`/`Image` rows | 3 default rows | Default rows: `Low / Off (0-20)`, `Normal (21-60)`, `High / Alert (61-100)`; first match wins |
 
 ##### Recommended MultiState Setup Order
 
@@ -666,71 +677,6 @@ Two modes control how values are interpreted:
 | `Background Image` | Fallback image when no state matches | blank | Optional; overridden by state image if range matches |
 | `Width` | Widget width | `200` | Clamped 80–800 |
 | `Height` | Widget height | `140` | Clamped 60–600 |
-
-#### MultiState Indicator
-
-![Mutli-State Widget with Image as State showing Off state](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-LED.webp){height=107}![Mutli-State Widget showing Off state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-plain.webp){height=107}![Mutli-State Widget with LED Image as State showing  Normal state](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-LED.webp){height=107} ![Mutli-State Widget with Image as State showing Normal state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-plain.webp){height=107} ![Mutli-State Widget with Image as State showing High state](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-LED.webp){height=107}![Mutli-State Widget as State showing High state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-plain.webp){height=107}
-<!-- Suggested capture: MultiState indicator with Low/Normal/High ranges and state label -->
-
-- Purpose: state display using color/image by value range or boolean mode.
-- Binding: required.
-- Main properties: `Monitoring Point`, `Boolean Mode`, `Custom Label`, `Show Label`, `Show State Name`, `Show Value`, `Show Border`, `Font Size`, `Text Color`, `Default State Color`.
-- Ranges and limits: each range uses inclusive `MinValue` and `MaxValue`; first matching range wins; default fallback color is gray when no range matches; legacy boolean mode treats `0` as false and non-zero as true; can only display one color at a time; state ranges are user-configurable via the Range Editor.
-- Notes: this is the clearest widget for alarm, run/stop, health, or traffic-light style state display. Use state ranges to define multi-state boundaries.
-
-##### MultiState Configuration Modes
-
-Two modes control how values are interpreted:
-
-1. **Range-Based Mode (Default, `Boolean Mode = false`)**
-   - Compares value against a list of ranges
-   - Each range: `Min ≤ Value ≤ Max` → shows color and name
-   - First match wins; gaps fall back to default color
-   - Example: `0-20` = Gray (Low), `21-60` = Green (Normal), `61-100` = Red (High)
-
-2. **Boolean Mode (Legacy, `Boolean Mode = true`)**
-   - Treats value as `0` (false) or non-zero (true)
-   - Value `0` → default color
-   - Value `1+` → green (or custom)
-   - Used for backward compatibility with V1 HMI files
-
-##### MultiState Indicator Recipe Table
-
-| State Pattern | Boolean Mode | Range Count | Default Color | Typical Use Case |
-|---|---|---|---|---|
-| Simple On/Off | `true` | — | Gray | Device power, switch status |
-| Three-state (Low/Normal/High) | `false` | `3` | Gray | Temperature, pressure, level |
-| Five-state (health) | `false` | `5` | Gray | System health: Offline/Idle/Running/Warning/Critical |
-| Binary fault | `true` | — | Red | Alarm triggered (0=ok, 1=alarm) |
-| Load capacity | `false` | `4` | Gray | 0-25% Empty (Blue), 26-75% Normal (Green), 76-99% Full (Yellow), 100% Overflow (Red) |
-| Traffic light | `false` | `3` | Gray | Stop (Red) 0-30, Caution (Yellow) 31-60, Go (Green) 61-100 |
-| Equipment mode | `false` | `6` | Gray | 1=Init (Gray), 2=Idle (Blue), 3=Run (Green), 4=Pause (Yellow), 5=Error (Red), 6=Unknown (Black) |
-| Pump status | `false` | `4` | Gray | 0=Off (Gray), 1-50% Startup (Blue), 51-99% Running (Green), 100% Max (Yellow) |
-
-##### MultiState Indicator Parameter Table
-
-| Property | Purpose | Default | Validated Behavior in Code |
-|---|---|---|---|
-| `Monitoring Point` | Modbus register to monitor | — | Required; changed register clears indicator state |
-| `Boolean Mode` | Toggle boolean vs. range mode | `false` | When true, treats 0=false, 1+=true |
-| `Custom Label` | Optional display label | blank | Falls back to register name if empty |
-| `Show Label` | Display label text | `true` | Toggled directly in property editor |
-| `Show State Name` | Display current state name | `true` | Toggled directly in property editor |
-| `Show Value` | Display numeric value | `false` | Toggled directly in property editor |
-| `Default State Color` | Color when out of range | Gray | Used when no state range matches or in boolean mode for 0 |
-| `Font Size` | Size of displayed text | `14` | Numeric input |
-| `Text Color` | Color of label/value text | `#FF000000` (black) | Hex color picker |
-| `Show Border` | 3D border/shadow | `true` | Toggled directly in property editor |
-| State Ranges | Min/Max/Color/Name | 3 default | Add/Remove/Edit via Range Editor in property panel |
-
-##### Recommended MultiState Setup Order
-
-1. Set `Monitoring Point`.
-2. Choose `Boolean Mode` or leave it off for range-based.
-3. If range-based (default), open the Range Editor and configure Min/Max/Color/Name for each state.
-4. Set `Default State Color` for out-of-range fallback.
-5. Toggle `Show Label`, `Show State Name`, `Show Value` as desired.
-6. Adjust `Font Size` and `Text Color` for visibility.
 
 #### Trend
 
