@@ -669,7 +669,7 @@ Two modes control how values are interpreted:
 
 #### MultiState Indicator
 
-> Image coming soon...
+![Mutli-State Widget with Image as State showing Off state](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-LED.webp){height=107}![Mutli-State Widget showing Off state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-plain.webp){height=107}![Mutli-State Widget with LED Image as State showing  Normal state](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-LED.webp){height=107} ![Mutli-State Widget with Image as State showing Normal state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-plain.webp){height=107} ![Mutli-State Widget with Image as State showing High state](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-LED.webp){height=107}![Mutli-State Widget as State showing High state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-plain.webp){height=107}
 <!-- Suggested capture: MultiState indicator with Low/Normal/High ranges and state label -->
 
 - Purpose: state display using color/image by value range or boolean mode.
