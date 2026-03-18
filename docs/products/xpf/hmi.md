@@ -17,7 +17,7 @@ Use the HMI feature when you need:
 - a quick way to test values, states, and controls together
 
 <!-- Screenshot placeholder: xpf-hmi-guide-01-overview.png -->
-![docs/products/xpf/hmi.md](../../assets/screenshots/xpf/xpf-hmi-guide-01-overview.webp){ .screenshot-shadow loading="lazy" }
+![docs/products/xpf/hmi.md](../../assets/screenshots/xpf/xpf-hmi-guide-01-overview.webp){.screenshot-shadow loading="lazy" }
  
 
 ## What You Can Build
@@ -310,9 +310,9 @@ If a widget supports image-backed states, image paths are included in HMI packag
 
 ### Per-Widget Details
 
-#### Numeric
+### Numeric
 <!-- Suggested capture: Numeric widget showing value, label, and state color -->
-![XPF Numeric Widget](../../assets/screenshots/xpf/xpf-hmi-numeric-widget.webp) 
+![XPF Numeric Widget](../../assets/screenshots/xpf/xpf-hmi-numeric-widget.webp){loading="lazy" }
 
 - Purpose: compact numeric value display bound to one monitoring point.
 - Binding: required.
@@ -320,9 +320,9 @@ If a widget supports image-backed states, image paths are included in HMI packag
 - Ranges and limits: default range is `0` to unbounded max; state ranges can be used for color changes; display formatting follows the configured decimal-place settings.
 - Notes: use this when operators need the exact current value, not a write control.
 
-#### Button
+### Button
 <!-- Suggested capture: Button widget with write value and click action in runtime -->
-![XPF Button Widget](../../assets/screenshots/xpf/xpf-hmi-button-widget.webp)
+![XPF Button Widget](../../assets/screenshots/xpf/xpf-hmi-button-widget.webp){loading="lazy" }
 
 - Purpose: one-click write command to a bound register with preset value.
 - Binding: required.
@@ -330,9 +330,9 @@ If a widget supports image-backed states, image paths are included in HMI packag
 - Ranges and limits: `WriteValue` defaults to `1.0`; optional `MinValue` and `MaxValue` clamp user input before write; status text clears automatically after the write completes.
 - Notes: best for fixed commands such as start, stop, reset, or mode selection. This is a Pro-tier control widget.
 
-#### Dial180
+### Dial
 <!-- Suggested capture: Dial180 with needle, ticks, and configured min/max arc -->
-![Dial Guage 270 degree sweep](../../assets/screenshots/xpf/xpf-hmi-guage-270-sweep.webp) ![Dial Guage 180 degree sweep](../../assets/screenshots/xpf/xpf-hmi-guage-180-sweep.webp) 
+![Dial Guage 270 degree sweep](../../assets/screenshots/xpf/xpf-hmi-guage-270-sweep.webp){loading="lazy" } ![Dial Guage 180 degree sweep](../../assets/screenshots/xpf/xpf-hmi-guage-180-sweep.webp){loading="lazy" }
 
 - Purpose: analog-style needle gauge with configurable arc.
 - Binding: required.
@@ -399,7 +399,7 @@ Use these geometry rules when drawing a dial:
 6. Set `Value Format` or leave it blank to use global decimal places.
 
 #### Text Label
-![Text Label](../../assets/screenshots/xpf/xpf-hmi-text-label.webp)
+![Text Label](../../assets/screenshots/xpf/xpf-hmi-text-label.webp){loading="lazy" }
 <!-- Suggested capture: Text Label in static mode and bound text mode -->
 
 - Purpose: static text or optional bound text value.
@@ -409,9 +409,9 @@ Use these geometry rules when drawing a dial:
 - Notes: use this for titles, instructions, annotations, and simple text-driven status. Write mode is an advanced Pro-tier scenario.
 
 
-#### Clock
+### Clock
 
-![Analog Clock Widget](../../assets/screenshots/xpf/xpf-hmi-clock-analog.webp) ![Digital Clock Widget](../../assets/screenshots/xpf/xpf-hmi-clock-digitial.webp)
+![Analog Clock Widget](../../assets/screenshots/xpf/xpf-hmi-clock-analog.webp){loading="lazy" } ![Digital Clock Widget](../../assets/screenshots/xpf/xpf-hmi-clock-digitial.webp){loading="lazy" }
 <!-- Suggested capture: Clock widget showing digital and analog modes -->
 
 - Purpose: live system clock widget with dual display modes (digital and analog); no register binding required.
@@ -468,9 +468,9 @@ When you specify a timezone:
 6. Adjust `Width` and `Height` to fit your dashboard layout.
 
 
-#### Slider
+### Slider
 
-![Slider Widget](../../assets/screenshots/xpf/xpf-hmi-slider.webp)
+![Slider Widget](../../assets/screenshots/xpf/xpf-hmi-slider.webp){loading="lazy" }
 <!-- Suggested capture: Slider widget adjusting setpoint with current value -->
 
 - Purpose: setpoint adjustment by dragging, with optional live updates or manual write-button confirmation.
@@ -552,9 +552,9 @@ This ensures displayed and written values always align with the tick marks.
 5. Choose `Enable Live Updates`: `false` for safe manual writes with confirmation, `true` for real-time continuous feedback.
 6. Adjust `Font Size`, `Label Color`, `Width`, `Height` to fit your dashboard layout and readability.
 
-#### MultiState Indicator
+### MultiState Indicator
 
-![Mutli-State Widget with Image as State showing Off state](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-LED.webp){height=107}![Mutli-State Widget showing Off state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-plain.webp){height=107}![Mutli-State Widget with LED Image as State showing  Normal state](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-LED.webp){height=107} ![Mutli-State Widget with Image as State showing Normal state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-plain.webp){height=107} ![Mutli-State Widget with Image as State showing High state](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-LED.webp){height=107}![Mutli-State Widget as State showing High state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-plain.webp){height=107}
+![Mutli-State Widget with Image as State showing Off state](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-LED.webp){height=107,loading="lazy"}![Mutli-State Widget showing Off state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-off-plain.webp){height=107,loading="lazy"}![Mutli-State Widget with LED Image as State showing  Normal state](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-LED.webp){height=107,loading="lazy"} ![Mutli-State Widget with Image as State showing Normal state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-normal-plain.webp){height=107} ![Mutli-State Widget with Image as State showing High state](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-LED.webp){height=107,loading="lazy"}![Mutli-State Widget as State showing High state with color](../../assets/screenshots/xpf/xpf-hmi-multi-state-high-plain.webp){height=107,loading="lazy"}
 <!-- Suggested capture: MultiState indicator with Low/Normal/High ranges and state label -->
 
 - Purpose: state display using color/image by value range or boolean mode.
@@ -628,7 +628,7 @@ State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`
 5. Toggle `Show Label`, `Show State Name`, `Show Value` as desired.
 6. Adjust `Font Size` and `Text Color` for visibility.
 
-#### Bar Graph
+### Bar Graph
 
 ![Bar Graph North](../../assets/screenshots/xpf/xpf-hmi-bar-graph-north.webp) ![Bar Graph East](../../assets/screenshots/xpf/xpf-hmi-bar-graph-east.webp)
 <!-- Suggested capture: Bar Graph with orientation and range-based state color/image -->
@@ -678,16 +678,17 @@ State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`
 | `Width` | Widget width | `200` | Clamped 80–800 |
 | `Height` | Widget height | `140` | Clamped 60–600 |
 
-#### Trend
+### Trend
 
-> Image coming soon...
-<!-- Suggested capture: Trend chart with live points and render style options -->
+![Area Trend Plot](../../assets/screenshots/xpf/xpf-hmi-trend-area-curve.webp) {loading="lazy" }
+![Line Tread Plot](../../assets/screenshots/xpf/xpf-hmi-trend-line-plot.webp) {loading="lazy" }
+
 
 - Purpose: real-time value history charting.
 - Binding: required.
-- Main properties: `Monitoring Point`, `Show Label`, `Label`, `Show Value`, `Show Grid Lines`, `Show Chart Title`, `Show Control Buttons`, `Gauge Minimum`, `Gauge Maximum`, `Max Data Points`, `Value Format`, `Render Style`, `Width`, `Height`.
-- Ranges and limits: default Y-axis range is `0-100`; `Max Data Points` defaults to `100` and is clamped to minimum `10` if non-zero; `Render Style` supports `Line`, `Scatter`, and `Area`; data sampling runs on an internal timer with roughly `1` second data collection interval and batched redraw updates; default size is `400×250`; state ranges can colorize points based on value.
-- Notes: this is a Pro-tier analytics widget and the largest default widget on the canvas. Use it when users need recent history, not just current state. Start/Stop/Clear buttons allow runtime control of data collection.
+- Main properties: `Monitoring Point`, `Show Label`, `Background Image`, `Show Current Value`, `Show Grid Lines`, `Show Border`, `Show Chart Title`, `Show Control Buttons`, `Chart Minimum`, `Chart Maximum`, `Value Format`, `Max Data Points`, `Sample Interval (sec)`, `Enable Live Update`, `Save to File`, `Render Style`, `Width`, `Height`.
+- Ranges and limits: default Y-axis range is `0-100`; `Max Data Points` defaults to `100` and is clamped to a minimum of `10` unless set to `0` for unlimited; `Sample Interval (sec)` defaults to `1.0` and is effectively clamped to `>= 0.1` in code; `Render Style` supports `Line`, `Scatter`, `Area`, and `Step`; default size is `400×250` with editor limits `Width 150-1200` and `Height 100-800`.
+- Notes: this is a Pro-tier analytics widget and the largest default widget on the canvas. Use it when users need recent history, not just current state. State ranges can colorize the plot, and `Save to File` exports CSV data into the Documents folder.
 
 ##### Trend Render Styles
 
@@ -696,6 +697,18 @@ State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`
 | `Line` | Continuous curve connecting points | Smooth trend visualization, default choice |
 | `Scatter` | Discrete point markers | Precise moment-in-time readings, sparse data |
 | `Area` | Filled area under the line | Cumulative effect, visual emphasis |
+| `Step` | Stair-step transitions between values | Discrete states, counters, or held values |
+
+##### Trend Data Collection Cheat Sheet
+
+| Setting | Practical Meaning | Code-Backed Note |
+|---|---|---|
+| `Max Data Points = 0` | Unlimited history in memory | Code keeps all samples until cleared |
+| `Max Data Points = 100` | Rolling window of 100 samples | Oldest points are removed as new ones arrive |
+| `Sample Interval = 1.0` | Roughly 1 sample per second | Default collection interval |
+| `Sample Interval < 0.1` | Not allowed in practice | Setter clamps to `0.1` seconds minimum |
+| `Enable Live Update = false` | Chart exists but does not collect new samples | Runtime controls or property toggle must enable collection |
+| `Save to File = true` | Persist samples to CSV | Writes chart data to Documents folder |
 
 ##### Trend Recipe Table
 
@@ -704,6 +717,7 @@ State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`
 | Real-time line | `Line` | `100` | `1.0` sec | `true` | `0` | `100` | Default smooth trend |
 | Precision readout | `Scatter` | `50` | `1.0` sec | `true` | `0` | `100` | Point-in-time values |
 | Filled area (load) | `Area` | `100` | `1.0` sec | `true` | `0` | `100` | Visual fill under curve |
+| Discrete machine states | `Step` | `100` | `1.0` sec | `true` | `0` | `5` | State transitions where values hold until the next event |
 | Long history | `Line` | `500` | `1.0` sec | `false` | `0` | `100` | Extended time window |
 | Dense data | `Scatter` | `200` | `0.5` sec | `false` | `0` | `100` | High-frequency sampling |
 | Sparse data | `Line` | `30` | `5.0` sec | `true` | `0` | `100` | Low-frequency updates |
@@ -715,92 +729,36 @@ State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`
 | Property | Purpose | Default | Validated Behavior in Code |
 |---|---|---|---|
 | `Monitoring Point` | Modbus register to trend | — | Required; clearing register clears all trend data |
-| `Gauge Minimum` | Y-axis lower bound | `0` | Auto-normalized if set above max |
-| `Gauge Maximum` | Y-axis upper bound | `100` | Cannot be below minimum |
-| `Max Data Points` | Buffer size (how many points to keep) | `100` | Clamped min 10; `0` = unlimited |
-| `Value Format` | Display format for current value | `F1` | .NET format string |
-| `Render Style` | Chart type | `Line` | Dropdown: Line, Scatter, Area |
-| `Show Grid Lines` | Display grid in background | `true` | Toggled directly in property editor |
-| `Show Chart Title` | Display chart name above plot | `false` | Toggled directly in property editor |
-| `Show Control Buttons` | Show Start/Stop/Clear buttons | `true` | Toggled directly in property editor |
 | `Show Label` | Show widget label above chart | `true` | Toggled directly in property editor |
-| `Show Value` | Display current value | `true` | Toggled directly in property editor |
-| `Is Collecting Data` | Runtime data collection toggle | `false` | Start/Stop button controls this |
-| `Width` | Widget width | `400` | Typical minimum `200`, maximum `800` |
-| `Height` | Widget height | `250` | Typical minimum `150`, maximum `600` |
+| `Background Image` | Optional image behind the plot | blank | Image picker; purely visual backdrop |
+| `Show Current Value` | Display current register value | `true` | Toggled directly in property editor |
+| `Show Grid Lines` | Display major/minor chart grid lines | `true` | Toggled directly in property editor; refreshes plot axes |
+| `Show Border` | 3D border/shadow around widget | `true` | Toggled directly in property editor |
+| `Show Chart Title` | Show label inside plot area | `false` | Updates the OxyPlot title on change |
+| `Show Control Buttons` | Show record/save/control buttons | `true` | Toggled directly in property editor |
+| `Chart Minimum` | Y-axis lower bound | `0` | Auto-normalized if set above max |
+| `Chart Maximum` | Y-axis upper bound | `100` | Cannot remain below minimum |
+| `Value Format` | Display format for current value | `F1` | .NET format string |
+| `Max Data Points` | Buffer size (how many points to keep) | `100` | Editor range `0-10000`; `0` = unlimited, otherwise clamped to minimum `10` |
+| `Sample Interval (sec)` | Minimum time between samples | `1.0` | Editor allows very small values, but setter clamps to `0.1` sec minimum |
+| `Enable Live Update` | Runtime data collection toggle | `false` | When enabled, new samples are collected from the bound register |
+| `Save to File` | Export trend data to CSV | `false` | Saves chart data to a CSV file in Documents |
+| `Render Style` | Chart type | `Line` | Dropdown: `Line`, `Scatter`, `Area`, `Step` |
+| `Width` | Widget width | `400` | Numeric; clamped to `150-1200` |
+| `Height` | Widget height | `250` | Numeric; clamped to `100-800` |
 
 ##### Recommended Trend Setup Order
 
 1. Set `Monitoring Point`.
-2. Set `Gauge Minimum` and `Gauge Maximum` to bracket expected value range.
-3. Choose `Render Style` (Line is default; try Scatter for precise readings, Area for cumulative effect).
-4. Adjust `Max Data Points` if you need longer history (higher = more memory, wider window).
-5. Toggle `Show Grid Lines`, `Show Chart Title`, `Show Control Buttons` for presentation.
-6. Start the trend and observe; adjust `Value Format` for readability if needed.
+2. Set `Chart Minimum` and `Chart Maximum` to bracket expected value range.
+3. Choose `Render Style` (`Line` is default; try `Scatter` for point sampling, `Area` for emphasis, `Step` for held values).
+4. Set `Max Data Points` and `Sample Interval (sec)` for the history depth and sample rate you need.
+5. Toggle `Enable Live Update` and optionally `Save to File` if you want CSV output.
+6. Adjust presentation options such as `Show Grid Lines`, `Show Chart Title`, `Show Control Buttons`, `Background Image`, and `Value Format`.
 
-#### Trend
+### Line
 
-> Image coming soon...
-<!-- Suggested capture: Trend chart with live points and render style options -->
-
-- Purpose: real-time value history charting.
-- Binding: required.
-- Main properties: `Monitoring Point`, `Show Label`, `Label`, `Show Value`, `Show Grid Lines`, `Show Chart Title`, `Show Control Buttons`, `Gauge Minimum`, `Gauge Maximum`, `Max Data Points`, `Value Format`, `Render Style`, `Width`, `Height`.
-- Ranges and limits: default Y-axis range is `0-100`; `Max Data Points` defaults to `100` and is clamped to minimum `10` if non-zero; `Render Style` supports `Line`, `Scatter`, and `Area`; data sampling runs on an internal timer with roughly `1` second data collection interval and batched redraw updates; default size is `400×250`; state ranges can colorize points based on value.
-- Notes: this is a Pro-tier analytics widget and the largest default widget on the canvas. Use it when users need recent history, not just current state. Start/Stop/Clear buttons allow runtime control of data collection.
-
-##### Trend Render Styles
-
-| Render Style | Visual | Best For |
-|---|---|---|
-| `Line` | Continuous curve connecting points | Smooth trend visualization, default choice |
-| `Scatter` | Discrete point markers | Precise moment-in-time readings, sparse data |
-| `Area` | Filled area under the line | Cumulative effect, visual emphasis |
-
-##### Trend Recipe Table
-
-| Trend Scenario | Render Style | Max Data Points | Sample Interval | Show Grid | Min | Max | Purpose |
-|---|---|---|---|---|---|---|---|
-| Real-time line | `Line` | `100` | `1.0` sec | `true` | `0` | `100` | Default smooth trend |
-| Precision readout | `Scatter` | `50` | `1.0` sec | `true` | `0` | `100` | Point-in-time values |
-| Filled area (load) | `Area` | `100` | `1.0` sec | `true` | `0` | `100` | Visual fill under curve |
-| Long history | `Line` | `500` | `1.0` sec | `false` | `0` | `100` | Extended time window |
-| Dense data | `Scatter` | `200` | `0.5` sec | `false` | `0` | `100` | High-frequency sampling |
-| Sparse data | `Line` | `30` | `5.0` sec | `true` | `0` | `100` | Low-frequency updates |
-| Temperature trend | `Area` | `100` | `1.0` sec | `true` | `-50` | `50` | Temperature deviation |
-| Pressure trend | `Line` | `120` | `1.0` sec | `true` | `80` | `120` | Pressure stability |
-
-##### Trend Parameter Table
-
-| Property | Purpose | Default | Validated Behavior in Code |
-|---|---|---|---|
-| `Monitoring Point` | Modbus register to trend | — | Required; clearing register clears all trend data |
-| `Gauge Minimum` | Y-axis lower bound | `0` | Auto-normalized if set above max |
-| `Gauge Maximum` | Y-axis upper bound | `100` | Cannot be below minimum |
-| `Max Data Points` | Buffer size (how many points to keep) | `100` | Clamped min 10; `0` = unlimited |
-| `Value Format` | Display format for current value | `F1` | .NET format string |
-| `Render Style` | Chart type | `Line` | Dropdown: Line, Scatter, Area |
-| `Show Grid Lines` | Display grid in background | `true` | Toggled directly in property editor |
-| `Show Chart Title` | Display chart name above plot | `false` | Toggled directly in property editor |
-| `Show Control Buttons` | Show Start/Stop/Clear buttons | `true` | Toggled directly in property editor |
-| `Show Label` | Show widget label above chart | `true` | Toggled directly in property editor |
-| `Show Value` | Display current value | `true` | Toggled directly in property editor |
-| `Is Collecting Data` | Runtime data collection toggle | `false` | Start/Stop button controls this |
-| `Width` | Widget width | `400` | Typical minimum `200`, maximum `800` |
-| `Height` | Widget height | `250` | Typical minimum `150`, maximum `600` |
-
-##### Recommended Trend Setup Order
-
-1. Set `Monitoring Point`.
-2. Set `Gauge Minimum` and `Gauge Maximum` to bracket expected value range.
-3. Choose `Render Style` (Line is default; try Scatter for precise readings, Area for cumulative effect).
-4. Adjust `Max Data Points` if you need longer history (higher = more memory, wider window).
-5. Toggle `Show Grid Lines`, `Show Chart Title`, `Show Control Buttons` for presentation.
-6. Start the trend and observe; adjust `Value Format` for readability if needed.
-
-#### Line
-
-> Image coming soon...
+![Line Widget State Normal](../../assets/screenshots/xpf/xpf-hmi-line-state-normal-45.webp)![Line Widget State High](../../assets/screenshots/xpf/xpf-hmi-line-state-high.webp)
 <!-- Suggested capture: Line widget with orientation/angle and state-driven appearance -->
 
 - Purpose: directional/flow line shape with optional data-driven state styling.
