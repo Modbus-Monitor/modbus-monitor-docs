@@ -763,64 +763,344 @@ State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`
 
 - Purpose: directional/flow line shape with optional data-driven state styling.
 - Binding: optional for static decoration, but needed for live state coloring.
-- Main properties: `WidgetLabel`, `ShowLabel`, `ShowValue`, `LineColor`, `DefaultStateColor`, `LineThickness`, `Orientation`, `AngleDegrees`, `BackgroundImagePath`.
-- Ranges and limits: `LineThickness` has a practical minimum of `1`; `Orientation` presets are `Horizontal`, `Vertical`, `DiagonalDown`, and `DiagonalUp`; preset orientations synchronize the displayed angle.
-- Notes: use this for process flow paths, conveyor direction, piping runs, or connector styling between other widgets.
+- Main properties: `Monitoring Point`, `Use State Coloring`, `Display Name`, `Show Label`, `Show Value`, `Line Color`, `Default State Color`, `Line Image`, `Show Border`, `Line Thickness`, `Orientation`, `Angle (°)`, `Width`, `Height`.
+- Ranges and limits: `Line Thickness` is clamped to `1-80`; `Orientation` supports `Horizontal`, `Vertical`, `DiagonalDown`, and `DiagonalUp`; `Angle (°)` is normalized into `0-360`; `Width` and `Height` are clamped to `40-2000`.
+- Notes: use this for process flow paths, conveyor direction, piping runs, or connector styling between other widgets. When state coloring is enabled, the line can switch both stroke color and image based on state ranges.
 
-#### Rounded Rectangle
+##### Line Orientation Cheat Sheet
 
-> Image coming soon...
+| Orientation | Preset Angle | What It Draws |
+|---|---:|---|
+| `Horizontal` | `0` | Left-to-right horizontal line |
+| `Vertical` | `90` | Bottom-to-top vertical line |
+| `DiagonalDown` | `45` | Top-left to bottom-right diagonal |
+| `DiagonalUp` | `315` | Bottom-left to top-right diagonal |
+
+Changing `Orientation` updates `Angle (°)` to the matching preset. Setting `Angle (°)` manually gives you arbitrary rotation without changing the orientation dropdown label.
+
+##### Line State and Image Rules
+
+| Condition | Effective Color | Effective Image |
+|---|---|---|
+| No register bound | `Default State Color` | `Line Image` |
+| Register bound, `Use State Coloring = false` | `Line Color` | `Line Image` |
+| Register bound, state match found | Matching range color | Matching range image, or `Line Image` if the range has no image |
+| Register bound, no state match | `Default State Color` | `Line Image` |
+
+State ranges are normalized and sorted by minimum value before evaluation. If a range is entered backwards, the widget swaps the min and max values automatically.
+
+##### Line Recipe Table
+
+| Use Case | Orientation | Angle | Thickness | State Coloring | Image | Notes |
+|---|---|---:|---:|---|---|---|
+| Static process pipe | `Horizontal` | `0` | `5` | `false` | none | Clean fixed connector between widgets |
+| Vertical riser | `Vertical` | `90` | `6` | `false` | none | Good for tank or column feeds |
+| Diagonal flow path | `DiagonalDown` | `45` | `5` | `false` | none | Default directional connector |
+| Reverse diagonal path | `DiagonalUp` | `315` | `5` | `false` | none | Upward sloping connection |
+| Alarm path highlight | `Horizontal` | `0` | `8` | `true` | optional | Uses state ranges to switch color on alarm |
+| Conveyor status line | `Horizontal` | `0` | `10` | `true` | optional belt texture | Use image-backed ranges for richer visual states |
+| Custom angle arrow shaft | `Horizontal` | `135` | `4` | `false` | none | Arbitrary angle for custom schematic layout |
+| Process state overlay | `Vertical` | `90` | `12` | `true` | optional | Thick state-driven line used as status emphasis |
+
+##### Line Parameter Table
+
+| Property | Purpose | Default | Validated Behavior in Code |
+|---|---|---|---|
+| `Monitoring Point` | Optional Modbus register for live state changes | — | Optional; when omitted, the line uses fallback state styling only |
+| `Use State Coloring` | Enable state-range-based color/image changes | `false` | When enabled, the widget evaluates `StateRanges` against the current value |
+| `Display Name` | Custom label text | blank | Falls back to register name, then `Line` if empty |
+| `Show Label` | Display widget label | `false` | Toggled directly in property editor |
+| `Show Value` | Display current numeric value | `false` | Toggled directly in property editor |
+| `Line Color` | Base stroke color | `#FF1F5F8A` | Normalized to ARGB hex; used when state coloring is off |
+| `Default State Color` | Fallback color when no state matches | `#FF0078D4` | Normalized to ARGB hex; used for no-register and out-of-range fallback |
+| `Line Image` | Optional image brush for the line stroke | blank | If present, image brush is used; state image overrides it when a range provides one |
+| `Show Border` | Show 3D border shell | inherited default | Toggled directly in property editor |
+| `Line Thickness` | Stroke width | `5` | Clamped to minimum `1`; editor range `1-80` |
+| `Orientation` | Preset direction helper | `DiagonalDown` | Dropdown: `Horizontal`, `Vertical`, `DiagonalDown`, `DiagonalUp`; changing it also sets the matching preset angle |
+| `Angle (°)` | Arbitrary line rotation | `45` | Normalized to `0-360`; negative and over-360 values wrap back into range |
+| `Width` | Widget width | `180` | Numeric; editor range `40-2000` |
+| `Height` | Widget height | `90` | Numeric; editor range `40-2000` |
+| `State Ranges` | Value/color/name/image rules | 3 default rows | Default rows are `Low (0-20)`, `Normal (21-60)`, `High (61-100)`; ranges are normalized and sorted by min |
+
+##### Recommended Line Setup Order
+
+1. Set `Display Name` only if the line needs a visible label.
+2. Choose `Orientation` for common directions, or set `Angle (°)` directly for custom geometry.
+3. Set `Line Thickness`, `Width`, and `Height` to fit the schematic layout.
+4. Set `Line Color` for static usage, or enable `Use State Coloring` for live state response.
+5. If using live states, set `Monitoring Point` and define `State Ranges` with color and optional image overrides.
+6. Add a `Line Image` only when you want a textured or patterned stroke as the default visual.
+
+### Rounded Rectangle
+
+![Rounded Rectangle with Borders ](../../assets/screenshots/xpf/xpf-hmi-rounded-rectagle-complex.webp) ![Rounded Rectangle Default ](../../assets/screenshots/xpf/xpf-hmi-rounded-rectagle-default.webp) ![Rounded Rectangle with State Coloring](../../assets/screenshots/xpf/xpf-hmi-rounded-rectagle-green.webp)
 <!-- Suggested capture: Rounded Rectangle used as status panel with corner radius settings -->
 
-- Purpose: shape/zone panel for grouping and status indication.
-- Binding: optional for static decoration, but needed for live state coloring.
-- Main properties: `WidgetLabel`, `ShowLabel`, `ShowValue`, `RadiusX`, `RadiusY`, `StrokeThickness`, `StrokeColor`, `FillColor`, `DefaultStateColor`, `UseFill`, `StateApplyMode`, `BackgroundImagePath`.
-- Ranges and limits: `RadiusX` and `RadiusY` default to `18` and cannot go below `0`; `StrokeThickness` defaults to `2` and cannot go below `0`; `StateApplyMode` supports `Fill` or `Stroke`.
-- Notes: this is useful as a status tile, equipment group frame, or a quick ellipse/circle when `RadiusX` and `RadiusY` are set to half the widget size.
+- Purpose: rounded status panel, grouping tile, or soft-edged annunciator area.
+- Binding: optional for static panels, but required if you want live color or image changes from a monitored value.
+- Main properties: `Monitoring Point`, `Use State Coloring`, `Apply State To`, `Display Name`, `Show Label`, `Show Value`, `Use Fill`, `Stroke Color`, `Fill Color`, `Default State Color`, `Fill Image`, `Show Border`, `Radius X`, `Radius Y`, `Stroke Thickness`, `Width`, `Height`, `State Ranges`.
+- Defaults and limits: `Radius X = 18`, `Radius Y = 18`, `Stroke Thickness = 2`, `Use Fill = true`, `Apply State To = Fill`; `Radius X` and `Radius Y` allow `0-500`, `Stroke Thickness` allows `0-50`, and `Width`/`Height` allow `40-2000`.
+- Notes: when `Use State Coloring` is enabled, the widget either recolors the fill or the outline depending on `Apply State To`. A state-range image overrides the default `Fill Image`; otherwise the default image is used as the fill brush.
 
-#### Arrow
+##### Rounded Rectangle Cheat Sheet
 
-> Image coming soon...
+| Goal | Use these settings | Result |
+|---|---|---|
+| Plain status tile | `Use Fill = true`, set `Fill Color`, leave `Use State Coloring = false` | Static rounded panel |
+| Live alarm tile | Set `Monitoring Point`, turn on `Use State Coloring`, keep `Apply State To = Fill` | Fill changes with the active state range |
+| Outline-only panel | `Use Fill = false`, set `Stroke Color`, optionally set `Apply State To = Stroke` | Hollow rounded frame |
+| Image-backed tile | `Use Fill = true`, set `Fill Image` | Default image fills the shape |
+| State-specific image tile | Add images in `State Ranges` | Matching state image overrides the default fill image |
+| Near-ellipse or pill | Increase `Radius X` and `Radius Y` toward half the widget size | Corners become progressively rounder |
+
+##### Rounded Rectangle Build Recipes
+
+| If you want... | Set... | Typical use |
+|---|---|---|
+| Equipment grouping panel | `Show Border = true`, moderate `Radius X/Y`, muted `Fill Color` | Background group box behind related widgets |
+| Machine status tile | `Monitoring Point`, `Use State Coloring`, `Show Label`, `Show Value` | Large OK/Warning/Fault tile |
+| Framed image plate | `Fill Image`, `Use Fill = true`, `Stroke Thickness = 1-3` | Decorative panel or equipment faceplate |
+| Border alarm frame | `Use Fill = false`, `Apply State To = Stroke`, thicker `Stroke Thickness` | Highlight area without covering content |
+
+##### Rounded Rectangle Parameter Reference
+
+| Property | What it controls | Typical value | Code-backed behavior / limits |
+|---|---|---|---|
+| `Monitoring Point` | Register used for live state evaluation | Temperature, status, or mode register | Optional; without a bound register the widget uses `Default State Color` and reports `No Register` |
+| `Use State Coloring` | Enables state-range driven styling | `On` for alarm/status tiles | When off, the widget stays on its default fill/stroke colors and default image |
+| `Apply State To` | Whether the state color affects fill or outline | `Fill` | Only `Fill` or `Stroke` are accepted |
+| `Display Name` | Custom label text | `Pump Status` | Falls back to register name or widget type when blank |
+| `Show Label` | Shows the label text | `On` | Checkbox |
+| `Show Value` | Shows the current numeric value | `On` for live tiles | Checkbox |
+| `Use Fill` | Fills the interior | `true` | When off, fill becomes transparent even if a fill image is set |
+| `Stroke Color` | Outline color | `#FF1F5F8A` | Normalized to ARGB hex |
+| `Fill Color` | Interior color | `#66BFD7EA` | Normalized to ARGB hex |
+| `Default State Color` | Fallback live color | `#FF0078D4` | Used when no range matches, no register is bound, or state coloring is off |
+| `Fill Image` | Default interior image | Texture or icon panel image | Relative paths are resolved from the current working directory |
+| `Show Border` | 3D border shell | `On` for panel look | Checkbox |
+| `Radius X` | Horizontal corner radius | `18` | Numeric editor range `0-500`; runtime clamps to `>= 0` |
+| `Radius Y` | Vertical corner radius | `18` | Numeric editor range `0-500`; runtime clamps to `>= 0` |
+| `Stroke Thickness` | Outline thickness | `2` | Numeric editor range `0-50`; runtime clamps to `>= 0` |
+| `Width` | Widget width | `170` | Numeric editor range `40-2000` |
+| `Height` | Widget height | `120` | Numeric editor range `40-2000` |
+| `State Ranges` | Value/color/name/image rules | 3 default rows | Default rows are `Low (0-20)`, `Normal (21-60)`, `High (61-100)`; min/max are normalized and reversed ranges are swapped |
+
+##### Recommended Rounded Rectangle Setup Order
+
+1. Set `Width`, `Height`, `Radius X`, and `Radius Y` for the basic panel shape.
+2. Choose whether the panel should be filled by setting `Use Fill`.
+3. Set `Stroke Color`, `Fill Color`, and `Stroke Thickness` for the default appearance.
+4. Add `Fill Image` only if you want a textured or illustrated panel surface.
+5. If the panel should react live, bind `Monitoring Point`, turn on `Use State Coloring`, and choose `Apply State To`.
+6. Define `State Ranges` last so the visual response matches the intended value bands.
+
+### Arrow
+![Arrow Widget](../../assets/screenshots/xpf/xpf-hmi-arrow.webp)
 <!-- Suggested capture: Arrow widget showing direction and state-based styling -->
 
-- Purpose: directional indicator for process flow and motion.
-- Binding: optional for static decoration, but needed for live state coloring.
-- Main properties: `HeadLengthPercent`, `ShaftThicknessPercent`, plus shared shape properties such as `StrokeColor`, `FillColor`, `DefaultStateColor`, `UseFill`, `StateApplyMode`, `StrokeThickness`, and `RotationDegrees`.
-- Ranges and limits: `HeadLengthPercent` is clamped to `10-65`; `ShaftThicknessPercent` is clamped to `8-90`.
-- Notes: use this when direction matters more than numeric precision, such as flow direction, transfer path, or motion indication.
+- Purpose: directional process-flow or movement indicator with a tunable head and shaft profile.
+- Binding: optional for static flow arrows, but required for live state-based color or image changes.
+- Main properties: `Monitoring Point`, `Use State Coloring`, `Apply State To`, `Display Name`, `Show Label`, `Show Value`, `Use Fill`, `Stroke Color`, `Fill Color`, `Default State Color`, `Fill Image`, `Show Border`, `Stroke Thickness`, `Rotation (°)`, `Head Length (%)`, `Shaft Thickness (%)`, `Width`, `Height`, `State Ranges`.
+- Defaults and limits: `Head Length (%) = 30`, `Shaft Thickness (%) = 35`, `Width = 170`, `Height = 100`; editor ranges are `Head Length 10-65`, `Shaft Thickness 8-90`, `Stroke Thickness 0-50`, `Rotation 0-360`, `Width/Height 40-2000`.
+- Notes: the geometry is drawn pointing right by default, then optionally rotated. State-range images override the default `Fill Image` when a matching range includes an image.
 
-#### Triangle
+##### Arrow Cheat Sheet
 
-> Image coming soon...
+| Goal | Use these settings | Result |
+|---|---|---|
+| Standard flow arrow | `Head Length = 30`, `Shaft Thickness = 35` | Balanced process arrow |
+| Aggressive pointer | Increase `Head Length` toward `50-65` | Larger arrow head, more emphasis on direction |
+| Pipe-like arrow | Lower `Head Length`, increase `Shaft Thickness` | Strong shaft, subtler head |
+| Thin motion indicator | Lower `Shaft Thickness` toward `8-20` | Lightweight directional cue |
+| Point in another direction | Set `Rotation (°)` | Reorients the right-pointing base geometry |
+| Live flow state arrow | Bind `Monitoring Point`, enable `Use State Coloring` | Arrow changes color or image by state |
+
+##### Arrow Build Recipes
+
+| If you want... | Set... | Typical use |
+|---|---|---|
+| Conveyor or pipe flow arrow | Moderate `Stroke Thickness`, `Use Fill = true`, rotate to match route | Process direction on layouts |
+| Alarmed direction marker | `Monitoring Point`, `Use State Coloring`, `Apply State To = Fill` | Flow path that changes by state |
+| Outline-only navigation marker | `Use Fill = false`, stronger `Stroke Thickness` | Simple schematic direction marker |
+| Textured arrow | Set `Fill Image` and keep `Use Fill = true` | Decorative directional indicator |
+
+##### Arrow Parameter Reference
+
+| Property | What it controls | Typical value | Code-backed behavior / limits |
+|---|---|---|---|
+| `Head Length (%)` | Arrow head depth relative to width | `30` | Numeric editor range `10-65`; runtime clamps to that range |
+| `Shaft Thickness (%)` | Shaft thickness relative to height | `35` | Numeric editor range `8-90`; runtime clamps to that range and geometry keeps the half-thickness within `0.04-0.45` of normalized height |
+| `Rotation (°)` | Overall arrow direction | `0`, `90`, `180`, `270` | Normalized into `0-360` |
+| `Stroke Thickness` | Outline thickness | `2` | Numeric editor range `0-50`; runtime clamps to `>= 0` |
+| `Use Fill` | Fills the arrow body | `true` | When off, fill becomes transparent |
+| `Apply State To` | Sends state color to fill or outline | `Fill` | Only `Fill` or `Stroke` are accepted |
+| `Fill Image` | Default image fill | Flow texture | Overridden by a matching state-range image |
+| `Width` | Widget width | `170` | Numeric editor range `40-2000` |
+| `Height` | Widget height | `100` | Numeric editor range `40-2000` |
+| `State Ranges` | Value/color/name/image rules | 3 default rows | Default rows are `Low (0-20)`, `Normal (21-60)`, `High (61-100)`; ranges are normalized and sorted |
+
+##### Recommended Arrow Setup Order
+
+1. Set `Width` and `Height` for the arrow footprint.
+2. Adjust `Head Length (%)` and `Shaft Thickness (%)` to get the right silhouette.
+3. Rotate the arrow with `Rotation (°)` so it points where the process actually flows.
+4. Set static `Stroke Color`, `Fill Color`, and `Stroke Thickness`.
+5. If needed, add `Fill Image` for a textured arrow body.
+6. For live behavior, bind `Monitoring Point` and define `State Ranges`.
+
+### Triangle
+
+![Triangle Widget](../../assets/screenshots/xpf/xpf-hmi-triangle.webp)
 <!-- Suggested capture: Triangle widget in multiple orientations with state color -->
 
-- Purpose: compact directional marker.
-- Binding: optional for static decoration, but needed for live state coloring.
-- Main properties: `Orientation`, plus shared shape properties such as `StrokeColor`, `FillColor`, `DefaultStateColor`, `UseFill`, `StateApplyMode`, `StrokeThickness`, and `RotationDegrees`.
-- Ranges and limits: `Orientation` supports `Up`, `Down`, `Left`, and `Right`.
-- Notes: this is the simplest directional shape and works well for compact status pointers or lane markers.
+- Purpose: compact pointer or marker for direction, lane indication, or simple state emphasis.
+- Binding: optional for static pointers, but required for live state-based color or image changes.
+- Main properties: `Monitoring Point`, `Use State Coloring`, `Apply State To`, `Display Name`, `Show Label`, `Show Value`, `Use Fill`, `Stroke Color`, `Fill Color`, `Default State Color`, `Fill Image`, `Show Border`, `Stroke Thickness`, `Rotation (°)`, `Orientation`, `Width`, `Height`, `State Ranges`.
+- Defaults and limits: `Orientation = Up`, `Width = 150`, `Height = 120`; `Orientation` supports `Up`, `Down`, `Left`, and `Right`; shared editor ranges are `Stroke Thickness 0-50`, `Rotation 0-360`, `Width/Height 40-2000`.
+- Notes: `Orientation` changes the base point layout first, then `Rotation (°)` can further rotate the finished triangle if you need an intermediate angle.
 
-#### Polygon
+##### Triangle Cheat Sheet
 
-> Image coming soon...
+| Goal | Use these settings | Result |
+|---|---|---|
+| Up indicator | `Orientation = Up` | Triangle points upward |
+| Down marker | `Orientation = Down` | Triangle points downward |
+| Left or right pointer | `Orientation = Left` or `Right` | Side-pointing marker |
+| Exact custom angle | Pick the nearest `Orientation`, then adjust `Rotation (°)` | Fine direction control |
+| Solid state marker | `Use Fill = true`, enable `Use State Coloring` | Filled triangle changes by state |
+| Outline pointer | `Use Fill = false`, set `Stroke Thickness` | Hollow directional marker |
+
+##### Triangle Build Recipes
+
+| If you want... | Set... | Typical use |
+|---|---|---|
+| Alarm pointer | `Use State Coloring`, `Apply State To = Fill`, `Show Label = false` | Compact alarm marker near another widget |
+| Lane direction symbol | Wide `Width`, modest `Height`, choose `Orientation` | Flow or travel direction marker |
+| Equipment pointer | `Show Label = true`, rotate as needed | Points to a device or region |
+
+##### Triangle Parameter Reference
+
+| Property | What it controls | Typical value | Code-backed behavior / limits |
+|---|---|---|---|
+| `Orientation` | Base triangle direction | `Up` | Only `Up`, `Down`, `Left`, or `Right` are accepted |
+| `Rotation (°)` | Additional rotation after base orientation | `0` | Normalized into `0-360` |
+| `Use Fill` | Fills the triangle interior | `true` | When off, fill becomes transparent |
+| `Stroke Thickness` | Outline thickness | `2` | Numeric editor range `0-50`; runtime clamps to `>= 0` |
+| `Fill Image` | Default fill image | Marker texture | Overridden by matching state-range image |
+| `Width` | Widget width | `150` | Numeric editor range `40-2000` |
+| `Height` | Widget height | `120` | Numeric editor range `40-2000` |
+| `State Ranges` | Value/color/name/image rules | 3 default rows | Default rows are `Low (0-20)`, `Normal (21-60)`, `High (61-100)`; ranges are normalized and sorted |
+
+##### Recommended Triangle Setup Order
+
+1. Set `Orientation` for the nearest cardinal direction.
+2. Size the marker with `Width` and `Height`.
+3. Use `Rotation (°)` only if the built-in orientation choices are not enough.
+4. Set fill or outline styling with `Use Fill`, `Stroke Color`, `Fill Color`, and `Stroke Thickness`.
+5. If the triangle needs to react live, bind `Monitoring Point` and add `State Ranges`.
+
+### Polygon
+
+![Polygon Widget](../../assets/screenshots/xpf/xpf-hmi-polygon.webp)
 <!-- Suggested capture: Polygon widget with side-count variation and status color -->
 
-- Purpose: multi-sided marker or status zone.
-- Binding: optional for static decoration, but needed for live state coloring.
-- Main properties: `SideCount`, plus shared shape properties such as `StrokeColor`, `FillColor`, `DefaultStateColor`, `UseFill`, `StateApplyMode`, `StrokeThickness`, and `RotationDegrees`.
-- Ranges and limits: `SideCount` is clamped to `4-8` and defaults to `6`.
-- Notes: use this when a regular geometric marker is more useful than a rectangle or triangle, such as zone markers or symbolic equipment badges.
+- Purpose: regular multi-sided badge, zone marker, or symbolic equipment plate.
+- Binding: optional for static geometry, but required for live state-based color or image changes.
+- Main properties: `Monitoring Point`, `Use State Coloring`, `Apply State To`, `Display Name`, `Show Label`, `Show Value`, `Use Fill`, `Stroke Color`, `Fill Color`, `Default State Color`, `Fill Image`, `Show Border`, `Stroke Thickness`, `Rotation (°)`, `Side Count`, `Width`, `Height`, `State Ranges`.
+- Defaults and limits: `Side Count = 6`, `Width = 140`, `Height = 140`; `Side Count` editor range is `4-8`; shared editor ranges are `Stroke Thickness 0-50`, `Rotation 0-360`, `Width/Height 40-2000`.
+- Notes: the polygon is drawn as a regular centered shape. Increasing `Side Count` makes it look more circular, while lower counts make it more angular and emblem-like.
 
-#### Arc
+##### Polygon Cheat Sheet
 
-> Image coming soon...
+| Goal | Use these settings | Result |
+|---|---|---|
+| Square-like badge | `Side Count = 4` | Diamond or square-like marker depending on rotation |
+| Hex badge | `Side Count = 6` | Balanced industrial symbol |
+| Near-round badge | `Side Count = 8` | Softer, almost circular marker |
+| Rotate the badge | Adjust `Rotation (°)` | Reorients the polygon without changing side count |
+| Live status badge | Bind `Monitoring Point`, enable `Use State Coloring` | Polygon changes by state |
+
+##### Polygon Build Recipes
+
+| If you want... | Set... | Typical use |
+|---|---|---|
+| Equipment badge | `Side Count = 6`, `Use Fill = true`, `Show Label = true` | Device marker on overview screens |
+| Zone marker | Larger `Width`/`Height`, soft fill color | Highlight an area or zone |
+| Alarm emblem | `Use State Coloring`, `Apply State To = Fill` | Status seal that shifts color by state |
+
+##### Polygon Parameter Reference
+
+| Property | What it controls | Typical value | Code-backed behavior / limits |
+|---|---|---|---|
+| `Side Count` | Number of sides in the polygon | `6` | Numeric editor range `4-8`; runtime clamps to that range |
+| `Rotation (°)` | Overall polygon rotation | `0` or `45` | Normalized into `0-360` |
+| `Use Fill` | Fills the polygon interior | `true` | When off, fill becomes transparent |
+| `Stroke Thickness` | Outline thickness | `2` | Numeric editor range `0-50`; runtime clamps to `>= 0` |
+| `Fill Image` | Default fill image | Badge texture | Overridden by matching state-range image |
+| `Width` | Widget width | `140` | Numeric editor range `40-2000` |
+| `Height` | Widget height | `140` | Numeric editor range `40-2000` |
+| `State Ranges` | Value/color/name/image rules | 3 default rows | Default rows are `Low (0-20)`, `Normal (21-60)`, `High (61-100)`; ranges are normalized and sorted |
+
+##### Recommended Polygon Setup Order
+
+1. Choose `Side Count` for the overall visual character.
+2. Set `Width` and `Height`.
+3. Rotate the shape only if you need a different badge orientation.
+4. Set fill, stroke, and border styling.
+5. Bind `Monitoring Point` and define `State Ranges` if the polygon should act as a live status badge.
+
+### Arc
+![Arc Widget](../../assets/screenshots/xpf/xpf-hmi-arc.webp)
 <!-- Suggested capture: Arc widget with start/sweep angle and stroke thickness -->
 
-- Purpose: arc/sector indicator for partial-scale visuals.
-- Binding: optional for static decoration, but needed for live state coloring.
-- Main properties: `StartAngle`, `SweepAngle`, `RenderAsSector`, plus shared shape properties such as `StrokeColor`, `FillColor`, `DefaultStateColor`, `UseFill`, `StateApplyMode`, `StrokeThickness`, and `RotationDegrees`.
-- Ranges and limits: `StartAngle` is normalized into `0-360`; `SweepAngle` is clamped to `-359` through `359` and kept away from `0`; `RenderAsSector` switches between an open arc and a filled wedge.
-- Notes: use this for partial rings, sector indicators, or radial emphasis around another widget.
+- Purpose: open arc or filled sector for radial emphasis, partial rings, and highlight wedges.
+- Binding: optional for static overlays, but required for live state-based color or image changes.
+- Main properties: `Monitoring Point`, `Use State Coloring`, `Apply State To`, `Display Name`, `Show Label`, `Show Value`, `Use Fill`, `Stroke Color`, `Fill Color`, `Default State Color`, `Fill Image`, `Show Border`, `Stroke Thickness`, `Rotation (°)`, `Start Angle (°)`, `Sweep Angle (°)`, `Render As Sector`, `Width`, `Height`, `State Ranges`.
+- Defaults and limits: `Start Angle = 225`, `Sweep Angle = 270`, `Render As Sector = false`, `Stroke Thickness = 8`, `Use Fill = false`, `Width = 170`, `Height = 120`; editor ranges are `Start Angle 0-360`, `Sweep Angle -359 to 359`, `Stroke Thickness 0-50`, `Rotation 0-360`, `Width/Height 40-2000`.
+- Notes: positive sweep values draw clockwise and negative values draw counterclockwise. If the entered sweep is too close to zero, runtime forces it to `1` or `-1` so the geometry remains visible.
+
+##### Arc Cheat Sheet
+
+| Goal | Use these settings | Result |
+|---|---|---|
+| Open radial accent | `Render As Sector = false`, `Use Fill = false` | Outline arc only |
+| Filled wedge | `Render As Sector = true`, `Use Fill = true` | Solid sector from center to arc |
+| Clockwise sweep | Positive `Sweep Angle (°)` | Arc moves clockwise from `Start Angle` |
+| Counterclockwise sweep | Negative `Sweep Angle (°)` | Arc moves the opposite direction |
+| Thick partial ring | Increase `Stroke Thickness` | Heavier open arc |
+| State-highlight wedge | Bind `Monitoring Point`, enable `Use State Coloring` | Sector or arc changes by state |
+
+##### Arc Build Recipes
+
+| If you want... | Set... | Typical use |
+|---|---|---|
+| Partial ring highlight | `Render As Sector = false`, `Use Fill = false`, higher `Stroke Thickness` | Emphasis around another radial widget |
+| Pie-slice alarm zone | `Render As Sector = true`, `Use Fill = true` | Highlight a radial region |
+| Directional radial cue | Adjust `Start Angle`, sign of `Sweep Angle`, and `Rotation (°)` | Radial process or zone indication |
+
+##### Arc Parameter Reference
+
+| Property | What it controls | Typical value | Code-backed behavior / limits |
+|---|---|---|---|
+| `Start Angle (°)` | Where the arc begins | `225` | Normalized into `0-360` |
+| `Sweep Angle (°)` | How far the arc travels | `270` | Numeric editor range `-359 to 359`; runtime clamps to that range and forces values with magnitude below `1` to `1` or `-1` |
+| `Render As Sector` | Open arc vs center-filled wedge | `false` | Checkbox |
+| `Use Fill` | Whether the shape interior is filled | `false` by default | Particularly important when `Render As Sector = true`; an open arc can still leave fill transparent |
+| `Stroke Thickness` | Arc outline thickness | `8` | Numeric editor range `0-50`; runtime clamps to `>= 0`; geometry also adjusts radius inward based on thickness |
+| `Rotation (°)` | Extra overall rotation | `0` | Normalized into `0-360` |
+| `Fill Image` | Default fill image | Sector texture | Overridden by matching state-range image |
+| `Width` | Widget width | `170` | Numeric editor range `40-2000` |
+| `Height` | Widget height | `120` | Numeric editor range `40-2000` |
+| `State Ranges` | Value/color/name/image rules | 3 default rows | Default rows are `Low (0-20)`, `Normal (21-60)`, `High (61-100)`; ranges are normalized and sorted |
+
+##### Recommended Arc Setup Order
+
+1. Decide whether you need an open arc or a filled wedge by setting `Render As Sector`.
+2. Set `Start Angle (°)` and `Sweep Angle (°)` for the actual radial span.
+3. Set `Width`, `Height`, and `Stroke Thickness`.
+4. Use `Rotation (°)` only if the direct angle settings are not enough for placement.
+5. Choose static fill/stroke colors or bind `Monitoring Point` for live state behavior.
+6. Add `State Ranges` last if the arc should change by value band.
 
 ### Choosing the Right Widget
 
@@ -831,7 +1111,26 @@ State range actions in the panel (`Add`, `Remove`, `Delete All`, `Copy`, `Paste`
 - Use `Button` and `Slider` for write actions.
 - Use shape widgets for grouping, flow direction, and layout.
 
-## See Also
+### Why Teams Choose XPF HMI (ROI)
 
-- [User Guide](user-guide.md)
-- [Quick Start Guide](quick-start.md)
+`Modbus Monitor XPF HMI` helps teams ship dashboards faster and operate with fewer surprises.
+
+- Faster commissioning: build live `Modbus HMI dashboards` without custom UI development.
+- Reduced downtime: state-aware widgets (`MultiState Indicator`, `Trend`, alarms) make faults visible earlier.
+- Lower engineering effort: reusable `.hmi` layouts and copy/paste-ready widgets reduce repetitive setup work.
+- Better operator clarity: purpose-built industrial widgets improve readability versus generic chart tools.
+- Scalable deployment: one workflow for commissioning screens, operator views, and maintenance diagnostics.
+
+Common search terms this guide supports:
+
+- `Modbus HMI dashboard`
+- `industrial HMI software`
+- `SCADA-style Modbus monitoring`
+- `real-time Modbus trend chart`
+- `operator dashboard for PLC/Modbus`
+
+### Next Steps
+
+- Previous: [XPF Quick Start Guide](quick-start.md)
+- Next: [XPF User Guide](user-guide.md)
+- Related: [HMI Widget Management](hmi-widget-management.md)
