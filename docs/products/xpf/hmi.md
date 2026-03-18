@@ -1,5 +1,3 @@
-→ New to XPF? Start with the [Quick Start Guide](quick-start.md)
-
 # Modbus Monitor XPF HMI Guide
 
 Use this as the single HMI guide page for XPF. It covers overview, dashboard management workflow, and widget reference in one place.
@@ -7,7 +5,7 @@ Use this as the single HMI guide page for XPF. It covers overview, dashboard man
 ![HMI Dashboard Demo](../../assets/screenshots/xpf/xpf-hmi-demo.webp){ .screenshot-shadow loading="lazy" }
 *This is a example layout used in real-world commissioning and monitoring scenarios.*
 
-## About HMI
+## Build Industrial Dashboards Without Custom UI
 
 The HMI feature in **Modbus Monitor XPF** lets you build **live industrial dashboards in minutes** using widgets connected directly to Modbus data.
 
@@ -51,7 +49,7 @@ Common uses include:
 - trend views for changing values
 - dashboards with time and event visibility
 
-## Available Widget Categories
+## HMI Widget System Overview
 
 ### Core Gauges and Status Widgets
 
@@ -89,8 +87,8 @@ Jump to [Widget Reference](#widget-reference).
 ![> Image coming soon...](../../assets/screenshots/xpf/xpf-hmi-guide-02-widget-categories.webp){ .screenshot-shadow loading="lazy" }
 <!-- Suggested capture: one dashboard showing numeric, state, trend, button, and shape widgets together -->
 
-## Basic Dashboard Workflow
-Use these widgets to enhance dashboards with trends, time awareness, and visual structure:
+## Build Your First Dashboard (2-5 Minutes)
+Most dashboards can be created in minutes using this workflow:
 
 ### 1. Open the HMI area
 
@@ -118,7 +116,7 @@ Use the live dashboard for monitoring, troubleshooting, and operator interaction
 
 Jump to [HMI Dashboard Management](#hmi-dashboard-management).
 
-## Save and Load Behavior
+## Reusable Dashboard Workflow { #save-and-load-behavior }
 
 Supported file formats:
 
@@ -131,6 +129,8 @@ When loading dashboards:
 - Example: `line-a.hmi` and `line-a.csv`.
 
 This makes it easy to reuse dashboards across projects, share setups between teams, and standardize layouts.
+
+This allows fast replication of dashboards across machines and projects.
 
 <!-- Screenshot placeholder: xpf-hmi-guide-03-save-load.png -->
 ![.hmi file drag and drop to load file ](../../assets/screenshots/xpf/xpf-hmi-guide-03-save-load.webp){ .screenshot-shadow loading="lazy" }
@@ -1156,3 +1156,7 @@ Common search terms this guide supports:
 - Previous: [XPF Quick Start Guide](quick-start.md)
 - Next: [XPF User Guide](user-guide.md)
 - Related: [HMI Widget Management](hmi-widget-management.md)
+
+### Ready to Try?
+
+Open Modbus Monitor XPF and build your first dashboard in minutes.
