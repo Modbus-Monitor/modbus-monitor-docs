@@ -1,13 +1,19 @@
+→ New to XPF? Start with the [Quick Start Guide](quick-start.md)
+
 # Modbus Monitor XPF HMI Guide
 
 Use this as the single HMI guide page for XPF. It covers overview, dashboard management workflow, and widget reference in one place.
 
 ![HMI Dashboard Demo](../../assets/screenshots/xpf/xpf-hmi-demo.webp){ .screenshot-shadow loading="lazy" }
-*Example HMI dashboard layout in XPF*
+*This is a example layout used in real-world commissioning and monitoring scenarios.*
 
 ## About HMI
 
-The HMI feature in Modbus Monitor XPF lets you build live dashboards using widgets connected to Modbus data. You can create monitoring screens, status panels, trend views, and operator controls without building a custom interface from scratch.
+The HMI feature in **Modbus Monitor XPF** lets you build **live industrial dashboards in minutes** using widgets connected directly to Modbus data.
+
+Instead of building custom UI screens from scratch, you can assemble a working operator dashboard using ready-to-use components, real-time data binding, and reusable layouts.
+
+This makes XPF ideal for **commissioning, troubleshooting, and production monitoring** where speed and clarity matter.
 
 Use the HMI feature when you need:
 
@@ -15,10 +21,24 @@ Use the HMI feature when you need:
 - a simple operator screen
 - a reusable monitoring layout
 - a quick way to test values, states, and controls together
+- a fast alternative to building a full SCADA or custom HMI system
 
 <!-- Screenshot placeholder: xpf-hmi-guide-01-overview.png -->
 ![docs/products/xpf/hmi.md](../../assets/screenshots/xpf/xpf-hmi-guide-01-overview.webp){.screenshot-shadow loading="lazy" }
  
+## Why Use XPF for HMI
+
+Traditional HMI or SCADA dashboards often require significant setup, custom development, or specialized tools.
+
+With Modbus Monitor XPF, you can:
+
+- Build dashboards in **hours instead of weeks**
+- Reuse layouts across multiple systems using `.hmi` files
+- Combine monitoring, control, and visualization in one place
+- Quickly validate system behavior during commissioning
+- Reduce engineering effort for repeated projects
+
+This makes XPF especially useful for engineers who need **fast, reliable visibility without heavy setup overhead**.
 
 ## What You Can Build
 
@@ -35,7 +55,7 @@ Common uses include:
 
 ### Core Gauges and Status Widgets
 
-Use these widgets to display live values and state changes:
+Use these widgets to display live values and state changes in a clean, operator-friendly way:
 
 - `Numeric`
 - `Dial180`
@@ -44,7 +64,7 @@ Use these widgets to display live values and state changes:
 
 ### Interactive Controls
 
-Use these widgets when operators need to write or adjust values:
+Use these widgets when operators need to safely interact with live systems:
 
 - `Button`
 - `Slider`
@@ -52,7 +72,7 @@ Use these widgets when operators need to write or adjust values:
 
 ### Advanced and Utility Widgets
 
-Use these widgets for trends, time display, layout, and visual grouping:
+Use these widgets to enhance dashboards with trends, time awareness, and visual structure:
 
 - `Trend`
 - `Clock`
@@ -70,6 +90,7 @@ Jump to [Widget Reference](#widget-reference).
 <!-- Suggested capture: one dashboard showing numeric, state, trend, button, and shape widgets together -->
 
 ## Basic Dashboard Workflow
+Use these widgets to enhance dashboards with trends, time awareness, and visual structure:
 
 ### 1. Open the HMI area
 
@@ -109,7 +130,7 @@ When loading dashboards:
 - If a `.hmi` file and a `.csv` file are in the same folder and share the same base name, XPF automatically finds and loads both.
 - Example: `line-a.hmi` and `line-a.csv`.
 
-This makes it easier to reopen complete dashboard and register-map pairs.
+This makes it easy to reuse dashboards across projects, share setups between teams, and standardize layouts.
 
 <!-- Screenshot placeholder: xpf-hmi-guide-03-save-load.png -->
 ![.hmi file drag and drop to load file ](../../assets/screenshots/xpf/xpf-hmi-guide-03-save-load.webp){ .screenshot-shadow loading="lazy" }
@@ -130,13 +151,11 @@ This gives a balanced screen with value display, state visibility, trend history
 
 ## Licensing Notes
 
-Some widgets and dashboard capabilities depend on the active HMI license tier. Core display widgets are available in lower tiers, while controls and trending may require higher tiers.
-
-The widget gallery shows only the widgets available for the current license tier.
+This tiered approach lets you start simple and expand into advanced control and trending as your system grows.
 
 ## HMI Dashboard Management { #hmi-dashboard-management }
 
-Use this section to create, edit, and run HMI dashboards in XPF.
+This reference helps you choose the right widget quickly and configure it correctly for reliable operation.
 
 ### Ribbon Controls
 
@@ -1113,13 +1132,16 @@ State ranges are normalized and sorted by minimum value before evaluation. If a 
 
 ### Why Teams Choose XPF HMI (ROI)
 
-`Modbus Monitor XPF HMI` helps teams ship dashboards faster and operate with fewer surprises.
+`Modbus Monitor XPF HMI` helps teams deliver dashboards faster and operate with greater confidence.
 
-- Faster commissioning: build live `Modbus HMI dashboards` without custom UI development.
-- Reduced downtime: state-aware widgets (`MultiState Indicator`, `Trend`, alarms) make faults visible earlier.
-- Lower engineering effort: reusable `.hmi` layouts and copy/paste-ready widgets reduce repetitive setup work.
-- Better operator clarity: purpose-built industrial widgets improve readability versus generic chart tools.
-- Scalable deployment: one workflow for commissioning screens, operator views, and maintenance diagnostics.
+- Faster commissioning: build live Modbus HMI dashboards without custom UI development
+- Reduced downtime: state-aware widgets and trends expose issues earlier
+- Lower engineering effort: reusable `.hmi` layouts reduce repetitive setup
+- Better operator clarity: purpose-built industrial widgets improve usability
+- Scalable deployment: one workflow for commissioning, operations, and maintenance
+
+This combination makes XPF a practical alternative to heavier HMI/SCADA solutions for many real-world applications.
+
 
 Common search terms this guide supports:
 
