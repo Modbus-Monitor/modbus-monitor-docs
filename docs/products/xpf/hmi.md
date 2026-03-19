@@ -914,7 +914,7 @@ State ranges are normalized and sorted by minimum value before evaluation. If a 
 6. Define `State Ranges` last so the visual response matches the intended value bands.
 
 ### Arrow
-![Arrow Widget](../../assets/screenshots/xpf/xpf-hmi-arrow.webp)
+![Arrow Widget](../../assets/screenshots/xpf/xpf-hmi-arrow.webp){loading="lazy" } ![Arrow Widget gray low](../../assets/screenshots/xpf/xpf-hmi-arrow-gray-low.webp)![Arrow Widget Green Normal](../../assets/screenshots/xpf/xpf-hmi-arrow-green-normal.webp){loading="lazy"} ![Arrow Widget Red High](../../assets/screenshots/xpf/xpf-hmi-arrow-red-high.webp){loading="lazy"}
 <!-- Suggested capture: Arrow widget showing direction and state-based styling -->
 
 - Purpose: directional process-flow or movement indicator with a tunable head and shaft profile.
@@ -969,7 +969,7 @@ State ranges are normalized and sorted by minimum value before evaluation. If a 
 
 ### Triangle
 
-![Triangle Widget](../../assets/screenshots/xpf/xpf-hmi-triangle.webp)
+![Triangle Widget](../../assets/screenshots/xpf/xpf-hmi-triangle.webp){loading="lazy"}![Triangle Widget east normal](../../assets/screenshots/xpf/xpf-hmi-triangle-east-normal.webp){loading="lazy"}![Triangle Widget South Low](../../assets/screenshots/xpf/xpf-hmi-triangle-south-low.webp){loading="lazy"}![Triangle Widget West Hight](../../assets/screenshots/xpf/xpf-hmi-triangle-west-high.webp){loading="lazy"}![Triangle Widget West Low](../../assets/screenshots/xpf/xpf-hmi-triangle-west-low.webp)![Triangle Widget West Normal](../../assets/screenshots/xpf/xpf-hmi-triangle-west-normal.webp){loading="lazy"}
 <!-- Suggested capture: Triangle widget in multiple orientations with state color -->
 
 - Purpose: compact pointer or marker for direction, lane indication, or simple state emphasis.
@@ -1020,7 +1020,7 @@ State ranges are normalized and sorted by minimum value before evaluation. If a 
 
 ### Polygon
 
-![Polygon Widget](../../assets/screenshots/xpf/xpf-hmi-polygon.webp)
+![Polygon Widget](../../assets/screenshots/xpf/xpf-hmi-polygon.webp){loading="lazy"}![Polygon Widget Gray State Low](../../assets/screenshots/xpf/xpf-hmi-polygon-gray-low.webp){loading="lazy"}![Polygon Widget Green State Normal](../../assets/screenshots/xpf/xpf-hmi-polygon-green-normal.webp){loading="lazy"}![Polygon Widget Red State High](../../assets/screenshots/xpf/xpf-hmi-polygon-red-high.webp){loading="lazy"}
 <!-- Suggested capture: Polygon widget with side-count variation and status color -->
 
 - Purpose: regular multi-sided badge, zone marker, or symbolic equipment plate.
@@ -1068,8 +1068,8 @@ State ranges are normalized and sorted by minimum value before evaluation. If a 
 4. Set fill, stroke, and border styling.
 5. Bind `Monitoring Point` and define `State Ranges` if the polygon should act as a live status badge.
 
-### Arc
-![Arc Widget](../../assets/screenshots/xpf/xpf-hmi-arc.webp)
+### Arc  
+![Arc Widget](../../assets/screenshots/xpf/xpf-hmi-arc.webp){loading="lazy"}![Arc Widget Gray State Low](../../assets/screenshots/xpf/xpf-hmi-arc-gray-low.webp){loading="lazy"}![Arc Widget Green State Normal](../../assets/screenshots/xpf/xpf-hmi-arc-green-normal.webp){loading="lazy"}![Arc Widget Red State High](../../assets/screenshots/xpf/xpf-hmi-arc-red-high.webp){loading="lazy"}
 <!-- Suggested capture: Arc widget with start/sweep angle and stroke thickness -->
 
 - Purpose: open arc or filled sector for radial emphasis, partial rings, and highlight wedges.
