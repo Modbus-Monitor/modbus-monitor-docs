@@ -1,0 +1,111 @@
+{
+  "slug": "pm5000-pm5100-pm5300",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "PM5000 / PM5100 / PM5300",
+  "title": "Schneider Electric PM5000 / PM5100 / PM5300 Modbus Map",
+  "description": "Pre-built Schneider Electric PM5000 / PM5100 / PM5300 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 8,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Demand",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Nominal voltage V",
+      "address": "402017",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Nominal current A",
+      "address": "402019",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Number of control power failures",
+      "address": "401828",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Conditional energy control status",
+      "address": "401999",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Nominal frequency Hz",
+      "address": "402016",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Demand system assignment",
+      "address": "403760",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Revenue security status",
+      "address": "401920",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Meter name",
+      "address": "400029",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Manufacturer",
+      "address": "400069",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Duration of last control power failure seconds",
+      "address": "401833",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Nominal power factor",
+      "address": "402021",
+      "type": "UINT32",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Peak current demand over last year A",
+      "address": "402047",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PM5100 PM5300 - Power Meter.csv"
+  ],
+  "related": []
+}

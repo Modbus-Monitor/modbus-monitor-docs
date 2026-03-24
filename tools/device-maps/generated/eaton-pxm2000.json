@@ -1,0 +1,111 @@
+{
+  "slug": "pxm2000",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "PXM2000",
+  "title": "Eaton PXM2000 Modbus Map",
+  "description": "Pre-built Eaton PXM2000 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 27,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Power",
+    "Harmonics",
+    "Power Factor",
+    "Energy",
+    "Current"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Nominal Voltage iDeviceVoltsRatingValue",
+      "address": "301356",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Output Current Rating iDeviceAmpsRatingValue",
+      "address": "301811",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Peak Demand In mDemandInPeakValue",
+      "address": "305263",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Forward Real Energy mForwardEnergyValue",
+      "address": "307005",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Nominal Frequency iNominalFrequencyValue",
+      "address": "301669",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "PF App Phase A mPFapparentAValue",
+      "address": "306213",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Demand Ia mDemandIaValue",
+      "address": "305251",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Status sStatusValue",
+      "address": "303001",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Percent THD Vab mVabPerTHDValue",
+      "address": "308149",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Vendor Name VendorNameValue:32",
+      "address": "301033",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Device Type iDeviceTypeValue:32",
+      "address": "301129",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Percent Voltage unbalance Negative Sequence mPercentVoltageUnbalanceValue",
+      "address": "304484",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - PXM2000 - Power Meter.csv"
+  ],
+  "related": []
+}

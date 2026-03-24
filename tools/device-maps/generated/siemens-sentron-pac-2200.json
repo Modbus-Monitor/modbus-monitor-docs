@@ -1,0 +1,111 @@
+{
+  "slug": "sentron-pac-2200",
+  "manufacturer_slug": "siemens",
+  "manufacturer": "Siemens",
+  "model": "PAC2200",
+  "title": "Siemens PAC2200 Modbus Map",
+  "description": "Pre-built Siemens PAC2200 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 18,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Status",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage UL1 N",
+      "address": "400002",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current L1",
+      "address": "400014",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Apparent power L1",
+      "address": "400020",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Secondary total of active energy im port",
+      "address": "400962",
+      "type": "DOUBLE64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency",
+      "address": "400056",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Device diagnostics and device status",
+      "address": "400206",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Active tariff",
+      "address": "400212",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Voltage UL2 N",
+      "address": "400004",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage UL3 N",
+      "address": "400006",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage UL1 L2",
+      "address": "400008",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage UL2 L3",
+      "address": "400010",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage UL3 L1",
+      "address": "400012",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Siemens_Sentron-PAC-2200_Power-Meter.csv"
+  ],
+  "related": []
+}

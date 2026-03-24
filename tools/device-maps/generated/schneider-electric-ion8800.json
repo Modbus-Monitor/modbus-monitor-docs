@@ -1,0 +1,110 @@
+{
+  "slug": "ion8800",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "ION8800",
+  "title": "Schneider Electric ION8800 Modbus Map",
+  "description": "Pre-built Schneider Electric ION8800 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 13,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Power Factor",
+    "Energy",
+    "Current",
+    "Demand"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Uln 1 VoltsAmpsFreq",
+      "address": "400010",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "kW 1 PowerPF kW",
+      "address": "400026",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "kWh del EnergyTHD kWh",
+      "address": "400090",
+      "type": "INT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "I 1 Ampfrequnbal",
+      "address": "400149",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Ull avg mx MinMaxDemand",
+      "address": "400058",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Uln 1 Volts",
+      "address": "400165",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "PO U1-Flck N EN50160 Modbus 1",
+      "address": "400999",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Uln 2 VoltsAmpsFreq",
+      "address": "400011",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Uln 3 VoltsAmpsFreq",
+      "address": "400012",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Uln avg VoltsAmpsFreq",
+      "address": "400013",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Ull 12 VoltsAmpsFreq",
+      "address": "400014",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Ull 23 VoltsAmpsFreq",
+      "address": "400015",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PowerLogic ION8800 - Power Meter.csv"
+  ],
+  "related": []
+}

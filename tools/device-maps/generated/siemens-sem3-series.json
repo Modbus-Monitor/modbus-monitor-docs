@@ -1,0 +1,110 @@
+{
+  "slug": "sem3-series",
+  "manufacturer_slug": "siemens",
+  "manufacturer": "Siemens",
+  "model": "SEM3 Series",
+  "title": "Siemens SEM3 Series Modbus Map",
+  "description": "Pre-built Siemens SEM3 Series Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 20,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Current",
+    "Power",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Monitor 1 current phase 1 Amps",
+      "address": "411906",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Monitor 1 power factor phase 1 1",
+      "address": "411930",
+      "type": "FLOAT32",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Monitor 1 alarm flags",
+      "address": "400200",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 1 volts phase 1 Volts",
+      "address": "411900",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Monitor 2 alarm flags",
+      "address": "400201",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 3 alarm flags",
+      "address": "400202",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 4 alarm flags",
+      "address": "400203",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 5 alarm flags",
+      "address": "400204",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 6 alarm flags",
+      "address": "400205",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 7 alarm flags",
+      "address": "400206",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 8 alarm flags",
+      "address": "400207",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Monitor 9 alarm flags",
+      "address": "400208",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    }
+  ],
+  "source_csvs": [
+    "Siemens_SEM3-Dual-Phase_Power-Meter.csv",
+    "Siemens_SEM3-Single-Phase_Power-Meter.csv",
+    "Siemens_SEM3-Three-Phase_Power-Meter.csv"
+  ],
+  "related": []
+}

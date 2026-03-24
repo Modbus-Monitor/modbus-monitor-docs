@@ -1,0 +1,111 @@
+{
+  "slug": "sentron-pac-4200",
+  "manufacturer_slug": "siemens",
+  "manufacturer": "Siemens",
+  "model": "PAC4200",
+  "title": "Siemens PAC4200 Modbus Map",
+  "description": "Pre-built Siemens PAC4200 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 4,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Status",
+    "Demand",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 N",
+      "address": "400001",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current L1",
+      "address": "400013",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Apparent power L1",
+      "address": "400019",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Line Frequency",
+      "address": "400055",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Sliding Window Demand Active Pow er L1",
+      "address": "400325",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "PMD Diagnostics and Status",
+      "address": "400205",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Maximum 3 Phase Average Volt age L N",
+      "address": "400131",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Voltage L2 N",
+      "address": "400003",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L3 N",
+      "address": "400005",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L1 L2",
+      "address": "400007",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L2 L3",
+      "address": "400009",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L3 L1",
+      "address": "400011",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Siemens_Sentron-PAC-4200_Power-Meter.csv"
+  ],
+  "related": []
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "bladeups",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "BladeUPS",
+  "title": "Eaton BladeUPS Modbus Map",
+  "description": "Pre-built Eaton BladeUPS Modbus map for Modbus Monitor XPF.",
+  "device_type": "UPS",
+  "tier": 1,
+  "order": 26,
+  "protocol": "Modbus",
+  "typical_use": "power continuity monitoring, alarm review, and resilience planning",
+  "categories": [
+    "Voltage",
+    "Status",
+    "Power",
+    "Frequency",
+    "Current",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Nominal Input Voltage iDeviceVoltsInRatingValue",
+      "address": "301358",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Output Current Rating iDeviceAmpsRatingValue",
+      "address": "301811",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Power Strategy sPowerStrategyValue",
+      "address": "303004",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Output KW Hours mOutputKWHourValue",
+      "address": "307003",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Nominal Input Frequency iNominalInputFrequencyValue",
+      "address": "301670",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Min Battery Capacity for Return iMinBattCapforReturnValue",
+      "address": "318490",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Low Runtime Alarm Setpoint iLowRuntimeSetpointValue",
+      "address": "301676",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Ambient Temperature mTempAmbientValue",
+      "address": "312001",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Vendor Name VendorNameValue:32",
+      "address": "301033",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Device Type iDeviceTypeValue:32",
+      "address": "301129",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Nominal Output Voltage iDeviceVoltsOutRatingValue",
+      "address": "301360",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Nominal Output Frequency iNominalOutputFrequencyValue",
+      "address": "301671",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - BladeUPS - 8kVA UPS.csv"
+  ],
+  "related": []
+}

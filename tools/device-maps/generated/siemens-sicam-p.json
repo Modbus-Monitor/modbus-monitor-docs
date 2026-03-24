@@ -1,0 +1,108 @@
+{
+  "slug": "sicam-p",
+  "manufacturer_slug": "siemens",
+  "manufacturer": "Siemens",
+  "model": "SICAM P",
+  "title": "Siemens SICAM P Modbus Map",
+  "description": "Pre-built Siemens SICAM P Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 19,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Power Factor",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "PF L1",
+      "address": "400258",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Status of Binary Outputs and Device",
+      "address": "400128",
+      "type": "BIT",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "THDU L1",
+      "address": "400280",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "MLFB:16",
+      "address": "400000",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Serial number:10",
+      "address": "400019",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Status of Binary Inputs",
+      "address": "400129",
+      "type": "BIT",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Status of Overflow at Measuring",
+      "address": "400199",
+      "type": "BIT",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "PF L2",
+      "address": "400260",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PF L3",
+      "address": "400262",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PF",
+      "address": "400264",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "THDU L2",
+      "address": "400282",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "THDU L3",
+      "address": "400284",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    }
+  ],
+  "source_csvs": [
+    "Siemens-SICAM-P_Power-Meter.csv"
+  ],
+  "related": []
+}

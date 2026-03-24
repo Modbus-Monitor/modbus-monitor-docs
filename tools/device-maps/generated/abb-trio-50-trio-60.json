@@ -1,0 +1,111 @@
+{
+  "slug": "trio-50-trio-60",
+  "manufacturer_slug": "abb",
+  "manufacturer": "ABB",
+  "model": "Trio 50 / Trio 60",
+  "title": "ABB Trio 50 / Trio 60 Modbus Map",
+  "description": "Pre-built ABB Trio 50 / Trio 60 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Solar Inverter",
+  "tier": 1,
+  "order": 23,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Power",
+    "Status",
+    "Current",
+    "Energy",
+    "Voltage",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Inverter Grid Voltage V",
+      "address": "400304",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Inverter Grid Current A",
+      "address": "400308",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Dynamic Mode Power Factor Set Point Reactive Power expressed as fixed Power Factor",
+      "address": "400201",
+      "type": "FLOAT32",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Daily Energy Wh",
+      "address": "401071",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Mean Grid Frequency Hz",
+      "address": "401107",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Global State",
+      "address": "401051",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Internal Temperature C",
+      "address": "401121",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Remote On Off",
+      "address": "400181",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Accuracy Set unit for Modbus Data Addresses 0507 0508 0511 and 0512 or",
+      "address": "400502",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Set communication protocol for serial line RS485 1",
+      "address": "401007",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Permanent Mode Power Factor Set Point Reactive Power expressed as fixed Power Factor",
+      "address": "400203",
+      "type": "FLOAT32",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Dynamic Mode Active Power Set Point Active Power Curtailment expressed as percentage of Nominal Power in steps",
+      "address": "400211",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    }
+  ],
+  "source_csvs": [
+    "ABB - Trio 50 Trio 60 - Power Meter.csv"
+  ],
+  "related": []
+}

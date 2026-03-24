@@ -1,0 +1,115 @@
+{
+  "slug": "se5k-se7k-se10k-se12-5k",
+  "manufacturer_slug": "solaredge",
+  "manufacturer": "SolarEdge",
+  "model": "SE5K / SE7K / SE10K / SE12.5K",
+  "title": "SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus Map",
+  "description": "Pre-built SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus map for Modbus Monitor XPF.",
+  "device_type": "Solar Inverter",
+  "tier": 1,
+  "order": 24,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Power Factor",
+    "Energy",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "I AC VoltageAB",
+      "address": "440077",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "I AC Current",
+      "address": "440072",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "I AC Power",
+      "address": "440084",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "I AC Energy WH",
+      "address": "440094",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "I AC Frequency",
+      "address": "440086",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "I AC PF1",
+      "address": "440092",
+      "type": "INT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "I Status",
+      "address": "440108",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "I Temp Sink",
+      "address": "440104",
+      "type": "INT16",
+      "units": "-",
+      "category": "Temperature"
+    },
+    {
+      "signal": "C SunSpec ID",
+      "address": "440001",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "C Model:16",
+      "address": "440021",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "M Exported",
+      "address": "440227",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "I AC CurrentA",
+      "address": "440073",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "SolarEdge-SE5K-SE7K-SE10K-SE12.5K_Solar-Inverter.csv",
+    "SolarEdge_SE10K_Modbus.csv",
+    "SolarEdge_SE12.5K_Modbus.csv",
+    "SolarEdge_SE5K_Modbus.csv",
+    "SolarEdge_SE7K_Modbus.csv"
+  ],
+  "related": []
+}

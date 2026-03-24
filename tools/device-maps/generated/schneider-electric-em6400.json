@@ -1,0 +1,111 @@
+{
+  "slug": "em6400",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "EM6400",
+  "title": "Schneider Electric EM6400 Modbus Map",
+  "description": "Pre-built Schneider Electric EM6400 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 11,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Voltage",
+    "Energy",
+    "Current",
+    "Power",
+    "Demand",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Max Voltage L-L Avg",
+      "address": "402307",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Nominal Current",
+      "address": "402019",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Duration of Last Control Power Failure",
+      "address": "401831",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Alarm Energy LED Mode",
+      "address": "402123",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Nominal Frequency",
+      "address": "402017",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Demand System Assignment",
+      "address": "403758",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Meter Name:20",
+      "address": "400027",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Manufacturer:20",
+      "address": "400067",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Supported Features",
+      "address": "400092",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Duration of Last Control Power Failure",
+      "address": "401833",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Duration of Last Control Power Failure",
+      "address": "401834",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Nominal Power Factor",
+      "address": "402021",
+      "type": "UINT16",
+      "units": "PF",
+      "category": "Power"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - EM6400NG.csv"
+  ],
+  "related": []
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "em7290",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "EM7290",
+  "title": "Schneider Electric EM7290 Modbus Map",
+  "description": "Pre-built Schneider Electric EM7290 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 16,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Voltage",
+    "Energy",
+    "Current",
+    "Power",
+    "Power Factor"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Max Voltage L L Avg",
+      "address": "402309",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Starting current",
+      "address": "400999",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Number of Control Power Failures",
+      "address": "401828",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Energy LED Mode",
+      "address": "402125",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Nominal Frequency",
+      "address": "402016",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "PF standard",
+      "address": "401000",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Demand Method",
+      "address": "401006",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Revenue Security Status",
+      "address": "401920",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Meter Name:20",
+      "address": "400029",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Manufacturer:20",
+      "address": "400069",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Supported Features",
+      "address": "400094",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "PF Lock",
+      "address": "401002",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Power Factor"
+    }
+  ],
+  "source_csvs": [
+    "Schneider-Electric_EM7290-7280-7230_Power-Meter.csv"
+  ],
+  "related": []
+}

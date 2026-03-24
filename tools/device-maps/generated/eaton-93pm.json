@@ -1,0 +1,111 @@
+{
+  "slug": "93pm",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "93PM",
+  "title": "Eaton 93PM Modbus Map",
+  "description": "Pre-built Eaton 93PM Modbus map for Modbus Monitor XPF.",
+  "device_type": "UPS",
+  "tier": 1,
+  "order": 7,
+  "protocol": "Modbus",
+  "typical_use": "power continuity monitoring, alarm review, and resilience planning",
+  "categories": [
+    "Current",
+    "Voltage",
+    "Status",
+    "Power Factor",
+    "Frequency",
+    "Energy"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Nominal Input Voltage (L-L) iDeviceVoltsInRating",
+      "address": "401358",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Output Current Rating iDeviceAmpsRating",
+      "address": "401811",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Load Power Off sLoadPowerOff",
+      "address": "417028",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Output KW Hours mOutputKWHour",
+      "address": "407003",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Nominal Input Frequency iNominalInputFrequency",
+      "address": "401670",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Output PF mPFdispOut",
+      "address": "406203",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Status sStatus",
+      "address": "403001",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Ambient Temperature mTempAmbient",
+      "address": "412001",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Vendor Name VendorName:32",
+      "address": "401033",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Device Type iDeviceType:32",
+      "address": "401129",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Common Battery sCommonBattery",
+      "address": "417017",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Nominal Output Voltage (L-L) iDeviceVoltsOutRating",
+      "address": "401360",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - 93PM - UPS.csv"
+  ],
+  "related": []
+}

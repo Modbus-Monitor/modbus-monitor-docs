@@ -1,0 +1,113 @@
+{
+  "slug": "pm5500-pm5560-pm5580",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "PM5500 / PM5560 / PM5580",
+  "title": "Schneider Electric PM5500 / PM5560 / PM5580 Modbus Map",
+  "description": "Pre-built Schneider Electric PM5500 / PM5560 / PM5580 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 9,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Demand",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Nominal voltage V",
+      "address": "402017",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Nominal current A",
+      "address": "402019",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Number of control power failures",
+      "address": "401828",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Alarm energy LED mode",
+      "address": "402125",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Nominal frequency Hz",
+      "address": "402016",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Min Displacement PF Total",
+      "address": "427319",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Demand system assignment",
+      "address": "403760",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Revenue security switch status",
+      "address": "401919",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Temperature degrees C",
+      "address": "403131",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Meter Name:20",
+      "address": "400029",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Manufacturer:20",
+      "address": "400069",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "RS-485 comm port protocol MS",
+      "address": "406499",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PM5500 - Power Meter.csv",
+    "Schneider Electric - PM5560 - Power Meter.csv",
+    "Schneider Electric - PM5580 - Power Meter.csv"
+  ],
+  "related": []
+}

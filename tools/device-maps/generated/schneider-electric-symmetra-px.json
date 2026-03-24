@@ -1,0 +1,111 @@
+{
+  "slug": "symmetra-px",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "Symmetra PX",
+  "title": "Schneider Electric Symmetra PX Modbus Map",
+  "description": "Pre-built Schneider Electric Symmetra PX Modbus map for Modbus Monitor XPF.",
+  "device_type": "UPS",
+  "tier": 1,
+  "order": 17,
+  "protocol": "Modbus",
+  "typical_use": "power continuity monitoring, alarm review, and resilience planning",
+  "categories": [
+    "Power",
+    "Current",
+    "Status",
+    "Voltage",
+    "Frequency",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Battery Voltage",
+      "address": "404359",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Battery Current",
+      "address": "404361",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Battery Power",
+      "address": "404369",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Energy Meter kwH",
+      "address": "405167",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency",
+      "address": "404608",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "UPS Status",
+      "address": "400000",
+      "type": "BIT",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "BatterySystem Temperature",
+      "address": "404367",
+      "type": "INT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "UPS Serial Number:6",
+      "address": "404145",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Time on battery",
+      "address": "404352",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Alarm Register",
+      "address": "400002",
+      "type": "INT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Alarm Register",
+      "address": "400003",
+      "type": "INT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Alarm Register",
+      "address": "400004",
+      "type": "INT16",
+      "units": "-",
+      "category": "Status"
+    }
+  ],
+  "source_csvs": [
+    "Schneider-Electric_Symmetra-PX_UPS.csv"
+  ],
+  "related": []
+}

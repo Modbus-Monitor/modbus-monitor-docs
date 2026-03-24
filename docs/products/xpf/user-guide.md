@@ -35,7 +35,7 @@
 Most Modbus tools are either simple monitors or complex SCADA packages. XPF sits in the middle - it's powerful enough for serious work but simple enough to use quickly. The key advantages:
 
 1. **Runs both Master and Slave simultaneously** - Test client-server interactions on one PC without physical devices
-2. **Pre-built device maps** - Download factory-validated maps or community-contributed maps for common equipment
+2. **Pre-built device maps** - Download factory-validated maps or community-contributed maps for common equipment (see [Modbus Device Maps Start Page](./device-maps/))
 3. **Built-in data validation** - Automatic pass/fail testing with color coding
 4. **Professional logging** - Proper timestamped records for troubleshooting
 5. **Cross-platform protocol support** - Mix Modbus TCP, RTU, ASCII in the same session
@@ -47,6 +47,7 @@ Beyond this user guide, additional resources are available:
 - **[YouTube Tutorials](https://www.youtube.com/@ModbusMonitor/videos)** - Short demonstrations of features and workflows
 - **[Online Help](https://quantumbitsolutions.com/xpf-help/)** - Comprehensive web-based documentation
 - **[Community Forum](https://quantumbitsolutions.com/forums/)** - User discussions and troubleshooting help
+- **[Modbus Device Maps Start Page](./device-maps/)** - Browse manufacturer/model map previews before importing maps in XPF
 
 ## 2. Installation & Activation
 
@@ -722,7 +723,7 @@ The **Home Tab** contains the most frequently used commands for essential operat
 | **Save** | Save current document in CSV format | Preserves entire Modbus map configuration including monitor points, settings, and extended properties for reuse |
 | **Save As** | Save As New document | Preserves entire Modbus map configuration including monitor points, settings, and extended properties for reuse |
 | **Open** | Open previously saved file | Load saved XPF configuration files (CSV format) from any location |
-| **Online** | Download Modbus Maps from online folder or community | Access pre-configured maps from (1) factory-released validated maps or (2) community-uploaded maps. See [Online Maps Feature](#online-maps-feature) below. |
+| **Online** | Download Modbus Maps from online folder or community | Access pre-configured maps from (1) factory-released validated maps or (2) community-uploaded maps. See [Online Maps Feature](#online-maps-feature) below and [Modbus Device Maps Start Page](./device-maps/) for searchable model previews. |
 
 !!! note "CSV Format Benefits"
     XPF saves configurations as standard CSV files, making them easy to:
@@ -734,7 +735,7 @@ The **Home Tab** contains the most frequently used commands for essential operat
 
 **Online Maps Feature:**
 
-**Cloud-Based Modbus Maps** - View and Download Online Modbus Maps from either **(1) factory-released maps** by Modbus Monitor or **(2) community-uploaded maps** from users. Toggle the **Online** button (shown in table above) to activate this feature. **An internet connection is required** to use this feature.
+**Cloud-Based Modbus Maps** - View and Download Online Modbus Maps from either **(1) factory-released maps** by Modbus Monitor or **(2) community-uploaded maps** from users. Toggle the **Online** button (shown in table above) to activate this feature. **An internet connection is required** to use this feature. For quick device discovery and compatibility checks, use the [Modbus Device Maps Start Page](./device-maps/) before downloading/importing maps.
 
 ![Online Maps Interface](../../assets/screenshots/xpf/xpf-home-file-online.webp){ loading="lazy" }
 *How to download pre-defined Modbus Map*
@@ -1289,7 +1290,7 @@ graph TB
     3. Save your configuration before starting polling
     4. Test with "Read Once" before enabling continuous polling
     5. Save frequently - especially before making major changes
-| **Online** | Download Modbus Maps from online folder or community | Access pre-configured maps from (1) factory-released validated maps or (2) community-uploaded maps. See detailed explanation below. |
+| **Online** | Download Modbus Maps from online folder or community | Access pre-configured maps from (1) factory-released validated maps or (2) community-uploaded maps. See detailed explanation below and [Modbus Device Maps Start Page](./device-maps/) for model previews. |
 
 !!! note "CSV Format Benefits"
     XPF saves configurations as standard CSV files, making them easy to:
@@ -1890,7 +1891,7 @@ graph TB
 
 #### Online Maps { #online-maps-feature }
 
-**Cloud-Based Modbus Maps** - View and Download Online Modbus Maps from either **(1) factory-released maps** by Modbus Monitor or **(2) community-uploaded maps** from users. Toggle the **Online** button in the File group located in the Home tab to activate this feature. **An internet connection is required** to use this feature.
+**Cloud-Based Modbus Maps** - View and Download Online Modbus Maps from either **(1) factory-released maps** by Modbus Monitor or **(2) community-uploaded maps** from users. Toggle the **Online** button in the File group located in the Home tab to activate this feature. **An internet connection is required** to use this feature. For quick model lookup before download, open the [Modbus Device Maps Start Page](./device-maps/).
 
 ![Online Maps Interface](../../assets/screenshots/xpf/xpf-home-file-online.webp){ loading="lazy" }
 *How to download pre-defined Modbus Map*

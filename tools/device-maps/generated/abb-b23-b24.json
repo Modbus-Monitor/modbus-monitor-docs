@@ -1,0 +1,111 @@
+{
+  "slug": "b23-b24",
+  "manufacturer_slug": "abb",
+  "manufacturer": "ABB",
+  "model": "B23 / B24",
+  "title": "ABB B23 / B24 Modbus Map",
+  "description": "Pre-built ABB B23 / B24 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 21,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Energy",
+    "Current",
+    "Voltage",
+    "Status",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 N V 2",
+      "address": "423297",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current L1 A 2",
+      "address": "423309",
+      "type": "UINT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Apparent import kVAh kVAh 4",
+      "address": "420505",
+      "type": "UINT64",
+      "units": "-",
+      "category": "Power"
+    },
+    {
+      "signal": "Active import kWh kWh 4",
+      "address": "420481",
+      "type": "UINT64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz 1",
+      "address": "423341",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Input 3 Stored state 1",
+      "address": "425361",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Active import Tariff 1 kWh 4",
+      "address": "420849",
+      "type": "UINT64",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Serial number 2",
+      "address": "435073",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Active export kWh kWh 4",
+      "address": "420485",
+      "type": "UINT64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Active net kWh kWh 4",
+      "address": "420489",
+      "type": "INT64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Reactive import kvarh kvarh 4",
+      "address": "420493",
+      "type": "UINT64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Reactive export kvarh kvarh 4",
+      "address": "420497",
+      "type": "UINT64",
+      "units": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "source_csvs": [
+    "ABB - B23 B24 - Power Meter.csv"
+  ],
+  "related": []
+}

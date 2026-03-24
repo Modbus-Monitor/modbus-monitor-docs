@@ -125,8 +125,10 @@ nav:
   - Products:
     - Overview: products/index.md
     - XPF:
+      - Overview: products/xpf/index.md
       - HMI Guide: products/xpf/hmi.md
       - User Guide: products/xpf/user-guide.md
+      - Device Maps: products/xpf/device-maps/index.md
   - Technical Resources:
       - Overview: technical/index.md
   - Support & Help:

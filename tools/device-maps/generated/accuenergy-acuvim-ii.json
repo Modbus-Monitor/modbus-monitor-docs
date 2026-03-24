@@ -1,0 +1,111 @@
+{
+  "slug": "acuvim-ii",
+  "manufacturer_slug": "accuenergy",
+  "manufacturer": "Accuenergy",
+  "model": "Acuvim II",
+  "title": "Accuenergy Acuvim II Modbus Map",
+  "description": "Pre-built Accuenergy Acuvim II Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 30,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Energy",
+    "Current",
+    "Voltage",
+    "Harmonics",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage Input Wiring Type 0 3LN 1 1LN 2 2LL 3 3LL 4 1LL",
+      "address": "404100",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current Input Wiring Type 0 3CT 1 1CT 2 2CT",
+      "address": "404101",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Reactive Power Calculation Method 0 True Reactive Power 1 Generic Reactive Power",
+      "address": "404121",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "kWh Pulse Constant 1 60000",
+      "address": "404107",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Selection 0 50Hz 1 60Hz",
+      "address": "404094",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "VAR PF Convention 0 IEC 1 IEEE",
+      "address": "404118",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Demand Interval 1 30",
+      "address": "404110",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Seal Status 0x0A Sealed Other Unsealed",
+      "address": "404128",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "THD V1 V12 THD Rx 100",
+      "address": "416475",
+      "type": "INT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Channel 1 Communication Protocol 0 Modbus 2 BACnet MS TP",
+      "address": "404095",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Channel 1 Parity 0 Even 1 Odd 2 None2 3 None1",
+      "address": "404096",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "kvarh Pulse Constant 1 60000",
+      "address": "404108",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "source_csvs": [
+    "Accuenergy - Acuvim II - Power Meter.csv"
+  ],
+  "related": []
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "pm8000",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "PM8000",
+  "title": "Schneider Electric PM8000 Modbus Map",
+  "description": "Pre-built Schneider Electric PM8000 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 1,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Demand",
+    "Energy",
+    "Harmonics"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage A B V",
+      "address": "403020",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current A A",
+      "address": "403000",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Active power A W",
+      "address": "403054",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Active energy delivered into load kWh",
+      "address": "402700",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "403110",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Over Demand Act Pwr Last",
+      "address": "14320",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Digital input status validity base unit",
+      "address": "402400",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Thd V1 10m mean",
+      "address": "440028",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Meter name",
+      "address": "400030",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Year year",
+      "address": "401837",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Com1 baud rate",
+      "address": "454392",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Digital output status validity base unit",
+      "address": "402402",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PM8000 - Power Meter.csv"
+  ],
+  "related": []
+}

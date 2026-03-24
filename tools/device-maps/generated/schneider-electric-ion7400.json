@@ -1,0 +1,111 @@
+{
+  "slug": "ion7400",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "ION7400",
+  "title": "Schneider Electric ION7400 Modbus Map",
+  "description": "Pre-built Schneider Electric ION7400 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 12,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Current",
+    "Voltage",
+    "Power",
+    "Energy",
+    "Harmonics",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage A B V",
+      "address": "403021",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current A A",
+      "address": "403001",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Active Power A W",
+      "address": "403055",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Active Energy Delivered Into Load kWh",
+      "address": "402701",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "403111",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Digital Input Status Validity Base Unit",
+      "address": "402401",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "THD V1 10m Mean",
+      "address": "440029",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Meter Name :20",
+      "address": "400031",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Year year",
+      "address": "401838",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "COM1 Baud Rate",
+      "address": "454393",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Digital Output Status Validity Base Unit",
+      "address": "402403",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Setpoint Status Validity",
+      "address": "402421",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PowerLogic ION7400 - Power Meter.csv"
+  ],
+  "related": []
+}

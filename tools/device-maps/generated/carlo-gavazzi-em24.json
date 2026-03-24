@@ -1,0 +1,110 @@
+{
+  "slug": "em24",
+  "manufacturer_slug": "carlo-gavazzi",
+  "manufacturer": "Carlo Gavazzi",
+  "model": "EM24",
+  "title": "Carlo Gavazzi EM24 Modbus Map",
+  "description": "Pre-built Carlo Gavazzi EM24 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 29,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Energy",
+    "Voltage",
+    "Power Factor",
+    "Status",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "V L1 N",
+      "address": "300001",
+      "type": "INT32",
+      "units": "-",
+      "category": "Voltage"
+    },
+    {
+      "signal": "KWh TOT",
+      "address": "300063",
+      "type": "INT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Hz",
+      "address": "300056",
+      "type": "INT16",
+      "units": "-",
+      "category": "Frequency"
+    },
+    {
+      "signal": "PF L1",
+      "address": "300051",
+      "type": "INT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Digital input status",
+      "address": "300769",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "A L1",
+      "address": "300013",
+      "type": "INT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Version code",
+      "address": "300771",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "V L2 N",
+      "address": "300003",
+      "type": "INT32",
+      "units": "-",
+      "category": "Voltage"
+    },
+    {
+      "signal": "V L3 N",
+      "address": "300005",
+      "type": "INT32",
+      "units": "-",
+      "category": "Voltage"
+    },
+    {
+      "signal": "V L1 L2",
+      "address": "300007",
+      "type": "INT32",
+      "units": "-",
+      "category": "Voltage"
+    },
+    {
+      "signal": "V L2 L3",
+      "address": "300009",
+      "type": "INT32",
+      "units": "-",
+      "category": "Voltage"
+    },
+    {
+      "signal": "V L3 L1",
+      "address": "300011",
+      "type": "INT32",
+      "units": "-",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Carlo Gavazzi _Eaton - EM24 - Power Meter.csv"
+  ],
+  "related": []
+}

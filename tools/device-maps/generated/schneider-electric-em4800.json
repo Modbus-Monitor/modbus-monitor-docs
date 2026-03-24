@@ -1,0 +1,108 @@
+{
+  "slug": "em4800",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "EM4800",
+  "title": "Schneider Electric EM4800 Modbus Map",
+  "description": "Pre-built Schneider Electric EM4800 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 15,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power Factor"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Meter 1 pf",
+      "address": "400900",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 1 Wh delivered",
+      "address": "400000",
+      "type": "INT32",
+      "units": "kWh",
+      "category": "General"
+    },
+    {
+      "signal": "Model",
+      "address": "402600",
+      "type": "INT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Meter 2 pf",
+      "address": "400902",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 3 pf",
+      "address": "400904",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 4 pf",
+      "address": "400906",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 5 pf",
+      "address": "400908",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 6 pf",
+      "address": "400910",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 7 pf",
+      "address": "400912",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 8 pf",
+      "address": "400914",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 9 pf",
+      "address": "400916",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Meter 10 pf",
+      "address": "400918",
+      "type": "FLOAT",
+      "units": "-",
+      "category": "Power Factor"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PowerLogic EM4800 1P24 - Power Meter.csv",
+    "Schneider Electric - PowerLogic EM4800 2P12- Power Meter.csv",
+    "Schneider Electric - PowerLogic EM4800 3P08- Power Meter.csv"
+  ],
+  "related": []
+}

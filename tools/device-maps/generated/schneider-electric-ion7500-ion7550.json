@@ -1,0 +1,113 @@
+{
+  "slug": "ion7500-ion7550",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "ION7500 / ION7550",
+  "title": "Schneider Electric ION7500 / ION7550 Modbus Map",
+  "description": "Pre-built Schneider Electric ION7500 / ION7550 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 14,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Energy",
+    "Power Factor",
+    "Current",
+    "Demand",
+    "Harmonics"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Vln a VoltsAmpsFreq 1",
+      "address": "400010",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "kW a",
+      "address": "400198",
+      "type": "INT32",
+      "units": "-",
+      "category": "Power"
+    },
+    {
+      "signal": "kWh del",
+      "address": "400230",
+      "type": "INT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PF sign a",
+      "address": "400262",
+      "type": "INT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Vll avg mx MinMaxDemand 3",
+      "address": "400058",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "V1 THD mx",
+      "address": "400266",
+      "type": "INT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "I a",
+      "address": "400150",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "PO V1-Flck N EN50160 Modbus1",
+      "address": "400999",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "kW b",
+      "address": "400200",
+      "type": "INT32",
+      "units": "-",
+      "category": "Power"
+    },
+    {
+      "signal": "kW c",
+      "address": "400202",
+      "type": "INT32",
+      "units": "-",
+      "category": "Power"
+    },
+    {
+      "signal": "kW tot",
+      "address": "400204",
+      "type": "INT32",
+      "units": "-",
+      "category": "Power"
+    },
+    {
+      "signal": "kW tot mx",
+      "address": "400206",
+      "type": "INT32",
+      "units": "-",
+      "category": "Power"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - ION7550 - Power Quality Meter.csv",
+    "Schneider Electric - PowerLogic ION7500-ION7600 - Power Meter.csv",
+    "Schneider Electric - PowerLogic ION7550-ION7650 - Power Meter.csv"
+  ],
+  "related": []
+}

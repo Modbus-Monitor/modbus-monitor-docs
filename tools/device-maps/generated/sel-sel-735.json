@@ -1,0 +1,110 @@
+{
+  "slug": "sel-735",
+  "manufacturer_slug": "sel",
+  "manufacturer": "SEL",
+  "model": "SEL-735",
+  "title": "SEL SEL-735 Modbus Map",
+  "description": "Pre-built SEL SEL-735 Modbus map for Modbus Monitor XPF.",
+  "device_type": "Power Quality and Revenue Meter",
+  "tier": 1,
+  "order": 28,
+  "protocol": "Modbus",
+  "typical_use": "power quality auditing, compliance reporting, and disturbance analysis",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Demand",
+    "Frequency",
+    "Power"
+  ],
+  "preview_registers": [
+    {
+      "signal": "VA RMS VOLTAGE VA",
+      "address": "400358",
+      "type": "INT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "IA RMS CURRENT IA",
+      "address": "400350",
+      "type": "INT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "PFD3 DISPLACEMENT POWER FACTOR 3 PHASE",
+      "address": "400910",
+      "type": "INT16",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "FREQ FREQUENCY (HZ)",
+      "address": "400900",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "WP3_DEL WATT PEAK DEMAND 3 PHASE DELIVERED",
+      "address": "400500",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "W3 WATTS 3 PHASE",
+      "address": "400370",
+      "type": "INT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "IB RMS CURRENT IB",
+      "address": "400352",
+      "type": "INT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "IC RMS CURRENT IC",
+      "address": "400354",
+      "type": "INT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "IN RMS CURRENT IN",
+      "address": "400356",
+      "type": "INT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "VB RMS VOLTAGE VB",
+      "address": "400362",
+      "type": "INT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "VC RMS VOLTAGE VC",
+      "address": "400360",
+      "type": "INT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "VAB RMS VOLTAGE VAB",
+      "address": "400364",
+      "type": "INT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "SEL - SEL 735 - Power Quality and Revenue Meter.csv"
+  ],
+  "related": []
+}
