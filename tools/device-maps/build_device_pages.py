@@ -329,9 +329,77 @@ def build_preview_note() -> str:
     return "This page shows a preview subset of the full device map available in Modbus Monitor XPF."
 
 
-def build_common_use_sentence(device_type: str) -> str:
-    typical_use = derive_typical_use(device_type)
-    return f"It is commonly used in {typical_use}."
+def build_focus_phrase(categories: list[str]) -> str:
+    normalized = [category.lower() for category in categories[:3]]
+    if not normalized:
+        return "device telemetry"
+    if len(normalized) == 1:
+        return f"{normalized[0]} data"
+    if len(normalized) == 2:
+        return f"{normalized[0]} and {normalized[1]} data"
+    return f"{normalized[0]}, {normalized[1]}, and {normalized[2]} data"
+
+
+def build_domain_phrase(manufacturer: str, device_type: str) -> str:
+    lowered_type = device_type.lower()
+    if manufacturer == "Schneider Electric":
+        return "data centers, switchgear lineups, and advanced power monitoring projects"
+    if manufacturer == "Siemens":
+        return "industrial automation panels and building management systems"
+    if manufacturer == "ABB":
+        return "switchboards, facility power distribution, and commercial energy monitoring"
+    if manufacturer == "SolarEdge" or "inverter" in lowered_type:
+        return "solar inverter monitoring and renewable energy systems"
+    if manufacturer == "Eaton" and "ups" in lowered_type:
+        return "UPS infrastructure, backup power systems, and resilience programs"
+    if manufacturer == "Eaton":
+        return "critical power distribution and electrical monitoring systems"
+    if manufacturer == "SEL":
+        return "utility metering, substations, and power quality analysis"
+    if manufacturer == "Carlo Gavazzi":
+        return "panel metering, building automation, and energy submetering"
+    if manufacturer == "Accuenergy":
+        return "multi-circuit energy monitoring, tenant billing, and branch circuit analytics"
+    if "ups" in lowered_type:
+        return "backup power systems and critical infrastructure monitoring"
+    if "quality" in lowered_type:
+        return "power quality investigations and compliance reporting"
+    if "meter" in lowered_type:
+        return "facility metering, commissioning, and operational analytics"
+    return "industrial monitoring and commissioning workflows"
+
+
+def build_unique_context_sentence(
+    manufacturer: str,
+    model: str,
+    device_type: str,
+    categories: list[str],
+) -> str:
+    model_overrides = {
+        "PM8000": "Commonly used in data centers and high-end power monitoring systems.",
+        "PAC4200": "Common in industrial automation and building management systems.",
+        "M4M": "Often deployed in switchboards and compact power monitoring panels.",
+        "SE5000": "Widely used in solar inverter monitoring and renewable energy systems.",
+        "93PM": "Common in critical backup power systems and UPS monitoring workflows.",
+    }
+    if model in model_overrides:
+        return model_overrides[model]
+
+    focus_phrase = build_focus_phrase(categories)
+    domain_phrase = build_domain_phrase(manufacturer, device_type)
+    return f"For {manufacturer} {model} deployments, teams often use this map to surface {focus_phrase} in {domain_phrase}."
+
+
+def build_cta_block() -> list[str]:
+    return [
+        "## Use This Device Map in Modbus Monitor XPF",
+        "",
+        "Start using this device map in minutes - no manual register mapping required.",
+        "",
+        "- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)",
+        "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
+        "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
+    ]
 
 
 def write_device_page(
@@ -361,13 +429,9 @@ def write_device_page(
         "",
         build_preview_note(),
         "",
-        build_common_use_sentence(device_type),
+        build_unique_context_sentence(manufacturer, model, device_type, categories),
         "",
-        "## Use This Device Map in Modbus Monitor XPF",
-        "",
-        "- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)",
-        "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
-        "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
+        *build_cta_block(),
         "",
         "## Quick Facts",
         "",
@@ -382,7 +446,7 @@ def write_device_page(
         "",
         "Instead of manually decoding registers and building your setup from scratch, Modbus Monitor XPF provides a pre-built device map to help engineers test, monitor, and visualize data faster.",
         "",
-        f"See all [{manufacturer} device maps](../) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.",
+        f"Browse all [XPF device maps](../../index.md) for the full library, explore [{manufacturer} device maps](../index.md) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.",
         "",
         "## Register Preview",
         "",
@@ -425,16 +489,13 @@ def write_device_page(
     if related_links:
         for label, rel_link in related_links:
             lines.append(f"- [{label}]({rel_link})")
-    lines.append(f"- [All {manufacturer} Device Maps](../)")
+    lines.append(f"- [All {manufacturer} Device Maps](../index.md)")
+    lines.append("- [All XPF Device Maps](../../index.md)")
 
     lines.extend(
         [
             "",
-            "## Use This Device Map in Modbus Monitor XPF",
-            "",
-            "- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)",
-            "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
-            "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
+            *build_cta_block(),
             "",
         ]
     )
@@ -458,7 +519,7 @@ def write_manufacturer_index(output_path: Path, manufacturer: str, devices: list
     lines.extend(["", "## Available Device Pages", ""])
 
     for item in sorted(devices, key=lambda d: d["order"]):
-        lines.append(f"- [{manufacturer} {item['model']} Modbus Map](./{item['slug']}/)")
+        lines.append(f"- [{manufacturer} {item['model']} Modbus Map](./{item['slug']}.md)")
 
     lines.append("")
     output_path.write_text("\n".join(lines), encoding="utf-8")
@@ -483,11 +544,21 @@ def write_main_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]
         "",
         "Use these pre-built Modbus map previews to validate device compatibility before commissioning. Each page includes a practical register subset, common categories, and links back to Modbus Monitor XPF.",
         "",
+        "Browse 300+ pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.",
+        "",
         "## Why These Pages Help",
         "",
         "- Reduce startup time by reusing pre-built device maps",
         "- Confirm available telemetry before full integration",
         "- Compare supported manufacturers and model families quickly",
+        "",
+        "## Popular Device Maps",
+        "",
+        "- [Schneider Electric PM8000](./schneider-electric/pm8000.md)",
+        "- [Siemens PAC4200](./siemens/sentron-pac-4200.md)",
+        "- [ABB M4M](./abb/m4m.md)",
+        "- [SolarEdge SE5000](./solaredge/se5000.md)",
+        "- [Eaton 93PM](./eaton/93pm.md)",
         "",
         "## Tier 1 Priority Maps",
         "",
@@ -498,8 +569,8 @@ def write_main_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]
             continue
         man_slug = slugify(manufacturer)
         devices = sorted([d for d in devices if d["tier"] == 1], key=lambda d: d["order"])
-        model_links = ", ".join(f"[{d['model']}](./{man_slug}/{d['slug']}/)" for d in devices)
-        lines.append(f"- [{manufacturer}](./{man_slug}/): {model_links}")
+        model_links = ", ".join(f"[{d['model']}](./{man_slug}/{d['slug']}.md)" for d in devices)
+        lines.append(f"- [{manufacturer}](./{man_slug}/index.md): {model_links}")
 
     if tier2:
         lines.extend(["", "## Tier 2 Maps", ""])
@@ -508,15 +579,17 @@ def write_main_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]
             devices = sorted([d for d in devices if d["tier"] == 2], key=lambda d: d["order"])
             if not devices:
                 continue
-            model_links = ", ".join(f"[{d['model']}](./{man_slug}/{d['slug']}/)" for d in devices)
-            lines.append(f"- [{manufacturer}](./{man_slug}/): {model_links}")
+            model_links = ", ".join(f"[{d['model']}](./{man_slug}/{d['slug']}.md)" for d in devices)
+            lines.append(f"- [{manufacturer}](./{man_slug}/index.md): {model_links}")
 
     lines.extend(
         [
             "",
             "## Use Device Maps in Modbus Monitor XPF",
             "",
-            "- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)",
+            "Start with the device maps hub, then open the free trial in Modbus Monitor XPF to test and import faster.",
+            "",
+            "- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)",
             "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
             "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
             "",
@@ -623,7 +696,7 @@ def main() -> None:
             for peer in sorted(devices, key=lambda d: d["order"]):
                 if peer["slug"] == device["slug"]:
                     continue
-                related.append((f"{manufacturer} {peer['model']} Modbus Map", f"../{peer['slug']}/"))
+                related.append((f"{manufacturer} {peer['model']} Modbus Map", f"./{peer['slug']}.md"))
                 if len(related) >= 3:
                     break
 

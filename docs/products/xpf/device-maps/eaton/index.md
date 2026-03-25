@@ -10,6 +10,6 @@ Modbus Monitor XPF includes pre-built Eaton device maps to speed up commissionin
 
 ## Available Device Pages
 
-- [Eaton 93PM Modbus Map](./93pm/)
-- [Eaton BladeUPS Modbus Map](./bladeups/)
-- [Eaton PXM2000 Modbus Map](./pxm2000/)
+- [Eaton 93PM Modbus Map](./93pm.md)
+- [Eaton BladeUPS Modbus Map](./bladeups.md)
+- [Eaton PXM2000 Modbus Map](./pxm2000.md)

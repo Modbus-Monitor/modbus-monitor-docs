@@ -9,11 +9,13 @@ This Siemens SEM3 Series Modbus map is supported in Modbus Monitor XPF, allowing
 
 This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
-It is commonly used in power monitoring, energy metering, and facility automation.
+For Siemens SEM3 Series deployments, teams often use this map to surface current, power, and status data in industrial automation panels and building management systems.
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)
 
@@ -30,7 +32,7 @@ It is commonly used in power monitoring, energy metering, and facility automatio
 
 Instead of manually decoding registers and building your setup from scratch, Modbus Monitor XPF provides a pre-built device map to help engineers test, monitor, and visualize data faster.
 
-See all [Siemens device maps](../) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
+Browse all [XPF device maps](../../index.md) for the full library, explore [Siemens device maps](../index.md) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
 
 ## Register Preview
 
@@ -64,13 +66,16 @@ See all [Siemens device maps](../) to compare related models, and use [Compare M
 
 ## Related Device Maps
 
-- [Siemens PAC4200 Modbus Map](../sentron-pac-4200/)
-- [Siemens PAC2200 Modbus Map](../sentron-pac-2200/)
-- [Siemens SICAM P Modbus Map](../sicam-p/)
-- [All Siemens Device Maps](../)
+- [Siemens PAC4200 Modbus Map](./sentron-pac-4200.md)
+- [Siemens PAC2200 Modbus Map](./sentron-pac-2200.md)
+- [Siemens SICAM P Modbus Map](./sicam-p.md)
+- [All Siemens Device Maps](../index.md)
+- [All XPF Device Maps](../../index.md)
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)

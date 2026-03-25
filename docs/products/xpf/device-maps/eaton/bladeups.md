@@ -9,11 +9,13 @@ This Eaton BladeUPS Modbus map is supported in Modbus Monitor XPF, allowing engi
 
 This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
-It is commonly used in power continuity monitoring, alarm review, and resilience planning.
+For Eaton BladeUPS deployments, teams often use this map to surface voltage, status, and power data in UPS infrastructure, backup power systems, and resilience programs.
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)
 
@@ -30,7 +32,7 @@ It is commonly used in power continuity monitoring, alarm review, and resilience
 
 Instead of manually decoding registers and building your setup from scratch, Modbus Monitor XPF provides a pre-built device map to help engineers test, monitor, and visualize data faster.
 
-See all [Eaton device maps](../) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
+Browse all [XPF device maps](../../index.md) for the full library, explore [Eaton device maps](../index.md) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
 
 ## Register Preview
 
@@ -67,12 +69,15 @@ See all [Eaton device maps](../) to compare related models, and use [Compare Mod
 
 ## Related Device Maps
 
-- [Eaton 93PM Modbus Map](../93pm/)
-- [Eaton PXM2000 Modbus Map](../pxm2000/)
-- [All Eaton Device Maps](../)
+- [Eaton 93PM Modbus Map](./93pm.md)
+- [Eaton PXM2000 Modbus Map](./pxm2000.md)
+- [All Eaton Device Maps](../index.md)
+- [All XPF Device Maps](../../index.md)
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)

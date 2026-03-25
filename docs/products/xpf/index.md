@@ -9,4 +9,4 @@ If you are not redirected automatically:
 - [User Guide](./user-guide.md)
 - [Quick Start](./quick-start.md)
 - [HMI Guide](./hmi.md)
-- [Device Maps](./device-maps/)
+- [Device Maps](./device-maps/index.md)

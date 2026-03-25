@@ -9,11 +9,13 @@ This ABB Trio 50 / Trio 60 Modbus map is supported in Modbus Monitor XPF, allowi
 
 This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
-It is commonly used in PV production monitoring, inverter diagnostics, and energy analytics.
+For ABB Trio 50 / Trio 60 deployments, teams often use this map to surface power, status, and current data in switchboards, facility power distribution, and commercial energy monitoring.
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)
 
@@ -30,7 +32,7 @@ It is commonly used in PV production monitoring, inverter diagnostics, and energ
 
 Instead of manually decoding registers and building your setup from scratch, Modbus Monitor XPF provides a pre-built device map to help engineers test, monitor, and visualize data faster.
 
-See all [ABB device maps](../) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
+Browse all [XPF device maps](../../index.md) for the full library, explore [ABB device maps](../index.md) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
 
 ## Register Preview
 
@@ -67,13 +69,16 @@ See all [ABB device maps](../) to compare related models, and use [Compare Modbu
 
 ## Related Device Maps
 
-- [ABB M4M Modbus Map](../m4m/)
-- [ABB B23 / B24 Modbus Map](../b23-b24/)
-- [ABB A41 / A42 Modbus Map](../a41-a42/)
-- [All ABB Device Maps](../)
+- [ABB M4M Modbus Map](./m4m.md)
+- [ABB B23 / B24 Modbus Map](./b23-b24.md)
+- [ABB A41 / A42 Modbus Map](./a41-a42.md)
+- [All ABB Device Maps](../index.md)
+- [All XPF Device Maps](../../index.md)
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)

@@ -11,7 +11,7 @@ Modbus Monitor XPF includes pre-built Siemens device maps to speed up commission
 
 ## Available Device Pages
 
-- [Siemens PAC4200 Modbus Map](./sentron-pac-4200/)
-- [Siemens PAC2200 Modbus Map](./sentron-pac-2200/)
-- [Siemens SICAM P Modbus Map](./sicam-p/)
-- [Siemens SEM3 Series Modbus Map](./sem3-series/)
+- [Siemens PAC4200 Modbus Map](./sentron-pac-4200.md)
+- [Siemens PAC2200 Modbus Map](./sentron-pac-2200.md)
+- [Siemens SICAM P Modbus Map](./sicam-p.md)
+- [Siemens SEM3 Series Modbus Map](./sem3-series.md)

@@ -8,4 +8,4 @@ Modbus Monitor XPF includes pre-built Accuenergy device maps to speed up commiss
 
 ## Available Device Pages
 
-- [Accuenergy Acuvim II Modbus Map](./acuvim-ii/)
+- [Accuenergy Acuvim II Modbus Map](./acuvim-ii.md)

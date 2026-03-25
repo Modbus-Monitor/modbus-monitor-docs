@@ -8,4 +8,4 @@ Modbus Monitor XPF includes pre-built Carlo Gavazzi device maps to speed up comm
 
 ## Available Device Pages
 
-- [Carlo Gavazzi EM24 Modbus Map](./em24/)
+- [Carlo Gavazzi EM24 Modbus Map](./em24.md)

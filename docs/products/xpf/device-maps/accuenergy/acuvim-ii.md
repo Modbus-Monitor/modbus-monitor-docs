@@ -9,11 +9,13 @@ This Accuenergy Acuvim II Modbus map is supported in Modbus Monitor XPF, allowin
 
 This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
-It is commonly used in power monitoring, energy metering, and facility automation.
+For Accuenergy Acuvim II deployments, teams often use this map to surface power, energy, and current data in multi-circuit energy monitoring, tenant billing, and branch circuit analytics.
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)
 
@@ -30,7 +32,7 @@ It is commonly used in power monitoring, energy metering, and facility automatio
 
 Instead of manually decoding registers and building your setup from scratch, Modbus Monitor XPF provides a pre-built device map to help engineers test, monitor, and visualize data faster.
 
-See all [Accuenergy device maps](../) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
+Browse all [XPF device maps](../../index.md) for the full library, explore [Accuenergy device maps](../index.md) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
 
 ## Register Preview
 
@@ -67,10 +69,13 @@ See all [Accuenergy device maps](../) to compare related models, and use [Compar
 
 ## Related Device Maps
 
-- [All Accuenergy Device Maps](../)
+- [All Accuenergy Device Maps](../index.md)
+- [All XPF Device Maps](../../index.md)
 
 ## Use This Device Map in Modbus Monitor XPF
 
-- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+Start using this device map in minutes - no manual register mapping required.
+
+- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
 - [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 - [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)
