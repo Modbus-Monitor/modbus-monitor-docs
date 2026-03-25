@@ -7,7 +7,7 @@ description: Browse pre-built Modbus device map previews by manufacturer and mod
 
 Use these pre-built Modbus map previews to validate device compatibility before commissioning. Each page includes a practical register subset, common categories, and links back to Modbus Monitor XPF.
 
-Browse 300+ pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.
+Browse 120+ pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.
 
 ## Why These Pages Help
 
