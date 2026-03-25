@@ -5,7 +5,11 @@ description: Pre-built SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus map for Mo
 
 # SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus Map
 
-Use this pre-built SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported solar inverter map, common data categories, and typical use cases.
+This SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in PV production monitoring, inverter diagnostics, and energy analytics.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [SolarEdge device maps](../) to compare related models, and use [Compare
 | C Model:16 | 440021 | STRING | - | Identification |
 | M Exported | 440227 | UINT32 | - | Communication |
 | I AC CurrentA | 440073 | UINT16 | - | Current |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

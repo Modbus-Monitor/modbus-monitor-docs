@@ -5,7 +5,11 @@ description: Pre-built Eaton BladeUPS Modbus map for Modbus Monitor XPF with reg
 
 # Eaton BladeUPS Modbus Map
 
-Use this pre-built Eaton BladeUPS Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported ups map, common data categories, and typical use cases.
+This Eaton BladeUPS Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in power continuity monitoring, alarm review, and resilience planning.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [Eaton device maps](../) to compare related models, and use [Compare Mod
 | Device Type iDeviceTypeValue:32 | 301129 | STRING | - | General |
 | Nominal Output Voltage iDeviceVoltsOutRatingValue | 301360 | UINT32 | V | Voltage |
 | Nominal Output Frequency iNominalOutputFrequencyValue | 301671 | UINT16 | Hz | Frequency |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

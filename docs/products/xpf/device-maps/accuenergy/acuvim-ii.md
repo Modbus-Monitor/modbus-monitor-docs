@@ -5,7 +5,11 @@ description: Pre-built Accuenergy Acuvim II Modbus map for Modbus Monitor XPF wi
 
 # Accuenergy Acuvim II Modbus Map
 
-Use this pre-built Accuenergy Acuvim II Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported power meter map, common data categories, and typical use cases.
+This Accuenergy Acuvim II Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in power monitoring, energy metering, and facility automation.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [Accuenergy device maps](../) to compare related models, and use [Compar
 | Channel 1 Communication Protocol 0 Modbus 2 BACnet MS TP | 404095 | UINT16 | - | Communication |
 | Channel 1 Parity 0 Even 1 Odd 2 None2 3 None1 | 404096 | UINT16 | - | General |
 | kvarh Pulse Constant 1 60000 | 404108 | UINT16 | kWh | Energy |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

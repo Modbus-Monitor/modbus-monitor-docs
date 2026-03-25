@@ -5,7 +5,11 @@ description: Pre-built ABB M4M Modbus map for Modbus Monitor XPF with register p
 
 # ABB M4M Modbus Map
 
-Use this pre-built ABB M4M Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported power meter map, common data categories, and typical use cases.
+This ABB M4M Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in power monitoring, energy metering, and facility automation.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [ABB device maps](../) to compare related models, and use [Compare Modbu
 | Energy Trend Data block 1 5 | 433557 | UINT16 | kWh | Energy |
 | Energy Trend Data block 1 6 | 433558 | UINT16 | kWh | Energy |
 | Energy Trend Data block 1 7 | 433559 | UINT16 | kWh | Energy |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

@@ -5,7 +5,11 @@ description: Pre-built Schneider Electric Symmetra PX Modbus map for Modbus Moni
 
 # Schneider Electric Symmetra PX Modbus Map
 
-Use this pre-built Schneider Electric Symmetra PX Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported ups map, common data categories, and typical use cases.
+This Schneider Electric Symmetra PX Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in power continuity monitoring, alarm review, and resilience planning.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [Schneider Electric device maps](../) to compare related models, and use
 | Alarm Register | 400002 | INT16 | - | Status |
 | Alarm Register | 400003 | INT16 | - | Status |
 | Alarm Register | 400004 | INT16 | - | Status |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

@@ -5,7 +5,11 @@ description: Pre-built Siemens SEM3 Series Modbus map for Modbus Monitor XPF wit
 
 # Siemens SEM3 Series Modbus Map
 
-Use this pre-built Siemens SEM3 Series Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported power meter map, common data categories, and typical use cases.
+This Siemens SEM3 Series Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in power monitoring, energy metering, and facility automation.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [Siemens device maps](../) to compare related models, and use [Compare M
 | Monitor 7 alarm flags | 400206 | UINT16 | - | Status |
 | Monitor 8 alarm flags | 400207 | UINT16 | - | Status |
 | Monitor 9 alarm flags | 400208 | UINT16 | - | Status |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

@@ -5,7 +5,11 @@ description: Pre-built Siemens PAC4200 Modbus map for Modbus Monitor XPF with re
 
 # Siemens PAC4200 Modbus Map
 
-Use this pre-built Siemens PAC4200 Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported power meter map, common data categories, and typical use cases.
+This Siemens PAC4200 Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in power monitoring, energy metering, and facility automation.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [Siemens device maps](../) to compare related models, and use [Compare M
 | Voltage L1 L2 | 400007 | FLOAT32 | V | Voltage |
 | Voltage L2 L3 | 400009 | FLOAT32 | V | Voltage |
 | Voltage L3 L1 | 400011 | FLOAT32 | V | Voltage |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

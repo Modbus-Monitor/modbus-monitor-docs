@@ -5,7 +5,11 @@ description: Pre-built Siemens SICAM P Modbus map for Modbus Monitor XPF with re
 
 # Siemens SICAM P Modbus Map
 
-Use this pre-built Siemens SICAM P Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported power meter map, common data categories, and typical use cases.
+This Siemens SICAM P Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in power monitoring, energy metering, and facility automation.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [Siemens device maps](../) to compare related models, and use [Compare M
 | PF | 400264 | FLOAT32 | - | Power Factor |
 | THDU L2 | 400282 | FLOAT32 | - | Harmonics |
 | THDU L3 | 400284 | FLOAT32 | - | Harmonics |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

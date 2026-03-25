@@ -5,7 +5,11 @@ description: Pre-built ABB Trio 50 / Trio 60 Modbus map for Modbus Monitor XPF w
 
 # ABB Trio 50 / Trio 60 Modbus Map
 
-Use this pre-built ABB Trio 50 / Trio 60 Modbus map in Modbus Monitor XPF to reduce setup time and start monitoring faster. This page provides a technical preview of the supported solar inverter map, common data categories, and typical use cases.
+This ABB Trio 50 / Trio 60 Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+
+This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+
+It is commonly used in PV production monitoring, inverter diagnostics, and energy analytics.
 
 ## Use This Device Map in Modbus Monitor XPF
 
@@ -44,8 +48,6 @@ See all [ABB device maps](../) to compare related models, and use [Compare Modbu
 | Set communication protocol for serial line RS485 1 | 401007 | UINT16 | - | Identification |
 | Permanent Mode Power Factor Set Point Reactive Power expressed as fixed Power Factor | 400203 | FLOAT32 | PF | Power |
 | Dynamic Mode Active Power Set Point Active Power Curtailment expressed as percentage of Nominal Power in steps | 400211 | UINT16 | kW | Power |
-
-> This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
 ## Common Data Categories
 

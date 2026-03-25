@@ -319,10 +319,19 @@ def derive_typical_use(device_type: str) -> str:
 
 def build_intro(manufacturer: str, model: str, device_type: str) -> str:
     return (
-        f"Use this pre-built {manufacturer} {model} Modbus map in Modbus Monitor XPF "
-        f"to reduce setup time and start monitoring faster. This page provides a technical "
-        f"preview of the supported {device_type.lower()} map, common data categories, and typical use cases."
+        f"This {manufacturer} {model} Modbus map is supported in Modbus Monitor XPF, "
+        "allowing engineers to quickly test, monitor, and visualize device data without "
+        "manual register mapping."
     )
+
+
+def build_preview_note() -> str:
+    return "This page shows a preview subset of the full device map available in Modbus Monitor XPF."
+
+
+def build_common_use_sentence(device_type: str) -> str:
+    typical_use = derive_typical_use(device_type)
+    return f"It is commonly used in {typical_use}."
 
 
 def write_device_page(
@@ -349,6 +358,10 @@ def write_device_page(
         f"# {title}",
         "",
         build_intro(manufacturer, model, device_type),
+        "",
+        build_preview_note(),
+        "",
+        build_common_use_sentence(device_type),
         "",
         "## Use This Device Map in Modbus Monitor XPF",
         "",
@@ -385,8 +398,6 @@ def write_device_page(
 
     lines.extend(
         [
-            "",
-            "> This page shows a preview subset of the full device map available in Modbus Monitor XPF.",
             "",
             "## Common Data Categories",
             "",
