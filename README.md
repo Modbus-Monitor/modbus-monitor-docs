@@ -1,3 +1,7 @@
+[![Download](https://img.shields.io/badge/Download-XPF-blue)](https://www.modbusmonitor.com/download)
+[![Compare](https://img.shields.io/badge/Compare-Modbus%20Tools-green)](https://www.modbusmonitor.com/compare)
+[![Docs](https://img.shields.io/badge/Docs-Device%20Maps-orange)](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
+
 # Modbus Monitor Documentation
 
 Documentation for **Modbus Monitor XPF** — a professional Modbus tester for Windows with built-in HMI dashboards, device maps, and industrial protocol tools.
@@ -49,7 +53,7 @@ Instead of manually decoding registers or searching PDFs:
   https://www.modbusmonitor.com/download  
 
 - 🔍 Compare with other Modbus tools:  
-  https://www.modbusmonitor.com/compare  
+  https://www.modbusmonitor.com/compare
 
 - 🧪 Modbus tester overview:  
   https://www.modbusmonitor.com/modbus-tester  
