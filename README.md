@@ -32,8 +32,16 @@ Modbus Monitor XPF includes pre-built Modbus device maps for:
 - Eaton UPS and power systems  
 - and many more  
 
-👉 Browse all device maps:  
+Browse all device maps:  
 https://docs.quantumbitsolutions.com/products/xpf/device-maps/
+
+---
+## Modbus HMI Dashboard
+
+Visualize Modbus data using built-in dashboards (gauges, trends, and controls) instead of working with raw register values.
+
+👉 Example and details:
+https://www.modbusmonitor.com/modbus-hmi
 
 ---
 
