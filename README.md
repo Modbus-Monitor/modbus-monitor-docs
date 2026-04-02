@@ -1,100 +1,94 @@
-# Modbus Monitor — Documentation
+[![Download](https://img.shields.io/badge/Download-XPF-blue)](https://www.modbusmonitor.com/download)
+[![Compare](https://img.shields.io/badge/Compare-Modbus%20Tools-green)](https://www.modbusmonitor.com/compare)
+[![Docs](https://img.shields.io/badge/Docs-Device%20Maps-orange)](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
 
-This repository hosts the documentation for all Modbus Monitor products:
-- Modbus Monitor XPF
-- Modbus Monitor Advanced  
-- Modbus Monitor Android (Free)
-- Modbus Monitor Mapper Pro
+# Modbus Monitor Documentation
 
-Built with **MkDocs Material**. Each product has its own section and comprehensive documentation.
+Documentation for **Modbus Monitor XPF** — a professional Modbus tester for Windows with built-in HMI dashboards, device maps, and industrial protocol tools.
 
-## 🌐 Live Documentation
+---
 
-**View the documentation**: https://modbus-monitor.github.io/modbus-monitor-docs/
+## What is Modbus Monitor XPF?
 
-## 🚀 Local Development Setup
+Modbus Monitor XPF is an all-in-one Modbus engineering tool that allows you to:
 
-### Prerequisites
-- **Windows**: WSL2 with Ubuntu 22.04+ (recommended) or Python 3.8+
-- **macOS/Linux**: Python 3.8+
-- **Git**: For cloning the repository
+- Test Modbus TCP, RTU, ASCII, and UDP devices  
+- Simulate Modbus slave/server devices  
+- Scan registers and analyze communication  
+- Log and visualize data in real time  
+- Build live HMI dashboards with gauges, charts, and controls  
+- Use 300+ pre-built device maps without manual register mapping  
 
-### Quick Start
+---
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/modbus-monitor/modbus-monitor-docs.git
-   cd docs
-   ```
+## Device Maps (120+ Supported Devices)
 
-2. **Option A: Automated Setup (WSL/Linux)**
-   ```bash
-   # Make script executable and run
-   chmod +x start-docs.sh
-   ./start-docs.sh
-   ```
+Modbus Monitor XPF includes pre-built Modbus device maps for:
 
-3. **Option B: Manual Setup**
-   ```bash
-   # Install MkDocs and plugins
-   pip3 install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-redirects mkdocs-minify-plugin
-   
-   # Start development server
-   mkdocs serve
-   ```
+- Schneider Electric (PM, ION series)  
+- Siemens (PAC, SICAM, SEM3)  
+- ABB (M4M, energy meters)  
+- SolarEdge, SMA, Huawei inverters  
+- Eaton UPS and power systems  
+- and many more  
 
-4. **Open your browser**: http://localhost:8000
+Browse all device maps:  
+https://docs.quantumbitsolutions.com/products/xpf/device-maps/
 
-### 📝 Editing Documentation
+---
+## Modbus HMI Dashboard
 
-1. Edit any `.md` file in the `docs/` directory
-2. Changes appear instantly in your browser
-3. Commit and push changes to deploy to GitHub Pages
+Visualize Modbus data using built-in dashboards (gauges, trends, and controls) instead of working with raw register values.
 
-### 📂 Structure
+👉 Example and details:
+https://www.modbusmonitor.com/modbus-hmi
 
-```
-docs/
-├── docs/                     # Documentation source files
-│   ├── index.md             # Homepage
-│   └── imported/            # Auto-imported WordPress content
-├── mkdocs.yml               # MkDocs configuration
-├── start-docs.sh            # One-click setup script
-└── .github/workflows/       # Automated deployment
-```
+---
 
-### 🔄 WordPress Integration
+## Why This Matters
 
-Documentation is automatically imported from WordPress and converted to Markdown via GitHub Actions. The imported content appears in `docs/imported/` and is rebuilt nightly.
+Instead of manually decoding registers or searching PDFs:
 
-### 📋 Version Management
+- Connect to your device  
+- Load a device map  
+- Start monitoring instantly  
 
-The documentation uses semantic versioning (`MAJOR.MINOR.PATCH`) for tracking significant content changes:
+---
 
-- **Patch** (1.0.0 → 1.0.1): Bug fixes, typos, minor corrections
-- **Minor** (1.0.1 → 1.1.0): New content, features, sections  
-- **Major** (1.1.0 → 2.0.0): Major restructure, breaking changes
+## Get Started
 
-**Updating Version:**
-```bash
-# Linux/WSL
-./update-version.sh
+- 🚀 Download Modbus Monitor XPF:  
+  https://www.modbusmonitor.com/download  
 
-# Windows
-update-version.bat
-```
+- 🔍 Compare with other Modbus tools:  
+  https://www.modbusmonitor.com/compare
 
-**Note:** The build date updates automatically with each deployment, but the version number should only be updated when actual content changes occur.
+- 🧪 Modbus tester overview:  
+  https://www.modbusmonitor.com/modbus-tester  
 
-## 🤝 Contributing
+---
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Make your changes
-4. Test locally with `mkdocs serve`
-5. If significant changes: Run `update-version.sh` or `update-version.bat`
-6. Submit a pull request
+## Documentation
 
-## 📄 License
+Full documentation is available here:
 
-This documentation is available under the MIT License.
+👉 https://docs.quantumbitsolutions.com/
+
+---
+
+## About This Repository
+
+This repository contains the source for the documentation site built with MkDocs.
+
+It includes:
+
+- User guides  
+- Feature documentation  
+- Device maps  
+- Release notes  
+
+---
+
+## License
+
+MIT License
