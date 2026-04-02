@@ -43,6 +43,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Show build environment versions
+        run: |
+          python --version
+          pip --version
+          pip freeze | grep -E "^(mkdocs|mkdocs-material|pymdown-extensions|pygments|Markdown)==" || true
+          echo "Git SHA: $GITHUB_SHA"
+
       # ────────────────────────────────
       # 2️⃣ Basic system updates (pandoc/curl no longer needed)
       # ────────────────────────────────

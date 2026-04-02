@@ -6,3 +6,4 @@ mkdocs-awesome-pages-plugin==2.10.1
 mkdocs-autorefs==1.4.3
 mkdocs-redirects==1.2.2
 pymdown-extensions==10.16.1
+pygments==2.19.2

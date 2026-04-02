@@ -29,7 +29,7 @@ Whether you're working with PLCs, energy meters, or industrial IoT systems, thes
 
 Compare the most popular Modbus tools including Modbus Poll, ModScan, and newer solutions that combine testing and visualization.
 
-> [Read the full comparison](./best-modbus-tester-software/)
+> [Read the full comparison](./best-modbus-tester-software.md/)
 
 ---
 
