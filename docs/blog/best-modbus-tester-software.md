@@ -30,7 +30,7 @@ Traditional tools focus on raw communication, but newer tools combine testing wi
 
 | Tool | Client (Master) | Server (Slave) | Visualization | Device Maps | Notes |
 |------|----------------|----------------|--------------|-------------|------|
-| Modbus Monitor XPF | ✔ | ✔ built-in | ✔ dashboards (HMI) | ✔ 300+ | Unified tool |
+| Modbus Monitor XPF | ✔ | ✔ built-in | ✔ dashboards (HMI) | ✔ 120+ | Unified tool |
 | Modbus Poll | ✔ | ✖ | ✖ | ✖ | Reliable, but limited |
 | ModScan | ✔ | ✖ | ✖ | ✖ | Legacy tool |
 | QModMaster | ✔ | ✖ | ✖ | ✖ | Open source, basic |

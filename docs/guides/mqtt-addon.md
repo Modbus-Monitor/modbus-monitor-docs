@@ -340,7 +340,7 @@ To verify that your XPF MQTT connection is working correctly, use **MQTT Explore
         - XPF displays "Connected" status 
         - MQTT icon changes to green (connected state)
         - Watch the Communication Log for MQTT connection messages:
-          ```          
+          ```text
             03:33:03:937839,MQTT Start/Stop Toggle
             03:33:04:760154,Connected to MQTT Broker
             03:33:13:289810,xpf/Sample Holding Register : 40001
@@ -360,7 +360,7 @@ To verify that your XPF MQTT connection is working correctly, use **MQTT Explore
       - Check that MQTT Explorer receives the test messages immediately
       - Confirm message format, content, and values match your monitor points
       - Communication Log should show published test messages with timestamps:
-         ```          
+      ```text
             03:33:13:289810,xpf/Sample Holding Register : 40001
             03:33:13:290089,xpf/Sample Input Register : 30001
             03:33:13:290243,xpf/Discrete Input Register : 1
@@ -437,7 +437,7 @@ For production systems, always use encrypted MQTT connections to protect your da
    - Use HiveMQ WebSocket client in dashboard for verification
    - **Enable MQTT Debug Log** (IoT Tab > MQTT Group > Debug Log) to see detailed connection status:
 
-      ```
+    ```text
          11/8/2025 3:34:33 PM,MQTT Start/Stop Toggle
          11/8/2025 3:34:33 PM,Port 8883 on a88b7e2966be46fdaa86a088d60d4160.s1.eu.hivemq.cloud is open.
          11/8/2025 3:34:33 PM,Connecting...
@@ -1031,7 +1031,7 @@ Result: Creates monitor point named "sensors/humidity/room1" with value "65.2"
    - Use MQTT client to publish to your subscription topics
    - **Monitor Points Grid should update immediately** with new/changed values
    - Check Communication Log for received message confirmations:
-     ```          
+    ```text
         14:33:13: MQTT Message Received: Topic: sensors/temp/room1, Payload: 24.8
         14:33:13: Updated monitor point: sensors/temp/room1 = 24.8
      ```
@@ -1458,7 +1458,7 @@ Subscription Topics:
 
       - Click **Connect** - should show **"Connected (TLS)"**
       - Check MQTT Debug Log for certificate validation:
-      ```
+  ```text
       Certificate validation approved. Errors: None.
       Subject: CN=*.ala.us-east-1.emqxsl.com
       TLS encryption enabled. Using protocol: Tls12
@@ -1544,7 +1544,7 @@ openssl pkcs12 -export -out client.pfx \
 #### Step 4: Verify Mutual TLS
 
 1. **Connection Log Should Show**:
-   ```
+  ```text
    [INFO] TLS Handshake successful
    [INFO] Client certificate presented
    [INFO] Mutual authentication completed
