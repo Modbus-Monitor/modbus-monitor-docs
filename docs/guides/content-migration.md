@@ -130,7 +130,7 @@ keywords: modbus, protocol, technical, [topic-keywords]
 ## 💡 Examples
 
 ### Example 1: [Practical Scenario]
-```code
+```
 [Code or configuration example]
 ```
 
