@@ -66,7 +66,7 @@ Instead of working only with raw register values, engineers can view real-time d
 
 This reduces the need for external tools or full SCADA systems during commissioning.
 
-> Example: https://www.modbusmonitor.com/modbus-hmi
+> Example: [https://www.modbusmonitor.com/modbus-hmi](https://www.modbusmonitor.com/modbus-hmi)
 
 ---
 
@@ -93,7 +93,7 @@ Modern tools now include pre-built device maps, allowing engineers to connect an
 
 This significantly reduces setup time and minimizes errors during commissioning.
 
-> See supported devices: https://docs.quantumbitsolutions.com/products/xpf/device-maps/
+> See supported devices: [https://docs.quantumbitsolutions.com/products/xpf/device-maps/](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
 
 ---
 
@@ -103,11 +103,11 @@ If your workflow only requires basic register reads, traditional tools like Modb
 
 However, if you need faster troubleshooting, visualization, and a more efficient workflow, modern tools that combine testing and HMI capabilities provide a significant advantage.
 
-> Explore a modern Modbus tester with built-in HMI: https://www.modbusmonitor.com/modbus-hmi
+> Explore a modern Modbus tester with built-in HMI: [https://www.modbusmonitor.com/modbus-hmi](https://www.modbusmonitor.com/modbus-hmi)
 
 ---
 
 ## Related Pages
 
-- Compare tools: https://www.modbusmonitor.com/compare  
-- Download software: https://www.modbusmonitor.com/download  
+- Compare tools: [https://www.modbusmonitor.com/compare](https://www.modbusmonitor.com/compare)  
+- Download software: [https://www.modbusmonitor.com/download](https://www.modbusmonitor.com/download)  

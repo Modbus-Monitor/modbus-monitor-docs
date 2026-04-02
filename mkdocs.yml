@@ -50,7 +50,7 @@ theme:
       accent: teal
   icon:
     logo: material/book-open-page-variant
-    favicon: images/favicon.png
+    favicon: assets/images/favicon.png
 
 extra_javascript:
   - javascripts/mathjax.js
