@@ -1,5 +1,72 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {{ super() }}
+  <link rel="me" href="https://x.com/ModbusMonitor">
+  <link rel="me" href="https://www.youtube.com/modbusmonitor">
+  <meta property="og:see_also" content="https://x.com/ModbusMonitor">
+  <meta property="og:see_also" content="https://www.youtube.com/modbusmonitor">
+
+  {% if page %}
+    {% set raw_meta_title = page.meta.get('title') if page.meta else none %}
+    {% set raw_meta_description = page.meta.get('description') if page.meta else none %}
+    {% set raw_meta_image = page.meta.get('image') if page.meta else none %}
+
+    {% if raw_meta_title %}
+      {% if raw_meta_title is string %}
+        {% set meta_title = raw_meta_title %}
+      {% else %}
+        {% set meta_title = raw_meta_title | join(' ') %}
+      {% endif %}
+    {% else %}
+      {% set meta_title = page.title %}
+    {% endif %}
+
+    {% if raw_meta_description %}
+      {% if raw_meta_description is string %}
+        {% set meta_description = raw_meta_description %}
+      {% else %}
+        {% set meta_description = raw_meta_description | join(' ') %}
+      {% endif %}
+      <meta property="og:description" content="{{ meta_description | e }}">
+      <meta name="twitter:description" content="{{ meta_description | e }}">
+    {% endif %}
+
+    {% if raw_meta_image %}
+      {% if raw_meta_image is string %}
+        {% set meta_image = raw_meta_image %}
+      {% else %}
+        {% set meta_image = raw_meta_image | join(' ') %}
+      {% endif %}
+
+      {% if meta_image.startswith('http://') or meta_image.startswith('https://') %}
+        {% set meta_image_url = meta_image %}
+      {% elif meta_image.startswith('/') %}
+        {% set meta_image_url = config.site_url.rstrip('/') ~ meta_image %}
+      {% else %}
+        {% set meta_image_url = config.site_url.rstrip('/') ~ '/' ~ meta_image %}
+      {% endif %}
+
+      <meta property="og:image" content="{{ meta_image_url | e }}">
+      <meta name="twitter:image" content="{{ meta_image_url | e }}">
+      <meta name="twitter:card" content="summary_large_image">
+    {% else %}
+      <meta name="twitter:card" content="summary">
+    {% endif %}
+
+    <meta property="og:title" content="{{ meta_title | e }}">
+    <meta property="og:site_name" content="{{ config.site_name | e }}">
+    <meta name="twitter:title" content="{{ meta_title | e }}">
+    <meta name="twitter:site" content="@ModbusMonitor">
+    <meta name="twitter:creator" content="@ModbusMonitor">
+    <meta property="og:type" content="{{ 'article' if page.url and 'blog/' in page.url else 'website' }}">
+
+    {% if page.canonical_url %}
+      <meta property="og:url" content="{{ page.canonical_url }}">
+    {% endif %}
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   {{ super() }}
   <style>

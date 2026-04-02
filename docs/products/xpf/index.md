@@ -1,3 +1,6 @@
+Title: Modbus Monitor XPF | User Guide, Quick Start, HMI, and Device Maps
+Description: Access the Modbus Monitor XPF user guide, quick start, HMI guide, and device map resources for Windows-based Modbus monitoring and testing.
+
 # Modbus Monitor XPF
 
 <meta http-equiv="refresh" content="0; url=./user-guide/" />

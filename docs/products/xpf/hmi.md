@@ -1,3 +1,7 @@
+Title: Modbus Monitor XPF HMI Guide | Build Modbus Dashboards with Widgets
+Description: Build live Modbus HMI dashboards in Modbus Monitor XPF using widgets, trends, controls, reusable layouts, and state-aware visualization.
+Image: /assets/screenshots/xpf/xpf-hmi-demo.webp
+
 # Modbus Monitor XPF HMI Guide
 
 Use this as the single HMI guide page for XPF. It covers overview, dashboard management workflow, and widget reference in one place.

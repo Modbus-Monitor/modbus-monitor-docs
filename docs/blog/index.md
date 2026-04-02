@@ -1,7 +1,5 @@
----
-title: Modbus Engineering Blog — Tools, Guides, and Best Practices
-description: Learn about Modbus testing, HMI dashboards, device maps, and industrial automation tools. Guides and comparisons for engineers and integrators.
----
+Title: Modbus Engineering Blog | Modbus Tools, HMI, and Automation Guides
+Description: Learn about Modbus testing, HMI dashboards, device maps, and industrial automation tools with practical guides and comparisons for engineers and integrators.
 
 # Modbus Engineering Blog
 

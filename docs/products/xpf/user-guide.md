@@ -1,3 +1,6 @@
+Title: Modbus Monitor XPF User Guide | Modbus Client, Server, Logging, and Testing
+Description: Learn how to use Modbus Monitor XPF for Modbus client and server operations, monitor points, logging, validation, scanning, and device simulation.
+
 # Modbus Monitor XPF - User Guide
 
 **A practical guide for controls engineers and technicians**

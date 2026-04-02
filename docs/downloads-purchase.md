@@ -1,3 +1,6 @@
+Title: Download Modbus Monitor XPF | Windows Modbus TCP, RTU, and ASCII Tool
+Description: Download Modbus Monitor XPF for Windows, compare installer options, start a free trial, and buy licenses for Modbus TCP, RTU, and ASCII monitoring.
+
 # Downloads & Purchase
 
 Professional Modbus monitoring software for Windows and mobile devices.

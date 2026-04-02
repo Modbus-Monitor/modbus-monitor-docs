@@ -1,5 +1,5 @@
 ﻿docs_dir: docs
-site_name: Modbus Monitor  Documentation
+site_name: Modbus Monitor Documentation
 site_url: https://docs.quantumbitsolutions.com/
 use_directory_urls: true
 
@@ -10,6 +10,13 @@ extra:
   version:
     provider: mike
   generator: false
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/ModbusMonitor
+      name: Modbus Monitor on X
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/modbusmonitor
+      name: Modbus Monitor on YouTube
   analytics:
     provider: google
     property: G-3C1Y42YDPV
@@ -79,6 +86,7 @@ plugins:
         'assets-guide.md': 'guides/assets-guide.md'
 
 markdown_extensions:
+  - meta
   - admonition
   - tables
   - toc:

@@ -1,3 +1,6 @@
+Title: Modbus Monitor XPF Quick Start | Connect to a Modbus Device in 5 Minutes
+Description: Get started with Modbus Monitor XPF in minutes. Install the app, connect to a Modbus TCP or RTU device, and begin monitoring live data.
+
 # Modbus Monitor XPF - Quick Start
 
 !!! success "5-Minute Setup Guide"

@@ -1,7 +1,6 @@
----
-title: Best Modbus Tester Software (2026): Modbus Poll vs ModScan vs Modern Tools
-description: Compare the best Modbus tester software in 2026 including Modbus Poll, ModScan, and modern tools with built-in HMI dashboards and device maps.
----
+Title: Best Modbus Tester Software (2026): Modbus Poll vs ModScan vs Modern Tools
+Description: Compare the best Modbus tester software in 2026 including Modbus Poll, ModScan, and modern tools with built-in HMI dashboards and device maps.
+Image: /assets/screenshots/xpf/xpf-main-interface.png
 
 # Best Modbus Tester Software (2026) — Tools Compared for Engineers
 

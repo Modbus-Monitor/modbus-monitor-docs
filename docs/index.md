@@ -1,3 +1,6 @@
+Title: Modbus Monitor Documentation | Modbus Tools, HMI, Device Maps, and Guides
+Description: Professional Modbus documentation for automation engineers, including downloads, quick starts, user guides, HMI dashboards, device maps, and troubleshooting resources.
+
 # 📚 Modbus Monitor Documentation
 
 **Professional Modbus tools for automation engineers, OEMs, and testing teams.**  
