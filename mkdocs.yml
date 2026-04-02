@@ -129,9 +129,13 @@ nav:
       - HMI Guide: products/xpf/hmi.md
       - User Guide: products/xpf/user-guide.md
       - Device Maps: products/xpf/device-maps/index.md
-  - Technical Resources:
+  - Blog:
+    - Overview: blog/index.md
+    - Best Modbus Tester Software (2026): blog/best-modbus-tester-software.md
+  - Technical:
       - Overview: technical/index.md
   - Support & Help:
       - Help Center: support/index.md
       - FAQ: support/faq.md
       - Community Forum: https://quantumbitsolutions.com/forums/
+
