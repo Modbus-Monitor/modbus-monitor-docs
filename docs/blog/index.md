@@ -29,6 +29,12 @@ Compare the most popular Modbus tools including Modbus Poll, ModScan, and newer 
 
 >  [Read the full comparison](./best-modbus-tester-software/)
 
+### Modbus HMI Software — Build Dashboards Without SCADA
+
+Learn how to build Modbus dashboards using HMI tools without SCADA. Visualize Modbus data with gauges, trends, and controls using modern workflows.
+
+>  [Read the full guide](./modbus-hmi-software/)
+
 ---
 
 ## Why Modern Modbus Tools Are Evolving
