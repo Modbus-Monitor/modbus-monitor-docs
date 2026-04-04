@@ -61,6 +61,16 @@ They do not provide built-in visualization, dashboards, or modern commissioning 
 
 ---
 
+## Modbus Poll Alternative
+If you're looking for a Modbus Poll alternative, the main limitation of traditional tools is lack of visualization and modern workflows.
+
+Modern tools combine:
+- testing
+- dashboards
+- faster setup
+
+---
+
 ## A New Approach: Modbus Tester + HMI (Mini-SCADA)
 
 Modern tools now combine Modbus testing with visualization.
@@ -167,3 +177,4 @@ They eliminate manual register setup, saving time and reducing errors.
 - [Compare Modbus tools](https://www.modbusmonitor.com/compare)  
 - [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)  
 - [Modbus HMI dashboards](https://www.modbusmonitor.com/modbus-hmi)
+- [Device Maps](https://docs.quantumbitsolutions.com/products/xpf/device-maps)

@@ -132,14 +132,26 @@ nav:
   - Downloads & Purchase: downloads-purchase.md
   - Products:
     - Overview: products/index.md
-    - XPF:
+    - Modbus Monitor XPF:
       - Overview: products/xpf/index.md
-      - HMI Guide: products/xpf/hmi.md
+      - Quick Start: products/xpf/quick-start.md
       - User Guide: products/xpf/user-guide.md
+      - HMI Guide: products/xpf/hmi.md
       - Device Maps: products/xpf/device-maps/index.md
+    - Modbus Monitor Android:
+      - Advanced Guide: products/android/advanced-guide.md
+      - Free Guide: products/android/free-guide.md
+    - Modbus Mapper:
+      - Quick Start: products/mapper/quick-start.md
+      - User Manual: products/mapper/user-manual.md
+    - Custom Solutions:
+      - Overview: products/custom/overview.md
   - Blog:
     - Overview: blog/index.md
     - Best Modbus Tester Software (2026): blog/best-modbus-tester-software.md
+    - Modbus HMI Software: blog/modbus-hmi-software.md
+    - Modbus Device Maps: blog/modbus-device-maps.md    
+
   - Technical:
       - Overview: technical/index.md
   - Support & Help:
