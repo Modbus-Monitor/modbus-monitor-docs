@@ -4,7 +4,7 @@
   "manufacturer": "SolarEdge",
   "model": "SE3000H",
   "title": "SolarEdge SE3000H Modbus Map",
-  "description": "Pre-built SolarEdge SE3000H Modbus map for Modbus Monitor XPF.",
+  "description": "SolarEdge SE3000H Modbus map with register preview, solar inverter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Solar Inverter",
   "tier": 1,
   "order": 25,

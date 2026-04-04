@@ -1,6 +1,6 @@
 ---
 title: ABB M4M Modbus Map
-description: Pre-built ABB M4M Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: ABB M4M Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # ABB M4M Modbus Map

@@ -1,3 +1,8 @@
+---
+title: Eaton Modbus Maps
+description: Browse Eaton Modbus maps for power meter and ups. Preview supported models and open pre-built device pages for faster setup in Modbus Monitor XPF.
+---
+
 # Eaton Modbus Maps
 
 Modbus Monitor XPF includes pre-built Eaton device maps to speed up commissioning, monitoring, and troubleshooting.

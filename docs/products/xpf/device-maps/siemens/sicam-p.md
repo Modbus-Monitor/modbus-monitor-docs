@@ -1,6 +1,6 @@
 ---
 title: Siemens SICAM P Modbus Map
-description: Pre-built Siemens SICAM P Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: Siemens SICAM P Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # Siemens SICAM P Modbus Map

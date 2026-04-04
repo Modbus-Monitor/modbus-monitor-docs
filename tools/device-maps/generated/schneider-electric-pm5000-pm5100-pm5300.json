@@ -4,7 +4,7 @@
   "manufacturer": "Schneider Electric",
   "model": "PM5000 / PM5100 / PM5300",
   "title": "Schneider Electric PM5000 / PM5100 / PM5300 Modbus Map",
-  "description": "Pre-built Schneider Electric PM5000 / PM5100 / PM5300 Modbus map for Modbus Monitor XPF.",
+  "description": "Schneider Electric PM5000 / PM5100 / PM5300 Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 1,
   "order": 8,

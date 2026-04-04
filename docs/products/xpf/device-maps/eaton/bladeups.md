@@ -1,6 +1,6 @@
 ---
 title: Eaton BladeUPS Modbus Map
-description: Pre-built Eaton BladeUPS Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: Eaton BladeUPS Modbus map with register preview, ups overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # Eaton BladeUPS Modbus Map

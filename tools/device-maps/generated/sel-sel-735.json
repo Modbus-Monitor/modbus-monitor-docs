@@ -4,7 +4,7 @@
   "manufacturer": "SEL",
   "model": "SEL-735",
   "title": "SEL SEL-735 Modbus Map",
-  "description": "Pre-built SEL SEL-735 Modbus map for Modbus Monitor XPF.",
+  "description": "SEL SEL-735 Modbus map with register preview, power quality and revenue meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Quality and Revenue Meter",
   "tier": 1,
   "order": 28,

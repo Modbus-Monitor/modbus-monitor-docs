@@ -1,6 +1,6 @@
 ---
 title: Siemens PAC4200 Modbus Map
-description: Pre-built Siemens PAC4200 Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: Siemens PAC4200 Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # Siemens PAC4200 Modbus Map

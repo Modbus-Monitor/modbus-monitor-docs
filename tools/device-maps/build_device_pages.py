@@ -329,6 +329,44 @@ def build_preview_note() -> str:
     return "This page shows a preview subset of the full device map available in Modbus Monitor XPF."
 
 
+def normalize_device_type(device_type: str) -> str:
+    return device_type.strip().lower()
+
+
+def build_device_meta_description(manufacturer: str, model: str, device_type: str) -> str:
+    device_type_lower = normalize_device_type(device_type)
+    return (
+        f"{manufacturer} {model} Modbus map with register preview, "
+        f"{device_type_lower} overview, common data categories, and ready-to-use "
+        "setup guidance for Modbus Monitor XPF."
+    )
+
+
+def build_manufacturer_meta_description(manufacturer: str, devices: list[dict[str, str]]) -> str:
+    device_types = sorted({normalize_device_type(d.get("device_type", "")) for d in devices if d.get("device_type")})
+    if not device_types:
+        summary = "industrial devices"
+    elif len(device_types) == 1:
+        summary = device_types[0]
+    elif len(device_types) == 2:
+        summary = f"{device_types[0]} and {device_types[1]}"
+    else:
+        summary = f"{device_types[0]}, {device_types[1]}, and other industrial devices"
+
+    return (
+        f"Browse {manufacturer} Modbus maps for {summary}. "
+        "Preview supported models and open pre-built device pages for faster setup "
+        "in Modbus Monitor XPF."
+    )
+
+
+def build_main_index_meta_description() -> str:
+    return (
+        "Browse 120+ Modbus device maps for power meters, solar inverters, UPS systems, "
+        "and industrial equipment. Use pre-built maps to reduce setup time in Modbus Monitor XPF."
+    )
+
+
 def build_focus_phrase(categories: list[str]) -> str:
     normalized = [category.lower() for category in categories[:3]]
     if not normalized:
@@ -412,10 +450,7 @@ def write_device_page(
     related_links: list[tuple[str, str]],
 ) -> None:
     title = f"{manufacturer} {model} Modbus Map"
-    description = (
-        f"Pre-built {manufacturer} {model} Modbus map for Modbus Monitor XPF with register preview, "
-        "device overview, and setup guidance."
-    )
+    description = build_device_meta_description(manufacturer, model, device_type)
 
     lines = [
         "---",
@@ -504,8 +539,16 @@ def write_device_page(
 
 
 def write_manufacturer_index(output_path: Path, manufacturer: str, devices: list[dict[str, str]]) -> None:
+    title = f"{manufacturer} Modbus Maps"
+    description = build_manufacturer_meta_description(manufacturer, devices)
+
     lines = [
-        f"# {manufacturer} Modbus Maps",
+        "---",
+        f"title: {title}",
+        f"description: {description}",
+        "---",
+        "",
+        f"# {title}",
         "",
         f"Modbus Monitor XPF includes pre-built {manufacturer} device maps to speed up commissioning, monitoring, and troubleshooting.",
         "",
@@ -537,7 +580,7 @@ def write_main_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]
     lines = [
         "---",
         "title: Modbus Device Maps for Modbus Monitor XPF",
-        "description: Browse pre-built Modbus device map previews by manufacturer and model for faster commissioning with Modbus Monitor XPF.",
+        f"description: {build_main_index_meta_description()}",
         "---",
         "",
         "# Modbus Device Maps for Modbus Monitor XPF",
@@ -664,7 +707,7 @@ def main() -> None:
             "manufacturer": spec.manufacturer,
             "model": spec.model,
             "title": f"{spec.manufacturer} {spec.model} Modbus Map",
-            "description": f"Pre-built {spec.manufacturer} {spec.model} Modbus map for Modbus Monitor XPF.",
+            "description": build_device_meta_description(spec.manufacturer, spec.model, spec.device_type),
             "device_type": spec.device_type,
             "tier": spec.tier,
             "order": order,

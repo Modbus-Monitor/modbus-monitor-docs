@@ -4,7 +4,7 @@
   "manufacturer": "Eaton",
   "model": "BladeUPS",
   "title": "Eaton BladeUPS Modbus Map",
-  "description": "Pre-built Eaton BladeUPS Modbus map for Modbus Monitor XPF.",
+  "description": "Eaton BladeUPS Modbus map with register preview, ups overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "UPS",
   "tier": 1,
   "order": 26,

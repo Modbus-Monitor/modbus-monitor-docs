@@ -4,7 +4,7 @@
   "manufacturer": "ABB",
   "model": "Trio 50 / Trio 60",
   "title": "ABB Trio 50 / Trio 60 Modbus Map",
-  "description": "Pre-built ABB Trio 50 / Trio 60 Modbus map for Modbus Monitor XPF.",
+  "description": "ABB Trio 50 / Trio 60 Modbus map with register preview, solar inverter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Solar Inverter",
   "tier": 1,
   "order": 23,

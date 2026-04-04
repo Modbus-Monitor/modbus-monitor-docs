@@ -4,7 +4,7 @@
   "manufacturer": "Siemens",
   "model": "PAC2200",
   "title": "Siemens PAC2200 Modbus Map",
-  "description": "Pre-built Siemens PAC2200 Modbus map for Modbus Monitor XPF.",
+  "description": "Siemens PAC2200 Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 1,
   "order": 18,

@@ -4,7 +4,7 @@
   "manufacturer": "ABB",
   "model": "B23 / B24",
   "title": "ABB B23 / B24 Modbus Map",
-  "description": "Pre-built ABB B23 / B24 Modbus map for Modbus Monitor XPF.",
+  "description": "ABB B23 / B24 Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 1,
   "order": 21,

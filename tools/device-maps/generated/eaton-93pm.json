@@ -4,7 +4,7 @@
   "manufacturer": "Eaton",
   "model": "93PM",
   "title": "Eaton 93PM Modbus Map",
-  "description": "Pre-built Eaton 93PM Modbus map for Modbus Monitor XPF.",
+  "description": "Eaton 93PM Modbus map with register preview, ups overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "UPS",
   "tier": 1,
   "order": 7,

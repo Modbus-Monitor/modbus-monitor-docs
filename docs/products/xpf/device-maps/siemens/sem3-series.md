@@ -1,6 +1,6 @@
 ---
 title: Siemens SEM3 Series Modbus Map
-description: Pre-built Siemens SEM3 Series Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: Siemens SEM3 Series Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # Siemens SEM3 Series Modbus Map

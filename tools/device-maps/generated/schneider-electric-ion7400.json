@@ -4,7 +4,7 @@
   "manufacturer": "Schneider Electric",
   "model": "ION7400",
   "title": "Schneider Electric ION7400 Modbus Map",
-  "description": "Pre-built Schneider Electric ION7400 Modbus map for Modbus Monitor XPF.",
+  "description": "Schneider Electric ION7400 Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 1,
   "order": 12,

@@ -1,3 +1,8 @@
+---
+title: Schneider Electric Modbus Maps
+description: Browse Schneider Electric Modbus maps for power meter and ups. Preview supported models and open pre-built device pages for faster setup in Modbus Monitor XPF.
+---
+
 # Schneider Electric Modbus Maps
 
 Modbus Monitor XPF includes pre-built Schneider Electric device maps to speed up commissioning, monitoring, and troubleshooting.

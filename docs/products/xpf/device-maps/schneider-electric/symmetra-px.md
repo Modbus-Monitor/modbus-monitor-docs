@@ -1,6 +1,6 @@
 ---
 title: Schneider Electric Symmetra PX Modbus Map
-description: Pre-built Schneider Electric Symmetra PX Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: Schneider Electric Symmetra PX Modbus map with register preview, ups overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # Schneider Electric Symmetra PX Modbus Map

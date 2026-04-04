@@ -4,7 +4,7 @@
   "manufacturer": "Carlo Gavazzi",
   "model": "EM24",
   "title": "Carlo Gavazzi EM24 Modbus Map",
-  "description": "Pre-built Carlo Gavazzi EM24 Modbus map for Modbus Monitor XPF.",
+  "description": "Carlo Gavazzi EM24 Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 2,
   "order": 29,

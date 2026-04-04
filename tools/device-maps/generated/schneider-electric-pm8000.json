@@ -4,7 +4,7 @@
   "manufacturer": "Schneider Electric",
   "model": "PM8000",
   "title": "Schneider Electric PM8000 Modbus Map",
-  "description": "Pre-built Schneider Electric PM8000 Modbus map for Modbus Monitor XPF.",
+  "description": "Schneider Electric PM8000 Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 1,
   "order": 1,

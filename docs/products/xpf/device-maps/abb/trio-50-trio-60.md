@@ -1,6 +1,6 @@
 ---
 title: ABB Trio 50 / Trio 60 Modbus Map
-description: Pre-built ABB Trio 50 / Trio 60 Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: ABB Trio 50 / Trio 60 Modbus map with register preview, solar inverter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # ABB Trio 50 / Trio 60 Modbus Map

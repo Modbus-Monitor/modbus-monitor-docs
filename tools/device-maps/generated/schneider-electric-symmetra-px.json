@@ -4,7 +4,7 @@
   "manufacturer": "Schneider Electric",
   "model": "Symmetra PX",
   "title": "Schneider Electric Symmetra PX Modbus Map",
-  "description": "Pre-built Schneider Electric Symmetra PX Modbus map for Modbus Monitor XPF.",
+  "description": "Schneider Electric Symmetra PX Modbus map with register preview, ups overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "UPS",
   "tier": 1,
   "order": 17,

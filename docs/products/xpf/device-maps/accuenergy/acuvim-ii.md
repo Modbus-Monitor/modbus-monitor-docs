@@ -1,6 +1,6 @@
 ---
 title: Accuenergy Acuvim II Modbus Map
-description: Pre-built Accuenergy Acuvim II Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: Accuenergy Acuvim II Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # Accuenergy Acuvim II Modbus Map

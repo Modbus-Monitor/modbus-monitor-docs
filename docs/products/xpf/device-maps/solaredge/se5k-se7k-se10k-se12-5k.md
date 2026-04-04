@@ -1,6 +1,6 @@
 ---
 title: SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus Map
-description: Pre-built SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus map for Modbus Monitor XPF with register preview, device overview, and setup guidance.
+description: SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus map with register preview, solar inverter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
 ---
 
 # SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus Map

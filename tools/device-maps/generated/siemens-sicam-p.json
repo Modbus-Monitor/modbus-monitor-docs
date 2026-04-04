@@ -4,7 +4,7 @@
   "manufacturer": "Siemens",
   "model": "SICAM P",
   "title": "Siemens SICAM P Modbus Map",
-  "description": "Pre-built Siemens SICAM P Modbus map for Modbus Monitor XPF.",
+  "description": "Siemens SICAM P Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 1,
   "order": 19,

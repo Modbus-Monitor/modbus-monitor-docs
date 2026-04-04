@@ -4,7 +4,7 @@
   "manufacturer": "Siemens",
   "model": "SEM3 Series",
   "title": "Siemens SEM3 Series Modbus Map",
-  "description": "Pre-built Siemens SEM3 Series Modbus map for Modbus Monitor XPF.",
+  "description": "Siemens SEM3 Series Modbus map with register preview, power meter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.",
   "device_type": "Power Meter",
   "tier": 1,
   "order": 20,
