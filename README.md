@@ -64,7 +64,10 @@ Instead of manually decoding registers or searching PDFs:
   https://www.modbusmonitor.com/compare
 
 - 🧪 Modbus tester overview:  
-  https://www.modbusmonitor.com/modbus-tester  
+  https://www.modbusmonitor.com/modbus-tester
+
+- 🟢 Modbus HMI Software overview:  
+  https://quantumbitsolutions.com/modbus-hmi-software/
 
 ---
 
