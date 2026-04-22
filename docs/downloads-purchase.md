@@ -13,16 +13,28 @@ Professional Modbus monitoring software for Windows and mobile devices.
 **Current Version:** v5.0.3.0 (March 9, 2026)  
 **Free Version:** Core features included (no time limit). Upgrade to unlock full capabilities.
 
-### Quick Download
+---
+
+## ⚡ Quick Download
 
 | Platform | Installer | Portable | Microsoft Store |
 |----------|-----------|----------|---|
-| **Windows x64** (Recommended) | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x64-setup){ .md-button .md-button--primary } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
-| **Windows x86** (Legacy, pre-2010) | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-x86-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x86-setup){ .md-button } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-x86-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x86-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
-| **Windows ARM64** (Surface X, Copilot+ PC) | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-arm64-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=arm64-setup){ .md-button } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-arm64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=arm64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
+| **Windows x64 (Recommended)** | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=main){ .md-button .md-button--primary } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
 | **Release Notes & History** | [📖 Changelog](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/latest){ .md-button } | [View All Releases](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases){ .md-button } | |
 
-**Not sure which version?** Use **Windows x64 Installer (recommended)** for most systems.  
+??? note "Advanced Downloads (Optional)"
+
+    Use these only if the main download doesn’t work for your system.
+
+    | Platform | Installer | Portable | Microsoft Store |
+    |----------|-----------|----------|---|
+    | **Windows x86 (Legacy, pre-2010)** | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-x86-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x86-setup){ .md-button } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-x86-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x86-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
+    | **Windows ARM64 (Surface X, Copilot+ PCs)** | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-arm64-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=arm64-setup){ .md-button } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-arm64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=arm64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
+
+---
+
+**Not sure which version?**  
+Use **Windows x64 Installer (recommended)** for most systems.  
 Use **Portable** if you need no installation or lack admin rights.
 
 ---
