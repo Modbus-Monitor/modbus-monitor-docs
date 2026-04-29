@@ -15,7 +15,7 @@ Professional Modbus monitoring software for Windows and mobile devices.
 
 ---
 
-## ⚡ Quick Download
+## ⚡ Quick Download {#quick-download-xpf}
 
 | Platform | Installer | Portable | Microsoft Store |
 |----------|-----------|----------|---|

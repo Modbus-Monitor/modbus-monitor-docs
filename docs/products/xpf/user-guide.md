@@ -164,7 +164,7 @@ Beyond this user guide, additional resources are available:
     - **Installer**: Better for permanent desk setups, adds shortcuts and file associations
     - **Portable**: Better for field work, USB drives, or systems without admin rights
 
-### License Activation
+### License Activation {#licensing}
 
 This section walks you through activating the license for your Modbus Monitor XPF software. The License window provides several buttons and fields to help you navigate the activation process.
 
