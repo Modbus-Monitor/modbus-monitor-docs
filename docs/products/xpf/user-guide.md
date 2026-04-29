@@ -1,5 +1,5 @@
-Title: Modbus Monitor XPF User Guide | Modbus Client, Server, Logging, and Testing
-Description: Learn how to use Modbus Monitor XPF for Modbus client and server operations, monitor points, logging, validation, scanning, and device simulation.
+Title: Modbus Monitor XPF User Guide | Modbus Client, Server, HMI, Logging, and Testing
+Description: Learn how to use Modbus Monitor XPF for Modbus client and server operations, HMI dashboards, monitor points, logging, validation, scanning, and device simulation.
 
 # Modbus Monitor XPF - User Guide
 
@@ -9,21 +9,22 @@ Description: Learn how to use Modbus Monitor XPF for Modbus client and server op
 
 ## 1. Introduction
 
-**Modbus Monitor XPF** is a versatile Windows application for facilitating communication between a Windows-based PC and Modbus Client or Server devices. It handles both Client (Master) and Server (Slave) operations and supports all common Modbus variants: TCP/IP, Serial RTU, Serial ASCII, and RTU/ASCII over TCP.
+**Modbus Monitor XPF** is a versatile Windows application for facilitating communication between a Windows-based PC and Modbus devices. It combines Client (Master), Server (Slave), and HMI dashboard functionality in one workflow and supports all common Modbus variants: TCP/IP, Serial RTU, Serial ASCII, and RTU/ASCII over TCP.
 
 ![Modbus Monitor XPF Main Interface](../../assets/screenshots/xpf/xpf-main-interface.png){ .screenshot-shadow loading="lazy" }
 
-**One of the standout features** of Modbus Monitor XPF is its **dual functionality** - it encompasses both a Modbus Client and a Modbus Server **within a single application, running simultaneously**. This dual capability, combined with support for both Modbus Serial and Modbus TCP protocols, makes it an invaluable tool for various Modbus communication needs.
+**One of the standout features** of Modbus Monitor XPF is its **triple functionality** - it brings together a Modbus Client, a Modbus Server, and an HMI dashboard environment **within a single application, running together**. This combined capability, with support for both Modbus Serial and Modbus TCP protocols, makes it an invaluable tool for commissioning, simulation, and real-time operator visualization.
 
 **What you can do with it:**
 
 - Monitor live data from PLCs, drives, meters, and other Modbus devices ([Client Mode](#client-tab))
 - Write values to registers and coils for testing or control ([Monitor Points Configuration](#7-monitor-points-configuration))
 - Simulate Modbus devices for testing your own equipment ([Server Mode](#server-tab))
+- Build and run HMI dashboards for live operator views and controls ([HMI Tab and Widgets](#hmi-tab-widgets))
 - Scan unknown devices to discover their register maps ([Scanner Group](#scanner-group))
 - Log data for analysis and troubleshooting ([Log Group](#log-group))
 - Validate register values against expected ranges ([Evaluate Group](#evaluate-group))
-- **Run Client and Server modes simultaneously** on one PC
+- **Run Client, Server, and HMI workflows together** on one PC
 
 **Who this is for:**
 
@@ -37,7 +38,7 @@ Description: Learn how to use Modbus Monitor XPF for Modbus client and server op
 
 Most Modbus tools are either simple monitors or complex SCADA packages. XPF sits in the middle - it's powerful enough for serious work but simple enough to use quickly. The key advantages:
 
-1. **Runs both Master and Slave simultaneously** - Test client-server interactions on one PC without physical devices
+1. **Runs Client, Server, and HMI together** - Test communications and visualize data in one application
 2. **Pre-built device maps** - Download factory-validated maps or community-contributed maps for common equipment (see [Modbus Device Maps Start Page](./device-maps/index.md))
 3. **Built-in data validation** - Automatic pass/fail testing with color coding
 4. **Professional logging** - Proper timestamped records for troubleshooting
