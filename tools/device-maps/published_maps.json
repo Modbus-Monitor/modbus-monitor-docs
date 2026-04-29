@@ -25,6 +25,7 @@
     "sel/sel-735",
     "siemens/sem3-series",
     "siemens/sentron-pac-2200",
+    "siemens/sentron-pac-3200",
     "siemens/sentron-pac-4200",
     "siemens/sicam-p",
     "solaredge/se3000h",
@@ -32,8 +33,14 @@
     "solaredge/se5k-se7k-se10k-se12-5k"
   ],
   "last_newly_added": [],
-  "release_history": [],
-  "next_batch_spec_keys": [
-    "siemens/sentron-pac-3200"
-  ]
+  "release_history": [
+    {
+      "released_on": "2026-04-29",
+      "batch_size": 1,
+      "spec_keys": [
+        "siemens/sentron-pac-3200"
+      ]
+    }
+  ],
+  "next_batch_spec_keys": []
 }

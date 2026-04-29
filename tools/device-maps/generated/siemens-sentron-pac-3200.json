@@ -1,13 +1,13 @@
 {
-  "slug": "sentron-pac-4200",
+  "slug": "sentron-pac-3200",
   "manufacturer_slug": "siemens",
   "manufacturer": "Siemens",
-  "model": "PAC4200",
-  "title": "Siemens PAC4200 Modbus Register Map",
-  "description": "Siemens PAC4200 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "model": "PAC3200",
+  "title": "Siemens PAC3200 Modbus Register Map",
+  "description": "Siemens PAC3200 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
   "device_type": "Power Meter",
   "tier": 1,
-  "order": 4,
+  "order": 3,
   "protocol": "Modbus",
   "typical_use": "power monitoring, energy metering, and facility automation",
   "categories": [
@@ -20,92 +20,92 @@
   ],
   "preview_registers": [
     {
-      "signal": "Voltage L1 N",
+      "signal": "Voltage Va n",
       "address": "400001",
       "type": "FLOAT32",
       "units": "V",
       "category": "Voltage"
     },
     {
-      "signal": "Current L1",
+      "signal": "Current a",
       "address": "400013",
       "type": "FLOAT32",
-      "units": "A",
+      "units": "-",
       "category": "Current"
     },
     {
-      "signal": "Apparent power L1",
+      "signal": "Apparent Power a",
       "address": "400019",
       "type": "FLOAT32",
       "units": "kW",
       "category": "Power"
     },
     {
-      "signal": "Line Frequency",
+      "signal": "Energy pulse mode",
+      "address": "450041",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency",
       "address": "400055",
       "type": "FLOAT32",
       "units": "Hz",
       "category": "Frequency"
     },
     {
-      "signal": "Sliding Window Demand Active Pow er L1",
-      "address": "400325",
+      "signal": "Demand Period",
+      "address": "400517",
       "type": "FLOAT32",
       "units": "kW",
       "category": "Demand"
     },
     {
-      "signal": "PMD Diagnostics and Status",
+      "signal": "Device Diagnostics and Device Status",
       "address": "400205",
-      "type": "UINT16",
+      "type": "FLOAT32",
       "units": "-",
       "category": "Status"
     },
     {
-      "signal": "Maximum 3 Phase Average Volt age L N",
-      "address": "400131",
+      "signal": "Limit Violations",
+      "address": "400203",
       "type": "FLOAT32",
       "units": "-",
       "category": "General"
     },
     {
-      "signal": "Voltage L2 N",
+      "signal": "IP address",
+      "address": "463001",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Bootloader version",
+      "address": "463007",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Voltage Vb n",
       "address": "400003",
       "type": "FLOAT32",
       "units": "V",
       "category": "Voltage"
     },
     {
-      "signal": "Voltage L3 N",
+      "signal": "Voltage Vc n",
       "address": "400005",
-      "type": "FLOAT32",
-      "units": "V",
-      "category": "Voltage"
-    },
-    {
-      "signal": "Voltage L1 L2",
-      "address": "400007",
-      "type": "FLOAT32",
-      "units": "V",
-      "category": "Voltage"
-    },
-    {
-      "signal": "Voltage L2 L3",
-      "address": "400009",
-      "type": "FLOAT32",
-      "units": "V",
-      "category": "Voltage"
-    },
-    {
-      "signal": "Voltage L3 L1",
-      "address": "400011",
       "type": "FLOAT32",
       "units": "V",
       "category": "Voltage"
     }
   ],
   "source_csvs": [
-    "Siemens_Sentron-PAC-4200_Power-Meter.csv"
+    "Siemens_Sentron-PAC-3200_Power-Meter.csv"
   ],
   "related": []
 }

@@ -7,7 +7,7 @@
   "description": "SolarEdge SE5000 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
   "device_type": "Solar Inverter",
   "tier": 1,
-  "order": 5,
+  "order": 6,
   "protocol": "Modbus",
   "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
   "categories": [

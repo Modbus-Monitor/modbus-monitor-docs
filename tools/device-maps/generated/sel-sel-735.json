@@ -7,7 +7,7 @@
   "description": "SEL SEL-735 Modbus map and register map with sample Modbus registers, register addresses, and power quality and revenue meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
   "device_type": "Power Quality and Revenue Meter",
   "tier": 1,
-  "order": 27,
+  "order": 28,
   "protocol": "Modbus",
   "typical_use": "power quality auditing, compliance reporting, and disturbance analysis",
   "categories": [

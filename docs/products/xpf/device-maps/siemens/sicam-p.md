@@ -72,6 +72,7 @@ Sample registers from the Siemens SICAM P Modbus map. Import the full map in Mod
 
 ## Related Device Maps
 
+- [Siemens PAC3200 Modbus Register Map](./sentron-pac-3200.md)
 - [Siemens PAC4200 Modbus Register Map](./sentron-pac-4200.md)
 - [Siemens PAC2200 Modbus Register Map](./sentron-pac-2200.md)
 - [Siemens SEM3 Series Modbus Register Map](./sem3-series.md)

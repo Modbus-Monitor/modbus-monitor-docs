@@ -9,6 +9,7 @@ Modbus Monitor XPF includes pre-built Siemens device maps to speed up commission
 
 ## Supported Siemens Device Families
 
+- PAC3200
 - PAC4200
 - PAC2200
 - SICAM P
@@ -16,6 +17,7 @@ Modbus Monitor XPF includes pre-built Siemens device maps to speed up commission
 
 ## Available Device Pages
 
+- [Siemens PAC3200 Modbus Register Map](./sentron-pac-3200.md)
 - [Siemens PAC4200 Modbus Register Map](./sentron-pac-4200.md)
 - [Siemens PAC2200 Modbus Register Map](./sentron-pac-2200.md)
 - [Siemens SICAM P Modbus Register Map](./sicam-p.md)

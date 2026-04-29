@@ -1043,7 +1043,7 @@ def main() -> None:
                 if peer["slug"] == device["slug"]:
                     continue
                 related.append((f"{manufacturer} {peer['model']} Modbus Register Map", f"./{peer['slug']}.md"))
-                if len(related) >= 3:
+                if len(related) >= 4:
                     break
 
             write_device_page(

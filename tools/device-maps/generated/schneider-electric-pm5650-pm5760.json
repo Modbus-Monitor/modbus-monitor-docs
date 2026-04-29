@@ -7,7 +7,7 @@
   "description": "Schneider Electric PM5650 / PM5760 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
   "device_type": "Power Meter",
   "tier": 1,
-  "order": 9,
+  "order": 10,
   "protocol": "Modbus",
   "typical_use": "power monitoring, energy metering, and facility automation",
   "categories": [

@@ -7,7 +7,7 @@
   "description": "Schneider Electric Symmetra PX Modbus map and register map with sample Modbus registers, register addresses, and ups overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
   "device_type": "UPS",
   "tier": 1,
-  "order": 16,
+  "order": 17,
   "protocol": "Modbus",
   "typical_use": "power continuity monitoring, alarm review, and resilience planning",
   "categories": [

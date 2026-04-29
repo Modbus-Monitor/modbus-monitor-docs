@@ -7,7 +7,7 @@
   "description": "Siemens PAC2200 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
   "device_type": "Power Meter",
   "tier": 1,
-  "order": 17,
+  "order": 18,
   "protocol": "Modbus",
   "typical_use": "power monitoring, energy metering, and facility automation",
   "categories": [
