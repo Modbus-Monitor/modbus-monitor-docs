@@ -167,6 +167,6 @@ Instead of relying only on raw register values, engineers are moving toward visu
 
 ## Related Pages
 
-- [Best Modbus Tester Software (2026)](./best-modbus-tester-software/)  
+- [Best Modbus Tester Software (2026)](./best-modbus-tester-software.md)  
 - [Compare Modbus tools](https://www.modbusmonitor.com/compare)  
 - [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)

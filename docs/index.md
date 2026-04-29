@@ -90,7 +90,7 @@ Description: Professional Modbus documentation for automation engineers, includi
 | **🔌 Hardware & Adapters** | [USB-OTG Serial](guides/android-hardware.md#usb-otg-serial-adapters) · [Bluetooth](guides/android-hardware.md) · [Network Equipment](guides/android-hardware.md) |
 | **🌐 Modbus Protocol** | [6-Digit Addressing](guides/6-digit-addressing.md) · [Error Codes](guides/error-codes.md) · [Protocol Reference](technical/index.md) |
 | **📊 Data & Integration** | [Import/Export](guides/import-export.md) · [Google Sheets](guides/android-sheets-addon.md) · [CSV Management](guides/import-export.md) |
-| **🎓 Learning & Demos** | [Features Demo](guides/features-demo.md) · [Arduino Server](technical/arduino-server.md) · [Use Cases](guides/features-demo.md) |
+| **🎓 Learning & Demos** | [Engineering Blog](blog/index.md) · [Arduino Server](technical/arduino-server.md) · [XPF Device Maps](products/xpf/device-maps/index.md) |
 
 ---
 
@@ -126,7 +126,7 @@ Description: Professional Modbus documentation for automation engineers, includi
 |---------|----------|
 | **Not working?** | [Error Codes & Fixes](guides/error-codes.md) · [Hardware Issues](guides/android-hardware.md) · [FAQ](support/faq.md) |
 | **Questions?** | [Community Forum](https://quantumbitsolutions.com/forums/) · [📧 Email Support](mailto:support@quantumbitsolutions.com) · [Contact Page](https://quantumbitsolutions.com/contact-us/) |
-| **Want to explore?** | [All Guides](technical/index.md) · [Features Demo](guides/features-demo.md) · [Download & Purchase](downloads-purchase.md) |
+| **Want to explore?** | [All Guides](technical/index.md) · [Engineering Blog](blog/index.md) · [Download & Purchase](downloads-purchase.md) |
 
 ---
 

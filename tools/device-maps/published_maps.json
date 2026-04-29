@@ -1,0 +1,39 @@
+{
+  "max_pages_per_run": 15,
+  "published_spec_keys": [
+    "abb/a41-a42",
+    "abb/b23-b24",
+    "abb/m4m",
+    "abb/trio-50-trio-60",
+    "accuenergy/acuvim-ii",
+    "carlo-gavazzi/em24",
+    "eaton/93pm",
+    "eaton/bladeups",
+    "eaton/pxm2000",
+    "schneider-electric/em4800",
+    "schneider-electric/em6400",
+    "schneider-electric/em7290",
+    "schneider-electric/ion7400",
+    "schneider-electric/ion7500-ion7550",
+    "schneider-electric/ion8800",
+    "schneider-electric/ion9000",
+    "schneider-electric/pm5000-pm5100-pm5300",
+    "schneider-electric/pm5500-pm5560-pm5580",
+    "schneider-electric/pm5650-pm5760",
+    "schneider-electric/pm8000",
+    "schneider-electric/symmetra-px",
+    "sel/sel-735",
+    "siemens/sem3-series",
+    "siemens/sentron-pac-2200",
+    "siemens/sentron-pac-4200",
+    "siemens/sicam-p",
+    "solaredge/se3000h",
+    "solaredge/se5000",
+    "solaredge/se5k-se7k-se10k-se12-5k"
+  ],
+  "last_newly_added": [],
+  "release_history": [],
+  "next_batch_spec_keys": [
+    "siemens/sentron-pac-3200"
+  ]
+}

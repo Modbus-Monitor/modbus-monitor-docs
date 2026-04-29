@@ -13,4 +13,4 @@ Modbus Monitor XPF includes pre-built SEL device maps to speed up commissioning,
 
 ## Available Device Pages
 
-- [SEL SEL-735 Modbus Map](./sel-735.md)
+- [SEL SEL-735 Modbus Register Map](./sel-735.md)

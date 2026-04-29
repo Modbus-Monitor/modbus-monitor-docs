@@ -81,9 +81,6 @@ plugins:
   - redirects:
       redirect_maps:
         'xpf-users-guide.md': 'products/xpf/user-guide.md'
-        'features-demo.md': 'guides/features-demo.md'
-        'mermaid-showcase.md': 'guides/mermaid-showcase.md'
-        'assets-guide.md': 'guides/assets-guide.md'
 
 markdown_extensions:
   - meta
@@ -129,6 +126,7 @@ copyright: |
 
 nav:
   - Home: index.md
+  - Modbus Device Maps: modbus-device-maps/index.md
   - Downloads & Purchase: downloads-purchase.md
   - Products:
     - Overview: products/index.md

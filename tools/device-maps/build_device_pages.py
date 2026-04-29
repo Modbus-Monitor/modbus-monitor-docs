@@ -21,6 +21,7 @@ from typing import Iterable
 SOURCE_DEFAULT = Path(r"H:\OneDrive - Quantum Bit Solutions\Docs\Modbus Map\ModbusMaps\Azure Blob\xpfmaps")
 DOCS_OUTPUT_DEFAULT = Path("docs/products/xpf/device-maps")
 GENERATED_OUTPUT_DEFAULT = Path("tools/device-maps/generated")
+PUBLISHED_STATE_DEFAULT = Path("tools/device-maps/published_maps.json")
 
 
 @dataclass(frozen=True)
@@ -75,6 +76,92 @@ def slugify(value: str) -> str:
     value = value.lower().strip()
     value = re.sub(r"[^a-z0-9]+", "-", value)
     return value.strip("-")
+
+
+def spec_key(spec: TargetSpec) -> str:
+    return f"{spec.manufacturer_slug}/{spec.slug}"
+
+
+def infer_category_bucket(device_type: str) -> str:
+    lowered = device_type.lower()
+    if "meter" in lowered:
+        return "Energy Meters"
+    if "inverter" in lowered:
+        return "Solar Inverters"
+    if "plc" in lowered:
+        return "PLCs"
+    return "Other Devices"
+
+
+def load_published_state(published_state_path: Path, generated_output: Path) -> dict[str, object]:
+    state: dict[str, object] = {
+        "max_pages_per_run": 15,
+        "published_spec_keys": [],
+        "release_history": [],
+        "last_newly_added": [],
+        "next_batch_spec_keys": [],
+    }
+
+    if published_state_path.exists():
+        try:
+            payload = json.loads(published_state_path.read_text(encoding="utf-8"))
+            if isinstance(payload, dict):
+                max_pages = payload.get("max_pages_per_run", 15)
+                if isinstance(max_pages, int) and max_pages > 0:
+                    state["max_pages_per_run"] = max_pages
+
+                keys = payload.get("published_spec_keys", payload.get("released_spec_keys", []))
+                if isinstance(keys, list):
+                    state["published_spec_keys"] = [k for k in keys if isinstance(k, str)]
+
+                release_history = payload.get("release_history", [])
+                if isinstance(release_history, list):
+                    state["release_history"] = release_history
+
+                last_new = payload.get("last_newly_added", [])
+                if isinstance(last_new, list):
+                    state["last_newly_added"] = [k for k in last_new if isinstance(k, str)]
+
+                next_batch = payload.get("next_batch_spec_keys", [])
+                if isinstance(next_batch, list):
+                    state["next_batch_spec_keys"] = [k for k in next_batch if isinstance(k, str)]
+
+            return state
+        except json.JSONDecodeError:
+            return state
+
+    # Bootstrap from existing generated files so current published maps remain stable.
+    bootstrap: set[str] = set()
+    for json_file in generated_output.glob("*.json"):
+        try:
+            payload = json.loads(json_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        man_slug = str(payload.get("manufacturer_slug", "")).strip()
+        slug = str(payload.get("slug", "")).strip()
+        if man_slug and slug:
+            bootstrap.add(f"{man_slug}/{slug}")
+    state["published_spec_keys"] = sorted(bootstrap)
+    return state
+
+
+def save_published_state(
+    published_state_path: Path,
+    published_keys: set[str],
+    newly_added_keys: list[str],
+    max_pages_per_run: int,
+    release_history: list[dict[str, object]],
+    next_batch_spec_keys: list[str],
+) -> None:
+    published_state_path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "max_pages_per_run": max_pages_per_run,
+        "published_spec_keys": sorted(published_keys),
+        "last_newly_added": newly_added_keys,
+        "release_history": release_history,
+        "next_batch_spec_keys": next_batch_spec_keys,
+    }
+    published_state_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
 def infer_units(name: str) -> str:
@@ -336,9 +423,9 @@ def normalize_device_type(device_type: str) -> str:
 def build_device_meta_description(manufacturer: str, model: str, device_type: str) -> str:
     device_type_lower = normalize_device_type(device_type)
     return (
-        f"{manufacturer} {model} Modbus map with register preview, "
-        f"{device_type_lower} overview, common data categories, and ready-to-use "
-        "setup guidance for Modbus Monitor XPF."
+        f"{manufacturer} {model} Modbus map and register map with sample Modbus registers, "
+        f"register addresses, and {device_type_lower} overview for engineers. "
+        "Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app."
     )
 
 
@@ -360,9 +447,9 @@ def build_manufacturer_meta_description(manufacturer: str, devices: list[dict[st
     )
 
 
-def build_main_index_meta_description() -> str:
+def build_main_index_meta_description(device_count: int) -> str:
     return (
-        "Browse 120+ Modbus device maps for power meters, solar inverters, UPS systems, "
+        f"Browse {device_count} Modbus device map previews for power meters, solar inverters, UPS systems, "
         "and industrial equipment. Use pre-built maps to reduce setup time in Modbus Monitor XPF."
     )
 
@@ -434,7 +521,7 @@ def build_cta_block() -> list[str]:
         "",
         "Start using this device map in minutes - no manual register mapping required.",
         "",
-        "- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)",
+        "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
         "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
         "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
     ]
@@ -449,8 +536,18 @@ def write_device_page(
     preview_rows: list[dict[str, str]],
     related_links: list[tuple[str, str]],
 ) -> None:
-    title = f"{manufacturer} {model} Modbus Map"
+    title = f"{manufacturer} {model} Modbus Register Map"
     description = build_device_meta_description(manufacturer, model, device_type)
+    typical_use = derive_typical_use(device_type)
+    unique_context = build_unique_context_sentence(manufacturer, model, device_type, categories)
+
+    # Intro: what the device is and why the map matters.
+    intro = (
+        f"The {manufacturer} {model} is a {device_type.lower()} used for {typical_use}. "
+        f"This page provides a sample Modbus register map with addresses, data types, and "
+        f"signal categories to help engineers commission, troubleshoot, and monitor the device. "
+        f"{unique_context}"
+    )
 
     lines = [
         "---",
@@ -460,30 +557,35 @@ def write_device_page(
         "",
         f"# {title}",
         "",
-        build_intro(manufacturer, model, device_type),
+        intro,
         "",
         build_preview_note(),
         "",
-        build_unique_context_sentence(manufacturer, model, device_type, categories),
+        (
+            f"Engineers searching for {manufacturer} {model} Modbus map, "
+            f"{manufacturer} {model} register map, or {manufacturer} {model} Modbus registers "
+            "can use this page as a compatibility snapshot before importing the full map into Modbus Monitor XPF."
+        ),
         "",
-        *build_cta_block(),
+        "## Overview",
         "",
-        "## Quick Facts",
+        f"- **Device:** {manufacturer} {model}",
+        f"- **Type:** {device_type}",
+        "- **Protocol:** Modbus RTU / Modbus TCP",
+        f"- **Use case:** {typical_use}",
+        "- **Works with:** Modbus Monitor XPF (import directly)",
         "",
-        f"- **Manufacturer:** {manufacturer}",
-        f"- **Model:** {model}",
-        f"- **Device Type:** {device_type}",
-        "- **Protocol:** Modbus",
-        f"- **Typical Use:** {derive_typical_use(device_type)}",
-        "- **Available in:** Modbus Monitor XPF",
+        "## Download Modbus Map",
         "",
-        "## Why This Map Matters",
+        f"The full {manufacturer} {model} Modbus register map is available inside Modbus Monitor XPF "
+        "as a pre-built device map. Download the free feature-locked version to access and export the complete map.",
         "",
-        "Instead of manually decoding registers and building your setup from scratch, Modbus Monitor XPF provides a pre-built device map to help engineers test, monitor, and visualize data faster.",
+        "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
         "",
-        f"Browse all [XPF device maps](../../index.md) for the full library, explore [{manufacturer} device maps](../index.md) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.",
+        "## Register Table (Sample)",
         "",
-        "## Register Preview",
+        f"Sample registers from the {manufacturer} {model} Modbus map. "
+        "Import the full map in Modbus Monitor XPF to access all registers.",
         "",
         "| Signal | Address | Type | Units | Category |",
         "|---|---:|---|---|---|",
@@ -498,7 +600,21 @@ def write_device_page(
     lines.extend(
         [
             "",
-            "## Common Data Categories",
+            "## How to Use This Map",
+            "",
+            f"1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).",
+            f"2. **Select the {manufacturer} {model} device map** — pre-built maps are bundled and ready to load.",
+            "3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.",
+            "4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.",
+            "",
+            "## Why Use Pre-Built Maps",
+            "",
+            "- **Saves time** — no need to manually look up or enter register addresses",
+            "- **Reduces errors** — pre-validated maps eliminate mis-typed addresses and wrong data types",
+            "- **Speeds commissioning** — connect and poll within minutes instead of hours",
+            "- **Reusable across projects** — use the same map across multiple sites and installations",
+            "",
+            "## Data Categories Available",
             "",
         ]
     )
@@ -509,12 +625,11 @@ def write_device_page(
     lines.extend(
         [
             "",
-            "## Typical Use Cases",
+            "## Related Tools",
             "",
-            "- Commissioning new devices with a known-good register baseline",
-            "- Troubleshooting Modbus communication and addressing issues",
-            "- Building HMI dashboards for operational visibility",
-            "- Logging device telemetry for analysis and reporting",
+            "- [Modbus Monitor XPF — Windows Modbus Tool](https://www.modbusmonitor.com/download)",
+            "- [Modbus HMI Builder](https://www.modbusmonitor.com/modbus-hmi)",
+            "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
             "",
             "## Related Device Maps",
             "",
@@ -524,17 +639,10 @@ def write_device_page(
     if related_links:
         for label, rel_link in related_links:
             lines.append(f"- [{label}]({rel_link})")
-    lines.append(f"- [All {manufacturer} Device Maps](../index.md)")
+    lines.append(f"- [All {manufacturer} Modbus Register Maps](../index.md)")
     lines.append("- [All XPF Device Maps](../../index.md)")
 
-    lines.extend(
-        [
-            "",
-            *build_cta_block(),
-            "",
-        ]
-    )
-
+    lines.append("")
     output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -562,32 +670,52 @@ def write_manufacturer_index(output_path: Path, manufacturer: str, devices: list
     lines.extend(["", "## Available Device Pages", ""])
 
     for item in sorted(devices, key=lambda d: d["order"]):
-        lines.append(f"- [{manufacturer} {item['model']} Modbus Map](./{item['slug']}.md)")
+        lines.append(f"- [{manufacturer} {item['model']} Modbus Register Map](./{item['slug']}.md)")
 
     lines.append("")
     output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_main_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]) -> None:
+def write_main_index(
+    output_path: Path,
+    grouped: dict[str, list[dict[str, str]]],
+    newly_added: list[dict[str, str]],
+) -> None:
     flat = [device for devices in grouped.values() for device in devices]
-    tier1 = sorted([d for d in flat if d["tier"] == 1], key=lambda d: d["order"])
-    tier2 = sorted([d for d in flat if d["tier"] == 2], key=lambda d: d["order"])
+    all_ordered = sorted(flat, key=lambda d: d["order"])
+    device_count = len(flat)
 
     by_manufacturer: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for d in tier1 + tier2:
+    for d in all_ordered:
         by_manufacturer[d["manufacturer"]].append(d)
+
+    category_buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for d in all_ordered:
+        bucket = infer_category_bucket(d.get("device_type", ""))
+        category_buckets[bucket].append(d)
+
+    alphabetic = sorted(flat, key=lambda d: (d["manufacturer"].lower(), d["model"].lower()))
 
     lines = [
         "---",
         "title: Modbus Device Maps for Modbus Monitor XPF",
-        f"description: {build_main_index_meta_description()}",
+        f"description: {build_main_index_meta_description(device_count)}",
         "---",
         "",
         "# Modbus Device Maps for Modbus Monitor XPF",
         "",
         "Use these pre-built Modbus map previews to validate device compatibility before commissioning. Each page includes a practical register subset, common categories, and links back to Modbus Monitor XPF.",
         "",
-        "Browse 120+ pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.",
+        f"Browse {device_count} pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.",
+        "",
+        "## Start Here {#start-here}",
+        "",
+        "- [Search and Filter All Device Maps](../../../modbus-device-maps/index.md)",
+        "- [Popular Device Maps](#popular-device-maps)",
+        "- [Recently Added](#recently-added)",
+        "- [Categories](#categories)",
+        "- [Browse by Manufacturer](#browse-by-manufacturer)",
+        "- [Full List](#full-list)",
         "",
         "## Why These Pages Help",
         "",
@@ -595,44 +723,69 @@ def write_main_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]
         "- Confirm available telemetry before full integration",
         "- Compare supported manufacturers and model families quickly",
         "",
-        "## Popular Device Maps",
+        "## Popular Device Maps {#popular-device-maps}",
         "",
-        "- [Schneider Electric PM8000](./schneider-electric/pm8000.md)",
-        "- [Siemens PAC4200](./siemens/sentron-pac-4200.md)",
-        "- [ABB M4M](./abb/m4m.md)",
-        "- [SolarEdge SE5000](./solaredge/se5000.md)",
-        "- [Eaton 93PM](./eaton/93pm.md)",
+        "- [Schneider Electric PM8000 Modbus Register Map](./schneider-electric/pm8000.md)",
+        "- [Siemens PAC4200 Modbus Register Map](./siemens/sentron-pac-4200.md)",
+        "- [ABB M4M Modbus Register Map](./abb/m4m.md)",
+        "- [SolarEdge SE5000 Modbus Register Map](./solaredge/se5000.md)",
+        "- [Eaton 93PM Modbus Register Map](./eaton/93pm.md)",
         "",
-        "## Tier 1 Priority Maps",
+        "## Recently Added {#recently-added}",
         "",
     ]
 
-    for manufacturer, devices in by_manufacturer.items():
-        if not any(d["tier"] == 1 for d in devices):
+    if newly_added:
+        for d in newly_added:
+            man_slug = slugify(d["manufacturer"])
+            lines.append(f"- [{d['manufacturer']} {d['model']} Modbus Register Map](./{man_slug}/{d['slug']}.md)")
+    else:
+        lines.append("- No new maps were added in this release run.")
+
+    lines.extend(
+        [
+            "",
+            "## Categories {#categories}",
+            "",
+        ]
+    )
+
+    for bucket in ("Energy Meters", "Solar Inverters", "PLCs", "Other Devices"):
+        bucket_devices = category_buckets.get(bucket, [])
+        if not bucket_devices:
             continue
+        lines.append(f"### {bucket}")
+        for d in bucket_devices:
+            man_slug = slugify(d["manufacturer"])
+            lines.append(f"- [{d['manufacturer']} {d['model']}](./{man_slug}/{d['slug']}.md)")
+        lines.append("")
+
+    lines.extend(
+        [
+        "## Browse by Manufacturer {#browse-by-manufacturer}",
+        "",
+        ]
+    )
+
+    for manufacturer, devices in by_manufacturer.items():
         man_slug = slugify(manufacturer)
-        devices = sorted([d for d in devices if d["tier"] == 1], key=lambda d: d["order"])
+        devices = sorted(devices, key=lambda d: d["order"])
         model_links = ", ".join(f"[{d['model']}](./{man_slug}/{d['slug']}.md)" for d in devices)
         lines.append(f"- [{manufacturer}](./{man_slug}/index.md): {model_links}")
 
-    if tier2:
-        lines.extend(["", "## Tier 2 Maps", ""])
-        for manufacturer, devices in by_manufacturer.items():
-            man_slug = slugify(manufacturer)
-            devices = sorted([d for d in devices if d["tier"] == 2], key=lambda d: d["order"])
-            if not devices:
-                continue
-            model_links = ", ".join(f"[{d['model']}](./{man_slug}/{d['slug']}.md)" for d in devices)
-            lines.append(f"- [{manufacturer}](./{man_slug}/index.md): {model_links}")
+    lines.extend(["", "## Full List {#full-list}", ""])
+    for d in alphabetic:
+        man_slug = slugify(d["manufacturer"])
+        lines.append(f"- [{d['manufacturer']} {d['model']} Modbus Register Map](./{man_slug}/{d['slug']}.md)")
 
     lines.extend(
         [
             "",
             "## Use Device Maps in Modbus Monitor XPF",
             "",
-            "Start with the device maps hub, then open the free trial in Modbus Monitor XPF to test and import faster.",
+            "Start with the device maps hub, then open the free feature-locked version of Modbus Monitor XPF to test and import faster.",
             "",
-            "- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)",
+            "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
             "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
             "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
             "",
@@ -642,22 +795,152 @@ def write_main_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]
     output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def write_public_maps_alias_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]) -> None:
+    flat = sorted((device for devices in grouped.values() for device in devices), key=lambda d: d["order"])
+    manufacturers = sorted({device["manufacturer"] for device in flat})
+
+    lines = [
+        "---",
+        "title: Modbus Device Maps",
+        (
+            "description: Search and filter Modbus device maps by manufacturer and model. "
+            "Open all map previews and import directly into Modbus Monitor XPF."
+        ),
+        "---",
+        "",
+        "# Modbus Device Maps",
+        "",
+        "Search and filter all generated device maps in one place.",
+        "",
+        "## Start Here {#start-here}",
+        "",
+        "- [Map Hub (Popular, Categories, Full List)](../products/xpf/device-maps/index.md)",
+        "- [Device Maps Guide Blog Post](../blog/modbus-device-maps.md)",
+        "- [XPF User Guide](../products/xpf/user-guide.md)",
+        "",
+        "See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/device-maps/index.md)",
+        "",
+        "<div class=\"mdx-device-map-filter\">",
+        "  <p><label for=\"mapSearch\"><strong>Search devices</strong></label></p>",
+        "  <input id=\"mapSearch\" type=\"search\" placeholder=\"Type model, manufacturer, or keyword...\" style=\"width:100%;max-width:720px;padding:0.6rem;\" />",
+        "  <p style=\"margin-top:0.8rem;\"><label for=\"manufacturerFilter\"><strong>Filter by manufacturer</strong></label></p>",
+        "  <select id=\"manufacturerFilter\" style=\"width:100%;max-width:420px;padding:0.5rem;\">",
+        "    <option value=\"\">All manufacturers</option>",
+    ]
+
+    for manufacturer in manufacturers:
+        lines.append(f"    <option value=\"{manufacturer}\">{manufacturer}</option>")
+
+    lines.extend(
+        [
+            "  </select>",
+            "  <p style=\"margin-top:0.8rem;\"><strong><span id=\"mapCount\"></span></strong></p>",
+            "</div>",
+            "",
+            "## All Device Maps",
+            "",
+            "<ul id=\"deviceMapList\">",
+        ]
+    )
+
+    for device in flat:
+        manufacturer = device["manufacturer"]
+        model = device["model"]
+        device_type = device["device_type"]
+        man_slug = slugify(manufacturer)
+        link = f"../products/xpf/device-maps/{man_slug}/{device['slug']}/"
+        search_blob = f"{manufacturer} {model} {device_type} modbus map register map modbus registers"
+        lines.append(
+            "  <li "
+            f"data-manufacturer=\"{manufacturer}\" "
+            f"data-search=\"{search_blob.lower()}\""
+            ">"
+            f"<a href=\"{link}\">{manufacturer} {model} Modbus Register Map</a>"
+            f" - {device_type}"
+            "</li>"
+        )
+
+    lines.extend(
+        [
+            "</ul>",
+            "",
+            "<script>",
+            "(function () {",
+            "  const searchInput = document.getElementById('mapSearch');",
+            "  const manufacturerFilter = document.getElementById('manufacturerFilter');",
+            "  const list = document.getElementById('deviceMapList');",
+            "  const count = document.getElementById('mapCount');",
+            "  if (!searchInput || !manufacturerFilter || !list || !count) return;",
+            "",
+            "  const items = Array.from(list.querySelectorAll('li'));",
+            "",
+            "  function applyFilter() {",
+            "    const q = searchInput.value.trim().toLowerCase();",
+            "    const manufacturer = manufacturerFilter.value;",
+            "    let visible = 0;",
+            "",
+            "    for (const item of items) {",
+            "      const matchesManufacturer = !manufacturer || item.dataset.manufacturer === manufacturer;",
+            "      const haystack = item.dataset.search || '';",
+            "      const matchesSearch = !q || haystack.includes(q);",
+            "      const show = matchesManufacturer && matchesSearch;",
+            "      item.style.display = show ? '' : 'none';",
+            "      if (show) visible += 1;",
+            "    }",
+            "",
+            "    count.textContent = visible + ' map(s) shown';",
+            "  }",
+            "",
+            "  searchInput.addEventListener('input', applyFilter);",
+            "  manufacturerFilter.addEventListener('change', applyFilter);",
+            "  applyFilter();",
+            "})();",
+            "</script>",
+            "",
+        ]
+    )
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build device-map MkDocs pages from CSV files")
     parser.add_argument("--source-dir", type=Path, default=SOURCE_DEFAULT)
     parser.add_argument("--docs-output", type=Path, default=DOCS_OUTPUT_DEFAULT)
     parser.add_argument("--generated-output", type=Path, default=GENERATED_OUTPUT_DEFAULT)
+    parser.add_argument("--published-state", type=Path, default=PUBLISHED_STATE_DEFAULT)
+    parser.add_argument("--max-pages-per-run", type=int, default=15)
+    parser.add_argument("--publish-next-batch", action="store_true")
+    parser.add_argument("--release-date", type=str, default="")
     args = parser.parse_args()
 
     source_dir = args.source_dir
     docs_output = args.docs_output
     generated_output = args.generated_output
+    published_state_path = args.published_state
+    max_pages_per_run = max(args.max_pages_per_run, 1)
+    publish_next_batch = args.publish_next_batch
+    release_date = args.release_date.strip() if args.release_date else ""
 
     if not source_dir.exists():
         raise SystemExit(f"Source directory not found: {source_dir}")
 
     docs_output.mkdir(parents=True, exist_ok=True)
     generated_output.mkdir(parents=True, exist_ok=True)
+
+    # Load release state before JSON cleanup so first-run bootstrap can read existing outputs.
+    loaded_state = load_published_state(published_state_path, generated_output)
+    known_specs = {spec_key(spec) for spec in TARGET_SPECS}
+    loaded_max_pages = loaded_state.get("max_pages_per_run", 15)
+    if isinstance(loaded_max_pages, int) and loaded_max_pages > 0:
+        max_pages_per_run = max_pages_per_run or loaded_max_pages
+
+    published_keys = set(loaded_state.get("published_spec_keys", []))
+    published_keys = {key for key in published_keys if key in known_specs}
+    release_history = loaded_state.get("release_history", [])
+    if not isinstance(release_history, list):
+        release_history = []
 
     # Remove stale generated JSON files from previous runs.
     for old_json in generated_output.glob("*.json"):
@@ -672,8 +955,26 @@ def main() -> None:
     source_files = list(source_dir.glob("*.csv"))
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     missing: list[str] = []
+    already_published_keys = set(published_keys)
+    pending_specs = [spec for spec in TARGET_SPECS if spec_key(spec) not in already_published_keys]
 
-    for order, spec in enumerate(TARGET_SPECS, start=1):
+    newly_added_keys: list[str] = []
+    if publish_next_batch:
+        newly_added_specs = pending_specs[:max_pages_per_run]
+        newly_added_keys = [spec_key(spec) for spec in newly_added_specs]
+
+    candidate_keys = already_published_keys | set(newly_added_keys)
+    successful_new_keys: set[str] = set()
+
+    selected_specs = [spec for spec in TARGET_SPECS if spec_key(spec) in candidate_keys]
+
+    if not selected_specs:
+        raise SystemExit(
+            "No target specs selected for publishing. Use --publish-next-batch to release first batch."
+        )
+
+    for order, spec in enumerate(selected_specs, start=1):
+        current_spec_key = spec_key(spec)
         csv_paths = choose_source_csvs(source_files, spec)
         if not csv_paths:
             missing.append(f"{spec.manufacturer} {spec.model}")
@@ -706,7 +1007,7 @@ def main() -> None:
             "manufacturer_slug": spec.manufacturer_slug,
             "manufacturer": spec.manufacturer,
             "model": spec.model,
-            "title": f"{spec.manufacturer} {spec.model} Modbus Map",
+            "title": f"{spec.manufacturer} {spec.model} Modbus Register Map",
             "description": build_device_meta_description(spec.manufacturer, spec.model, spec.device_type),
             "device_type": spec.device_type,
             "tier": spec.tier,
@@ -724,6 +1025,8 @@ def main() -> None:
         (generated_output / json_name).write_text(json.dumps(device_record, indent=2), encoding="utf-8")
 
         grouped[spec.manufacturer].append(device_record)
+        if current_spec_key in set(newly_added_keys):
+            successful_new_keys.add(current_spec_key)
 
     # Build pages now that grouped data is available.
     for manufacturer, devices in grouped.items():
@@ -739,7 +1042,7 @@ def main() -> None:
             for peer in sorted(devices, key=lambda d: d["order"]):
                 if peer["slug"] == device["slug"]:
                     continue
-                related.append((f"{manufacturer} {peer['model']} Modbus Map", f"./{peer['slug']}.md"))
+                related.append((f"{manufacturer} {peer['model']} Modbus Register Map", f"./{peer['slug']}.md"))
                 if len(related) >= 3:
                     break
 
@@ -755,11 +1058,59 @@ def main() -> None:
 
         write_manufacturer_index(man_dir / "index.md", manufacturer, devices)
 
-    write_main_index(docs_output / "index.md", grouped)
+    final_published_keys = already_published_keys | successful_new_keys
+    newly_added_key_set = successful_new_keys
+    newly_added_records = [
+        d
+        for devices in grouped.values()
+        for d in devices
+        if f"{d['manufacturer_slug']}/{d['slug']}" in newly_added_key_set
+    ]
+
+    write_main_index(docs_output / "index.md", grouped, newly_added_records)
+
+    release_date_value = release_date if release_date else ""
+    if publish_next_batch and successful_new_keys:
+        if not release_date_value:
+            from datetime import date
+
+            release_date_value = date.today().isoformat()
+        release_history.append(
+            {
+                "released_on": release_date_value,
+                "batch_size": len(successful_new_keys),
+                "spec_keys": sorted(successful_new_keys),
+            }
+        )
+
+    next_batch_spec_keys = [spec_key(spec) for spec in TARGET_SPECS if spec_key(spec) not in final_published_keys][
+        :max_pages_per_run
+    ]
 
     print("Generated device maps for:")
     for manufacturer in sorted(grouped.keys()):
         print(f"- {manufacturer}: {len(grouped[manufacturer])} page(s)")
+
+    print(f"\nRelease throttle: {max_pages_per_run} map(s) per batch")
+    print(f"Publish action used: {'yes' if publish_next_batch else 'no'}")
+    print(f"Newly added this run: {len(newly_added_records)}")
+    for d in newly_added_records:
+        print(f"- {d['manufacturer']} {d['model']}")
+
+    print(f"Next batch candidate size: {len(next_batch_spec_keys)}")
+    for key in next_batch_spec_keys:
+        print(f"- {key}")
+
+    docs_root = docs_output.parents[2]
+    write_public_maps_alias_index(docs_root / "modbus-device-maps" / "index.md", grouped)
+    save_published_state(
+        published_state_path,
+        final_published_keys,
+        sorted(successful_new_keys),
+        max_pages_per_run,
+        release_history,
+        next_batch_spec_keys,
+    )
 
     if missing:
         print("\nSkipped targets (missing source CSV or parse issue):")

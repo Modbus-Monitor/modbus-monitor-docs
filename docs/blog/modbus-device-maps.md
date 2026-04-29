@@ -172,6 +172,8 @@ When combined with modern tools that include visualization and interaction, engi
 
 ## Related Pages
 
-- [Best Modbus Tester Software (2026)](./best-modbus-tester-software/)  
-- [Modbus HMI Software](./modbus-hmi-software/)  
+- [Best Modbus Tester Software (2026)](./best-modbus-tester-software.md)  
+- [Modbus HMI Software](./modbus-hmi-software.md)  
+- [Device Maps Library (Search/Filter)](../modbus-device-maps/index.md)
+- [XPF Device Maps Hub](../products/xpf/device-maps/index.md)
 - [Compare Modbus tools](https://www.modbusmonitor.com/compare)

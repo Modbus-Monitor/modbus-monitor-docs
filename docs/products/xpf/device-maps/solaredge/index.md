@@ -15,6 +15,6 @@ Modbus Monitor XPF includes pre-built SolarEdge device maps to speed up commissi
 
 ## Available Device Pages
 
-- [SolarEdge SE5000 Modbus Map](./se5000.md)
-- [SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus Map](./se5k-se7k-se10k-se12-5k.md)
-- [SolarEdge SE3000H Modbus Map](./se3000h.md)
+- [SolarEdge SE5000 Modbus Register Map](./se5000.md)
+- [SolarEdge SE5K / SE7K / SE10K / SE12.5K Modbus Register Map](./se5k-se7k-se10k-se12-5k.md)
+- [SolarEdge SE3000H Modbus Register Map](./se3000h.md)

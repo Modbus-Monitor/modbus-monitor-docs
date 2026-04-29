@@ -1,40 +1,33 @@
 ---
-title: ABB Trio 50 / Trio 60 Modbus Map
-description: ABB Trio 50 / Trio 60 Modbus map with register preview, solar inverter overview, common data categories, and ready-to-use setup guidance for Modbus Monitor XPF.
+title: ABB Trio 50 / Trio 60 Modbus Register Map
+description: ABB Trio 50 / Trio 60 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.
 ---
 
-# ABB Trio 50 / Trio 60 Modbus Map
+# ABB Trio 50 / Trio 60 Modbus Register Map
 
-This ABB Trio 50 / Trio 60 Modbus map is supported in Modbus Monitor XPF, allowing engineers to quickly test, monitor, and visualize device data without manual register mapping.
+The ABB Trio 50 / Trio 60 is a solar inverter used for PV production monitoring, inverter diagnostics, and energy analytics. This page provides a sample Modbus register map with addresses, data types, and signal categories to help engineers commission, troubleshoot, and monitor the device. For ABB Trio 50 / Trio 60 deployments, teams often use this map to surface power, status, and current data in switchboards, facility power distribution, and commercial energy monitoring.
 
 This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
-For ABB Trio 50 / Trio 60 deployments, teams often use this map to surface power, status, and current data in switchboards, facility power distribution, and commercial energy monitoring.
+Engineers searching for ABB Trio 50 / Trio 60 Modbus map, ABB Trio 50 / Trio 60 register map, or ABB Trio 50 / Trio 60 Modbus registers can use this page as a compatibility snapshot before importing the full map into Modbus Monitor XPF.
 
-## Use This Device Map in Modbus Monitor XPF
+## Overview
 
-Start using this device map in minutes - no manual register mapping required.
+- **Device:** ABB Trio 50 / Trio 60
+- **Type:** Solar Inverter
+- **Protocol:** Modbus RTU / Modbus TCP
+- **Use case:** PV production monitoring, inverter diagnostics, and energy analytics
+- **Works with:** Modbus Monitor XPF (import directly)
 
-- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
-- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
-- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)
+## Download Modbus Map
 
-## Quick Facts
+The full ABB Trio 50 / Trio 60 Modbus register map is available inside Modbus Monitor XPF as a pre-built device map. Download the free feature-locked version to access and export the complete map.
 
-- **Manufacturer:** ABB
-- **Model:** Trio 50 / Trio 60
-- **Device Type:** Solar Inverter
-- **Protocol:** Modbus
-- **Typical Use:** PV production monitoring, inverter diagnostics, and energy analytics
-- **Available in:** Modbus Monitor XPF
+- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)
 
-## Why This Map Matters
+## Register Table (Sample)
 
-Instead of manually decoding registers and building your setup from scratch, Modbus Monitor XPF provides a pre-built device map to help engineers test, monitor, and visualize data faster.
-
-Browse all [XPF device maps](../../index.md) for the full library, explore [ABB device maps](../index.md) to compare related models, and use [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare) when evaluating fit across your stack.
-
-## Register Preview
+Sample registers from the ABB Trio 50 / Trio 60 Modbus map. Import the full map in Modbus Monitor XPF to access all registers.
 
 | Signal | Address | Type | Units | Category |
 |---|---:|---|---|---|
@@ -51,7 +44,21 @@ Browse all [XPF device maps](../../index.md) for the full library, explore [ABB 
 | Permanent Mode Power Factor Set Point Reactive Power expressed as fixed Power Factor | 400203 | FLOAT32 | PF | Power |
 | Dynamic Mode Active Power Set Point Active Power Curtailment expressed as percentage of Nominal Power in steps | 400211 | UINT16 | kW | Power |
 
-## Common Data Categories
+## How to Use This Map
+
+1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).
+2. **Select the ABB Trio 50 / Trio 60 device map** — pre-built maps are bundled and ready to load.
+3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.
+4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.
+
+## Why Use Pre-Built Maps
+
+- **Saves time** — no need to manually look up or enter register addresses
+- **Reduces errors** — pre-validated maps eliminate mis-typed addresses and wrong data types
+- **Speeds commissioning** — connect and poll within minutes instead of hours
+- **Reusable across projects** — use the same map across multiple sites and installations
+
+## Data Categories Available
 
 - Power
 - Status
@@ -60,25 +67,16 @@ Browse all [XPF device maps](../../index.md) for the full library, explore [ABB 
 - Voltage
 - Temperature
 
-## Typical Use Cases
+## Related Tools
 
-- Commissioning new devices with a known-good register baseline
-- Troubleshooting Modbus communication and addressing issues
-- Building HMI dashboards for operational visibility
-- Logging device telemetry for analysis and reporting
+- [Modbus Monitor XPF — Windows Modbus Tool](https://www.modbusmonitor.com/download)
+- [Modbus HMI Builder](https://www.modbusmonitor.com/modbus-hmi)
+- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
 
 ## Related Device Maps
 
-- [ABB M4M Modbus Map](./m4m.md)
-- [ABB B23 / B24 Modbus Map](./b23-b24.md)
-- [ABB A41 / A42 Modbus Map](./a41-a42.md)
-- [All ABB Device Maps](../index.md)
+- [ABB M4M Modbus Register Map](./m4m.md)
+- [ABB B23 / B24 Modbus Register Map](./b23-b24.md)
+- [ABB A41 / A42 Modbus Register Map](./a41-a42.md)
+- [All ABB Modbus Register Maps](../index.md)
 - [All XPF Device Maps](../../index.md)
-
-## Use This Device Map in Modbus Monitor XPF
-
-Start using this device map in minutes - no manual register mapping required.
-
-- [Download Modbus Monitor XPF Free Trial](https://www.modbusmonitor.com/download)
-- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)
-- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)

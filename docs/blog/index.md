@@ -12,21 +12,23 @@ Practical guides for engineers working with Modbus devices, industrial automatio
 ### 🔧 Best Modbus Tester Software (2026)
 Compare Modbus Poll, ModScan, and modern tools with dashboards and device maps.
 
-👉 [Read the full comparison](./best-modbus-tester-software/)
+👉 [Read the full comparison](./best-modbus-tester-software.md)
 
 ---
 
 ### 📊 Modbus HMI Software — Build Dashboards Without SCADA
 Learn how to visualize Modbus data using gauges, trends, and controls without full SCADA systems.
 
-👉 [Read the full guide](./modbus-hmi-software/)
+👉 [Read the full guide](./modbus-hmi-software.md)
 
 ---
 
 ### ⚡ Modbus Device Maps — Stop Manual Register Mapping
 Use pre-built device maps to reduce setup time and eliminate manual configuration.
 
-👉 [Read the full guide](./modbus-device-maps/)
+👉 [Read the full guide](./modbus-device-maps.md)
+
+👉 [Browse all device maps (search/filter)](../modbus-device-maps/index.md)
 
 ---
 
@@ -58,9 +60,10 @@ This shift is driving the adoption of tools that combine:
 
 ## All Articles
 
-- [Best Modbus Tester Software (2026)](./best-modbus-tester-software/)
-- [Modbus HMI Software](./modbus-hmi-software/)
-- [Modbus Device Maps](./modbus-device-maps/)
+- [Best Modbus Tester Software (2026)](./best-modbus-tester-software.md)
+- [Modbus HMI Software](./modbus-hmi-software.md)
+- [Modbus Device Maps](./modbus-device-maps.md)
+- [Device Maps Library (Search/Filter)](../modbus-device-maps/index.md)
 
 ---
 
@@ -69,4 +72,5 @@ This shift is driving the adoption of tools that combine:
 - [Compare Modbus tools](https://www.modbusmonitor.com/compare)  
 - [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)  
 - [View HMI dashboards](https://www.modbusmonitor.com/modbus-hmi)
-- [Device Maps](https://docs.quantumbitsolutions.com/products/xpf/device-maps)
+- [Device Maps Hub](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
+- [Device Maps Library (Search/Filter)](https://docs.quantumbitsolutions.com/modbus-device-maps/)
