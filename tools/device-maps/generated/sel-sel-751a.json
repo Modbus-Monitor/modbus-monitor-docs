@@ -1,0 +1,110 @@
+{
+  "slug": "sel-751a",
+  "manufacturer_slug": "sel",
+  "manufacturer": "SEL",
+  "model": "SEL-751A",
+  "title": "SEL SEL-751A Modbus Register Map",
+  "description": "SEL SEL-751A Modbus map and register map with sample Modbus registers, register addresses, and relay overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Relay",
+  "tier": 2,
+  "order": 47,
+  "protocol": "Modbus",
+  "typical_use": "commissioning, troubleshooting, and operational monitoring",
+  "categories": [
+    "Demand",
+    "Power Factor",
+    "Energy",
+    "Current",
+    "Voltage"
+  ],
+  "preview_registers": [
+    {
+      "signal": "PercentVoltageUnbalance",
+      "address": "300685",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "PercentCurrentUnbalance",
+      "address": "300664",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "ReverseEnergy",
+      "address": "300691",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFapparentTotal",
+      "address": "300689",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "DemandIa",
+      "address": "301690",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "BFActive",
+      "address": "300267",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "ForwardEnergy",
+      "address": "300705",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFapparentA",
+      "address": "301485",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFapparentB",
+      "address": "301489",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFapparentC",
+      "address": "301493",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "DemandIb",
+      "address": "301691",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandIc",
+      "address": "301692",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    }
+  ],
+  "source_csvs": [
+    "Schweitzer - SEL-751A - Protection Relays.csv"
+  ],
+  "related": []
+}

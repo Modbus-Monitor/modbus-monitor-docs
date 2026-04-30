@@ -1,0 +1,111 @@
+{
+  "slug": "se10k",
+  "manufacturer_slug": "solaredge",
+  "manufacturer": "SolarEdge",
+  "model": "SE10K",
+  "title": "SolarEdge SE10K Modbus Register Map",
+  "description": "SolarEdge SE10K Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Solar Inverter",
+  "tier": 2,
+  "order": 43,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Power Factor",
+    "Status",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "I AC VoltageAB",
+      "address": "440077",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "I AC Current",
+      "address": "440072",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "I AC Power",
+      "address": "440084",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "I AC Energy WH",
+      "address": "440094",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "I AC Frequency",
+      "address": "440086",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "I AC PF1",
+      "address": "440092",
+      "type": "INT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "I Status",
+      "address": "440108",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "I AC VA",
+      "address": "440088",
+      "type": "INT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "I AC CurrentA",
+      "address": "440073",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "I AC CurrentB",
+      "address": "440074",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "I AC CurrentC",
+      "address": "440075",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "I AC Current SF",
+      "address": "440076",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "SolarEdge_SE10K_Modbus.csv"
+  ],
+  "related": []
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "pm210",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "PM210",
+  "title": "Schneider Electric PM210 Modbus Register Map",
+  "description": "Schneider Electric PM210 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 39,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Command Status",
+      "address": "407032",
+      "type": "INT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Command",
+      "address": "407015",
+      "type": "INT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Command Parameters",
+      "address": "407016",
+      "type": "INT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Command Result",
+      "address": "407033",
+      "type": "INT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Command Data Location Register Number",
+      "address": "407034",
+      "type": "INT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Command Data Area",
+      "address": "407035",
+      "type": "INT16",
+      "units": "-",
+      "category": "Communication"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PM210 - Power Meter.csv"
+  ],
+  "related": []
+}

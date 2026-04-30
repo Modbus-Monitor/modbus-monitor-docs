@@ -1,0 +1,111 @@
+{
+  "slug": "cm2000",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "CM2000",
+  "title": "Schneider Electric CM2000 Modbus Register Map",
+  "description": "Schneider Electric CM2000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 41,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Harmonics",
+    "Frequency",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage phase A to B Volts",
+      "address": "401014",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current phase A Amps",
+      "address": "401003",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "True power factor phase A",
+      "address": "401031",
+      "type": "UINT16",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Frequency Hertz",
+      "address": "401001",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Time remaining in demand interval Seconds",
+      "address": "401752",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Temperature inside CM enclosure Degrees C",
+      "address": "401002",
+      "type": "UINT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Harmonic factor phase A",
+      "address": "401108",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Update interval second",
+      "address": "401000",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Current phase B Amps",
+      "address": "401004",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Current phase C Amps",
+      "address": "401005",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Current neutral Amps",
+      "address": "401006",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Current ground Amps",
+      "address": "401007",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - CM2000 - Circuit Monitor.csv"
+  ],
+  "related": []
+}

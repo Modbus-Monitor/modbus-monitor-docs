@@ -23,7 +23,7 @@ Engineers searching for Accuenergy Acuvim II Modbus map, Accuenergy Acuvim II re
 
 The full Accuenergy Acuvim II Modbus register map is available inside Modbus Monitor XPF as a pre-built device map. Download the free feature-locked version to access and export the complete map.
 
-- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)
+- [Download Modbus Monitor XPF Free](/download)
 
 ## Register Table (Sample)
 
@@ -46,7 +46,7 @@ Sample registers from the Accuenergy Acuvim II Modbus map. Import the full map i
 
 ## How to Use This Map
 
-1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).
+1. **Download Modbus Monitor XPF** — [Get the free version](/download).
 2. **Select the Accuenergy Acuvim II device map** — pre-built maps are bundled and ready to load.
 3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.
 4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.

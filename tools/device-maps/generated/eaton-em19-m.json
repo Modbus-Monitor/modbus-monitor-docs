@@ -1,0 +1,109 @@
+{
+  "slug": "em19-m",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "EM19 M",
+  "title": "Eaton EM19 M Modbus Register Map",
+  "description": "Eaton EM19 M Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 31,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Harmonics",
+    "Power Factor",
+    "Energy"
+  ],
+  "preview_registers": [
+    {
+      "signal": "ForwardEnergy",
+      "address": "400515",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFapparentA",
+      "address": "407699",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PwrDemandWindowPeriod",
+      "address": "403336",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "VanPerTHD",
+      "address": "404353",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "VAh",
+      "address": "400517",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "ReverseEnergy",
+      "address": "400525",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "CurDemandWindowPeriod",
+      "address": "403594",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "ACIAPeakDemand",
+      "address": "403841",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "ACIBPeakDemand",
+      "address": "403842",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "ACICPeakDemand",
+      "address": "403843",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandACVanPeak",
+      "address": "403844",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandACVbnPeak",
+      "address": "403845",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - EM19 M - Power Meter.csv"
+  ],
+  "related": []
+}

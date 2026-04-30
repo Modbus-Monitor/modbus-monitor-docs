@@ -1,0 +1,111 @@
+{
+  "slug": "sel-710",
+  "manufacturer_slug": "sel",
+  "manufacturer": "SEL",
+  "model": "SEL-710",
+  "title": "SEL SEL-710 Modbus Register Map",
+  "description": "SEL SEL-710 Modbus map and register map with sample Modbus registers, register addresses, and relay overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Relay",
+  "tier": 2,
+  "order": 48,
+  "protocol": "Modbus",
+  "typical_use": "commissioning, troubleshooting, and operational monitoring",
+  "categories": [
+    "Status",
+    "Power",
+    "Current",
+    "Voltage",
+    "Power Factor",
+    "Energy"
+  ],
+  "preview_registers": [
+    {
+      "signal": "PercentVoltageUnbalance",
+      "address": "300685",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "PercentCurrentUnbalance",
+      "address": "300664",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "PercentMotorPower",
+      "address": "300662",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "ForwardEnergy",
+      "address": "300691",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFapparentTotal",
+      "address": "300689",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "49alarm.7",
+      "address": "301812",
+      "type": "BIT",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "49Active",
+      "address": "300267",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Status",
+      "address": "301815",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "BFActive",
+      "address": "300267",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50PActive",
+      "address": "300341",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50NActive",
+      "address": "300347",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50GActive",
+      "address": "300353",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    }
+  ],
+  "source_csvs": [
+    "Schweitzer - SEL-710 - Protection Relays.csv"
+  ],
+  "related": []
+}

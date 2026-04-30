@@ -1,0 +1,107 @@
+{
+  "slug": "em20",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "EM20",
+  "title": "Eaton EM20 Modbus Register Map",
+  "description": "Eaton EM20 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 32,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Energy"
+  ],
+  "preview_registers": [
+    {
+      "signal": "TotalEnergy",
+      "address": "400067",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "DemandTotalWatts",
+      "address": "400043",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "ACVAN",
+      "address": "400001",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "DemandVAs",
+      "address": "400045",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandWattsA",
+      "address": "400047",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandVAsA",
+      "address": "400049",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandWattsB",
+      "address": "400051",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandVAsB",
+      "address": "400053",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "PeakDemandWatts",
+      "address": "400055",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "PeakDemandVAs",
+      "address": "400057",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "PeakDemandVAsA",
+      "address": "400059",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "PeakDemandWattsA",
+      "address": "400059",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - EM20 - Power Meter.csv"
+  ],
+  "related": []
+}

@@ -23,7 +23,7 @@ Engineers searching for Eaton BladeUPS Modbus map, Eaton BladeUPS register map, 
 
 The full Eaton BladeUPS Modbus register map is available inside Modbus Monitor XPF as a pre-built device map. Download the free feature-locked version to access and export the complete map.
 
-- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)
+- [Download Modbus Monitor XPF Free](/download)
 
 ## Register Table (Sample)
 
@@ -46,7 +46,7 @@ Sample registers from the Eaton BladeUPS Modbus map. Import the full map in Modb
 
 ## How to Use This Map
 
-1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).
+1. **Download Modbus Monitor XPF** — [Get the free version](/download).
 2. **Select the Eaton BladeUPS device map** — pre-built maps are bundled and ready to load.
 3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.
 4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.
@@ -77,5 +77,7 @@ Sample registers from the Eaton BladeUPS Modbus map. Import the full map in Modb
 
 - [Eaton 93PM Modbus Register Map](./93pm.md)
 - [Eaton PXM2000 Modbus Register Map](./pxm2000.md)
+- [Eaton EM19 M Modbus Register Map](./em19-m.md)
+- [Eaton EM20 Modbus Register Map](./em20.md)
 - [All Eaton Modbus Register Maps](../index.md)
 - [All XPF Device Maps](../../index.md)

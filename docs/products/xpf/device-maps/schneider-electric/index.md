@@ -21,6 +21,11 @@ Modbus Monitor XPF includes pre-built Schneider Electric device maps to speed up
 - EM4800
 - EM7290
 - Symmetra PX
+- PM200
+- PM200P
+- PM210
+- iEM3000
+- CM2000
 
 ## Available Device Pages
 
@@ -36,3 +41,8 @@ Modbus Monitor XPF includes pre-built Schneider Electric device maps to speed up
 - [Schneider Electric EM4800 Modbus Register Map](./em4800.md)
 - [Schneider Electric EM7290 Modbus Register Map](./em7290.md)
 - [Schneider Electric Symmetra PX Modbus Register Map](./symmetra-px.md)
+- [Schneider Electric PM200 Modbus Register Map](./pm200.md)
+- [Schneider Electric PM200P Modbus Register Map](./pm200p.md)
+- [Schneider Electric PM210 Modbus Register Map](./pm210.md)
+- [Schneider Electric iEM3000 Modbus Register Map](./iem3000.md)
+- [Schneider Electric CM2000 Modbus Register Map](./cm2000.md)

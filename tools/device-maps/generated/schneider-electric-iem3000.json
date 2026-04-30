@@ -1,0 +1,111 @@
+{
+  "slug": "iem3000",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "iEM3000",
+  "title": "Schneider Electric iEM3000 Modbus Register Map",
+  "description": "Schneider Electric iEM3000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 40,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Energy",
+    "Power",
+    "Current",
+    "Voltage",
+    "Status",
+    "Demand"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 L2 V",
+      "address": "403020",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "I1 phase 1 current A",
+      "address": "403000",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Active power phase 1 kW",
+      "address": "403054",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Total active energy import Wh",
+      "address": "403204",
+      "type": "INT64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "403110",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Demand method",
+      "address": "403701",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Digital input status bit only bit 1 is used",
+      "address": "408905",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Digital input control mode",
+      "address": "407274",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "MeterName:20",
+      "address": "400029",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Protocol 0Modbus",
+      "address": "406499",
+      "type": "INT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Digital output control mode status",
+      "address": "409673",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "I2 phase 2 current A",
+      "address": "403002",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - iEM3000 - Energy Meter.csv"
+  ],
+  "related": []
+}

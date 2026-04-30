@@ -1,0 +1,110 @@
+{
+  "slug": "pxm4000",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "PXM4000",
+  "title": "Eaton PXM4000 Modbus Register Map",
+  "description": "Eaton PXM4000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 36,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Power Factor",
+    "Status",
+    "Energy",
+    "Current"
+  ],
+  "preview_registers": [
+    {
+      "signal": "DemandAmpsAvg",
+      "address": "414112",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "ForwardEnergy",
+      "address": "406305",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFdisplacementTotal",
+      "address": "404657",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "DemandForwardWatts",
+      "address": "414114",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "SecondaryStatus",
+      "address": "404609",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "ErrCode",
+      "address": "404610",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Status",
+      "address": "404609",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "PFapparentTotal",
+      "address": "404659",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFdisplacementA",
+      "address": "404685",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFdisplacementB",
+      "address": "404687",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFdisplacementC",
+      "address": "404689",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFapparentA",
+      "address": "404691",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - PXM4000 - Power Meter.csv"
+  ],
+  "related": []
+}

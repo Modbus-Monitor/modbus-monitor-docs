@@ -1,0 +1,111 @@
+{
+  "slug": "pxm1000-series",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "PXM1000 Series",
+  "title": "Eaton PXM1000 Series Modbus Register Map",
+  "description": "Eaton PXM1000 Series Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 34,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Energy",
+    "Harmonics",
+    "Status",
+    "Power Factor",
+    "Voltage"
+  ],
+  "preview_registers": [
+    {
+      "signal": "PercentVoltageUnbalance",
+      "address": "416505",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "PercentCurrentUnbalance",
+      "address": "416507",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "ForwardEnergy",
+      "address": "416463",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFapparentA",
+      "address": "416489",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "DemandType",
+      "address": "404111",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "SysStatus",
+      "address": "404143",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "VabPerTHD",
+      "address": "416475",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Module1",
+      "address": "404151",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "AlarmIndicator",
+      "address": "404147",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "SecondaryStatus",
+      "address": "408193",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Status",
+      "address": "408193",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "DemandTotalWatts",
+      "address": "416451",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - PXM1000_PXM1100_PXM1200_PXM1300 - Power Meter.csv"
+  ],
+  "related": []
+}

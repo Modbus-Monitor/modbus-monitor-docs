@@ -1,0 +1,107 @@
+{
+  "slug": "sel-351a",
+  "manufacturer_slug": "sel",
+  "manufacturer": "SEL",
+  "model": "SEL-351A",
+  "title": "SEL SEL-351A Modbus Register Map",
+  "description": "SEL SEL-351A Modbus map and register map with sample Modbus registers, register addresses, and relay overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Relay",
+  "tier": 2,
+  "order": 46,
+  "protocol": "Modbus",
+  "typical_use": "commissioning, troubleshooting, and operational monitoring",
+  "categories": [
+    "Energy",
+    "Power Factor"
+  ],
+  "preview_registers": [
+    {
+      "signal": "ForwardEnergy",
+      "address": "300031",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFapparentTotal",
+      "address": "300027",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Ptrip.6",
+      "address": "100001",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "ReverseEnergy",
+      "address": "300033",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "50A1pickup.7",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50A2pickup.4",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50A3pickup.1",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50B1pickup.6",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50B2pickup.3",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50B3pickup.0",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50C1pickup.5",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "50C2pickup.2",
+      "address": "100003",
+      "type": "BIT",
+      "units": "-",
+      "category": "General"
+    }
+  ],
+  "source_csvs": [
+    "Schweitzer - SEL-351A - Protection Relays.csv"
+  ],
+  "related": []
+}

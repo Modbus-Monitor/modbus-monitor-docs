@@ -1,0 +1,111 @@
+{
+  "slug": "pm200",
+  "manufacturer_slug": "schneider-electric",
+  "manufacturer": "Schneider Electric",
+  "model": "PM200",
+  "title": "Schneider Electric PM200 Modbus Register Map",
+  "description": "Schneider Electric PM200 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 37,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Frequency",
+    "Demand"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Scale Factor V voltage",
+      "address": "404106",
+      "type": "INT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Scale Factor I current",
+      "address": "404105",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Scale Factor W power",
+      "address": "404107",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Scale Factor E energy",
+      "address": "404108",
+      "type": "INT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Service Frequency",
+      "address": "404125",
+      "type": "INT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Thermal Demand Interval",
+      "address": "404117",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Error Bitmap",
+      "address": "404112",
+      "type": "INT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Serial Number",
+      "address": "407002",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Modbus Address",
+      "address": "407005",
+      "type": "INT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Power Block Demand Interval",
+      "address": "404118",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Power Block Demand Number of SubIntervals",
+      "address": "404119",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Signed Real Energy Consumption",
+      "address": "401000",
+      "type": "FLOAT",
+      "units": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "source_csvs": [
+    "Schneider Electric - PM200 - Power Meter.csv"
+  ],
+  "related": []
+}

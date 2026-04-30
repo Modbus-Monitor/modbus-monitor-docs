@@ -1,0 +1,107 @@
+{
+  "slug": "em22-din",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "EM22-DIN",
+  "title": "Eaton EM22-DIN Modbus Register Map",
+  "description": "Eaton EM22-DIN Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 33,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Energy"
+  ],
+  "preview_registers": [
+    {
+      "signal": "TotalEnergy",
+      "address": "400035",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "DemandTotalWatts",
+      "address": "400027",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "ACVAN",
+      "address": "400001",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "PeakDemandWatts",
+      "address": "400029",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "DemandVAs",
+      "address": "400031",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "PeakDemandVAs",
+      "address": "400033",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "TotalEnergyA",
+      "address": "400037",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "TotalEnergyB",
+      "address": "400039",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "DemandWindow",
+      "address": "404357",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "ACIout1A",
+      "address": "400003",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "ACIout2A",
+      "address": "400005",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "ACIA",
+      "address": "400007",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - EM22-DIN - Power Meter.csv"
+  ],
+  "related": []
+}

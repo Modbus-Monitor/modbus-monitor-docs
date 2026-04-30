@@ -1,0 +1,111 @@
+{
+  "slug": "pxm3000",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "PXM3000",
+  "title": "Eaton PXM3000 Modbus Register Map",
+  "description": "Eaton PXM3000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 2,
+  "order": 35,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Energy",
+    "Harmonics",
+    "Status",
+    "Power Factor",
+    "Voltage"
+  ],
+  "preview_registers": [
+    {
+      "signal": "PercentVoltageUnbalance",
+      "address": "401590",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "PercentCurrentUnbalance",
+      "address": "401592",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "ForwardEnergy",
+      "address": "401676",
+      "type": "DOUBLE64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "PFapparentA",
+      "address": "401522",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "DemandType",
+      "address": "401036",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "SysStatus",
+      "address": "401076",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "VanPerTHD",
+      "address": "401816",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Freq",
+      "address": "401470",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "AlarmIndicator",
+      "address": "401084",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "PFapparentB",
+      "address": "401524",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFapparentC",
+      "address": "401526",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PFapparentTotal",
+      "address": "401528",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - PXM3000 - Power Meter.csv"
+  ],
+  "related": []
+}

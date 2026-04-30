@@ -69,6 +69,25 @@ TARGET_SPECS = (
     # Tier 2 - useful long-tail pages
     TargetSpec("Carlo Gavazzi", "carlo-gavazzi", "EM24", "em24", "Power Meter", 2, ("EM24",)),
     TargetSpec("Accuenergy", "accuenergy", "Acuvim II", "acuvim-ii", "Power Meter", 2, ("Acuvim II", "Acuvim-II")),
+    # Next publish batch candidates (requested)
+    TargetSpec("Eaton", "eaton", "EM19 M", "em19-m", "Power Meter", 2, ("EM19 M", "EM19-M", "EM19M")),
+    TargetSpec("Eaton", "eaton", "EM20", "em20", "Power Meter", 2, ("EM20",)),
+    TargetSpec("Eaton", "eaton", "EM22-DIN", "em22-din", "Power Meter", 2, ("EM22-DIN", "EM22 DIN", "EM22")),
+    TargetSpec("Eaton", "eaton", "PXM1000 Series", "pxm1000-series", "Power Meter", 2, ("PXM1000", "PXM 1000"), True),
+    TargetSpec("Eaton", "eaton", "PXM3000", "pxm3000", "Power Meter", 2, ("PXM3000", "PXM 3000")),
+    TargetSpec("Eaton", "eaton", "PXM4000", "pxm4000", "Power Meter", 2, ("PXM4000", "PXM 4000")),
+    TargetSpec("Schneider Electric", "schneider-electric", "PM200", "pm200", "Power Meter", 2, ("PM200",)),
+    TargetSpec("Schneider Electric", "schneider-electric", "PM200P", "pm200p", "Power Meter", 2, ("PM200P", "PM 200P")),
+    TargetSpec("Schneider Electric", "schneider-electric", "PM210", "pm210", "Power Meter", 2, ("PM210",)),
+    TargetSpec("Schneider Electric", "schneider-electric", "iEM3000", "iem3000", "Power Meter", 2, ("IEM3000", "iEM3000", "iEM 3000")),
+    TargetSpec("Schneider Electric", "schneider-electric", "CM2000", "cm2000", "Power Meter", 2, ("CM2000", "CM 2000")),
+    TargetSpec("SolarEdge", "solaredge", "SE6000", "se6000", "Solar Inverter", 2, ("SE6000", "SE6K")),
+    TargetSpec("SolarEdge", "solaredge", "SE10K", "se10k", "Solar Inverter", 2, ("SE10K",)),
+    TargetSpec("SolarEdge", "solaredge", "SE12.5K", "se12-5k", "Solar Inverter", 2, ("SE12.5K", "SE12.5", "SE12K5")),
+    TargetSpec("SolarEdge", "solaredge", "SE3800H", "se3800h", "Solar Inverter", 2, ("SE3800H",)),
+    TargetSpec("SEL", "sel", "SEL-351A", "sel-351a", "Relay", 2, ("SEL-351A", "SEL 351A", "SEL351A")),
+    TargetSpec("SEL", "sel", "SEL-751A", "sel-751a", "Relay", 2, ("SEL-751A", "SEL 751A", "SEL751A")),
+    TargetSpec("SEL", "sel", "SEL-710", "sel-710", "Relay", 2, ("SEL-710", "SEL 710", "SEL710")),
 )
 
 
@@ -517,13 +536,13 @@ def build_unique_context_sentence(
 
 def build_cta_block() -> list[str]:
     return [
-        "## Use This Device Map in Modbus Monitor XPF",
+        "## Works with modern Modbus tools",
         "",
-        "Start using this device map in minutes - no manual register mapping required.",
+        "Use this map with Modbus tools:",
         "",
-        "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
-        "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
-        "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
+        "- [Download Modbus Monitor XPF](/download)",
+        "- [Build dashboards using Modbus HMI](/modbus-hmi)",
+        "- [Compare Modbus tools](/compare)",
     ]
 
 
@@ -580,7 +599,7 @@ def write_device_page(
         f"The full {manufacturer} {model} Modbus register map is available inside Modbus Monitor XPF "
         "as a pre-built device map. Download the free feature-locked version to access and export the complete map.",
         "",
-        "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
+        "- [Download Modbus Monitor XPF Free](/download)",
         "",
         "## Register Table (Sample)",
         "",
@@ -602,7 +621,7 @@ def write_device_page(
             "",
             "## How to Use This Map",
             "",
-            f"1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).",
+            f"1. **Download Modbus Monitor XPF** — [Get the free version](/download).",
             f"2. **Select the {manufacturer} {model} device map** — pre-built maps are bundled and ready to load.",
             "3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.",
             "4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.",

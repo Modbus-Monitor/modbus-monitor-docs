@@ -1,0 +1,111 @@
+{
+  "slug": "se3800h",
+  "manufacturer_slug": "solaredge",
+  "manufacturer": "SolarEdge",
+  "model": "SE3800H",
+  "title": "SolarEdge SE3800H Modbus Register Map",
+  "description": "SolarEdge SE3800H Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Solar Inverter",
+  "tier": 2,
+  "order": 45,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Frequency",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "I AC VoltageAN1",
+      "address": "440080",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "I AC Current",
+      "address": "440072",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "I AC Power",
+      "address": "440084",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "I AC Energy WH",
+      "address": "440094",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "I AC Frequency",
+      "address": "440086",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "M AC PF",
+      "address": "440222",
+      "type": "INT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "I Status",
+      "address": "440108",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "I Temp Sink",
+      "address": "440104",
+      "type": "INT16",
+      "units": "-",
+      "category": "Temperature"
+    },
+    {
+      "signal": "C SunSpec ID",
+      "address": "440001",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "C Model:16",
+      "address": "440021",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "M Exported",
+      "address": "440227",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "I AC Current SF",
+      "address": "440076",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "SolarEdge_SE3800H_Solar-Inverter.csv"
+  ],
+  "related": []
+}
