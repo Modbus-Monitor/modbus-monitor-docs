@@ -540,9 +540,9 @@ def build_cta_block() -> list[str]:
         "",
         "Use this map with Modbus tools:",
         "",
-        "- [Download Modbus Monitor XPF](/download)",
-        "- [Build dashboards using Modbus HMI](/modbus-hmi)",
-        "- [Compare Modbus tools](/compare)",
+        "- [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)",
+        "- [Build dashboards using Modbus HMI](https://www.modbusmonitor.com/modbus-hmi)",
+        "- [Compare Modbus tools](https://www.modbusmonitor.com/compare)",
     ]
 
 
@@ -599,7 +599,7 @@ def write_device_page(
         f"The full {manufacturer} {model} Modbus register map is available inside Modbus Monitor XPF "
         "as a pre-built device map. Download the free feature-locked version to access and export the complete map.",
         "",
-        "- [Download Modbus Monitor XPF Free](/download)",
+        "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
         "",
         "## Register Table (Sample)",
         "",
@@ -621,7 +621,7 @@ def write_device_page(
             "",
             "## How to Use This Map",
             "",
-            f"1. **Download Modbus Monitor XPF** — [Get the free version](/download).",
+            f"1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).",
             f"2. **Select the {manufacturer} {model} device map** — pre-built maps are bundled and ready to load.",
             "3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.",
             "4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.",
