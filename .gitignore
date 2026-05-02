@@ -1,3 +1,7 @@
+# Temporary XPF release binaries copied by release scripts.
+# Official distribution source is GitHub Releases assets, not git-tracked binaries.
+docs/release/Modbus-Monitor-XPF-*.exe
+docs/release/SHA256SUMS.txt
 # WordPress uploads folder (temporary, not for commit)
 uploads/
 
