@@ -103,8 +103,8 @@ Advanced Modbus network analyzer & device discovery.
 
 | Platform | Portable |
 |----------|----------|
-| **Windows x64** (Recommended) | [💾 Download](https://docs.quantumbitsolutions.com/release/Modbus-Mapper-Pro-v1.0.0-x64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=mapper&utm_content=x64){ .md-button .md-button--primary } |
-| **Windows x86** (Legacy) | [💾 Download](https://docs.quantumbitsolutions.com/release/Modbus-Mapper-Pro-v1.0.0-x86-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=mapper&utm_content=x86){ .md-button .md-button--primary } |
+| **Windows x64** (Recommended) | [💾 Download](https://quantumbitsolutions.com/download/modbus-mapper-pro-x64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=mapper&utm_content=x64){ .md-button .md-button--primary } |
+| **Windows x86** (Legacy) | [💾 Download](https://quantumbitsolutions.com/download/modbus-mapper-pro-x86-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=mapper&utm_content=x86){ .md-button .md-button--primary } |
 
 **Not sure which version?** Use **x64** for most systems.
 
