@@ -10,7 +10,7 @@ Professional Modbus monitoring software for Windows and mobile devices.
 ## ⚡ Modbus Monitor XPF (Windows) – Download Now
 
 **Professional Modbus TCP/RTU/ASCII monitoring, logging, analytics & HMI dashboards (mini-SCADA).**  
-**Current Version:** v5.0.3.0 (March 9, 2026)  
+**Current Version:** v5.0.4.2 (May 2, 2026) | **Trial:** 14 days full features, no credit card needed
 **Free Version:** Core features included (no time limit). Upgrade to unlock full capabilities.
 
 ---
@@ -19,7 +19,7 @@ Professional Modbus monitoring software for Windows and mobile devices.
 
 | Platform | Installer | Portable | Microsoft Store |
 |----------|-----------|----------|---|
-| **Windows x64 (Recommended)** | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=main){ .md-button .md-button--primary } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
+| **Windows x64 (Recommended)** | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.0.4.2/Modbus-Monitor-XPF-5.0.4.2-x64-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=v5.0.4.2&utm_content=x64-setup){ .md-button .md-button--primary } | [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.0.4.2/Modbus-Monitor-XPF-5.0.4.2-x64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=v5.0.4.2&utm_content=x64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
 | **Release Notes & History** | [📖 Changelog](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/latest){ .md-button } | [View All Releases](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases){ .md-button } | |
 
 ??? note "Advanced Downloads (Optional)"
@@ -28,8 +28,8 @@ Professional Modbus monitoring software for Windows and mobile devices.
 
     | Platform | Installer | Portable | Microsoft Store |
     |----------|-----------|----------|---|
-    | **Windows x86 (Legacy, pre-2010)** | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-x86-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x86-setup){ .md-button } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-x86-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=x86-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
-    | **Windows ARM64 (Surface X, Copilot+ PCs)** | [Download](https://quantumbitsolutions.com/download/modbus-monitor-xpf-arm64-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=arm64-setup){ .md-button } | [Portable](https://quantumbitsolutions.com/download/modbus-monitor-xpf-arm64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=xpf&utm_content=arm64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
+| **Windows x86 (Legacy, pre-2010)** | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.0.4.2/Modbus-Monitor-XPF-5.0.4.2-x86-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=v5.0.4.2&utm_content=x86-setup){ .md-button .md-button--primary } | [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.0.4.2/Modbus-Monitor-XPF-5.0.4.2-x86-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=v5.0.4.2&utm_content=x86-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
+| **Windows ARM64 (Surface X, Copilot+ PCs)** | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.0.4.2/Modbus-Monitor-XPF-5.0.4.2-arm64-setup.exe?utm_source=docs&utm_medium=download&utm_campaign=v5.0.4.2&utm_content=arm64-setup){ .md-button .md-button--primary } | [Portable](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.0.4.2/Modbus-Monitor-XPF-5.0.4.2-arm64-portable.exe?utm_source=docs&utm_medium=download&utm_campaign=v5.0.4.2&utm_content=arm64-portable){ .md-button } | [Install](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } |
 
 ---
 
@@ -141,4 +141,4 @@ A: [View all releases →](releases/index.md)
 
 ---
 
-*Last updated: Aril 22, 2026*
+*Last updated: May 2, 2026*
