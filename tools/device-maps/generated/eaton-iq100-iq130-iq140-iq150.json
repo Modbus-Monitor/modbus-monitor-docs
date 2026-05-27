@@ -1,0 +1,111 @@
+{
+  "slug": "iq100-iq130-iq140-iq150",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "IQ100 Series / IQ130 / IQ140 / IQ150",
+  "title": "Eaton IQ100 Series / IQ130 / IQ140 / IQ150 Modbus Register Map",
+  "description": "Eaton IQ100 Series / IQ130 / IQ140 / IQ150 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 60,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Current",
+    "Energy",
+    "Demand",
+    "Frequency",
+    "Power",
+    "Power Factor"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Amps A amps",
+      "address": "401011",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Positive Power Factor 3 Ph Maximum Avg Demand none",
+      "address": "403127",
+      "type": "FLOAT32",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Power Energy Format pppp nn eee ddd",
+      "address": "430005",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "401025",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Positive pf 3 ph average -100 to 100",
+      "address": "402015",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Positive Watts 3 Ph Maximum Avg Demand watts",
+      "address": "403117",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Meter status bit-mapped",
+      "address": "404999",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Meter Serial Number:8",
+      "address": "400008",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Meter type bit-mapped",
+      "address": "400016",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Amps B amps",
+      "address": "401013",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Amps C amps",
+      "address": "401015",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Neutral current amps",
+      "address": "401027",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - IQ100 series IQ130 IQ140 IQ150 - Power Meter.csv"
+  ],
+  "related": []
+}

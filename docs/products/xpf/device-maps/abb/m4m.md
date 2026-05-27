@@ -76,4 +76,4 @@ Sample registers from the ABB M4M Modbus map. Import the full map in Modbus Moni
 - [ABB A41 / A42 Modbus Register Map](./a41-a42.md)
 - [ABB Trio 50 / Trio 60 Modbus Register Map](./trio-50-trio-60.md)
 - [All ABB Modbus Register Maps](../index.md)
-- [All XPF Device Maps](../../index.md)
+- [All XPF Device Maps](../../../../modbus-device-maps/index.md)

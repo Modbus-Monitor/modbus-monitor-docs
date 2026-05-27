@@ -1,0 +1,109 @@
+{
+  "slug": "sun2000",
+  "manufacturer_slug": "huawei",
+  "manufacturer": "Huawei",
+  "model": "Sun2000",
+  "title": "Huawei Sun2000 Modbus Register Map",
+  "description": "Huawei Sun2000 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Huawei Sun2000 Modbus TCP register, Huawei Sun2000 Modbus register map.",
+  "device_type": "Solar Inverter",
+  "tier": 1,
+  "order": 61,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Power",
+    "Temperature",
+    "Current",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Inverter 1 total DC input current",
+      "address": "451004",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Inverter 1 active power kW",
+      "address": "451000",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Inverter 1 inverter status",
+      "address": "451009",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Inverter 1 cabinet temperature",
+      "address": "451011",
+      "type": "INT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Inverter 1 insulation resistance M",
+      "address": "451007",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Inverter 1 reactive power",
+      "address": "451002",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Inverter 1 total input power kW",
+      "address": "451005",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Inverter 1 power factor",
+      "address": "451008",
+      "type": "INT16",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Inverter 2 active power kW",
+      "address": "451025",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Inverter 2 reactive power",
+      "address": "451027",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Inverter 2 total DC input current",
+      "address": "451029",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Inverter 2 total input power kW",
+      "address": "451030",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    }
+  ],
+  "source_csvs": [
+    "Huawei - Sun2000 - Solar Inverter.csv"
+  ],
+  "related": []
+}

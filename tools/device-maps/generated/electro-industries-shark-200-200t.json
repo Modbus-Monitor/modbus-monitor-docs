@@ -1,0 +1,111 @@
+{
+  "slug": "shark-200-200t",
+  "manufacturer_slug": "electro-industries",
+  "manufacturer": "Electro Industries",
+  "model": "Shark 200 / 200T",
+  "title": "Electro Industries Shark 200 / 200T Modbus Register Map",
+  "description": "Electro Industries Shark 200 / 200T Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 66,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Energy",
+    "Current",
+    "Demand",
+    "Power Factor",
+    "Power",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase A Voltage harmonic phases 0 1 degree",
+      "address": "406045",
+      "type": "INT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Amps A amps",
+      "address": "400284",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Power Factor 3 Ph total",
+      "address": "400291",
+      "type": "INT16",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "W hours Received Wh per energy format",
+      "address": "401499",
+      "type": "INT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "400292",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Positive PF 3 Ph Average",
+      "address": "402015",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Volts A N previous Demand interval Short Term Minimum volts",
+      "address": "407975",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Meter Status mmmpch tffeeccc",
+      "address": "404500",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Volts A N THD 0 01",
+      "address": "405999",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Meter Name :8",
+      "address": "400000",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Meter Type st vvv",
+      "address": "400016",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Port ID",
+      "address": "404499",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    }
+  ],
+  "source_csvs": [
+    "Electro Industries - Shark 200_200T - Power Meter.csv"
+  ],
+  "related": []
+}

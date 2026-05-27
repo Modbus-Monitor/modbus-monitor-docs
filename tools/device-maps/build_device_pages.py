@@ -22,6 +22,7 @@ SOURCE_DEFAULT = Path(r"H:\OneDrive - Quantum Bit Solutions\Docs\Modbus Map\Modb
 DOCS_OUTPUT_DEFAULT = Path("docs/products/xpf/device-maps")
 GENERATED_OUTPUT_DEFAULT = Path("tools/device-maps/generated")
 PUBLISHED_STATE_DEFAULT = Path("tools/device-maps/published_maps.json")
+APP_MAP_COUNT_CTA = 339
 
 
 @dataclass(frozen=True)
@@ -88,6 +89,27 @@ TARGET_SPECS = (
     TargetSpec("SEL", "sel", "SEL-351A", "sel-351a", "Relay", 2, ("SEL-351A", "SEL 351A", "SEL351A")),
     TargetSpec("SEL", "sel", "SEL-751A", "sel-751a", "Relay", 2, ("SEL-751A", "SEL 751A", "SEL751A")),
     TargetSpec("SEL", "sel", "SEL-710", "sel-710", "Relay", 2, ("SEL-710", "SEL 710", "SEL710")),
+    # Next high-value wave from tracker (NOW / Tier 1)
+    TargetSpec("Janitza", "janitza", "UMG104", "umg104", "Power Meter", 1, ("UMG104",)),
+    TargetSpec("Janitza", "janitza", "UMG605", "umg605", "Power Meter", 1, ("UMG605PRO", "UMG605")),
+    TargetSpec("Janitza", "janitza", "UMG604", "umg604", "Power Meter", 1, ("UMG604_PRO", "UMG604")),
+    TargetSpec("Janitza", "janitza", "UMG96", "umg96", "Power Meter", 1, ("UMG96_S2", "UMG96")),
+    TargetSpec("Janitza", "janitza", "UMG103", "umg103", "Power Meter", 1, ("UMG103",)),
+    TargetSpec("Socomec", "socomec", "DIRIS A40 / A41 RS485", "diris-a40-a41-rs485", "Power Meter", 1, ("DIRIS A40 A41 RS485",)),
+    TargetSpec("Socomec", "socomec", "DIRIS I31", "diris-i31", "Power Meter", 1, ("DIRIS DIGIWARE I_31", "I31")),
+    TargetSpec("Socomec", "socomec", "DIRIS U30", "diris-u30", "Power Meter", 1, ("DIRIS U30",)),
+    TargetSpec("Socomec", "socomec", "Countis ECI3", "countis-eci3", "Power Meter", 1, ("Countis ECI3",)),
+    TargetSpec("Socomec", "socomec", "Countis ECI2", "countis-eci2", "Power Meter", 1, ("Countis ECI2",)),
+    TargetSpec("Eaton", "eaton", "IQ DP 4000", "iq-dp-4000", "Power Meter", 1, ("IQ DP 4000", "IQDP 4000")),
+    TargetSpec("Eaton", "eaton", "IQ100 Series / IQ130 / IQ140 / IQ150", "iq100-iq130-iq140-iq150", "Power Meter", 1, ("IQ100 series", "IQ130", "IQ140", "IQ150"), True),
+    TargetSpec("Huawei", "huawei", "Sun2000", "sun2000", "Solar Inverter", 1, ("Sun2000 - Solar Inverter", "Sun2000", "SUN2000")),
+    TargetSpec("Huawei", "huawei", "SmartLogger", "smartlogger", "Solar Inverter", 1, ("SmartLogger", "Smartlogger 3000"), True),
+    TargetSpec("Fronius", "fronius", "Primo 4", "primo-4", "Solar Inverter", 1, ("Primo 4",)),
+    TargetSpec("Fronius", "fronius", "Primo 5", "primo-5", "Solar Inverter", 1, ("Primo 5",)),
+    TargetSpec("Fronius", "fronius", "Symo 6", "symo-6", "Solar Inverter", 1, ("Symo 6",)),
+    TargetSpec("Electro Industries", "electro-industries", "Shark 200 / 200T", "shark-200-200t", "Power Meter", 1, ("Shark 200_200T", "Shark 200")),
+    TargetSpec("Electro Industries", "electro-industries", "Shark 250", "shark-250", "Power Meter", 1, ("Shark 250",)),
+    TargetSpec("GE", "ge", "EPM 7000 / EPM 7100", "epm-7000-epm-7100", "Power Meter", 1, ("EPM 7000", "EPM 7100"), True),
 )
 
 
@@ -441,11 +463,58 @@ def normalize_device_type(device_type: str) -> str:
 
 def build_device_meta_description(manufacturer: str, model: str, device_type: str) -> str:
     device_type_lower = normalize_device_type(device_type)
-    return (
+    base = (
         f"{manufacturer} {model} Modbus map and register map with sample Modbus registers, "
         f"register addresses, and {device_type_lower} overview for engineers. "
         "Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app."
     )
+    extras = build_search_intent_terms(manufacturer, model, device_type)
+    if extras:
+        return f"{base} Common searches: {', '.join(extras[:2])}."
+    return base
+
+
+def build_search_intent_terms(manufacturer: str, model: str, device_type: str) -> list[str]:
+    lowered_type = device_type.lower()
+
+    if manufacturer == "Janitza":
+        return [
+            f"{manufacturer} {model} Modbus register",
+            f"{manufacturer} {model} Modbus address list",
+        ]
+
+    if manufacturer == "Socomec":
+        return [
+            f"{manufacturer} {model} Modbus register list",
+            f"{manufacturer} {model} Modbus table",
+            f"{manufacturer} {model} Modbus TCP",
+        ]
+
+    if manufacturer == "Huawei" and "inverter" in lowered_type:
+        return [
+            f"{manufacturer} {model} Modbus TCP register",
+            f"{manufacturer} {model} Modbus register map",
+        ]
+
+    if manufacturer == "Fronius" and "inverter" in lowered_type:
+        return [
+            f"{manufacturer} {model} Modbus registers",
+            f"{manufacturer} {model} Modbus TCP",
+        ]
+
+    return []
+
+
+def build_search_sentence(manufacturer: str, model: str, device_type: str) -> str:
+    base = (
+        f"Engineers searching for {manufacturer} {model} Modbus map, "
+        f"{manufacturer} {model} register map, or {manufacturer} {model} Modbus registers "
+        "can use this page as a compatibility snapshot before importing the full map into Modbus Monitor XPF."
+    )
+    extras = build_search_intent_terms(manufacturer, model, device_type)
+    if extras:
+        return f"{base} Also aligns to search intent around {', '.join(extras[:2])}."
+    return base
 
 
 def build_manufacturer_meta_description(manufacturer: str, devices: list[dict[str, str]]) -> str:
@@ -580,11 +649,7 @@ def write_device_page(
         "",
         build_preview_note(),
         "",
-        (
-            f"Engineers searching for {manufacturer} {model} Modbus map, "
-            f"{manufacturer} {model} register map, or {manufacturer} {model} Modbus registers "
-            "can use this page as a compatibility snapshot before importing the full map into Modbus Monitor XPF."
-        ),
+        build_search_sentence(manufacturer, model, device_type),
         "",
         "## Overview",
         "",
@@ -659,7 +724,7 @@ def write_device_page(
         for label, rel_link in related_links:
             lines.append(f"- [{label}]({rel_link})")
     lines.append(f"- [All {manufacturer} Modbus Register Maps](../index.md)")
-    lines.append("- [All XPF Device Maps](../../index.md)")
+    lines.append("- [All XPF Device Maps](../../../../modbus-device-maps/index.md)")
 
     lines.append("")
     output_path.write_text("\n".join(lines), encoding="utf-8")
@@ -726,6 +791,10 @@ def write_main_index(
         "Use these pre-built Modbus map previews to validate device compatibility before commissioning. Each page includes a practical register subset, common categories, and links back to Modbus Monitor XPF.",
         "",
         f"Browse {device_count} pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.",
+        (
+            f"{device_count} maps are shown here, while {APP_MAP_COUNT_CTA}+ maps are available in the actual app. "
+            "Download Modbus Monitor XPF to access the complete bundled map library."
+        ),
         "",
         "## Start Here {#start-here}",
         "",
@@ -831,6 +900,11 @@ def write_public_maps_alias_index(output_path: Path, grouped: dict[str, list[dic
         "",
         "Search and filter all generated device maps in one place.",
         "",
+        (
+            f"{len(flat)} maps are shown here, while {APP_MAP_COUNT_CTA}+ maps are available in the actual app. "
+            "Download Modbus Monitor XPF to access the full bundled map library."
+        ),
+        "",
         "## Start Here {#start-here}",
         "",
         "- [Map Hub (Popular, Categories, Full List)](../products/xpf/device-maps/index.md)",
@@ -840,8 +914,11 @@ def write_public_maps_alias_index(output_path: Path, grouped: dict[str, list[dic
         "See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/device-maps/index.md)",
         "",
         "<div class=\"mdx-device-map-filter\">",
-        "  <p><label for=\"mapSearch\"><strong>Search devices</strong></label></p>",
-        "  <input id=\"mapSearch\" type=\"search\" placeholder=\"Type model, manufacturer, or keyword...\" style=\"width:100%;max-width:720px;padding:0.6rem;\" />",
+        "  <div style=\"max-width:720px;border:1px solid #9ca3af;border-radius:10px;padding:0.9rem 1rem;background:#f8fafc;\">",
+        "    <p style=\"margin:0 0 0.35rem 0;font-size:0.88rem;letter-spacing:0.02em;color:#374151;\"><strong>Filter by typing</strong></p>",
+        "    <p style=\"margin:0 0 0.6rem 0;color:#4b5563;\">Find a map by model, manufacturer, or keyword.</p>",
+        "    <input id=\"mapSearch\" type=\"search\" placeholder=\"Filter by typing model, manufacturer, or keyword...\" style=\"width:100%;padding:0.7rem;border:1px solid #6b7280;border-radius:8px;background:#ffffff;\" />",
+        "  </div>",
         "  <p style=\"margin-top:0.8rem;\"><label for=\"manufacturerFilter\"><strong>Filter by manufacturer</strong></label></p>",
         "  <select id=\"manufacturerFilter\" style=\"width:100%;max-width:420px;padding:0.5rem;\">",
         "    <option value=\"\">All manufacturers</option>",
@@ -853,7 +930,8 @@ def write_public_maps_alias_index(output_path: Path, grouped: dict[str, list[dic
     lines.extend(
         [
             "  </select>",
-            "  <p style=\"margin-top:0.8rem;\"><strong><span id=\"mapCount\"></span></strong></p>",
+            "  <p style=\"margin-top:0.8rem;\"><strong><span id=\"mapCount\" data-app-count=\"{0}\"></span></strong></p>".format(APP_MAP_COUNT_CTA),
+            "  <p style=\"margin:0.25rem 0 0.35rem 0;color:#4b5563;\">Need the full library? <a href=\"../downloads-purchase.md\">Download Modbus Monitor XPF</a> and import {0}+ bundled maps.</p>".format(APP_MAP_COUNT_CTA),
             "</div>",
             "",
             "## All Device Maps",
@@ -896,6 +974,7 @@ def write_public_maps_alias_index(output_path: Path, grouped: dict[str, list[dic
             "  function applyFilter() {",
             "    const q = searchInput.value.trim().toLowerCase();",
             "    const manufacturer = manufacturerFilter.value;",
+            "    const appCount = count.dataset.appCount || '';",
             "    let visible = 0;",
             "",
             "    for (const item of items) {",
@@ -907,7 +986,10 @@ def write_public_maps_alias_index(output_path: Path, grouped: dict[str, list[dic
             "      if (show) visible += 1;",
             "    }",
             "",
-            "    count.textContent = visible + ' map(s) shown';",
+            "    count.textContent = visible + ' map(s) shown on this page';",
+            "    if (appCount) {",
+            "      count.textContent += '  |  ' + appCount + '+ available in app';",
+            "    }",
             "  }",
             "",
             "  searchInput.addEventListener('input', applyFilter);",

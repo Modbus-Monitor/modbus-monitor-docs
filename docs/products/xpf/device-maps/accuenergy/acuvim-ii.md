@@ -76,4 +76,4 @@ Sample registers from the Accuenergy Acuvim II Modbus map. Import the full map i
 ## Related Device Maps
 
 - [All Accuenergy Modbus Register Maps](../index.md)
-- [All XPF Device Maps](../../index.md)
+- [All XPF Device Maps](../../../../modbus-device-maps/index.md)

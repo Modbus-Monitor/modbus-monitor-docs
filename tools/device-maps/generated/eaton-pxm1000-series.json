@@ -11,34 +11,48 @@
   "protocol": "Modbus",
   "typical_use": "power monitoring, energy metering, and facility automation",
   "categories": [
-    "Demand",
+    "Power",
     "Energy",
     "Harmonics",
-    "Status",
-    "Power Factor",
-    "Voltage"
+    "Voltage",
+    "Current",
+    "Demand"
   ],
   "preview_registers": [
     {
-      "signal": "PercentVoltageUnbalance",
-      "address": "416505",
+      "signal": "Phase voltage V1",
+      "address": "312291",
       "type": "FLOAT32",
       "units": "V",
       "category": "Voltage"
     },
     {
-      "signal": "PercentCurrentUnbalance",
-      "address": "416507",
+      "signal": "Current I1",
+      "address": "312307",
       "type": "FLOAT32",
       "units": "-",
       "category": "Current"
     },
     {
-      "signal": "ForwardEnergy",
-      "address": "416463",
+      "signal": "Phase A power pa",
+      "address": "312317",
       "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Energy IMP",
+      "address": "316457",
+      "type": "UINT32",
       "units": "kWh",
       "category": "Energy"
+    },
+    {
+      "signal": "Frequency",
+      "address": "312289",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
     },
     {
       "signal": "PFapparentA",
@@ -62,49 +76,36 @@
       "category": "Status"
     },
     {
-      "signal": "VabPerTHD",
-      "address": "416475",
-      "type": "FLOAT32",
+      "signal": "THDV1 of V1 V12",
+      "address": "316474",
+      "type": "UINT16",
       "units": "-",
       "category": "Harmonics"
     },
     {
-      "signal": "Module1",
-      "address": "404151",
-      "type": "UINT16",
+      "signal": "Load characteristic LCR",
+      "address": "316449",
+      "type": "FLOAT32",
       "units": "-",
       "category": "General"
     },
     {
-      "signal": "AlarmIndicator",
-      "address": "404147",
-      "type": "UINT16",
-      "units": "-",
-      "category": "Status"
-    },
-    {
-      "signal": "SecondaryStatus",
-      "address": "408193",
-      "type": "UINT16",
-      "units": "-",
-      "category": "Status"
-    },
-    {
-      "signal": "Status",
-      "address": "408193",
-      "type": "UINT16",
-      "units": "-",
-      "category": "Status"
-    },
-    {
-      "signal": "DemandTotalWatts",
-      "address": "416451",
+      "signal": "Phase voltage V2",
+      "address": "312293",
       "type": "FLOAT32",
-      "units": "kW",
-      "category": "Demand"
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Phase voltage V3",
+      "address": "312295",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
     }
   ],
   "source_csvs": [
+    "Eaton - PXM 1000 - Power Meter.csv",
     "Eaton - PXM1000_PXM1100_PXM1200_PXM1300 - Power Meter.csv"
   ],
   "related": []

@@ -7,6 +7,8 @@ description: Search and filter Modbus device maps by manufacturer and model. Ope
 
 Search and filter all generated device maps in one place.
 
+68 maps are shown here, while 339+ maps are available in the actual app. Download Modbus Monitor XPF to access the full bundled map library.
+
 ## Start Here {#start-here}
 
 - [Map Hub (Popular, Categories, Full List)](../products/xpf/device-maps/index.md)
@@ -16,8 +18,11 @@ Search and filter all generated device maps in one place.
 See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/device-maps/index.md)
 
 <div class="mdx-device-map-filter">
-  <p><label for="mapSearch"><strong>Search devices</strong></label></p>
-  <input id="mapSearch" type="search" placeholder="Type model, manufacturer, or keyword..." style="width:100%;max-width:720px;padding:0.6rem;" />
+  <div style="max-width:720px;border:1px solid #9ca3af;border-radius:10px;padding:0.9rem 1rem;background:#f8fafc;">
+    <p style="margin:0 0 0.35rem 0;font-size:0.88rem;letter-spacing:0.02em;color:#374151;"><strong>Filter by typing</strong></p>
+    <p style="margin:0 0 0.6rem 0;color:#4b5563;">Find a map by model, manufacturer, or keyword.</p>
+    <input id="mapSearch" type="search" placeholder="Filter by typing model, manufacturer, or keyword..." style="width:100%;padding:0.7rem;border:1px solid #6b7280;border-radius:8px;background:#ffffff;" />
+  </div>
   <p style="margin-top:0.8rem;"><label for="manufacturerFilter"><strong>Filter by manufacturer</strong></label></p>
   <select id="manufacturerFilter" style="width:100%;max-width:420px;padding:0.5rem;">
     <option value="">All manufacturers</option>
@@ -25,12 +30,19 @@ See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/d
     <option value="Accuenergy">Accuenergy</option>
     <option value="Carlo Gavazzi">Carlo Gavazzi</option>
     <option value="Eaton">Eaton</option>
+    <option value="Electro Industries">Electro Industries</option>
+    <option value="Fronius">Fronius</option>
+    <option value="GE">GE</option>
+    <option value="Huawei">Huawei</option>
+    <option value="Janitza">Janitza</option>
     <option value="SEL">SEL</option>
     <option value="Schneider Electric">Schneider Electric</option>
     <option value="Siemens">Siemens</option>
+    <option value="Socomec">Socomec</option>
     <option value="SolarEdge">SolarEdge</option>
   </select>
-  <p style="margin-top:0.8rem;"><strong><span id="mapCount"></span></strong></p>
+  <p style="margin-top:0.8rem;"><strong><span id="mapCount" data-app-count="339"></span></strong></p>
+  <p style="margin:0.25rem 0 0.35rem 0;color:#4b5563;">Need the full library? <a href="../downloads-purchase.md">Download Modbus Monitor XPF</a> and import 339+ bundled maps.</p>
 </div>
 
 ## All Device Maps
@@ -84,6 +96,26 @@ See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/d
   <li data-manufacturer="SEL" data-search="sel sel-351a relay modbus map register map modbus registers"><a href="../products/xpf/device-maps/sel/sel-351a/">SEL SEL-351A Modbus Register Map</a> - Relay</li>
   <li data-manufacturer="SEL" data-search="sel sel-751a relay modbus map register map modbus registers"><a href="../products/xpf/device-maps/sel/sel-751a/">SEL SEL-751A Modbus Register Map</a> - Relay</li>
   <li data-manufacturer="SEL" data-search="sel sel-710 relay modbus map register map modbus registers"><a href="../products/xpf/device-maps/sel/sel-710/">SEL SEL-710 Modbus Register Map</a> - Relay</li>
+  <li data-manufacturer="Janitza" data-search="janitza umg104 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/umg104/">Janitza UMG104 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Janitza" data-search="janitza umg605 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/umg605/">Janitza UMG605 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Janitza" data-search="janitza umg604 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/umg604/">Janitza UMG604 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Janitza" data-search="janitza umg96 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/umg96/">Janitza UMG96 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Janitza" data-search="janitza umg103 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/umg103/">Janitza UMG103 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris a40 / a41 rs485 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-a40-a41-rs485/">Socomec DIRIS A40 / A41 RS485 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris i31 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-i31/">Socomec DIRIS I31 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris u30 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-u30/">Socomec DIRIS U30 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis eci3 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-eci3/">Socomec Countis ECI3 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis eci2 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-eci2/">Socomec Countis ECI2 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Eaton" data-search="eaton iq dp 4000 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/eaton/iq-dp-4000/">Eaton IQ DP 4000 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Eaton" data-search="eaton iq100 series / iq130 / iq140 / iq150 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/eaton/iq100-iq130-iq140-iq150/">Eaton IQ100 Series / IQ130 / IQ140 / IQ150 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Huawei" data-search="huawei sun2000 solar inverter modbus map register map modbus registers"><a href="../products/xpf/device-maps/huawei/sun2000/">Huawei Sun2000 Modbus Register Map</a> - Solar Inverter</li>
+  <li data-manufacturer="Huawei" data-search="huawei smartlogger solar inverter modbus map register map modbus registers"><a href="../products/xpf/device-maps/huawei/smartlogger/">Huawei SmartLogger Modbus Register Map</a> - Solar Inverter</li>
+  <li data-manufacturer="Fronius" data-search="fronius primo 4 solar inverter modbus map register map modbus registers"><a href="../products/xpf/device-maps/fronius/primo-4/">Fronius Primo 4 Modbus Register Map</a> - Solar Inverter</li>
+  <li data-manufacturer="Fronius" data-search="fronius primo 5 solar inverter modbus map register map modbus registers"><a href="../products/xpf/device-maps/fronius/primo-5/">Fronius Primo 5 Modbus Register Map</a> - Solar Inverter</li>
+  <li data-manufacturer="Fronius" data-search="fronius symo 6 solar inverter modbus map register map modbus registers"><a href="../products/xpf/device-maps/fronius/symo-6/">Fronius Symo 6 Modbus Register Map</a> - Solar Inverter</li>
+  <li data-manufacturer="Electro Industries" data-search="electro industries shark 200 / 200t power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/electro-industries/shark-200-200t/">Electro Industries Shark 200 / 200T Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Electro Industries" data-search="electro industries shark 250 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/electro-industries/shark-250/">Electro Industries Shark 250 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="GE" data-search="ge epm 7000 / epm 7100 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/ge/epm-7000-epm-7100/">GE EPM 7000 / EPM 7100 Modbus Register Map</a> - Power Meter</li>
 </ul>
 
 <script>
@@ -99,6 +131,7 @@ See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/d
   function applyFilter() {
     const q = searchInput.value.trim().toLowerCase();
     const manufacturer = manufacturerFilter.value;
+    const appCount = count.dataset.appCount || '';
     let visible = 0;
 
     for (const item of items) {
@@ -110,7 +143,10 @@ See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/d
       if (show) visible += 1;
     }
 
-    count.textContent = visible + ' map(s) shown';
+    count.textContent = visible + ' map(s) shown on this page';
+    if (appCount) {
+      count.textContent += '  |  ' + appCount + '+ available in app';
+    }
   }
 
   searchInput.addEventListener('input', applyFilter);

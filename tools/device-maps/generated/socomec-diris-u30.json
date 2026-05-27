@@ -1,0 +1,109 @@
+{
+  "slug": "diris-u30",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "DIRIS U30",
+  "title": "Socomec DIRIS U30 Modbus Register Map",
+  "description": "Socomec DIRIS U30 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS U30 Modbus register list, Socomec DIRIS U30 Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 56,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Voltage",
+    "Status",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "System Ph N Voltage V",
+      "address": "436867",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Frequency mHz",
+      "address": "436871",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Status",
+      "address": "458273",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "System THD V",
+      "address": "437150",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "SOCO :4",
+      "address": "450000",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "MODBUS Table Version",
+      "address": "450006",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "System Ph Ph Voltage V",
+      "address": "436869",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph N Voltage V1 V",
+      "address": "436873",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph N Voltage V2 V",
+      "address": "436875",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph N Voltage V3 V",
+      "address": "436877",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph N Voltage Vn V",
+      "address": "436879",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph Ph Voltage U12 V",
+      "address": "436881",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - DIRIS U30 - Power Meter.csv"
+  ],
+  "related": []
+}

@@ -5,7 +5,7 @@ description: Eaton PXM1000 Series Modbus map and register map with sample Modbus
 
 # Eaton PXM1000 Series Modbus Register Map
 
-The Eaton PXM1000 Series is a power meter used for power monitoring, energy metering, and facility automation. This page provides a sample Modbus register map with addresses, data types, and signal categories to help engineers commission, troubleshoot, and monitor the device. For Eaton PXM1000 Series deployments, teams often use this map to surface demand, energy, and harmonics data in critical power distribution and electrical monitoring systems.
+The Eaton PXM1000 Series is a power meter used for power monitoring, energy metering, and facility automation. This page provides a sample Modbus register map with addresses, data types, and signal categories to help engineers commission, troubleshoot, and monitor the device. For Eaton PXM1000 Series deployments, teams often use this map to surface power, energy, and harmonics data in critical power distribution and electrical monitoring systems.
 
 This page shows a preview subset of the full device map available in Modbus Monitor XPF.
 
@@ -31,18 +31,18 @@ Sample registers from the Eaton PXM1000 Series Modbus map. Import the full map i
 
 | Signal | Address | Type | Units | Category |
 |---|---:|---|---|---|
-| PercentVoltageUnbalance | 416505 | FLOAT32 | V | Voltage |
-| PercentCurrentUnbalance | 416507 | FLOAT32 | - | Current |
-| ForwardEnergy | 416463 | FLOAT32 | kWh | Energy |
+| Phase voltage V1 | 312291 | FLOAT32 | V | Voltage |
+| Current I1 | 312307 | FLOAT32 | - | Current |
+| Phase A power pa | 312317 | FLOAT32 | kW | Power |
+| Energy IMP | 316457 | UINT32 | kWh | Energy |
+| Frequency | 312289 | FLOAT32 | Hz | Frequency |
 | PFapparentA | 416489 | FLOAT32 | - | Power Factor |
 | DemandType | 404111 | UINT16 | kW | Demand |
 | SysStatus | 404143 | UINT16 | - | Status |
-| VabPerTHD | 416475 | FLOAT32 | - | Harmonics |
-| Module1 | 404151 | UINT16 | - | General |
-| AlarmIndicator | 404147 | UINT16 | - | Status |
-| SecondaryStatus | 408193 | UINT16 | - | Status |
-| Status | 408193 | UINT16 | - | Status |
-| DemandTotalWatts | 416451 | FLOAT32 | kW | Demand |
+| THDV1 of V1 V12 | 316474 | UINT16 | - | Harmonics |
+| Load characteristic LCR | 316449 | FLOAT32 | - | General |
+| Phase voltage V2 | 312293 | FLOAT32 | V | Voltage |
+| Phase voltage V3 | 312295 | FLOAT32 | V | Voltage |
 
 ## How to Use This Map
 
@@ -60,12 +60,12 @@ Sample registers from the Eaton PXM1000 Series Modbus map. Import the full map i
 
 ## Data Categories Available
 
-- Demand
+- Power
 - Energy
 - Harmonics
-- Status
-- Power Factor
 - Voltage
+- Current
+- Demand
 
 ## Related Tools
 
@@ -80,4 +80,4 @@ Sample registers from the Eaton PXM1000 Series Modbus map. Import the full map i
 - [Eaton PXM2000 Modbus Register Map](./pxm2000.md)
 - [Eaton EM19 M Modbus Register Map](./em19-m.md)
 - [All Eaton Modbus Register Maps](../index.md)
-- [All XPF Device Maps](../../index.md)
+- [All XPF Device Maps](../../../../modbus-device-maps/index.md)

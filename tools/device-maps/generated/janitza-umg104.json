@@ -1,0 +1,111 @@
+{
+  "slug": "umg104",
+  "manufacturer_slug": "janitza",
+  "manufacturer": "Janitza",
+  "model": "UMG104",
+  "title": "Janitza UMG104 Modbus Register Map",
+  "description": "Janitza UMG104 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Janitza UMG104 Modbus register, Janitza UMG104 Modbus address list.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 49,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Power",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 N V",
+      "address": "419000",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Apparent current L1 A",
+      "address": "419012",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Real power L1 W",
+      "address": "419020",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Real energy L1 Wh",
+      "address": "419054",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Measured frequency Hz",
+      "address": "419050",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Status digital output 0not active 1active n",
+      "address": "409973",
+      "type": "INT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Internal temperature DC",
+      "address": "401461",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Harmonic thd u L1 N",
+      "address": "419110",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Vector sum ini1i2i3 A",
+      "address": "419018",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Rs485 modbus address",
+      "address": "410180",
+      "type": "INT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Serial number",
+      "address": "410176",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Voltage L2 N V",
+      "address": "419002",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Janitza - UMG104 - Power Meter.csv"
+  ],
+  "related": []
+}

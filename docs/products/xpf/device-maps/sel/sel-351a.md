@@ -75,4 +75,4 @@ Sample registers from the SEL SEL-351A Modbus map. Import the full map in Modbus
 - [SEL SEL-751A Modbus Register Map](./sel-751a.md)
 - [SEL SEL-710 Modbus Register Map](./sel-710.md)
 - [All SEL Modbus Register Maps](../index.md)
-- [All XPF Device Maps](../../index.md)
+- [All XPF Device Maps](../../../../modbus-device-maps/index.md)

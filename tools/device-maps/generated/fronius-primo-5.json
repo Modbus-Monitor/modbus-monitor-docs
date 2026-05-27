@@ -1,0 +1,111 @@
+{
+  "slug": "primo-5",
+  "manufacturer_slug": "fronius",
+  "manufacturer": "Fronius",
+  "model": "Primo 5",
+  "title": "Fronius Primo 5 Modbus Register Map",
+  "description": "Fronius Primo 5 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Fronius Primo 5 Modbus registers, Fronius Primo 5 Modbus TCP.",
+  "device_type": "Solar Inverter",
+  "tier": 1,
+  "order": 64,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Status",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase Voltage AB V",
+      "address": "440077",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "AC Current A",
+      "address": "440069",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC Power W",
+      "address": "440089",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "AC Energy Wh",
+      "address": "440099",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Line Frequency Hz",
+      "address": "440091",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Enumerated value Operating state",
+      "address": "440115",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Cabinet Temperature C",
+      "address": "440107",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Bitmask value Event fields",
+      "address": "440117",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Phase A Current A",
+      "address": "440071",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Phase B Current A",
+      "address": "440073",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Phase C Current A",
+      "address": "440075",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Phase Voltage BC V",
+      "address": "440079",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Fronius - Primo 5 - Solar Inverter.csv"
+  ],
+  "related": []
+}

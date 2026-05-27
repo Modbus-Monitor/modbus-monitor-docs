@@ -1,0 +1,113 @@
+{
+  "slug": "epm-7000-epm-7100",
+  "manufacturer_slug": "ge",
+  "manufacturer": "GE",
+  "model": "EPM 7000 / EPM 7100",
+  "title": "GE EPM 7000 / EPM 7100 Modbus Register Map",
+  "description": "GE EPM 7000 / EPM 7100 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 68,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Current",
+    "Power Factor",
+    "Harmonics",
+    "Status",
+    "Voltage"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase A Voltage harmonic magnitudes",
+      "address": "406005",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Amps A",
+      "address": "400284",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Power Factor 3 Ph total",
+      "address": "400291",
+      "type": "INT16",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "Power Energy Format",
+      "address": "430005",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency",
+      "address": "400292",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Positive PF 3 Ph Average",
+      "address": "402015",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Volts A N previous Demand interval Short Term Minimum",
+      "address": "407975",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Meter Status",
+      "address": "404500",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Unit Lifetime Data Max Temperature",
+      "address": "404536",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Volts A N THD",
+      "address": "405999",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Meter Name:8",
+      "address": "400000",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Meter Type",
+      "address": "400016",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    }
+  ],
+  "source_csvs": [
+    "GE - EPM 7000 - Power Meter.csv",
+    "GE - EPM 7000P - Power Meter.csv",
+    "GE - EPM 7100 - Power Meter.csv"
+  ],
+  "related": []
+}

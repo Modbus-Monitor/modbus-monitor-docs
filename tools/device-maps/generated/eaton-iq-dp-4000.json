@@ -1,0 +1,111 @@
+{
+  "slug": "iq-dp-4000",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "IQ DP 4000",
+  "title": "Eaton IQ DP 4000 Modbus Register Map",
+  "description": "Eaton IQ DP 4000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 59,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Demand",
+    "Energy",
+    "Power",
+    "Power Factor",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Real power W",
+      "address": "306006",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Forward real energy Wh",
+      "address": "307004",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "311000",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Pf displacement",
+      "address": "306218",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Peak demand forward watts W",
+      "address": "307222",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Status",
+      "address": "303000",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Percent thd la",
+      "address": "309436",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Vab V",
+      "address": "304002",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Peak demand reverse watts W",
+      "address": "307264",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Peak demand lagging vars VAr",
+      "address": "307305",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Peak demand leading vars VAr",
+      "address": "307347",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Peak demand la A",
+      "address": "305014",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - IQ DP 4000 - Power Meter.csv"
+  ],
+  "related": []
+}

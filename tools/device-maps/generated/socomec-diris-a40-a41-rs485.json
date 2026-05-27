@@ -1,0 +1,111 @@
+{
+  "slug": "diris-a40-a41-rs485",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "DIRIS A40 / A41 RS485",
+  "title": "Socomec DIRIS A40 / A41 RS485 Modbus Register Map",
+  "description": "Socomec DIRIS A40 / A41 RS485 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS A40 / A41 RS485 Modbus register list, Socomec DIRIS A40 / A41 RS485 Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 54,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Power",
+    "Voltage",
+    "Current",
+    "Temperature",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase to phase voltage u12 V",
+      "address": "410513",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Phase current 1",
+      "address": "410527",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "active power kW",
+      "address": "410535",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Active energy",
+      "address": "410769",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "410525",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Internal temperature sensor present",
+      "address": "411455",
+      "type": "UINT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Thd u12",
+      "address": "411535",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Hour meter 1",
+      "address": "410511",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Phase to phase voltage u23 V",
+      "address": "410515",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Phase to phase voltage u31 V",
+      "address": "410517",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Phase to neutral voltage phase 1 V",
+      "address": "410519",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Phase to neutral voltage phase 2 V",
+      "address": "410521",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - DIRIS A40 A41 RS485 - Power Meter.csv"
+  ],
+  "related": []
+}

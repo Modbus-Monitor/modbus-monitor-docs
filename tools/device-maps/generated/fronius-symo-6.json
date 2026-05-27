@@ -1,0 +1,111 @@
+{
+  "slug": "symo-6",
+  "manufacturer_slug": "fronius",
+  "manufacturer": "Fronius",
+  "model": "Symo 6",
+  "title": "Fronius Symo 6 Modbus Register Map",
+  "description": "Fronius Symo 6 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Fronius Symo 6 Modbus registers, Fronius Symo 6 Modbus TCP.",
+  "device_type": "Solar Inverter",
+  "tier": 1,
+  "order": 65,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Status",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase Voltage AB V",
+      "address": "440074",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "AC Current A",
+      "address": "440069",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC Power W",
+      "address": "440081",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "AC Energy Wh",
+      "address": "440091",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Line Frequency Hz",
+      "address": "440083",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Scale factor PFSF",
+      "address": "440090",
+      "type": "INT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Enumerated value Operating state",
+      "address": "440105",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Cabinet Temperature C",
+      "address": "440100",
+      "type": "INT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Scale factor ASF",
+      "address": "440073",
+      "type": "INT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Phase A Current A",
+      "address": "440070",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Phase B Current A",
+      "address": "440071",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Phase C Current A",
+      "address": "440072",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Fronius - Symo 6 - Solar Inverter.csv"
+  ],
+  "related": []
+}

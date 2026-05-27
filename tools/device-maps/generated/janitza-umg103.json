@@ -1,0 +1,111 @@
+{
+  "slug": "umg103",
+  "manufacturer_slug": "janitza",
+  "manufacturer": "Janitza",
+  "model": "UMG103",
+  "title": "Janitza UMG103 Modbus Register Map",
+  "description": "Janitza UMG103 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Janitza UMG103 Modbus register, Janitza UMG103 Modbus address list.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 53,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Energy",
+    "Power",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 N V",
+      "address": "419000",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Apparent current L1 A",
+      "address": "419012",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Real power L1 W",
+      "address": "419020",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Real energy l1l3 Wh",
+      "address": "419060",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Measured frequency Hz",
+      "address": "419050",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Harmonic thd u L1 N",
+      "address": "419110",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Vector sum ini1i2i3 A",
+      "address": "419018",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Serial number",
+      "address": "400911",
+      "type": "INT32",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Voltage L2 N V",
+      "address": "419002",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L3 N V",
+      "address": "419004",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L1 L2 V",
+      "address": "419006",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L2 L3 V",
+      "address": "419008",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Janitza - UMG103 - Power Meter.csv"
+  ],
+  "related": []
+}

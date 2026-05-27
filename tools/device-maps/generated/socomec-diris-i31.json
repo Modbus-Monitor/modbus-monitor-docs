@@ -1,0 +1,111 @@
+{
+  "slug": "diris-i31",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "DIRIS I31",
+  "title": "Socomec DIRIS I31 Modbus Register Map",
+  "description": "Socomec DIRIS I31 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS I31 Modbus register list, Socomec DIRIS I31 Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 55,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Energy",
+    "Power",
+    "Voltage",
+    "Status",
+    "Current",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Ph N Voltage V1 V",
+      "address": "418444",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current I1 mA",
+      "address": "418458",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Total active power W",
+      "address": "418476",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Total Positive active Energy EaP kWh",
+      "address": "419841",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency mHz",
+      "address": "418442",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Load status",
+      "address": "418432",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "SOCO :4",
+      "address": "450000",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "MODBUS Table Version",
+      "address": "450006",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Ph N Voltage V2 V",
+      "address": "418446",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph N Voltage V3 V",
+      "address": "418448",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph Ph Voltage U12 V",
+      "address": "418452",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph Ph Voltage U23 V",
+      "address": "418454",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - DIRIS DIGIWARE I_31 - Power Meter.csv"
+  ],
+  "related": []
+}

@@ -1,0 +1,110 @@
+{
+  "slug": "umg604",
+  "manufacturer_slug": "janitza",
+  "manufacturer": "Janitza",
+  "model": "UMG604",
+  "title": "Janitza UMG604 Modbus Register Map",
+  "description": "Janitza UMG604 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Janitza UMG604 Modbus register, Janitza UMG604 Modbus address list.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 51,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Power",
+    "Temperature",
+    "Power Factor",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "S0_POWER_0",
+      "address": "301457",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "pf_total",
+      "address": "319636",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "MB_STATUS",
+      "address": "315135",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "EXT_TEMPERATUR",
+      "address": "301461",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Temperature"
+    },
+    {
+      "signal": "G_THD_ULN_0",
+      "address": "319110",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "G_ULN_0",
+      "address": "319000",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "BAUD485",
+      "address": "310184",
+      "type": "INT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "SET_BACNAME_INSTACE",
+      "address": "315126",
+      "type": "INT32",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "G_THD_ULN_1",
+      "address": "319112",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "G_THD_ULN_2",
+      "address": "319114",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "G_THD_ILN_0",
+      "address": "319116",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "G_THD_ILN_1",
+      "address": "319118",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    }
+  ],
+  "source_csvs": [
+    "Janitza - UMG604_PRO - Power Meter.csv"
+  ],
+  "related": []
+}

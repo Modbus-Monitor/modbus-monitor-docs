@@ -79,4 +79,4 @@ Sample registers from the ABB Trio 50 / Trio 60 Modbus map. Import the full map 
 - [ABB B23 / B24 Modbus Register Map](./b23-b24.md)
 - [ABB A41 / A42 Modbus Register Map](./a41-a42.md)
 - [All ABB Modbus Register Maps](../index.md)
-- [All XPF Device Maps](../../index.md)
+- [All XPF Device Maps](../../../../modbus-device-maps/index.md)

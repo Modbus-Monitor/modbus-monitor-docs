@@ -80,4 +80,4 @@ Sample registers from the SolarEdge SE10K Modbus map. Import the full map in Mod
 - [SolarEdge SE3000H Modbus Register Map](./se3000h.md)
 - [SolarEdge SE6000 Modbus Register Map](./se6000.md)
 - [All SolarEdge Modbus Register Maps](../index.md)
-- [All XPF Device Maps](../../index.md)
+- [All XPF Device Maps](../../../../modbus-device-maps/index.md)

@@ -1,0 +1,111 @@
+{
+  "slug": "umg605",
+  "manufacturer_slug": "janitza",
+  "manufacturer": "Janitza",
+  "model": "UMG605",
+  "title": "Janitza UMG605 Modbus Register Map",
+  "description": "Janitza UMG605 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Janitza UMG605 Modbus register, Janitza UMG605 Modbus address list.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 50,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Power",
+    "Status",
+    "Power Factor",
+    "Energy",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 N V G_ULN_0",
+      "address": "319000",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Apparent current L1 N A G_ILN_0",
+      "address": "319012",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Real power L1 N W G_PLN_0",
+      "address": "319020",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Real energy L1 Wh G_WH_0",
+      "address": "319054",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Measured frequency Hz G_FREQ",
+      "address": "319050",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "PFLN_0",
+      "address": "403893",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "EMAX_D_STATUS_0",
+      "address": "307066",
+      "type": "INT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "EXT_TEMPERATUR",
+      "address": "404209",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Harmonic thd u L1 N G_THD_ULN_0",
+      "address": "319110",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Vector sum ini1i2i3 A G_I_SUM3",
+      "address": "319018",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "BAUD485",
+      "address": "306864",
+      "type": "INT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Voltage L2 N V G_ULN_1",
+      "address": "319002",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Janitza - UMG605PRO - Power Meter.csv"
+  ],
+  "related": []
+}

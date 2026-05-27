@@ -1,0 +1,112 @@
+{
+  "slug": "smartlogger",
+  "manufacturer_slug": "huawei",
+  "manufacturer": "Huawei",
+  "model": "SmartLogger",
+  "title": "Huawei SmartLogger Modbus Register Map",
+  "description": "Huawei SmartLogger Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Huawei SmartLogger Modbus TCP register, Huawei SmartLogger Modbus register map.",
+  "device_type": "Solar Inverter",
+  "tier": 1,
+  "order": 62,
+  "protocol": "Modbus",
+  "typical_use": "PV production monitoring, inverter diagnostics, and energy analytics",
+  "categories": [
+    "Power",
+    "Status",
+    "Current",
+    "Energy",
+    "Voltage",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Grid A phase voltage",
+      "address": "432260",
+      "type": "INT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Grid A phase current",
+      "address": "432272",
+      "type": "INT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Grid-tied Active Power",
+      "address": "432278",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Energy Yield Daily",
+      "address": "440562",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "ESS Battery Status",
+      "address": "437000",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Battery1 Inv3 Temperature",
+      "address": "437022",
+      "type": "UINT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Solar Producion Now",
+      "address": "440521",
+      "type": "INT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Conversion coefficient",
+      "address": "441940",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Communication abnormal shutdown",
+      "address": "441947",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Battery Inv3 Charge/Discharge Power",
+      "address": "437765",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Grid B Phase current",
+      "address": "432274",
+      "type": "INT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Grid C Phase Current",
+      "address": "432276",
+      "type": "INT32",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Huawei - Smartlogger 3000 - Home Assistant Project Event Logger.csv",
+    "Huawei - SmartLogger SUN2000- Event Logger.csv"
+  ],
+  "related": []
+}

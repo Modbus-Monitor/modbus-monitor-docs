@@ -78,4 +78,4 @@ Sample registers from the Eaton EM19 M Modbus map. Import the full map in Modbus
 - [Eaton PXM2000 Modbus Register Map](./pxm2000.md)
 - [Eaton EM20 Modbus Register Map](./em20.md)
 - [All Eaton Modbus Register Maps](../index.md)
-- [All XPF Device Maps](../../index.md)
+- [All XPF Device Maps](../../../../modbus-device-maps/index.md)

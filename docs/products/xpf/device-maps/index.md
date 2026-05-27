@@ -1,13 +1,14 @@
 ---
 title: Modbus Device Maps for Modbus Monitor XPF
-description: Browse 48 Modbus device map previews for power meters, solar inverters, UPS systems, and industrial equipment. Use pre-built maps to reduce setup time in Modbus Monitor XPF.
+description: Browse 68 Modbus device map previews for power meters, solar inverters, UPS systems, and industrial equipment. Use pre-built maps to reduce setup time in Modbus Monitor XPF.
 ---
 
 # Modbus Device Maps for Modbus Monitor XPF
 
 Use these pre-built Modbus map previews to validate device compatibility before commissioning. Each page includes a practical register subset, common categories, and links back to Modbus Monitor XPF.
 
-Browse 48 pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.
+Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.
+68 maps are shown here, while 339+ maps are available in the actual app. Download Modbus Monitor XPF to access the complete bundled map library.
 
 ## Start Here {#start-here}
 
@@ -73,6 +74,21 @@ Browse 48 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Schneider Electric PM210](./schneider-electric/pm210.md)
 - [Schneider Electric iEM3000](./schneider-electric/iem3000.md)
 - [Schneider Electric CM2000](./schneider-electric/cm2000.md)
+- [Janitza UMG104](./janitza/umg104.md)
+- [Janitza UMG605](./janitza/umg605.md)
+- [Janitza UMG604](./janitza/umg604.md)
+- [Janitza UMG96](./janitza/umg96.md)
+- [Janitza UMG103](./janitza/umg103.md)
+- [Socomec DIRIS A40 / A41 RS485](./socomec/diris-a40-a41-rs485.md)
+- [Socomec DIRIS I31](./socomec/diris-i31.md)
+- [Socomec DIRIS U30](./socomec/diris-u30.md)
+- [Socomec Countis ECI3](./socomec/countis-eci3.md)
+- [Socomec Countis ECI2](./socomec/countis-eci2.md)
+- [Eaton IQ DP 4000](./eaton/iq-dp-4000.md)
+- [Eaton IQ100 Series / IQ130 / IQ140 / IQ150](./eaton/iq100-iq130-iq140-iq150.md)
+- [Electro Industries Shark 200 / 200T](./electro-industries/shark-200-200t.md)
+- [Electro Industries Shark 250](./electro-industries/shark-250.md)
+- [GE EPM 7000 / EPM 7100](./ge/epm-7000-epm-7100.md)
 
 ### Solar Inverters
 - [SolarEdge SE5000](./solaredge/se5000.md)
@@ -83,6 +99,11 @@ Browse 48 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [SolarEdge SE10K](./solaredge/se10k.md)
 - [SolarEdge SE12.5K](./solaredge/se12-5k.md)
 - [SolarEdge SE3800H](./solaredge/se3800h.md)
+- [Huawei Sun2000](./huawei/sun2000.md)
+- [Huawei SmartLogger](./huawei/smartlogger.md)
+- [Fronius Primo 4](./fronius/primo-4.md)
+- [Fronius Primo 5](./fronius/primo-5.md)
+- [Fronius Symo 6](./fronius/symo-6.md)
 
 ### Other Devices
 - [Eaton 93PM](./eaton/93pm.md)
@@ -98,10 +119,16 @@ Browse 48 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Siemens](./siemens/index.md): [PAC3200](./siemens/sentron-pac-3200.md), [PAC4200](./siemens/sentron-pac-4200.md), [PAC2200](./siemens/sentron-pac-2200.md), [SICAM P](./siemens/sicam-p.md), [SEM3 Series](./siemens/sem3-series.md)
 - [ABB](./abb/index.md): [M4M](./abb/m4m.md), [B23 / B24](./abb/b23-b24.md), [A41 / A42](./abb/a41-a42.md), [Trio 50 / Trio 60](./abb/trio-50-trio-60.md)
 - [SolarEdge](./solaredge/index.md): [SE5000](./solaredge/se5000.md), [SE5K / SE7K / SE10K / SE12.5K](./solaredge/se5k-se7k-se10k-se12-5k.md), [SE3000H](./solaredge/se3000h.md), [SE6000](./solaredge/se6000.md), [SE10K](./solaredge/se10k.md), [SE12.5K](./solaredge/se12-5k.md), [SE3800H](./solaredge/se3800h.md)
-- [Eaton](./eaton/index.md): [93PM](./eaton/93pm.md), [BladeUPS](./eaton/bladeups.md), [PXM2000](./eaton/pxm2000.md), [EM19 M](./eaton/em19-m.md), [EM20](./eaton/em20.md), [EM22-DIN](./eaton/em22-din.md), [PXM1000 Series](./eaton/pxm1000-series.md), [PXM3000](./eaton/pxm3000.md), [PXM4000](./eaton/pxm4000.md)
+- [Eaton](./eaton/index.md): [93PM](./eaton/93pm.md), [BladeUPS](./eaton/bladeups.md), [PXM2000](./eaton/pxm2000.md), [EM19 M](./eaton/em19-m.md), [EM20](./eaton/em20.md), [EM22-DIN](./eaton/em22-din.md), [PXM1000 Series](./eaton/pxm1000-series.md), [PXM3000](./eaton/pxm3000.md), [PXM4000](./eaton/pxm4000.md), [IQ DP 4000](./eaton/iq-dp-4000.md), [IQ100 Series / IQ130 / IQ140 / IQ150](./eaton/iq100-iq130-iq140-iq150.md)
 - [SEL](./sel/index.md): [SEL-735](./sel/sel-735.md), [SEL-351A](./sel/sel-351a.md), [SEL-751A](./sel/sel-751a.md), [SEL-710](./sel/sel-710.md)
 - [Carlo Gavazzi](./carlo-gavazzi/index.md): [EM24](./carlo-gavazzi/em24.md)
 - [Accuenergy](./accuenergy/index.md): [Acuvim II](./accuenergy/acuvim-ii.md)
+- [Janitza](./janitza/index.md): [UMG104](./janitza/umg104.md), [UMG605](./janitza/umg605.md), [UMG604](./janitza/umg604.md), [UMG96](./janitza/umg96.md), [UMG103](./janitza/umg103.md)
+- [Socomec](./socomec/index.md): [DIRIS A40 / A41 RS485](./socomec/diris-a40-a41-rs485.md), [DIRIS I31](./socomec/diris-i31.md), [DIRIS U30](./socomec/diris-u30.md), [Countis ECI3](./socomec/countis-eci3.md), [Countis ECI2](./socomec/countis-eci2.md)
+- [Huawei](./huawei/index.md): [Sun2000](./huawei/sun2000.md), [SmartLogger](./huawei/smartlogger.md)
+- [Fronius](./fronius/index.md): [Primo 4](./fronius/primo-4.md), [Primo 5](./fronius/primo-5.md), [Symo 6](./fronius/symo-6.md)
+- [Electro Industries](./electro-industries/index.md): [Shark 200 / 200T](./electro-industries/shark-200-200t.md), [Shark 250](./electro-industries/shark-250.md)
+- [GE](./ge/index.md): [EPM 7000 / EPM 7100](./ge/epm-7000-epm-7100.md)
 
 ## Full List {#full-list}
 
@@ -116,10 +143,25 @@ Browse 48 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Eaton EM19 M Modbus Register Map](./eaton/em19-m.md)
 - [Eaton EM20 Modbus Register Map](./eaton/em20.md)
 - [Eaton EM22-DIN Modbus Register Map](./eaton/em22-din.md)
+- [Eaton IQ DP 4000 Modbus Register Map](./eaton/iq-dp-4000.md)
+- [Eaton IQ100 Series / IQ130 / IQ140 / IQ150 Modbus Register Map](./eaton/iq100-iq130-iq140-iq150.md)
 - [Eaton PXM1000 Series Modbus Register Map](./eaton/pxm1000-series.md)
 - [Eaton PXM2000 Modbus Register Map](./eaton/pxm2000.md)
 - [Eaton PXM3000 Modbus Register Map](./eaton/pxm3000.md)
 - [Eaton PXM4000 Modbus Register Map](./eaton/pxm4000.md)
+- [Electro Industries Shark 200 / 200T Modbus Register Map](./electro-industries/shark-200-200t.md)
+- [Electro Industries Shark 250 Modbus Register Map](./electro-industries/shark-250.md)
+- [Fronius Primo 4 Modbus Register Map](./fronius/primo-4.md)
+- [Fronius Primo 5 Modbus Register Map](./fronius/primo-5.md)
+- [Fronius Symo 6 Modbus Register Map](./fronius/symo-6.md)
+- [GE EPM 7000 / EPM 7100 Modbus Register Map](./ge/epm-7000-epm-7100.md)
+- [Huawei SmartLogger Modbus Register Map](./huawei/smartlogger.md)
+- [Huawei Sun2000 Modbus Register Map](./huawei/sun2000.md)
+- [Janitza UMG103 Modbus Register Map](./janitza/umg103.md)
+- [Janitza UMG104 Modbus Register Map](./janitza/umg104.md)
+- [Janitza UMG604 Modbus Register Map](./janitza/umg604.md)
+- [Janitza UMG605 Modbus Register Map](./janitza/umg605.md)
+- [Janitza UMG96 Modbus Register Map](./janitza/umg96.md)
 - [Schneider Electric CM2000 Modbus Register Map](./schneider-electric/cm2000.md)
 - [Schneider Electric EM4800 Modbus Register Map](./schneider-electric/em4800.md)
 - [Schneider Electric EM6400 Modbus Register Map](./schneider-electric/em6400.md)
@@ -146,6 +188,11 @@ Browse 48 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Siemens PAC4200 Modbus Register Map](./siemens/sentron-pac-4200.md)
 - [Siemens SEM3 Series Modbus Register Map](./siemens/sem3-series.md)
 - [Siemens SICAM P Modbus Register Map](./siemens/sicam-p.md)
+- [Socomec Countis ECI2 Modbus Register Map](./socomec/countis-eci2.md)
+- [Socomec Countis ECI3 Modbus Register Map](./socomec/countis-eci3.md)
+- [Socomec DIRIS A40 / A41 RS485 Modbus Register Map](./socomec/diris-a40-a41-rs485.md)
+- [Socomec DIRIS I31 Modbus Register Map](./socomec/diris-i31.md)
+- [Socomec DIRIS U30 Modbus Register Map](./socomec/diris-u30.md)
 - [SolarEdge SE10K Modbus Register Map](./solaredge/se10k.md)
 - [SolarEdge SE12.5K Modbus Register Map](./solaredge/se12-5k.md)
 - [SolarEdge SE3000H Modbus Register Map](./solaredge/se3000h.md)
