@@ -119,6 +119,13 @@ jobs:
             echo "No version changes to commit"
           else
             git commit -m "🔄 Auto-update: version bump and build date [skip ci]"
+            # Pull with rebase to handle remote changes (e.g., manual user pushes)
+            git pull --rebase origin main || {
+              echo "⚠️  Rebase conflict detected - skipping auto-commit to avoid disrupting manual changes"
+              git rebase --abort
+              echo "Version update skipped due to concurrent changes"
+              exit 0
+            }
             git push
             echo "✅ Committed version updates"
           fi

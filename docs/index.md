@@ -55,7 +55,7 @@ Description: Professional Modbus documentation for automation engineers, includi
 </div>
 
 <div class="admonition success" markdown>
-**✅ Pro Tip:** 14-day free trial for XPF (all features, no credit card). Android apps are completely free.
+**✅ Pro Tip:** Free version available with feature lock. XPF includes a 14-day full-featured trial (no credit card). Android apps are completely free.
 </div>
 
 ---
