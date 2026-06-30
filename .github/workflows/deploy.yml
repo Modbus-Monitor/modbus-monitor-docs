@@ -182,6 +182,25 @@ jobs:
         with:
           path: site
 
+      # ────────────────────────────────
+      # 5️⃣a Clean up old GitHub Actions caches (save storage costs)
+      # ────────────────────────────────
+      - name: Clean up old GitHub Actions caches
+        run: |
+          echo "🧹 Cleaning up old caches to save storage space..."
+          # Get all caches sorted by creation date (newest first)
+          # Delete all but the 10 most recent caches
+          gh actions-cache list \
+            --repo Modbus-Monitor/modbus-monitor-docs \
+            --sort created-at \
+            --direction desc | tail -n +11 | awk '{print $1}' | xargs -I {} \
+            gh actions-cache delete {} \
+            --repo Modbus-Monitor/modbus-monitor-docs \
+            --confirm || echo "✅ No old caches to clean or already up-to-date"
+          echo "✅ Cache cleanup complete"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   # ────────────────────────────────
   # 6️⃣ Deploy to GitHub Pages
   # ────────────────────────────────
