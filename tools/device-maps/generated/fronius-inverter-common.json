@@ -1,0 +1,111 @@
+{
+  "slug": "common",
+  "manufacturer_slug": "fronius-inverter",
+  "manufacturer": "Fronius Inverter",
+  "model": "Common",
+  "title": "Fronius Inverter Common Modbus Register Map",
+  "description": "Fronius Inverter Common Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 101,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Temperature",
+    "Frequency",
+    "Energy"
+  ],
+  "preview_registers": [
+    {
+      "signal": "AC voltage phase AB V",
+      "address": "440076",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Total AC current A",
+      "address": "440071",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC in feed power W",
+      "address": "440083",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Total fed-in energy Wh",
+      "address": "440093",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "AC frequency Hz",
+      "address": "440085",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Housing temperature C",
+      "address": "440102",
+      "type": "INT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Operating mode Bitmask",
+      "address": "440107",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "AC current phase A A",
+      "address": "440072",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "AC current phase B A",
+      "address": "440073",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "AC current phase C A",
+      "address": "440074",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Scale factor AC current SF",
+      "address": "440075",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC voltage phase BC V",
+      "address": "440077",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Fronius - Common - Solar Inverter.csv"
+  ],
+  "related": []
+}

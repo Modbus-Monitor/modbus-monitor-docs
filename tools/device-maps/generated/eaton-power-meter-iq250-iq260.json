@@ -1,0 +1,111 @@
+{
+  "slug": "iq250-iq260",
+  "manufacturer_slug": "eaton-power-meter",
+  "manufacturer": "Eaton Power Meter",
+  "model": "IQ250, IQ260",
+  "title": "Eaton Power Meter IQ250, IQ260 Modbus Register Map",
+  "description": "Eaton Power Meter IQ250, IQ260 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 75,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Energy",
+    "Current",
+    "Demand",
+    "Power Factor",
+    "Power",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase A Voltage harmonic magnitudes 0 01",
+      "address": "406005",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Amps A amps",
+      "address": "400284",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Power Factor 3 Ph total",
+      "address": "400291",
+      "type": "INT16",
+      "units": "PF",
+      "category": "Power"
+    },
+    {
+      "signal": "W hours Received Wh per energy format",
+      "address": "401499",
+      "type": "INT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "401025",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Positive PF 3 Ph Average",
+      "address": "402015",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Volts A N previous Demand interval Short TermMinimum volts",
+      "address": "407975",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Meter Status mmmpch tffeeccc",
+      "address": "404500",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Volts A N THD 0 01",
+      "address": "405999",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Meter Name :8",
+      "address": "400000",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Meter Type st vvv",
+      "address": "400016",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Port ID",
+      "address": "404499",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - IQ250 IQ260 - Power Meter.csv"
+  ],
+  "related": []
+}

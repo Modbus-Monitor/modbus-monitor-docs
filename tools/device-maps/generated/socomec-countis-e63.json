@@ -1,0 +1,110 @@
+{
+  "slug": "countis-e63",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "Countis E63",
+  "title": "Socomec Countis E63 Modbus Register Map",
+  "description": "Socomec Countis E63 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec Countis E63 Modbus register list, Socomec Countis E63 Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 79,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase to phase voltage U12",
+      "address": "450514",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current transformer primary",
+      "address": "457346",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Active power - P",
+      "address": "450536",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Partial positive active energy ea",
+      "address": "450780",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency F",
+      "address": "450526",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "SOCO :4",
+      "address": "450000",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Product software version EX 100 Version 1 00",
+      "address": "450007",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Communication board VLO",
+      "address": "438919",
+      "type": "STRING",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Phase to phase voltage U23",
+      "address": "450516",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Phase to phase voltage U31",
+      "address": "450518",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Simple voltage V1",
+      "address": "450520",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Simple voltage V2",
+      "address": "450522",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - Countis E63 - Power Meter.csv"
+  ],
+  "related": []
+}

@@ -20,6 +20,8 @@ Modbus Monitor XPF includes pre-built Eaton device maps to speed up commissionin
 - PXM4000
 - IQ DP 4000
 - IQ100 Series / IQ130 / IQ140 / IQ150
+- IQ100 series,IQ130,IQ140,IQ150
+- Power Xpert Meter,PXM 1000
 
 ## Available Device Pages
 
@@ -34,3 +36,5 @@ Modbus Monitor XPF includes pre-built Eaton device maps to speed up commissionin
 - [Eaton PXM4000 Modbus Register Map](./pxm4000.md)
 - [Eaton IQ DP 4000 Modbus Register Map](./iq-dp-4000.md)
 - [Eaton IQ100 Series / IQ130 / IQ140 / IQ150 Modbus Register Map](./iq100-iq130-iq140-iq150.md)
+- [Eaton IQ100 series,IQ130,IQ140,IQ150 Modbus Register Map](./iq100-series-iq130-iq140-iq150.md)
+- [Eaton Power Xpert Meter,PXM 1000 Modbus Register Map](./power-xpert-meter-pxm-1000.md)

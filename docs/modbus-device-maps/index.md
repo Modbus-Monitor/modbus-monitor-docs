@@ -7,7 +7,7 @@ description: Search and filter Modbus device maps by manufacturer and model. Ope
 
 Search and filter all generated device maps in one place.
 
-68 maps are shown here, while 339+ maps are available in the actual app. Download Modbus Monitor XPF to access the full bundled map library.
+102 maps are shown here, while 339+ maps are available in the actual app. Download Modbus Monitor XPF to access the full bundled map library.
 
 ## Start Here {#start-here}
 
@@ -30,12 +30,17 @@ See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/d
     <option value="Accuenergy">Accuenergy</option>
     <option value="Carlo Gavazzi">Carlo Gavazzi</option>
     <option value="Eaton">Eaton</option>
+    <option value="Eaton Power Meter">Eaton Power Meter</option>
     <option value="Electro Industries">Electro Industries</option>
     <option value="Fronius">Fronius</option>
+    <option value="Fronius Inverter">Fronius Inverter</option>
+    <option value="Fronius Power Meter">Fronius Power Meter</option>
     <option value="GE">GE</option>
     <option value="Huawei">Huawei</option>
     <option value="Janitza">Janitza</option>
+    <option value="Phoenix Contact">Phoenix Contact</option>
     <option value="SEL">SEL</option>
+    <option value="SMA">SMA</option>
     <option value="Schneider Electric">Schneider Electric</option>
     <option value="Siemens">Siemens</option>
     <option value="Socomec">Socomec</option>
@@ -116,6 +121,40 @@ See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/d
   <li data-manufacturer="Electro Industries" data-search="electro industries shark 200 / 200t power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/electro-industries/shark-200-200t/">Electro Industries Shark 200 / 200T Modbus Register Map</a> - Power Meter</li>
   <li data-manufacturer="Electro Industries" data-search="electro industries shark 250 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/electro-industries/shark-250/">Electro Industries Shark 250 Modbus Register Map</a> - Power Meter</li>
   <li data-manufacturer="GE" data-search="ge epm 7000 / epm 7100 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/ge/epm-7000-epm-7100/">GE EPM 7000 / EPM 7100 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Eaton" data-search="eaton iq100 series,iq130,iq140,iq150 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/eaton/iq100-series-iq130-iq140-iq150/">Eaton IQ100 series,IQ130,IQ140,IQ150 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Eaton" data-search="eaton power xpert meter,pxm 1000 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/eaton/power-xpert-meter-pxm-1000/">Eaton Power Xpert Meter,PXM 1000 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Electro Industries" data-search="electro industries shark 200 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/electro-industries/shark-200/">Electro Industries Shark 200 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Phoenix Contact" data-search="phoenix contact eem-em3xx,em325,em355,em375,em327,em357,em377 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/phoenix-contact/eem-em3xx-em325-em355-em375-em327-em357-em377/">Phoenix Contact EEM-EM3xx,EM325,EM355,EM375,EM327,EM357,EM377 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Phoenix Contact" data-search="phoenix contact eem-ma,eem-ma3xx power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/phoenix-contact/eem-ma-eem-ma3xx/">Phoenix Contact EEM-MA,EEM-MA3xx Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Phoenix Contact" data-search="phoenix contact eem-ma3xx power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/phoenix-contact/eem-ma3xx/">Phoenix Contact EEM-MA3xx Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Eaton Power Meter" data-search="eaton power meter iq250, iq260 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/eaton-power-meter/iq250-iq260/">Eaton Power Meter IQ250, IQ260 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="SMA" data-search="sma solar inverter power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/sma/solar-inverter/">SMA Solar Inverter Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris,d30,d50,d70 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-d30-d50-d70/">Socomec DIRIS,D30,D50,D70 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris,d30,d50,d70 _ power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-d30-d50-d70/">Socomec DIRIS,D30,D50,D70 _ Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e63 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e63/">Socomec Countis E63 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e33, countis e43 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e33-countis-e43/">Socomec Countis E33, Countis E43 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec netys pr,netys rt,itys ups modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/netys-pr-netys-rt-itys/">Socomec NETYS PR,NETYS RT,ITYS Modbus Register Map</a> - UPS</li>
+  <li data-manufacturer="Socomec" data-search="socomec multis l20, multis l40 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/multis-l20-multis-l40/">Socomec Multis L20, Multis L40 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e23 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e23/">Socomec Countis E23 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e24 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e24/">Socomec Countis E24 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Fronius Inverter" data-search="fronius inverter 110,111.112,113 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/fronius-inverter/110-111-112-113/">Fronius Inverter 110,111.112,113 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e50 e53 e50r e53r power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e50-e53-e50r-e53r/">Socomec Countis E50 E53 E50R E53R Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Electro Industries" data-search="electro industries shark 50 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/electro-industries/shark-50/">Electro Industries Shark 50 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Janitza" data-search="janitza ecs power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/ecs/">Janitza ECS Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris a20 modbus power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-a20-modbus/">Socomec DIRIS A20 modbus Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e13 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e13/">Socomec Countis E13 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e14 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e14/">Socomec Countis E14 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Huawei" data-search="huawei solar inverter power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/huawei/solar-inverter/">Huawei Solar Inverter Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Janitza" data-search="janitza umg511 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/umg511/">Janitza UMG511 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Fronius Power Meter" data-search="fronius power meter 210,211.212,213 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/fronius-power-meter/210-211-212-213/">Fronius Power Meter 210,211.212,213 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Janitza" data-search="janitza b21,b23,b24 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/janitza/b21-b23-b24/">Janitza B21,B23,B24 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec masterys ups modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/masterys/">Socomec Masterys Modbus Register Map</a> - UPS</li>
+  <li data-manufacturer="Huawei" data-search="huawei sun2000 -env solar inverter modbus map register map modbus registers"><a href="../products/xpf/device-maps/huawei/sun2000-env/">Huawei Sun2000 -env Modbus Register Map</a> - Solar Inverter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e03 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e03/">Socomec Countis E03 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec countis e04 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/countis-e04/">Socomec Countis E04 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Fronius Inverter" data-search="fronius inverter common power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/fronius-inverter/common/">Fronius Inverter Common Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris u20 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-u20/">Socomec DIRIS U20 Modbus Register Map</a> - Power Meter</li>
+  <li data-manufacturer="Socomec" data-search="socomec diris u10 power meter modbus map register map modbus registers"><a href="../products/xpf/device-maps/socomec/diris-u10/">Socomec DIRIS U10 Modbus Register Map</a> - Power Meter</li>
 </ul>
 
 <script>

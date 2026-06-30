@@ -1,14 +1,14 @@
 ---
 title: Modbus Device Maps for Modbus Monitor XPF
-description: Browse 68 Modbus device map previews for power meters, solar inverters, UPS systems, and industrial equipment. Use pre-built maps to reduce setup time in Modbus Monitor XPF.
+description: Browse 102 Modbus device map previews for power meters, solar inverters, UPS systems, and industrial equipment. Use pre-built maps to reduce setup time in Modbus Monitor XPF.
 ---
 
 # Modbus Device Maps for Modbus Monitor XPF
 
 Use these pre-built Modbus map previews to validate device compatibility before commissioning. Each page includes a practical register subset, common categories, and links back to Modbus Monitor XPF.
 
-Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.
-68 maps are shown here, while 339+ maps are available in the actual app. Download Modbus Monitor XPF to access the complete bundled map library.
+Browse 102 pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.
+102 maps are shown here, while 339+ maps are available in the actual app. Download Modbus Monitor XPF to access the complete bundled map library.
 
 ## Start Here {#start-here}
 
@@ -35,7 +35,40 @@ Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS 
 
 ## Recently Added {#recently-added}
 
-- No new maps were added in this release run.
+- [Eaton IQ100 series,IQ130,IQ140,IQ150 Modbus Register Map](./eaton/iq100-series-iq130-iq140-iq150.md)
+- [Eaton Power Xpert Meter,PXM 1000 Modbus Register Map](./eaton/power-xpert-meter-pxm-1000.md)
+- [Janitza ECS Modbus Register Map](./janitza/ecs.md)
+- [Janitza UMG511 Modbus Register Map](./janitza/umg511.md)
+- [Janitza B21,B23,B24 Modbus Register Map](./janitza/b21-b23-b24.md)
+- [Socomec DIRIS,D30,D50,D70 Modbus Register Map](./socomec/diris-d30-d50-d70.md)
+- [Socomec DIRIS,D30,D50,D70 _ Modbus Register Map](./socomec/diris-d30-d50-d70.md)
+- [Socomec Countis E63 Modbus Register Map](./socomec/countis-e63.md)
+- [Socomec Countis E33, Countis E43 Modbus Register Map](./socomec/countis-e33-countis-e43.md)
+- [Socomec NETYS PR,NETYS RT,ITYS Modbus Register Map](./socomec/netys-pr-netys-rt-itys.md)
+- [Socomec Multis L20, Multis L40 Modbus Register Map](./socomec/multis-l20-multis-l40.md)
+- [Socomec Countis E23 Modbus Register Map](./socomec/countis-e23.md)
+- [Socomec Countis E24 Modbus Register Map](./socomec/countis-e24.md)
+- [Socomec Countis E50 E53 E50R E53R Modbus Register Map](./socomec/countis-e50-e53-e50r-e53r.md)
+- [Socomec DIRIS A20 modbus Modbus Register Map](./socomec/diris-a20-modbus.md)
+- [Socomec Countis E13 Modbus Register Map](./socomec/countis-e13.md)
+- [Socomec Countis E14 Modbus Register Map](./socomec/countis-e14.md)
+- [Socomec Masterys Modbus Register Map](./socomec/masterys.md)
+- [Socomec Countis E03 Modbus Register Map](./socomec/countis-e03.md)
+- [Socomec Countis E04 Modbus Register Map](./socomec/countis-e04.md)
+- [Socomec DIRIS U20 Modbus Register Map](./socomec/diris-u20.md)
+- [Socomec DIRIS U10 Modbus Register Map](./socomec/diris-u10.md)
+- [Huawei Solar Inverter Modbus Register Map](./huawei/solar-inverter.md)
+- [Huawei Sun2000 -env Modbus Register Map](./huawei/sun2000-env.md)
+- [Electro Industries Shark 200 Modbus Register Map](./electro-industries/shark-200.md)
+- [Electro Industries Shark 50 Modbus Register Map](./electro-industries/shark-50.md)
+- [Phoenix Contact EEM-EM3xx,EM325,EM355,EM375,EM327,EM357,EM377 Modbus Register Map](./phoenix-contact/eem-em3xx-em325-em355-em375-em327-em357-em377.md)
+- [Phoenix Contact EEM-MA,EEM-MA3xx Modbus Register Map](./phoenix-contact/eem-ma-eem-ma3xx.md)
+- [Phoenix Contact EEM-MA3xx Modbus Register Map](./phoenix-contact/eem-ma3xx.md)
+- [Eaton Power Meter IQ250, IQ260 Modbus Register Map](./eaton-power-meter/iq250-iq260.md)
+- [SMA Solar Inverter Modbus Register Map](./sma/solar-inverter.md)
+- [Fronius Inverter 110,111.112,113 Modbus Register Map](./fronius-inverter/110-111-112-113.md)
+- [Fronius Inverter Common Modbus Register Map](./fronius-inverter/common.md)
+- [Fronius Power Meter 210,211.212,213 Modbus Register Map](./fronius-power-meter/210-211-212-213.md)
 
 ## Categories {#categories}
 
@@ -89,6 +122,37 @@ Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Electro Industries Shark 200 / 200T](./electro-industries/shark-200-200t.md)
 - [Electro Industries Shark 250](./electro-industries/shark-250.md)
 - [GE EPM 7000 / EPM 7100](./ge/epm-7000-epm-7100.md)
+- [Eaton IQ100 series,IQ130,IQ140,IQ150](./eaton/iq100-series-iq130-iq140-iq150.md)
+- [Eaton Power Xpert Meter,PXM 1000](./eaton/power-xpert-meter-pxm-1000.md)
+- [Electro Industries Shark 200](./electro-industries/shark-200.md)
+- [Phoenix Contact EEM-EM3xx,EM325,EM355,EM375,EM327,EM357,EM377](./phoenix-contact/eem-em3xx-em325-em355-em375-em327-em357-em377.md)
+- [Phoenix Contact EEM-MA,EEM-MA3xx](./phoenix-contact/eem-ma-eem-ma3xx.md)
+- [Phoenix Contact EEM-MA3xx](./phoenix-contact/eem-ma3xx.md)
+- [Eaton Power Meter IQ250, IQ260](./eaton-power-meter/iq250-iq260.md)
+- [SMA Solar Inverter](./sma/solar-inverter.md)
+- [Socomec DIRIS,D30,D50,D70](./socomec/diris-d30-d50-d70.md)
+- [Socomec DIRIS,D30,D50,D70 _](./socomec/diris-d30-d50-d70.md)
+- [Socomec Countis E63](./socomec/countis-e63.md)
+- [Socomec Countis E33, Countis E43](./socomec/countis-e33-countis-e43.md)
+- [Socomec Multis L20, Multis L40](./socomec/multis-l20-multis-l40.md)
+- [Socomec Countis E23](./socomec/countis-e23.md)
+- [Socomec Countis E24](./socomec/countis-e24.md)
+- [Fronius Inverter 110,111.112,113](./fronius-inverter/110-111-112-113.md)
+- [Socomec Countis E50 E53 E50R E53R](./socomec/countis-e50-e53-e50r-e53r.md)
+- [Electro Industries Shark 50](./electro-industries/shark-50.md)
+- [Janitza ECS](./janitza/ecs.md)
+- [Socomec DIRIS A20 modbus](./socomec/diris-a20-modbus.md)
+- [Socomec Countis E13](./socomec/countis-e13.md)
+- [Socomec Countis E14](./socomec/countis-e14.md)
+- [Huawei Solar Inverter](./huawei/solar-inverter.md)
+- [Janitza UMG511](./janitza/umg511.md)
+- [Fronius Power Meter 210,211.212,213](./fronius-power-meter/210-211-212-213.md)
+- [Janitza B21,B23,B24](./janitza/b21-b23-b24.md)
+- [Socomec Countis E03](./socomec/countis-e03.md)
+- [Socomec Countis E04](./socomec/countis-e04.md)
+- [Fronius Inverter Common](./fronius-inverter/common.md)
+- [Socomec DIRIS U20](./socomec/diris-u20.md)
+- [Socomec DIRIS U10](./socomec/diris-u10.md)
 
 ### Solar Inverters
 - [SolarEdge SE5000](./solaredge/se5000.md)
@@ -104,6 +168,7 @@ Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Fronius Primo 4](./fronius/primo-4.md)
 - [Fronius Primo 5](./fronius/primo-5.md)
 - [Fronius Symo 6](./fronius/symo-6.md)
+- [Huawei Sun2000 -env](./huawei/sun2000-env.md)
 
 ### Other Devices
 - [Eaton 93PM](./eaton/93pm.md)
@@ -112,6 +177,8 @@ Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [SEL SEL-351A](./sel/sel-351a.md)
 - [SEL SEL-751A](./sel/sel-751a.md)
 - [SEL SEL-710](./sel/sel-710.md)
+- [Socomec NETYS PR,NETYS RT,ITYS](./socomec/netys-pr-netys-rt-itys.md)
+- [Socomec Masterys](./socomec/masterys.md)
 
 ## Browse by Manufacturer {#browse-by-manufacturer}
 
@@ -119,16 +186,21 @@ Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Siemens](./siemens/index.md): [PAC3200](./siemens/sentron-pac-3200.md), [PAC4200](./siemens/sentron-pac-4200.md), [PAC2200](./siemens/sentron-pac-2200.md), [SICAM P](./siemens/sicam-p.md), [SEM3 Series](./siemens/sem3-series.md)
 - [ABB](./abb/index.md): [M4M](./abb/m4m.md), [B23 / B24](./abb/b23-b24.md), [A41 / A42](./abb/a41-a42.md), [Trio 50 / Trio 60](./abb/trio-50-trio-60.md)
 - [SolarEdge](./solaredge/index.md): [SE5000](./solaredge/se5000.md), [SE5K / SE7K / SE10K / SE12.5K](./solaredge/se5k-se7k-se10k-se12-5k.md), [SE3000H](./solaredge/se3000h.md), [SE6000](./solaredge/se6000.md), [SE10K](./solaredge/se10k.md), [SE12.5K](./solaredge/se12-5k.md), [SE3800H](./solaredge/se3800h.md)
-- [Eaton](./eaton/index.md): [93PM](./eaton/93pm.md), [BladeUPS](./eaton/bladeups.md), [PXM2000](./eaton/pxm2000.md), [EM19 M](./eaton/em19-m.md), [EM20](./eaton/em20.md), [EM22-DIN](./eaton/em22-din.md), [PXM1000 Series](./eaton/pxm1000-series.md), [PXM3000](./eaton/pxm3000.md), [PXM4000](./eaton/pxm4000.md), [IQ DP 4000](./eaton/iq-dp-4000.md), [IQ100 Series / IQ130 / IQ140 / IQ150](./eaton/iq100-iq130-iq140-iq150.md)
+- [Eaton](./eaton/index.md): [93PM](./eaton/93pm.md), [BladeUPS](./eaton/bladeups.md), [PXM2000](./eaton/pxm2000.md), [EM19 M](./eaton/em19-m.md), [EM20](./eaton/em20.md), [EM22-DIN](./eaton/em22-din.md), [PXM1000 Series](./eaton/pxm1000-series.md), [PXM3000](./eaton/pxm3000.md), [PXM4000](./eaton/pxm4000.md), [IQ DP 4000](./eaton/iq-dp-4000.md), [IQ100 Series / IQ130 / IQ140 / IQ150](./eaton/iq100-iq130-iq140-iq150.md), [IQ100 series,IQ130,IQ140,IQ150](./eaton/iq100-series-iq130-iq140-iq150.md), [Power Xpert Meter,PXM 1000](./eaton/power-xpert-meter-pxm-1000.md)
 - [SEL](./sel/index.md): [SEL-735](./sel/sel-735.md), [SEL-351A](./sel/sel-351a.md), [SEL-751A](./sel/sel-751a.md), [SEL-710](./sel/sel-710.md)
 - [Carlo Gavazzi](./carlo-gavazzi/index.md): [EM24](./carlo-gavazzi/em24.md)
 - [Accuenergy](./accuenergy/index.md): [Acuvim II](./accuenergy/acuvim-ii.md)
-- [Janitza](./janitza/index.md): [UMG104](./janitza/umg104.md), [UMG605](./janitza/umg605.md), [UMG604](./janitza/umg604.md), [UMG96](./janitza/umg96.md), [UMG103](./janitza/umg103.md)
-- [Socomec](./socomec/index.md): [DIRIS A40 / A41 RS485](./socomec/diris-a40-a41-rs485.md), [DIRIS I31](./socomec/diris-i31.md), [DIRIS U30](./socomec/diris-u30.md), [Countis ECI3](./socomec/countis-eci3.md), [Countis ECI2](./socomec/countis-eci2.md)
-- [Huawei](./huawei/index.md): [Sun2000](./huawei/sun2000.md), [SmartLogger](./huawei/smartlogger.md)
+- [Janitza](./janitza/index.md): [UMG104](./janitza/umg104.md), [UMG605](./janitza/umg605.md), [UMG604](./janitza/umg604.md), [UMG96](./janitza/umg96.md), [UMG103](./janitza/umg103.md), [ECS](./janitza/ecs.md), [UMG511](./janitza/umg511.md), [B21,B23,B24](./janitza/b21-b23-b24.md)
+- [Socomec](./socomec/index.md): [DIRIS A40 / A41 RS485](./socomec/diris-a40-a41-rs485.md), [DIRIS I31](./socomec/diris-i31.md), [DIRIS U30](./socomec/diris-u30.md), [Countis ECI3](./socomec/countis-eci3.md), [Countis ECI2](./socomec/countis-eci2.md), [DIRIS,D30,D50,D70](./socomec/diris-d30-d50-d70.md), [DIRIS,D30,D50,D70 _](./socomec/diris-d30-d50-d70.md), [Countis E63](./socomec/countis-e63.md), [Countis E33, Countis E43](./socomec/countis-e33-countis-e43.md), [NETYS PR,NETYS RT,ITYS](./socomec/netys-pr-netys-rt-itys.md), [Multis L20, Multis L40](./socomec/multis-l20-multis-l40.md), [Countis E23](./socomec/countis-e23.md), [Countis E24](./socomec/countis-e24.md), [Countis E50 E53 E50R E53R](./socomec/countis-e50-e53-e50r-e53r.md), [DIRIS A20 modbus](./socomec/diris-a20-modbus.md), [Countis E13](./socomec/countis-e13.md), [Countis E14](./socomec/countis-e14.md), [Masterys](./socomec/masterys.md), [Countis E03](./socomec/countis-e03.md), [Countis E04](./socomec/countis-e04.md), [DIRIS U20](./socomec/diris-u20.md), [DIRIS U10](./socomec/diris-u10.md)
+- [Huawei](./huawei/index.md): [Sun2000](./huawei/sun2000.md), [SmartLogger](./huawei/smartlogger.md), [Solar Inverter](./huawei/solar-inverter.md), [Sun2000 -env](./huawei/sun2000-env.md)
 - [Fronius](./fronius/index.md): [Primo 4](./fronius/primo-4.md), [Primo 5](./fronius/primo-5.md), [Symo 6](./fronius/symo-6.md)
-- [Electro Industries](./electro-industries/index.md): [Shark 200 / 200T](./electro-industries/shark-200-200t.md), [Shark 250](./electro-industries/shark-250.md)
+- [Electro Industries](./electro-industries/index.md): [Shark 200 / 200T](./electro-industries/shark-200-200t.md), [Shark 250](./electro-industries/shark-250.md), [Shark 200](./electro-industries/shark-200.md), [Shark 50](./electro-industries/shark-50.md)
 - [GE](./ge/index.md): [EPM 7000 / EPM 7100](./ge/epm-7000-epm-7100.md)
+- [Phoenix Contact](./phoenix-contact/index.md): [EEM-EM3xx,EM325,EM355,EM375,EM327,EM357,EM377](./phoenix-contact/eem-em3xx-em325-em355-em375-em327-em357-em377.md), [EEM-MA,EEM-MA3xx](./phoenix-contact/eem-ma-eem-ma3xx.md), [EEM-MA3xx](./phoenix-contact/eem-ma3xx.md)
+- [Eaton Power Meter](./eaton-power-meter/index.md): [IQ250, IQ260](./eaton-power-meter/iq250-iq260.md)
+- [SMA](./sma/index.md): [Solar Inverter](./sma/solar-inverter.md)
+- [Fronius Inverter](./fronius-inverter/index.md): [110,111.112,113](./fronius-inverter/110-111-112-113.md), [Common](./fronius-inverter/common.md)
+- [Fronius Power Meter](./fronius-power-meter/index.md): [210,211.212,213](./fronius-power-meter/210-211-212-213.md)
 
 ## Full List {#full-list}
 
@@ -145,23 +217,39 @@ Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Eaton EM22-DIN Modbus Register Map](./eaton/em22-din.md)
 - [Eaton IQ DP 4000 Modbus Register Map](./eaton/iq-dp-4000.md)
 - [Eaton IQ100 Series / IQ130 / IQ140 / IQ150 Modbus Register Map](./eaton/iq100-iq130-iq140-iq150.md)
+- [Eaton IQ100 series,IQ130,IQ140,IQ150 Modbus Register Map](./eaton/iq100-series-iq130-iq140-iq150.md)
+- [Eaton Power Xpert Meter,PXM 1000 Modbus Register Map](./eaton/power-xpert-meter-pxm-1000.md)
 - [Eaton PXM1000 Series Modbus Register Map](./eaton/pxm1000-series.md)
 - [Eaton PXM2000 Modbus Register Map](./eaton/pxm2000.md)
 - [Eaton PXM3000 Modbus Register Map](./eaton/pxm3000.md)
 - [Eaton PXM4000 Modbus Register Map](./eaton/pxm4000.md)
+- [Eaton Power Meter IQ250, IQ260 Modbus Register Map](./eaton-power-meter/iq250-iq260.md)
+- [Electro Industries Shark 200 Modbus Register Map](./electro-industries/shark-200.md)
 - [Electro Industries Shark 200 / 200T Modbus Register Map](./electro-industries/shark-200-200t.md)
 - [Electro Industries Shark 250 Modbus Register Map](./electro-industries/shark-250.md)
+- [Electro Industries Shark 50 Modbus Register Map](./electro-industries/shark-50.md)
 - [Fronius Primo 4 Modbus Register Map](./fronius/primo-4.md)
 - [Fronius Primo 5 Modbus Register Map](./fronius/primo-5.md)
 - [Fronius Symo 6 Modbus Register Map](./fronius/symo-6.md)
+- [Fronius Inverter 110,111.112,113 Modbus Register Map](./fronius-inverter/110-111-112-113.md)
+- [Fronius Inverter Common Modbus Register Map](./fronius-inverter/common.md)
+- [Fronius Power Meter 210,211.212,213 Modbus Register Map](./fronius-power-meter/210-211-212-213.md)
 - [GE EPM 7000 / EPM 7100 Modbus Register Map](./ge/epm-7000-epm-7100.md)
 - [Huawei SmartLogger Modbus Register Map](./huawei/smartlogger.md)
+- [Huawei Solar Inverter Modbus Register Map](./huawei/solar-inverter.md)
 - [Huawei Sun2000 Modbus Register Map](./huawei/sun2000.md)
+- [Huawei Sun2000 -env Modbus Register Map](./huawei/sun2000-env.md)
+- [Janitza B21,B23,B24 Modbus Register Map](./janitza/b21-b23-b24.md)
+- [Janitza ECS Modbus Register Map](./janitza/ecs.md)
 - [Janitza UMG103 Modbus Register Map](./janitza/umg103.md)
 - [Janitza UMG104 Modbus Register Map](./janitza/umg104.md)
+- [Janitza UMG511 Modbus Register Map](./janitza/umg511.md)
 - [Janitza UMG604 Modbus Register Map](./janitza/umg604.md)
 - [Janitza UMG605 Modbus Register Map](./janitza/umg605.md)
 - [Janitza UMG96 Modbus Register Map](./janitza/umg96.md)
+- [Phoenix Contact EEM-EM3xx,EM325,EM355,EM375,EM327,EM357,EM377 Modbus Register Map](./phoenix-contact/eem-em3xx-em325-em355-em375-em327-em357-em377.md)
+- [Phoenix Contact EEM-MA,EEM-MA3xx Modbus Register Map](./phoenix-contact/eem-ma-eem-ma3xx.md)
+- [Phoenix Contact EEM-MA3xx Modbus Register Map](./phoenix-contact/eem-ma3xx.md)
 - [Schneider Electric CM2000 Modbus Register Map](./schneider-electric/cm2000.md)
 - [Schneider Electric EM4800 Modbus Register Map](./schneider-electric/em4800.md)
 - [Schneider Electric EM6400 Modbus Register Map](./schneider-electric/em6400.md)
@@ -188,11 +276,29 @@ Browse 68 pre-built Modbus device map previews for power meters, inverters, UPS 
 - [Siemens PAC4200 Modbus Register Map](./siemens/sentron-pac-4200.md)
 - [Siemens SEM3 Series Modbus Register Map](./siemens/sem3-series.md)
 - [Siemens SICAM P Modbus Register Map](./siemens/sicam-p.md)
+- [SMA Solar Inverter Modbus Register Map](./sma/solar-inverter.md)
+- [Socomec Countis E03 Modbus Register Map](./socomec/countis-e03.md)
+- [Socomec Countis E04 Modbus Register Map](./socomec/countis-e04.md)
+- [Socomec Countis E13 Modbus Register Map](./socomec/countis-e13.md)
+- [Socomec Countis E14 Modbus Register Map](./socomec/countis-e14.md)
+- [Socomec Countis E23 Modbus Register Map](./socomec/countis-e23.md)
+- [Socomec Countis E24 Modbus Register Map](./socomec/countis-e24.md)
+- [Socomec Countis E33, Countis E43 Modbus Register Map](./socomec/countis-e33-countis-e43.md)
+- [Socomec Countis E50 E53 E50R E53R Modbus Register Map](./socomec/countis-e50-e53-e50r-e53r.md)
+- [Socomec Countis E63 Modbus Register Map](./socomec/countis-e63.md)
 - [Socomec Countis ECI2 Modbus Register Map](./socomec/countis-eci2.md)
 - [Socomec Countis ECI3 Modbus Register Map](./socomec/countis-eci3.md)
+- [Socomec DIRIS A20 modbus Modbus Register Map](./socomec/diris-a20-modbus.md)
 - [Socomec DIRIS A40 / A41 RS485 Modbus Register Map](./socomec/diris-a40-a41-rs485.md)
 - [Socomec DIRIS I31 Modbus Register Map](./socomec/diris-i31.md)
+- [Socomec DIRIS U10 Modbus Register Map](./socomec/diris-u10.md)
+- [Socomec DIRIS U20 Modbus Register Map](./socomec/diris-u20.md)
 - [Socomec DIRIS U30 Modbus Register Map](./socomec/diris-u30.md)
+- [Socomec DIRIS,D30,D50,D70 Modbus Register Map](./socomec/diris-d30-d50-d70.md)
+- [Socomec DIRIS,D30,D50,D70 _ Modbus Register Map](./socomec/diris-d30-d50-d70.md)
+- [Socomec Masterys Modbus Register Map](./socomec/masterys.md)
+- [Socomec Multis L20, Multis L40 Modbus Register Map](./socomec/multis-l20-multis-l40.md)
+- [Socomec NETYS PR,NETYS RT,ITYS Modbus Register Map](./socomec/netys-pr-netys-rt-itys.md)
 - [SolarEdge SE10K Modbus Register Map](./solaredge/se10k.md)
 - [SolarEdge SE12.5K Modbus Register Map](./solaredge/se12-5k.md)
 - [SolarEdge SE3000H Modbus Register Map](./solaredge/se3000h.md)

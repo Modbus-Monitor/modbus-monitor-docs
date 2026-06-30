@@ -1,0 +1,111 @@
+{
+  "slug": "solar-inverter",
+  "manufacturer_slug": "sma",
+  "manufacturer": "SMA",
+  "model": "Solar Inverter",
+  "title": "SMA Solar Inverter Modbus Register Map",
+  "description": "SMA Solar Inverter Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 76,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Frequency",
+    "Power Factor",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Grid voltage phase L1 Metering GridMs PhV phsA V",
+      "address": "431252",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current charging power CmpBMS GetBatChaWh Wh",
+      "address": "432200",
+      "type": "INT64U",
+      "units": "kWh",
+      "category": "Current"
+    },
+    {
+      "signal": "External active power setpoint specification fallback value for active power setpoint specification Inverter WModCfg WCtlComCfg FlbWSpt W",
+      "address": "441214",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Charge energy CmpBMS BatChaWh Wh",
+      "address": "441362",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Grid frequency Metering GridMs Hz Hz",
+      "address": "431446",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Nominal cos phi PFMinQ1 Inverter PFMinQ1 0 to 1",
+      "address": "444408",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Operating mode of multifunction relay MltFncSw OpMode 258 Switching status grid relay GriSwCpy",
+      "address": "440574",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Ambient temperature Env TmpVal degC",
+      "address": "434608",
+      "type": "INT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Control of battery charging via communication available Bat ChaCtlComAval 1129 Yes Yes",
+      "address": "431060",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Battery charge BatChrg BatChrg Wh",
+      "address": "431396",
+      "type": "INT64U",
+      "units": "kWh",
+      "category": "General"
+    },
+    {
+      "signal": "Standard Daylight saving time conversion on DtTm DlSvIsOn 1129 Yes Yes",
+      "address": "440004",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Discharge energy CmpBMS BatDschWh Wh",
+      "address": "441364",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "source_csvs": [
+    "SMA - STP 125 70  - Solar Inverter.csv"
+  ],
+  "related": []
+}

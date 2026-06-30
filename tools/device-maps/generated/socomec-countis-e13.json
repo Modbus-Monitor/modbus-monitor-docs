@@ -1,0 +1,111 @@
+{
+  "slug": "countis-e13",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "Countis E13",
+  "title": "Socomec Countis E13 Modbus Register Map",
+  "description": "Socomec Countis E13 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec Countis E13 Modbus register list, Socomec Countis E13 Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 91,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Energy",
+    "Power",
+    "Voltage",
+    "Frequency",
+    "Current",
+    "Status"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Simple voltage V1 V",
+      "address": "450520",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current I1 A",
+      "address": "450528",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Sum Active Power P P W",
+      "address": "450536",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Partial Positive Active Energy EaP Wh",
+      "address": "450780",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency F Hz",
+      "address": "450526",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "MID status 0 non MID product 1 MID product",
+      "address": "440545",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "SOCO :4",
+      "address": "450000",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "JBUS Table Version EX 101 Version 1 01",
+      "address": "450006",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Slave Address",
+      "address": "457344",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Sum Reactive Power P Q var",
+      "address": "450538",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Sum Apparent Power S VA",
+      "address": "450540",
+      "type": "UINT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Sum Power Factor leading et P lagging PF",
+      "address": "450542",
+      "type": "INT32",
+      "units": "PF",
+      "category": "Power"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - Countis E13 E14 - Power Meter.csv"
+  ],
+  "related": []
+}

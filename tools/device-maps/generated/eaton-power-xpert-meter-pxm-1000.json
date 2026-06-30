@@ -1,0 +1,111 @@
+{
+  "slug": "power-xpert-meter-pxm-1000",
+  "manufacturer_slug": "eaton",
+  "manufacturer": "Eaton",
+  "model": "Power Xpert Meter,PXM 1000",
+  "title": "Eaton Power Xpert Meter,PXM 1000 Modbus Register Map",
+  "description": "Eaton Power Xpert Meter,PXM 1000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 70,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Energy",
+    "Harmonics",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Phase voltage V1",
+      "address": "312291",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current I1",
+      "address": "312307",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Phase A power pa",
+      "address": "312317",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Energy IMP",
+      "address": "316457",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency",
+      "address": "312289",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "THDV1 of V1 V12",
+      "address": "316474",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Load characteristic LCR",
+      "address": "316449",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Phase voltage V2",
+      "address": "312293",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Phase voltage V3",
+      "address": "312295",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Average voltage vavg",
+      "address": "312297",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Line voltage V12",
+      "address": "312299",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Line voltage V23",
+      "address": "312301",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Eaton - PXM 1000 - Power Meter.csv"
+  ],
+  "related": []
+}

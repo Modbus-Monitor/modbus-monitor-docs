@@ -1,0 +1,111 @@
+{
+  "slug": "shark-200",
+  "manufacturer_slug": "electro-industries",
+  "manufacturer": "Electro Industries",
+  "model": "Shark 200",
+  "title": "Electro Industries Shark 200 Modbus Register Map",
+  "description": "Electro Industries Shark 200 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 71,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Demand",
+    "Power Factor",
+    "Current",
+    "Harmonics",
+    "Status",
+    "Voltage"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage Unbalance zero sequence component component",
+      "address": "401062",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current Unbalance",
+      "address": "401064",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Pulse Output Test Power",
+      "address": "410074",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Save Energy to File",
+      "address": "413993",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency",
+      "address": "401025",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "PF Total",
+      "address": "401023",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Demand Interval End Timestamp",
+      "address": "401996",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Demand"
+    },
+    {
+      "signal": "Meter Status",
+      "address": "404500",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Unit Lifetime Data MaxTemperature",
+      "address": "404536",
+      "type": "FLOAT32",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "V A N THD Minimum",
+      "address": "408077",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Meter Name:8",
+      "address": "400000",
+      "type": "STRING",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Meter Type",
+      "address": "400016",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    }
+  ],
+  "source_csvs": [
+    "Electro Industries - Shark 250 - Power Meter.csv"
+  ],
+  "related": []
+}

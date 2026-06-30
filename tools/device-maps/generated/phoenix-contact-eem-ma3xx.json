@@ -1,0 +1,110 @@
+{
+  "slug": "eem-ma3xx",
+  "manufacturer_slug": "phoenix-contact",
+  "manufacturer": "Phoenix Contact",
+  "model": "EEM-MA3xx",
+  "title": "Phoenix Contact EEM-MA3xx Modbus Register Map",
+  "description": "Phoenix Contact EEM-MA3xx Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 74,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "U12 conductor voltage V",
+      "address": "450514",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "I1 current A",
+      "address": "450528",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Sum P total active power - W",
+      "address": "450536",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Total active energy procurement system kWh",
+      "address": "450770",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "F frequency Hz",
+      "address": "450526",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Hour operating hours counter h",
+      "address": "450512",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "U23 conductor voltage V",
+      "address": "450516",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "U31 conductor voltage V",
+      "address": "450518",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "V1 conductor voltage to N V",
+      "address": "450520",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "V2 conductor voltage to N V",
+      "address": "450522",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "V3 conductor voltage to N V",
+      "address": "450524",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "I2 current A",
+      "address": "450530",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Phoenix Contact - EEM_MA3xx - Power Meter.csv"
+  ],
+  "related": []
+}

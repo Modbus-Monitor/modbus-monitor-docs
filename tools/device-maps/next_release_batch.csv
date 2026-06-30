@@ -1,0 +1,36 @@
+Priority_Order,Manufacturer,Model,Type,ROI_Score,Status,Description
+12,Eaton,IQ100 series,IQ130,IQ140,IQ150,Power Meter,10,READY,High-performance power quality and energy meter with advanced harmonic analysis
+13,Eaton,Power Xpert Meter,PXM 1000,Power Meter,10,READY,Compact three-phase power meter with Modbus RTU/TCP connectivity
+21,Electro Industries,Shark 200,Power Meter,10,READY,Industrial-grade power meter with real-time energy and demand monitoring
+24,Phoenix Contact,EEM-EM3xx,EM325,EM355,EM375,EM327,EM357,EM377,Power Meter,10,READY,Modular energy measurement system with configurable input modules
+25,Phoenix Contact,EEM-MA,EEM-MA3xx,Power Meter,10,READY,Three-phase energy meter with Modbus communication
+26,Phoenix Contact,EEM-MA3xx,Power Meter,10,READY,Advanced energy meter with extended measurement capabilities
+27,Eaton Power Meter,IQ250, IQ260,Power Meter,10,READY,High-accuracy power measurement for industrial automation
+17,SMA,Solar Inverter,Power Meter,9,READY,Solar PV inverter with Modbus monitoring interface
+28,Socomec,DIRIS,D30,D50,D70,Power Meter,9,READY,Three-phase power meter for industrial power distribution
+29,Socomec,DIRIS,D30,D50,D70 _,Power Meter,9,READY,Extended DIRIS power meter family with advanced diagnostics
+30,Socomec,Countis E63,Power Meter,9,READY,Compact single-phase power meter for branch circuit monitoring
+31,Socomec,Countis E33, Countis E43,Power Meter,9,READY,Multi-function power meter with energy and harmonic analysis
+32,Socomec,Countis E34, Countis E44,Power Meter,9,READY,Industrial power meter with dual-rate energy metering
+33,Socomec,NETYS PR,NETYS RT,ITYS,UPS,9,READY,Uninterruptible power supply with Modbus energy monitoring
+34,Socomec,Multis L20, Multis L40,Power Meter,9,READY,Single-phase power meter for home and small business
+35,Socomec,Countis E23,Power Meter,9,READY,Compact power meter for residential and light commercial
+36,Socomec,Countis E24,Power Meter,9,READY,Enhanced power meter with reactive energy measurement
+37,Fronius Inverter,110,111.112,113,Power Meter,9,READY,Solar inverter power monitoring module
+38,Socomec,Countis E50 E53 E50R E53R,Power Meter,9,READY,Power meter family with multi-rate energy metering
+39,Electro Industries,Shark 50,Power Meter,9,READY,Compact single-phase power meter for branch circuits
+40,Janitza,ECS,Power Meter,9,READY,Energy management system with Modbus RTU connectivity
+41,Socomec,DIRIS A20 modbus,Power Meter,9,READY,Three-phase power meter with Modbus RTU protocol
+42,Socomec,Countis E13,Power Meter,9,READY,Basic power meter for simple energy monitoring
+43,Socomec,Countis E14,Power Meter,9,READY,Enhanced single-phase power meter
+44,Huawei,Solar Inverter,Power Meter,9,READY,Grid-tie solar inverter with power monitoring
+45,Janitza,UMG511,Power Meter,9,READY,Three-phase power meter with advanced analytics
+46,Fronius Power Meter,210,211.212,213,Power Meter,9,READY,Solar power monitoring and analysis
+47,Janitza,B21,B23,B24,Power Meter,9,READY,Compact power meter series for distributed monitoring
+48,Socomec,Masterys,UPS,9,READY,Uninterruptible power supply with network management
+49,Huawei,Sun2000 -env,Solar Inverter,9,READY,Large-scale solar inverter with environmental monitoring
+50,Socomec,Countis E03,Power Meter,9,READY,Single-phase power meter for small applications
+51,Socomec,Countis E04,Power Meter,9,READY,Enhanced single-phase power meter with data logging
+52,Fronius Inverter,Common,Power Meter,9,READY,Common power monitoring platform for Fronius systems
+53,Socomec,DIRIS U20,Power Meter,9,READY,Compact three-phase power meter with real-time displays
+54,Socomec,DIRIS U10,Power Meter,9,READY,Entry-level three-phase power meter for simple monitoring

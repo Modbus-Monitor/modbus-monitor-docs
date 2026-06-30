@@ -1,0 +1,111 @@
+{
+  "slug": "diris-d30-d50-d70",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "DIRIS,D30,D50,D70 _",
+  "title": "Socomec DIRIS,D30,D50,D70 _ Modbus Register Map",
+  "description": "Socomec DIRIS,D30,D50,D70 _ Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS,D30,D50,D70 _ Modbus register list, Socomec DIRIS,D30,D50,D70 _ Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 78,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Energy",
+    "Voltage",
+    "Current",
+    "Power",
+    "Status",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Inst Measurement Load 1 Ph N voltage V1 V",
+      "address": "418444",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Current I1 A",
+      "address": "418458",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Total active power W",
+      "address": "418476",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Energy measurement Load 1 Total positive active energy ea Wh",
+      "address": "419841",
+      "type": "UINT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Frequency Hz",
+      "address": "418442",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Acknowledgment of alarms Ack id",
+      "address": "439616",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Date of last instance s",
+      "address": "418433",
+      "type": "UINT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Ph N voltage V2 V",
+      "address": "418446",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Ph N voltage V3 V",
+      "address": "418448",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Ph ph voltage U12 V",
+      "address": "418452",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Ph ph voltage U23 V",
+      "address": "418454",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Inst Measurement Load 1 Ph ph voltage U31 V",
+      "address": "418456",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - DIRIS D30_DIGIWARE D40 D50 D70 - Power Meter.csv"
+  ],
+  "related": []
+}

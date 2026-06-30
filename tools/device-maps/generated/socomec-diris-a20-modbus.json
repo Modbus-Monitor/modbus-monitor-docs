@@ -1,0 +1,111 @@
+{
+  "slug": "diris-a20-modbus",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "DIRIS A20 modbus",
+  "title": "Socomec DIRIS A20 modbus Modbus Register Map",
+  "description": "Socomec DIRIS A20 modbus Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS A20 modbus Modbus register list, Socomec DIRIS A20 modbus Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 90,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Status",
+    "Harmonics"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Hour meter allocation1 Auxiliary power supply 2 Currents3 phase to phase voltage 4 Input 1 5 Input2 6 Input3",
+      "address": "436361",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current Transformer secondary",
+      "address": "457345",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "Reactive Power Calculation",
+      "address": "436369",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "OUT pulse output value 0 0 1 kWh kvarh1 1 kWh kvarh2 10 kWh kvarh3 100 kWh kvarh4 1000 kWh kvarh5 10000 kWh kvarh",
+      "address": "436359",
+      "type": "UINT16",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency F Hz",
+      "address": "450526",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Alarm Type 1 I2 In3 U4 V5 PP6 QP7 SP8 PFC9 PFL10 THDU11 THDV12 THDI13 HOUR14 F",
+      "address": "436363",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "Alarm Specified time 1 999 s",
+      "address": "436364",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "thd U12",
+      "address": "451536",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "SOCO :4",
+      "address": "450000",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "JBUS Table Version EX 101 Version 1 01",
+      "address": "450006",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Product option code bit field bit 1 Metering Optionbit 2 Communication optionbit 3 3 inputs 1 output option",
+      "address": "436096",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Current Transformer primary A",
+      "address": "457346",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - DIRIS A20 modbus - Power Meter.csv"
+  ],
+  "related": []
+}

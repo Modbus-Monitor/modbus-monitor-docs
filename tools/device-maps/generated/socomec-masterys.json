@@ -1,0 +1,110 @@
+{
+  "slug": "masterys",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "Masterys",
+  "title": "Socomec Masterys Modbus Register Map",
+  "description": "Socomec Masterys Modbus map and register map with sample Modbus registers, register addresses, and ups overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec Masterys Modbus register list, Socomec Masterys Modbus table.",
+  "device_type": "UPS",
+  "tier": 1,
+  "order": 97,
+  "protocol": "Modbus",
+  "typical_use": "power continuity monitoring, alarm review, and resilience planning",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Frequency",
+    "Temperature"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Auxiliary mains star voltage v1 M06 V",
+      "address": "400102",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Input current phase l1 M12 A",
+      "address": "400108",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Output active power 4 M36 kW",
+      "address": "400132",
+      "type": "UINT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Auxiliary frequency M18 Hz",
+      "address": "400114",
+      "type": "UINT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Internal UPS temperature M22 DC",
+      "address": "400118",
+      "type": "UINT16",
+      "units": "degC",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Load phase 1 M00",
+      "address": "400096",
+      "type": "UINT16",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Auxiliary mains star voltage v2 M07 V",
+      "address": "400103",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Auxiliary mains star voltage v3 M08 V",
+      "address": "400104",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Output star voltage v1 M09 V",
+      "address": "400105",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Output star voltage v2 M10 V",
+      "address": "400106",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Output star voltage v3 M11 V",
+      "address": "400107",
+      "type": "UINT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Input current phase l2 M13 A",
+      "address": "400109",
+      "type": "UINT16",
+      "units": "A",
+      "category": "Current"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - Masterys - UPS.csv"
+  ],
+  "related": []
+}

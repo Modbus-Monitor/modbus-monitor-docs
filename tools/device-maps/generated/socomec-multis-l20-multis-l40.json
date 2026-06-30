@@ -1,0 +1,110 @@
+{
+  "slug": "multis-l20-multis-l40",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "Multis L20, Multis L40",
+  "title": "Socomec Multis L20, Multis L40 Modbus Register Map",
+  "description": "Socomec Multis L20, Multis L40 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec Multis L20, Multis L40 Modbus register list, Socomec Multis L20, Multis L40 Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 83,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 V",
+      "address": "400000",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current L1 A",
+      "address": "400006",
+      "type": "UINT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Active power L1 W",
+      "address": "400020",
+      "type": "INT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Import active energy 1 Wh",
+      "address": "400086",
+      "type": "INT64",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Frequency Hz",
+      "address": "400058",
+      "type": "INT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Average inductive CosF Var",
+      "address": "400054",
+      "type": "INT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "Voltage L2 V",
+      "address": "400002",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Voltage L3 V",
+      "address": "400004",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Current L2 A",
+      "address": "400008",
+      "type": "UINT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Current L3 A",
+      "address": "400010",
+      "type": "UINT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Current L-N A",
+      "address": "400012",
+      "type": "UINT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Voltage L1-L2 V",
+      "address": "400014",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - Multis L20 Multis L40 - Power Meter.csv"
+  ],
+  "related": []
+}

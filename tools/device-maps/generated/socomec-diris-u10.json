@@ -1,0 +1,108 @@
+{
+  "slug": "diris-u10",
+  "manufacturer_slug": "socomec",
+  "manufacturer": "Socomec",
+  "model": "DIRIS U10",
+  "title": "Socomec DIRIS U10 Modbus Register Map",
+  "description": "Socomec DIRIS U10 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS U10 Modbus register list, Socomec DIRIS U10 Modbus table.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 103,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Status",
+    "Voltage",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Ph N Voltage V1 V",
+      "address": "436869",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Frequency mHz",
+      "address": "436867",
+      "type": "UINT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Status",
+      "address": "438497",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "SOCO :4",
+      "address": "450000",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "MODBUS Table Version",
+      "address": "450006",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Ph N Voltage V2 V",
+      "address": "436871",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph N Voltage V3 V",
+      "address": "436873",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph Ph Voltage U12 V",
+      "address": "436875",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph Ph Voltage U23 V",
+      "address": "436877",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Ph Ph Voltage U31 V",
+      "address": "436879",
+      "type": "UINT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "F Hz",
+      "address": "400260",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Frequency"
+    },
+    {
+      "signal": "F Hz",
+      "address": "400388",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Frequency"
+    }
+  ],
+  "source_csvs": [
+    "Socomec - DIRIS DIGIWARE U10 - Power Meter.csv"
+  ],
+  "related": []
+}

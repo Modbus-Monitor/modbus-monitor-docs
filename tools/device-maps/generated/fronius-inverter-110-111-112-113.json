@@ -1,0 +1,109 @@
+{
+  "slug": "110-111-112-113",
+  "manufacturer_slug": "fronius-inverter",
+  "manufacturer": "Fronius Inverter",
+  "model": "110,111.112,113",
+  "title": "Fronius Inverter 110,111.112,113 Modbus Register Map",
+  "description": "Fronius Inverter 110,111.112,113 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 86,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "preview_registers": [
+    {
+      "signal": "AC Voltage Average Phase to neutral value PhV V",
+      "address": "440076",
+      "type": "INT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "AC Total Current value A A",
+      "address": "440071",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC Power value W W",
+      "address": "440087",
+      "type": "INT16",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "AC Frequency value Hz Hz",
+      "address": "440085",
+      "type": "INT16",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "Well known value Uniquely identifies this as a SunSpec Modbus Map SID",
+      "address": "440000",
+      "type": "UINT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "Well known value Uniquely identifies this as a SunSpec Common Model block ID",
+      "address": "440002",
+      "type": "UINT16",
+      "units": "-",
+      "category": "Identification"
+    },
+    {
+      "signal": "Manufacturer Mn :16",
+      "address": "440004",
+      "type": "STRING",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "AC Phase A Current value AphA A",
+      "address": "440072",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC Phase B Current value AphB A",
+      "address": "440073",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC Phase C Current value AphC A",
+      "address": "440074",
+      "type": "INT16",
+      "units": "-",
+      "category": "Current"
+    },
+    {
+      "signal": "AC Voltage Phase A to neutral value PhVphA V",
+      "address": "440077",
+      "type": "INT16",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "AC Voltage Phase B to neutral value PhVphB V",
+      "address": "440078",
+      "type": "INT16",
+      "units": "V",
+      "category": "Voltage"
+    }
+  ],
+  "source_csvs": [
+    "Fronius - 201, 202, 203 integer v1.0- Power Meter.csv"
+  ],
+  "related": []
+}

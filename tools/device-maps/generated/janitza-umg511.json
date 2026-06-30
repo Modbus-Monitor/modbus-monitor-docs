@@ -1,0 +1,111 @@
+{
+  "slug": "umg511",
+  "manufacturer_slug": "janitza",
+  "manufacturer": "Janitza",
+  "model": "UMG511",
+  "title": "Janitza UMG511 Modbus Register Map",
+  "description": "Janitza UMG511 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Janitza UMG511 Modbus register, Janitza UMG511 Modbus address list.",
+  "device_type": "Power Meter",
+  "tier": 1,
+  "order": 94,
+  "protocol": "Modbus",
+  "typical_use": "power monitoring, energy metering, and facility automation",
+  "categories": [
+    "Harmonics",
+    "Power",
+    "Power Factor",
+    "Energy",
+    "Temperature",
+    "Voltage"
+  ],
+  "preview_registers": [
+    {
+      "signal": "Voltage L1 N V",
+      "address": "419000",
+      "type": "FLOAT32",
+      "units": "V",
+      "category": "Voltage"
+    },
+    {
+      "signal": "Apparent current L1 N A",
+      "address": "419012",
+      "type": "FLOAT32",
+      "units": "A",
+      "category": "Current"
+    },
+    {
+      "signal": "Real power L1 N W",
+      "address": "419020",
+      "type": "FLOAT32",
+      "units": "kW",
+      "category": "Power"
+    },
+    {
+      "signal": "Real energy L1 Wh",
+      "address": "419054",
+      "type": "FLOAT32",
+      "units": "kWh",
+      "category": "Energy"
+    },
+    {
+      "signal": "Measured frequency Hz",
+      "address": "419050",
+      "type": "FLOAT32",
+      "units": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "signal": "PFLN_0",
+      "address": "403893",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Power Factor"
+    },
+    {
+      "signal": "PTP_STATE",
+      "address": "314562",
+      "type": "INT32",
+      "units": "-",
+      "category": "Status"
+    },
+    {
+      "signal": "TEMPERATUR",
+      "address": "404209",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Temperature"
+    },
+    {
+      "signal": "Harmonic thd u L1 N",
+      "address": "419110",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "Harmonics"
+    },
+    {
+      "signal": "Vector sum ini1i2i3 A",
+      "address": "419018",
+      "type": "FLOAT32",
+      "units": "-",
+      "category": "General"
+    },
+    {
+      "signal": "BAUD485",
+      "address": "306951",
+      "type": "INT32",
+      "units": "-",
+      "category": "Communication"
+    },
+    {
+      "signal": "PTP_VERSION",
+      "address": "314548",
+      "type": "INT16",
+      "units": "-",
+      "category": "Identification"
+    }
+  ],
+  "source_csvs": [
+    "Janitza - UMG511 - Power Meter.csv"
+  ],
+  "related": []
+}

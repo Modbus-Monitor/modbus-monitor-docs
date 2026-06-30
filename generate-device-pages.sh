@@ -149,14 +149,31 @@ if [[ $SKIP_QA -eq 0 ]]; then
     if [[ $GUIDED_MODE -eq 1 || ${#ORIGINAL_ARGS[@]} -eq 0 ]]; then
         echo
         echo "Guided workflow mode"
+        
+        # Check for next_release_batch.csv
+        BATCH_CSV="tools/device-maps/next_release_batch.csv"
+        BATCH_COUNT=0
+        if [[ -f "$BATCH_CSV" ]]; then
+            BATCH_COUNT=$(tail -n +2 "$BATCH_CSV" | wc -l)
+            echo "Found next_release_batch.csv with $BATCH_COUNT maps ready to publish"
+        fi
+        
+        echo
         echo "Choose one option:"
         echo "  1) Regenerate current published pages only"
-        echo "  2) Publish next batch of new maps and regenerate"
-        echo "  3) skip (no Q&A, run current/default config)"
-        read -r -p "Selection [1/2/3]: " workflow_choice
+        if [[ $BATCH_COUNT -gt 0 ]]; then
+            echo "  2) Publish next batch ($BATCH_COUNT maps from next_release_batch.csv)"
+        fi
+        echo "  3) Custom batch size (manual entry)"
+        echo "  4) skip (no Q&A, run current/default config)"
+        if [[ $BATCH_COUNT -gt 0 ]]; then
+            read -r -p "Selection [1/2/3/4]: " workflow_choice
+        else
+            read -r -p "Selection [1/3/4]: " workflow_choice
+        fi
         workflow_choice="${workflow_choice:-1}"
 
-        if [[ "$workflow_choice" == "3" || "$workflow_choice" == "skip" || "$workflow_choice" == "SKIP" ]]; then
+        if [[ "$workflow_choice" == "4" || "$workflow_choice" == "skip" || "$workflow_choice" == "SKIP" ]]; then
             SKIP_QA=1
         else
             echo
@@ -174,7 +191,17 @@ if [[ $SKIP_QA -eq 0 ]]; then
                     ;;
             esac
 
-            if [[ "$workflow_choice" == "2" ]]; then
+            if [[ "$workflow_choice" == "2" && $BATCH_COUNT -gt 0 ]]; then
+                # Use batch from next_release_batch.csv
+                batch_size=$BATCH_COUNT
+                echo
+                echo "Using batch from next_release_batch.csv: $batch_size maps"
+                default_release_date="$(date +%F)"
+                read -r -p "Release date [${default_release_date}]: " release_date
+                release_date="${release_date:-$default_release_date}"
+                GENERATOR_ARGS+=(--publish-next-batch --max-pages-per-run "$batch_size" --release-date "$release_date")
+            elif [[ "$workflow_choice" == "3" ]] || [[ "$workflow_choice" == "2" && $BATCH_COUNT -eq 0 ]]; then
+                # Custom batch size
                 echo
                 read -r -p "How many maps do you want to publish this batch? [20]: " batch_size
                 batch_size="${batch_size:-20}"
