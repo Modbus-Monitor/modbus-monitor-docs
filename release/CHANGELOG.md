@@ -1,23 +1,21 @@
-## Changelog v5.0.4.2
+## Changelog v5.1.0.0
 
 ### NEW
-- Added New Widgets with States: Line, Rounded Square, Triangle, Polygon, Arc, Arrow
-- Added independent Y1 and Y2 chart axis controls with per-axis Auto and Manual Min/Max scaling.
-- Added `Fit->Lock` to auto-detect Y-axis limits and populate manual Min/Max values for quick tuning.
-- Added import/export support for the new chart axis scaling settings.
+
+- Added Quick Test tools for faster Modbus request testing and troubleshooting.
+- Added improved first-run guidance and restoration of your prior workspace settings.
 
 ### IMPROVED
-- Improved chart toolbar usability on small windows by wrapping controls and reducing clipping.
-- Improved Microsoft Store license detection and refresh flow.
-- Improved persistence and restoration of valid license state across sessions.
-- Enabled live chart axis updates while editing Min/Max values with improved stability during streaming.
- 
+
+- Improved Modbus connection, reconnect, and fast-poll reliability.
+- Improved copy/paste behavior and address handling throughout the application.
+- Improved live status feedback and overall responsiveness during monitoring.
+
 ### FIXED
-- Fixed Y1/Y2 Auto toggles so they immediately apply auto scaling and clear prior manual zoom state.
-- Fixed trial license validation issues and applied minor licensing UI/text cleanup fixes.
+
+- Fixed issues affecting license restoration on some Windows environments.
+- Fixed several stability and usability issues in Modbus testing and data entry.
 
 ## Notes
-Notes: Intended for development, testing, commissioning and monitoring; not for unattended safety-critical control. See EULA for full terms.
 
-
-
+Intended for development, testing, commissioning and monitoring; not for unattended safety-critical control. See EULA for full terms.
