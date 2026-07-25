@@ -11,6 +11,7 @@ Professional Modbus monitoring software for Windows and mobile devices.
 
 **Professional Modbus TCP/RTU/ASCII monitoring, logging, analytics & HMI dashboards (mini-SCADA).**  
 **Current Version:** v5.1.0.0 (July 25, 2026)
+
 **Free Version:** Core features included with no time limit. Upgrade anytime to unlock advanced features.
 
 ---
