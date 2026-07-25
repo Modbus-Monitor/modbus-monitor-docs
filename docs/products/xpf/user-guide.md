@@ -1528,8 +1528,8 @@ Change the background colors of the Value cell based on the High, Low, and Nomin
 | **High Filter** | Toggle Button | Filter: Show only rows where value has exceeded the High Limit. Red status indicates out-of-range high condition." | Testing upper bounds or identifying overhigh values | Red |
 | **Nominal Filter** | Toggle Button | Filter: Show only rows where value is between Low Limit and High Limit (normal operating range). Green status indicates normal condition. | Monitoring normal operation or quality control pass tests | Green |
 | **Low Filter** | Toggle Button | Filter: Show only rows where value is below the Low Limit. Blue status indicates out-of-range low condition. | Testing lower bounds or identifying underlow values | Blue |
-| **Auto Toggle** | Toggle Button | Auto-evaluate: When enabled, filter updates automatically after each scan cycle without manual intervention. When disabled, manually toggle filters to refresh. | You want automatic status updates as data arrives | - |
-| **Test/Evaluate** | Toggle Button | Toggle evaluation ON/OFF. When ON, each register's limit status (High/Nominal/Low) is calculated and displayed with color coding. When OFF, no evaluation occurs. Status indicator shows current mode. | You want to enable or disable all evaluation color coding | Gray (off) / Color (on) |
+| **Auto Toggle** | Toggle Button | Refreshes the active High, Nominal, and Low filters after each scan cycle. It does not enable or disable limit evaluation or status colors. | You want the active filter view to refresh automatically | - |
+| **Test/Evaluate** | Toggle Button | Toggle evaluation ON/OFF. When ON, each register's limit status (High/Nominal/Low) is calculated and displayed with color coding. When OFF, no evaluation occurs. Status indicator shows current mode. | You want to enable or disable all evaluation color coding | Black (off) / configured color (on) |
 | **Save as High Limit (current row)** | Menu Button | Saves the currently selected row's value as its High Limit. Use when a single register reaches its maximum safe operating value." | You want to capture the highest observed value as the threshold for only the selected register | - |
 | **Save as Low Limit (current row)** | Menu Button | Saves the currently selected row's value as its Low Limit. Use when a single register reaches its minimum safe operating value." | You want to capture the lowest observed value as the threshold for only the selected register | - |
 | **Save as High Limit (all rows)** | Menu Button | Saves the currently selected row's value as the High Limit for all register rows in the list. Use when you want to apply the same high threshold across all equipment parameters. | You want to apply the same high threshold value to all registers at once | - |
@@ -1540,10 +1540,14 @@ Change the background colors of the Value cell based on the High, Low, and Nomin
 
 | Condition | Status | Color | Display |
 |-----------|--------|-------|---------|
-| **Value ≥ High Limit** | Out-of-Range High | Red | Value cell background turns red |
-| **Low Limit < Value < High Limit** | Normal/Nominal | Green | Value cell background turns green |
-| **Value ≤ Low Limit** | Out-of-Range Low | Blue | Value cell background turns blue |
-| **Evaluate OFF** | Not Evaluated | Gray | Value cell shows normal (no color) |
+| **Value > High Limit** | Out-of-Range High | Red | Value cell background turns red |
+| **Low Limit ≤ Value ≤ High Limit** | Normal/Nominal (Pass) | Green | Value cell background turns green |
+| **Value < Low Limit** | Out-of-Range Low | Blue | Value cell background turns blue |
+| **Evaluate OFF** | Not Evaluated | Black | Value cell shows the disabled status color |
+
+For numeric values, equality is included in the normal operating range: a value exactly equal to either configured limit is a pass.
+
+For **String**, **BIT**, and boolean-style values, limits are expected states rather than a numeric range. A value is Normal/green when it matches either configured Low Limit or High Limit, ignoring letter case. A value that matches neither configured state is High/red (fail); these value types do not produce a Low/blue status. Configure at least one expected state. For a single expected state such as `RUNNING` or `TRUE`, enter it in either limit; entering it in both limits is also supported.
 
 **Common Workflows:**
 
@@ -1592,14 +1596,14 @@ Change the background colors of the Value cell based on the High, Low, and Nomin
 | Issue | Cause | Solution |
 |-------|-------|----------|
 | **No colors appearing** | Test/Evaluate is OFF | Click Test/Evaluate button to toggle ON |
-| **Colors not updating** | Auto is disabled | Click Auto toggle to enable automatic updates, or manually toggle filters |
+| **Colors not updating** | Evaluate is off, no value/limit is configured, or the UI needs to redraw | Turn on Evaluate and verify the point has a value and at least one limit. Auto affects filter refresh only. |
 | **Wrong limits set** | Previous calibration incorrect | Select row, click Save as High/Low to capture new values, or edit limits manually |
 | **Filter not working** | Show button is OFF, filters hidden | Click Show button to display High/Low/Nominal/Auto controls |
-| **String evaluation fails** | Mismatched case or spacing | For strings, High Limit and Low Limit must be identical and match exactly (case-sensitive) |
+| **String evaluation fails** | The value does not match either configured expected state, or contains different spacing | String matching ignores letter case but preserves spaces. Set one or both limits to the accepted state value. |
 
 **Tips & Best Practices:**
 
-- ✅ **Use Auto toggle** for real-time monitoring - colors update automatically as data changes
+- ✅ **Use Auto toggle** to keep active High/Low/Nominal filters current after scan cycles; status colors update whenever the register value or its evaluation settings change
 - ✅ **Save values during normal operation** - Use Save as High/Low when equipment is running at actual min/max
 - ✅ **Combine with Filter** - Focus investigation on out-of-spec registers only
 - ✅ **Document limits** - Save your CSV configuration file after setting limits for reuse on other devices
@@ -1618,17 +1622,17 @@ Click the **three dots (...)** button at the end of any monitor point row to ope
 |------|---------|---------|-------------|
 |**1**| **Three Dots (...)** | Button | Opens the Evaluate Limits settings dialog for this monitor point |
 |**2**| **Evaluate** | Checkbox | Turn the Evaluate feature **on or off** for this specific monitor point |
-|**3**| **Nominal Color** | Color picker | Choose a color for the **Nominal Value range**. The nominal range is calculated as values **between the Low Limit and High Limit**. |
-|**4**| **Low Limit** | Value + Color | Choose a color to highlight the Value column when the value **equals or falls below the Low Limit**. The value can be **numerical or string** type. |
-|**5**| **High Limit** | Value + Color | Choose a color to highlight the Value column when the value **equals or exceeds the High Limit**. The value can be **numerical or string** type. |
-|**4 + 5**| **String Mode** | Same High/Low | For String Data Type, set the **same High and Low Limit** for exact string matching |
+|**3**| **Nominal Color** | Color picker | Choose a color for the numeric pass range, **including** the Low and High Limit values. For String/BIT/boolean values, it is the color for a matching expected state. |
+|**4**| **Low Limit** | Value + Color | For numeric values, choose the lower inclusive boundary: only values **below** it are Low. For String/BIT/boolean values, this is an optional accepted state. |
+|**5**| **High Limit** | Value + Color | For numeric values, choose the upper inclusive boundary: only values **above** it are High. For String/BIT/boolean values, this is an optional accepted state. |
+|**4 + 5**| **String/BIT Mode** | One or both expected states | A String, BIT, or boolean value passes when it matches either configured limit, ignoring letter case. A non-match is High/red. |
 
 !!! example "Practical Applications"
     **Quality Control Testing:**
     
     - Set High Limit: 100, Low Limit: 0, Nominal: Green
     - Values 0-100 show green (pass)
-    - Values outside range show red/yellow (fail)
+    - Values outside range show red/blue (fail)
     - Instant visual validation during production testing
     
     **Equipment Health Monitoring:**
