@@ -134,6 +134,7 @@ nav:
     - Modbus Monitor XPF:
       - Overview: products/xpf/index.md
       - Quick Start: products/xpf/quick-start.md
+      - Quick Modbus Test: products/xpf/quick-modbus-test.md
       - User Guide: products/xpf/user-guide.md
       - HMI Guide: products/xpf/hmi.md
       - Device Maps: products/xpf/device-maps/index.md

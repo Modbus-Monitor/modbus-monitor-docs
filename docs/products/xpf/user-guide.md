@@ -17,6 +17,7 @@ Description: Learn how to use Modbus Monitor XPF for Modbus client and server op
 
 **What you can do with it:**
 
+- Test a single Modbus address before building a monitor list ([Quick Modbus Test](quick-modbus-test.md))
 - Monitor live data from PLCs, drives, meters, and other Modbus devices ([Client Mode](#client-tab))
 - Write values to registers and coils for testing or control ([Monitor Points Configuration](#7-monitor-points-configuration))
 - Simulate Modbus devices for testing your own equipment ([Server Mode](#server-tab))
@@ -48,6 +49,7 @@ Most Modbus tools are either simple monitors or complex SCADA packages. XPF sits
 
 Beyond this user guide, additional resources are available:
 
+- **[Quick Modbus Test Guide](quick-modbus-test.md)** - Test, decode, and verify one Modbus point before adding it to continuous monitoring
 - **[YouTube Tutorials](https://www.youtube.com/@ModbusMonitor/videos)** - Short demonstrations of features and workflows
 - **[Online Help](https://quantumbitsolutions.com/xpf-help/)** - Comprehensive web-based documentation
 - **[Community Forum](https://quantumbitsolutions.com/forums/)** - User discussions and troubleshooting help
@@ -1950,6 +1952,32 @@ Users can upload their own custom Modbus Maps to share with the community or sto
     - You want to help other users with the same equipment
     
     Your contributions help the entire community!
+
+## Quick Modbus Test Workspace
+
+The **Quick Modbus Test** workspace is the fastest way to check one coil or register without first creating a full monitor-point list. It is designed for first connection checks, register-map validation, data-type and byte-order troubleshooting, and safe commissioning.
+
+Use it to:
+
+- Read one address or a range of addresses
+- Write a coil or register when writing is enabled
+- Poll a point continuously while troubleshooting
+- Compare decode and swap settings
+- Review transmitted and received Modbus data
+- Move a verified point into the Client monitor list without entering it again
+
+The typical workflow is:
+
+**Connect → Test → Verify → Add to Client List → Monitor**
+
+<!-- SAMPLE SCREENSHOT: Quick Modbus Test workspace overview -->
+<!-- Suggested file: ../../assets/screenshots/xpf/quick-modbus-test-overview.png -->
+<!-- Show the connection status, request fields, action buttons, and Modbus Output area in one image. -->
+
+!!! tip "New to Modbus?"
+    Start with one known register from the device manual. Confirm the **Point Type**, **Address**, **Device ID**, and **Decode Type**, click **Start Client**, and then click **Read**. Add more points only after the first value is correct.
+
+For field-by-field explanations, addressing examples, write precautions, output interpretation, and troubleshooting, see the **[Quick Modbus Test Guide](quick-modbus-test.md)**.
 
 <a id="4-modbus-client-operations"></a>
 ## 4. Modbus Client Operations { #modbus-client-operations }
