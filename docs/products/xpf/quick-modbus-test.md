@@ -60,6 +60,7 @@ For a Modbus RTU or ASCII device, identify:
 <!-- SAMPLE SCREENSHOT: Where to open Modbus Test -->
 <!-- Suggested file: ../../assets/screenshots/xpf/open-modbus-test-tab.png -->
 <!-- Highlight the Modbus Test navigation item and the Client connection settings used by Quick Test. -->
+![Where to open Modbus Test](../../assets/screenshots/xpf/xpf-open-modbus-test-tab.webp){.screenshot-shadow loading="lazy"}
 
 ## Understand the Request Fields
 
@@ -118,21 +119,23 @@ These can identify the same physical register. Always check whether the manufact
 
 Use a known, read-only value for the first test, such as device temperature, voltage, status, or firmware version.
 
-1. Configure the connection in the **Client** ribbon.
-2. In Quick Modbus Test, enter the **Address**.
-3. Set **Length** to `1`.
-4. Enter the correct **Device Id**.
-5. Select the matching **MODBUS Point Type**.
-6. Start with **UINT16** for a single unsigned register unless the device manual specifies another type.
-7. Start with **ABCD_BE** for **Swap Type**.
-8. Click **Start Client**.
-9. Confirm the status reads **Test Client: Connected**.
-10. Click **Read**.
-11. Review the result in **Modbus Output**.
+1. Configure the connection in the **InterFace** section.
+2. In Quick Modbus Test, enter the **Address**.  
+3. Set `1-based` or `0-based` to toggle address mode. Click the label to change the mode.
+4. Set **Length** to `1`.
+5. Enter the correct **Device Id**.
+6. Select the matching **MODBUS Point Type**.
+7. Start with **UINT16** for a single unsigned register unless the device manual specifies another type.
+8. Start with **ABCD_BE** for **Swap Type**.
+9. Click **Start Client**.
+10. Confirm the status reads **Test Client: Connected**.
+11. Click **Read**.
+12. Review the result in **Modbus Output**.
 
 <!-- SAMPLE SCREENSHOT: Successful single-register read -->
 <!-- Suggested file: ../../assets/screenshots/xpf/quick-test-successful-read.png -->
 <!-- Show the completed fields, Connected status, Read button, TX line, RX line, decoded value, and elapsed time. -->
+![Successful single-register read](../../assets/screenshots/xpf/xpf-quick-test-successful-read.webp){.screenshot-shadow loading="lazy"}
 
 ### Reading Multi-Register Values
 
