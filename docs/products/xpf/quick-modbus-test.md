@@ -110,7 +110,7 @@ These can identify the same physical register. Always check whether the manufact
 <!-- SAMPLE SCREENSHOT: Addressing control -->
 <!-- Suggested file: ../../assets/screenshots/xpf/quick-test-addressing.png -->
 <!-- Highlight Address, the zero-based/one-based toggle, the six-digit display, and Point Type. -->
-
+![Addressing control](../../assets/screenshots/xpf/xpf-quick-test-addressing.webp)
 
 !!! tip "A Simple Address Test"
     If the device responds with **Illegal Data Address**, verify the Point Type first. Then check whether the manual's address needs a one-position offset. Avoid changing several settings at once; one controlled change makes troubleshooting easier.
@@ -163,6 +163,8 @@ Use **Clear** to empty the output before a new troubleshooting test.
 <!-- SAMPLE SCREENSHOT: Modbus Output explained -->
 <!-- Suggested file: ../../assets/screenshots/xpf/quick-test-output-annotated.png -->
 <!-- Annotate one TX request, one successful RX response, decoded data, and response time. -->
+![Modbus Output explained](../../assets/screenshots/xpf/xpf-quick-test-output-annotated.webp)
+
 
 ## Correct a Value That Looks Wrong
 
@@ -215,6 +217,7 @@ For a coil, `0` means off and any nonzero write value means on. Depending on Cli
 <!-- SAMPLE SCREENSHOT: Safe write workflow -->
 <!-- Suggested file: ../../assets/screenshots/xpf/quick-test-write.png -->
 <!-- Highlight Client write-mode setting, Write Value, Point Type, Write button, and successful output. -->
+![Safe write workflow](../../assets/screenshots/xpf/xpf-quick-test-write.webp)
 
 ## Add a Verified Point to the Client List
 
