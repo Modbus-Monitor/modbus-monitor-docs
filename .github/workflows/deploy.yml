@@ -108,7 +108,13 @@ jobs:
           fi
           
       # ────────────────────────────────
-      # 3️⃣d Commit version updates back to repo
+      # 3️⃣d Validate the versioned source before committing it
+      # ────────────────────────────────
+      - name: Preflight MkDocs build
+        run: mkdocs build --strict
+
+      # ────────────────────────────────
+      # 3️⃣e Commit version updates back to repo
       # ────────────────────────────────
       - name: Commit version updates
         run: |

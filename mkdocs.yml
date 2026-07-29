@@ -1,5 +1,9 @@
 ﻿docs_dir: docs
 site_name: Modbus Monitor Documentation
+exclude_docs: |
+  assets/screenshots/README.md
+  assets/screenshots/android-advanced/README.md
+
 site_url: https://docs.quantumbitsolutions.com/
 use_directory_urls: true
 
