@@ -154,6 +154,7 @@ nav:
 
   - Technical:
       - Overview: technical/index.md
+      - Modbus 6-Digit Addressing: guides/6-digit-addressing.md
   - Support & Help:
       - Help Center: support/index.md
       - FAQ: support/faq.md

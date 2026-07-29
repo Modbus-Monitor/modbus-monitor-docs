@@ -1,9 +1,14 @@
+Title: Modbus 6-Digit Addressing Guide | 40001 and 0-Based Offsets
+Description: Understand 5-digit and 6-digit Modbus addresses, convert 40001 to protocol offset 0, choose register types, and fix zero-based vs. one-based errors.
+
 # Modbus 6-Digit Addressing Scheme Guide
 
 !!! info "Quick Reference"
     **6-Digit Address Format:** `[Type][5-Digit Register Number]`
-    
+
     Examples: `400001`, `300025`, `000013`, `165536`
+
+    Need an answer now? Use the free [Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=6-digit-quick-reference) to convert 40001-style references, 5-digit and 6-digit addresses, zero-based offsets, and hexadecimal protocol values.
 
 ## Overview
 
@@ -127,6 +132,8 @@ Function Code → Prefix Mapping:
 
 Example: FC03, Address 567 → "4" + "00567" = 400567
 ```
+
+[Check a Modbus address in the calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=conversion-formula){ .md-button .md-button--primary }
 
 ## Zero-Based vs One-Based Addressing
 
@@ -281,10 +288,12 @@ Inefficient: 400001, 400005, 400009 (scattered reads)
 
 ## Reference Links
 
+- **Modbus Address Calculator:** [Convert 40001, 5-digit, 6-digit, zero-based, and hex addresses](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=reference-links)
+- **Test a Converted Address:** [Quick Modbus Test Guide](../products/xpf/quick-modbus-test.md)
+- **Windows Modbus Tester:** [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download?utm_source=docs&utm_medium=referral&utm_campaign=xpf&utm_content=addressing-guide)
 - **Video Tutorial:** [Modbus Monitor YouTube Channel](https://www.youtube.com/watch?v=eesPvKslLV8)
 - **Modbus Specification:** [Wikipedia Modbus Article](https://en.wikipedia.org/wiki/Modbus)
-- **Interactive Tools:** Use address conversion utilities in Modbus Monitor XPF
-- **Additional Help:** See product-specific guides for detailed examples
+- **Additional Help:** See the [Modbus Monitor XPF User Guide](../products/xpf/user-guide.md) for detailed examples
 
 ---
 

@@ -1,5 +1,5 @@
 Title: Quick Modbus Test Guide | Read, Write, and Verify Modbus Registers
-Description: Learn how to use Quick Modbus Test in Modbus Monitor XPF to connect to a Modbus TCP or serial device, read or write a register, decode values, troubleshoot addressing, and add verified points to monitoring.
+Description: Test Modbus TCP or RTU registers in Modbus Monitor XPF. Convert 40001-style addresses, fix zero-based offsets, decode values, and verify points before monitoring.
 
 # Quick Modbus Test
 
@@ -15,6 +15,9 @@ This is especially useful when you are:
 - Finding the correct data type or byte order
 - Testing a value before long-term monitoring
 - Troubleshooting an unexpected or incorrect value
+
+!!! tip "Have a 40001-Style Address?"
+    Use the free [Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=quick-test-intro) to convert 4-digit, 5-digit, or 6-digit register references into a zero-based protocol offset. For the underlying rules, see the [Modbus 6-Digit Addressing Guide](../../guides/6-digit-addressing.md).
 
 The recommended workflow is:
 
@@ -90,6 +93,8 @@ For a Modbus RTU or ASCII device, identify:
 
 Modbus manuals commonly describe the same physical location in different ways. Quick Modbus Test supports raw offsets and familiar reference-address notation.
 
+If a manual gives you an address such as `40001`, `400001`, or a hexadecimal protocol offset, check it with the [free Modbus register address calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=quick-test-addressing) before testing. It shows the register type, 5-digit and 6-digit references, zero-based offset, and on-wire hexadecimal value together.
+
 | Data Area | Function | Common Reference Example | First Zero-Based Offset |
 |-----------|----------|--------------------------|-------------------------|
 | Coils | FC01 | `000001` | `0` |
@@ -114,6 +119,8 @@ These can identify the same physical register. Always check whether the manufact
 
 !!! tip "A Simple Address Test"
     If the device responds with **Illegal Data Address**, verify the Point Type first. Then check whether the manual's address needs a one-position offset. Avoid changing several settings at once; one controlled change makes troubleshooting easier.
+
+    Still unsure? Read [zero-based vs. one-based Modbus addressing](../../guides/6-digit-addressing.md#zero-based-vs-one-based-addressing), then use the [Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=quick-test-error) to confirm the conversion.
 
 ## Read Your First Register
 
@@ -276,10 +283,19 @@ This order separates communication problems from data-format problems and preven
 - [ ] Decode Type and Swap Type produce a realistic value.
 - [ ] The verified point has been added to the Client list if ongoing monitoring is needed.
 
+## Continue from Testing to Monitoring
+
+Quick Modbus Test confirms one point. Modbus Monitor XPF can then monitor multiple devices, scan for registers, log values, plot trends, and build HMI dashboards from the verified addresses.
+
+[Download Modbus Monitor XPF](https://www.modbusmonitor.com/download?utm_source=docs&utm_medium=referral&utm_campaign=xpf&utm_content=quick-test-footer){ .md-button .md-button--primary }
+[View XPF Downloads and License Options](../../downloads-purchase.md){ .md-button }
+
 ## Related Guides
 
 - [Modbus Monitor XPF Quick Start](quick-start.md)
 - [Complete XPF User Guide](user-guide.md)
+- [Modbus 6-Digit Addressing and 40001 Conversion](../../guides/6-digit-addressing.md)
+- [Free Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=quick-test-related)
 - [Modbus Client Operations](user-guide.md#modbus-client-operations)
 - [Monitor Points Configuration](user-guide.md#monitor-points-configuration)
 - [HMI Dashboard Guide](hmi.md)

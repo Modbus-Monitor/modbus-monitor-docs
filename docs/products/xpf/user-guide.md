@@ -50,6 +50,8 @@ Most Modbus tools are either simple monitors or complex SCADA packages. XPF sits
 Beyond this user guide, additional resources are available:
 
 - **[Quick Modbus Test Guide](quick-modbus-test.md)** - Test, decode, and verify one Modbus point before adding it to continuous monitoring
+- **[Free Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=xpf-user-guide-resources)** - Convert 40001-style references, 5-digit and 6-digit addresses, zero-based offsets, and hexadecimal values
+- **[Modbus 6-Digit Addressing Guide](../../guides/6-digit-addressing.md)** - Understand register-type prefixes and zero-based vs. one-based addressing
 - **[YouTube Tutorials](https://www.youtube.com/@ModbusMonitor/videos)** - Short demonstrations of features and workflows
 - **[Online Help](https://quantumbitsolutions.com/xpf-help/)** - Comprehensive web-based documentation
 - **[Community Forum](https://quantumbitsolutions.com/forums/)** - User discussions and troubleshooting help
@@ -1977,6 +1979,8 @@ The typical workflow is:
 !!! tip "New to Modbus?"
     Start with one known register from the device manual. Confirm the **Point Type**, **Address**, **Device ID**, and **Decode Type**, click **Start Client**, and then click **Read**. Add more points only after the first value is correct.
 
+    If the manual uses `40001`, `400001`, a raw offset, or hexadecimal, use the [Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=xpf-quick-test-workspace) before testing.
+
 For field-by-field explanations, addressing examples, write precautions, output interpretation, and troubleshooting, see the **[Quick Modbus Test Guide](quick-modbus-test.md)**.
 
 <a id="4-modbus-client-operations"></a>
@@ -3663,8 +3667,10 @@ Effect: Poll once (@-1), 32 registers (:31), bit 5 (.5)
 
 !!! info "Complete 6-Digit Addressing Guide"
     **For comprehensive explanations, troubleshooting, and examples:** See the [**6-Digit Addressing Scheme Guide**](../../guides/6-digit-addressing.md)
-    
+
     This section provides XPF-specific details. The comprehensive guide covers all aspects including common mistakes, device compatibility, and conversion from other tools.
+
+    **Need a conversion now?** Open the [free Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=xpf-address-field) to translate 40001-style references into 5-digit, 6-digit, zero-based, and hexadecimal formats.
 
 The **6-digit addressing format** provides an explicit and standardized way to identify both the register type and its address in a single number. This format is used in XPF and many other Modbus tools to simplify configuration.
 
@@ -4045,6 +4051,8 @@ Click on red-bordered Value cells to see detailed error messages:
 ## Additional Resources
 
 ### Learning Materials
+- **[Modbus Address Calculator](https://www.modbusmonitor.com/address-calculator?utm_source=docs&utm_medium=referral&utm_campaign=modbus-addressing&utm_content=xpf-additional-resources)** - Check register references and protocol offsets
+- **[Modbus 6-Digit Addressing Guide](../../guides/6-digit-addressing.md)** - Learn address formats, function-code mapping, and offset rules
 - **[YouTube Tutorials](https://www.youtube.com/@ModbusMonitor/videos)** - Step-by-step video guides
 - **[Technical Documentation](../../technical/index.md)** - Protocol details and integration guides  
 - **[Community Forum](https://quantumbitsolutions.com/forums/)** - User discussions and support
