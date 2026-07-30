@@ -20,14 +20,14 @@ All official releases of Modbus Monitor XPF with download links and release note
 | Version | Date | Status | GitHub Release |
 |---------|------|--------|---|
 | v5.1.1.0 | 2026-07-30 | Latest | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.1.1.0){ .md-button .md-button--primary } |
-| v5.1.0.0 | 2026-07-25 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.1.0.0){ .md-button } |
-| v5.0.4.2 | 2026-05-02 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.4.2){ .md-button } |
-| v5.0.3.0 | 2026-03-09 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.3.0){ .md-button } |
-| v5.0.2.0 | 2026-03-08 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.2.0){ .md-button } |
-| v5.0.1.0 | 2026-02-20 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.1.0){ .md-button } |
-| v5.0.0.0 | 2026-02-09 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.0.0){ .md-button } |
-| v4.4.1.0 | 2025-12-23 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v4.4.1.0){ .md-button } |
-| v4.4.0.0 | 2025-12-14 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v4.4.0.0){ .md-button } |
+| v5.1.0.0 | 2026-07-25 | Archive |  |
+| v5.0.4.2 | 2026-05-02 | Archive |  |
+| v5.0.3.0 | 2026-03-09 | Archive |  |
+| v5.0.2.0 | 2026-03-08 | Archive |  |
+| v5.0.1.0 | 2026-02-20 | Archive |  |
+| v5.0.0.0 | 2026-02-09 | Archive |  |
+| v4.4.1.0 | 2025-12-23 | Archive |  |
+| v4.4.0.0 | 2025-12-14 | Archive |  |
 
 ---
 
