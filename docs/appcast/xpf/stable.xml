@@ -5,21 +5,22 @@
     <link>https://docs.quantumbitsolutions.com/downloads-purchase/#quick-download-xpf</link>
     <description>NetSparkle appcast feed for Modbus Monitor XPF stable channel</description>
     <item>
-      <title>Modbus Monitor XPF v5.1.0.0</title>
-      <sparkle:version>5.1.0.0</sparkle:version>
-      <sparkle:shortVersionString>5.1.0.0</sparkle:shortVersionString>
-      <sparkle:releaseNotesLink>https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.1.0.0</sparkle:releaseNotesLink>
+      <title>Modbus Monitor XPF v5.1.1.0</title>
+      <sparkle:version>5.1.1.0</sparkle:version>
+      <sparkle:shortVersionString>5.1.1.0</sparkle:shortVersionString>
+      <sparkle:releaseNotesLink>https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.1.1.0</sparkle:releaseNotesLink>
       <enclosure
         url="https://docs.quantumbitsolutions.com/downloads-purchase/#quick-download-xpf"
-        sparkle:version="5.1.0.0"
-        sparkle:shortVersionString="5.1.0.0"
+        sparkle:version="5.1.1.0"
+        sparkle:shortVersionString="5.1.1.0"
         type="application/octet-stream"
         length="0" />
-      <pubDate>Sat, 25 Jul 2026 21:21:53 GMT</pubDate>
-      <guid isPermaLink="false">modbus-monitor-xpf-5.1.0.0</guid>
+      <pubDate>Thu, 30 Jul 2026 15:09:11 GMT</pubDate>
+      <guid isPermaLink="false">modbus-monitor-xpf-5.1.1.0</guid>
     </item>
   </channel>
 </rss>
+
 
 
 

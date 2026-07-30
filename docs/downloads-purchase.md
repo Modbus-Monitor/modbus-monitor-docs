@@ -10,7 +10,7 @@ Professional Modbus monitoring software for Windows and mobile devices.
 ## ⚡ Modbus Monitor XPF (Windows) – Download Now
 
 **Professional Modbus TCP/RTU/ASCII monitoring, logging, analytics & HMI dashboards (mini-SCADA).**  
-**Current Version:** v5.1.0.0 (July 25, 2026)
+**Current Version:** v5.1.1.0 (July 30, 2026)
 
 **Free Version:** Core features included with no time limit. Upgrade anytime to unlock advanced features.
 
@@ -143,5 +143,5 @@ A: [View all releases →](releases/index.md)
 
 ---
 
-*Last updated: July 25, 2026*
+*Last updated: July 30, 2026*
 

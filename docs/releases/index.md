@@ -4,14 +4,14 @@ All official releases of Modbus Monitor XPF with download links and release note
 
 ## Latest Release
 
-### Modbus Monitor XPF v5.1.0.0
+### Modbus Monitor XPF v5.1.1.0
 
-**Release Date:** July 25, 2026  
+**Release Date:** July 30, 2026  
 **Status:** Latest Stable
 
-[:octicons-download-24: Download v5.1.0.0](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.1.0.0/Modbus-Monitor-XPF-5.1.0.0-x64-setup.exe){ .md-button .md-button--primary }
+[:octicons-download-24: Download v5.1.1.0](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/v5.1.1.0/Modbus-Monitor-XPF-5.1.1.0-x64-setup.exe){ .md-button .md-button--primary }
 
-[Release Notes](../releases/v5.1.0.0.md){ .md-button } [Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button }
+[Release Notes](../releases/v5.1.1.0.md){ .md-button } [Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button }
 
 ---
 
@@ -19,7 +19,8 @@ All official releases of Modbus Monitor XPF with download links and release note
 
 | Version | Date | Status | GitHub Release |
 |---------|------|--------|---|
-| v5.1.0.0 | 2026-07-25 | Latest | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.1.0.0){ .md-button .md-button--primary } |
+| v5.1.1.0 | 2026-07-30 | Latest | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.1.1.0){ .md-button .md-button--primary } |
+| v5.1.0.0 | 2026-07-25 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.1.0.0){ .md-button } |
 | v5.0.4.2 | 2026-05-02 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.4.2){ .md-button } |
 | v5.0.3.0 | 2026-03-09 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.3.0){ .md-button } |
 | v5.0.2.0 | 2026-03-08 | Archive | [Download](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/tag/v5.0.2.0){ .md-button } |
@@ -37,6 +38,7 @@ All official releases of Modbus Monitor XPF with download links and release note
 ---
 
 Current XPF releases are hosted on [GitHub Releases](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases) with version history.
+
 
 
 
