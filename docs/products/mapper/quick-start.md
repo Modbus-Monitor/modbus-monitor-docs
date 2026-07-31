@@ -223,6 +223,26 @@ Once you've built your Modbus map:
 
 ## Troubleshooting
 
+## Replay from File
+
+Replay emulates a device response without decoding Modbus. It performs an exact byte-for-byte request match, so it can also be used for a non-Modbus byte protocol.
+
+1. In pass-through mode, enable **Record TX/RX exchanges** before starting. Starting a new recording clears the prior in-memory recording. Identical TX/RX pairs are saved once, so repeated polling does not bloat the replay file.
+2. Select **Save Recording** and write a `.txt` replay file.
+3. Enable **Replay from file**, select **Load Replay**, then start with one client port enabled. The matching response is returned on that same port; no server port is required.
+
+The file is plain text, one exchange per line:
+
+```text
+# Comments are allowed.
+TX: 01 03 00 00 00 02 C4 0B, RX: 01 03 04 00 2A 00 2B 9B 3B
+TX: AABBCC, RX: 10 20 30
+```
+
+`TX` and `RX` bytes may be spaced, compact, or dash-separated (for example, `01-03-00-00`). Exact matching includes every byte, including Modbus CRC bytes when they are part of the request. If a request has no matching `TX` line, the application logs a replay miss and sends no response.
+
+Recording currently follows the pass-through Modbus RTU path, which only forwards requests with a valid Modbus CRC. You can still create or edit replay files for any hexadecimal protocol manually; recording arbitrary non-Modbus request/response pairs requires a future raw-pass-through framing mode.
+
 ## Common First-Time Issues
 
 ### No Traffic Detected

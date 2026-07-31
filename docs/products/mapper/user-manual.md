@@ -161,7 +161,7 @@ graph TB
 ```
 
 !!! tip "Mode 1: The Safest Choice"
-    Mode 1 is the **safest** and most non-intrusive way to analyze live Modbus traffic. It never transmits—only listens passively to existing RS-485 communication. **Safe for production environments.**
+    Mode 1 is the least intrusive software mode: the application does not intentionally transmit. A passive result still depends on correctly configured receive-only hardware and wiring; verify that the adapter's transmitter/driver-enable line cannot drive the bus before connecting to production equipment.
 
 #### How It Works
 
@@ -180,7 +180,7 @@ Builds live Modbus map
 **Process:**
 
 1. Connect RS485 adapter to the existing two-wire Modbus network
-2. Application captures all frames from the bus
+2. Application captures frames that the adapter can receive and delimit
 3. Frames are decoded and analyzed in real-time
 4. Complete Modbus map is built automatically
 5. No interruption to active master/slave communication
@@ -391,7 +391,7 @@ graph LR
 
 When you start Modbus Mapper Pro in Listen Only mode:
 
-1. **Frame Capture** - All Modbus RTU frames are captured from the RS485 bus
+1. **Frame Capture** - Modbus RTU frames received by the adapter are captured from the RS485 bus
 2. **Frame Decoding** - Frames are decoded to extract function codes, addresses, and data
 3. **Pattern Recognition** - Unique requests are identified and catalogued
 4. **Data Type Inference** - System infers data types based on register patterns
@@ -416,11 +416,11 @@ Within **seconds** of pressing Start:
 
 ✅ **Modbus traffic detected** - Frames are captured from the RS485 bus  
 ✅ **Automatic decoding** - Raw frames translated to readable values  
-✅ **182+ unique requests** typically discovered (varies by network activity)  
+✅ Unique requests may be discovered (the number depends on actual network activity)  
 ✅ **Complete register map** automatically built without manual entry  
 ✅ **Live data values** displayed with proper formatting  
 ✅ **Communication patterns** visualized and analyzed  
-✅ **Zero disruption** to existing operations  
+✅ No intentional transmissions in Listen Only mode when the adapter is configured receive-only  
 
 ## Key Features
 
