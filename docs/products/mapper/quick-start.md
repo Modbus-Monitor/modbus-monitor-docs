@@ -227,7 +227,7 @@ Once you've built your Modbus map:
 
 Replay emulates a device response without decoding Modbus. It performs an exact byte-for-byte request match, so it can also be used for a non-Modbus byte protocol.
 
-1. In pass-through mode, enable **Record TX/RX exchanges** before starting. Starting a new recording clears the prior in-memory recording. Identical TX/RX pairs are saved once, so repeated polling does not bloat the replay file.
+1. Enable **Record TX/RX exchanges** before starting. In pass-through mode, requests and responses are known from the two sides of the proxy. In **Listen Only [RS-485]** mode, the application reassembles CRC-valid RTU frames and correlates likely request/response pairs from the passive stream. Starting a new recording clears the prior in-memory recording. Identical TX/RX pairs are saved once, so repeated polling does not bloat the replay file.
 2. Select **Save Recording** and write a `.txt` replay file.
 3. Enable **Replay from file**, select **Load Replay**, then start with one client port enabled. The matching response is returned on that same port; no server port is required.
 
@@ -241,7 +241,15 @@ TX: AABBCC, RX: 10 20 30
 
 `TX` and `RX` bytes may be spaced, compact, or dash-separated (for example, `01-03-00-00`). Exact matching includes every byte, including Modbus CRC bytes when they are part of the request. If a request has no matching `TX` line, the application logs a replay miss and sends no response.
 
-Recording currently follows the pass-through Modbus RTU path, which only forwards requests with a valid Modbus CRC. You can still create or edit replay files for any hexadecimal protocol manually; recording arbitrary non-Modbus request/response pairs requires a future raw-pass-through framing mode.
+Passive recording accepts standard and custom Modbus function codes with variable frame lengths. Known standard functions use their request/response structure for correlation; unknown or custom functions are paired by unit ID, function code, arrival order, and response timeout. Because a two-wire passive tap does not expose direction, custom-function pairing is a best-effort inference and retries or multi-master traffic can be ambiguous. Only CRC-valid RTU frames become passive replay pairs. You can still create or edit replay files for any hexadecimal protocol manually; capturing arbitrary non-Modbus traffic requires a separate raw framing mode.
+
+### RS-485 Replay Emulator
+
+Use **RS-485 Replay Emulator** only when the selected Server port is connected as an active RS-485 participant. It reads requests from that port and writes a matching replay response back to the same port. It is mutually exclusive with **Listen Only [RS-485]** and requires a loaded replay file.
+
+Before starting, disconnect or disable every real slave that could answer a replayed unit ID. Two devices responding to the same request can corrupt the bus and cause equipment to act on unintended traffic. The application asks for confirmation each time this active mode starts.
+
+Replay modes match received bytes against the loaded replay requests as a stream, so a request split across multiple serial callbacks is retained until it completes. **Replay fragment idle gap** controls only when an unfinished matching prefix is discarded. Leave it at `0` for the automatic baud-derived value with a 25 ms host-scheduling minimum; increase it for high-latency USB/serial adapters. It is not used to split a replay request that already matches a loaded request prefix.
 
 ## Common First-Time Issues
 
