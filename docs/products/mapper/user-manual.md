@@ -1,16 +1,29 @@
-Title: Modbus Mapper Pro User Manual | RS-485 Monitor, Modbus RTU Replay and Bridge
-Description: Learn how to monitor RS-485 Modbus RTU traffic, build live Modbus maps, record replay exchanges, and emulate devices with Modbus Mapper Pro.
+Title: Modbus Mapper Pro User Manual | Modbus RTU and ASCII RS-485 Monitor, Replay and Bridge
+Description: Learn how to monitor Modbus RTU and Modbus ASCII traffic, build live Modbus maps, record replay exchanges, and emulate devices with Modbus Mapper Pro.
 
 # Modbus Mapper Pro User Manual
 
-Modbus Mapper Pro is a Windows tool for **Modbus RTU monitoring, RS-485 traffic analysis, transparent serial bridging, and replay testing**. Use it to understand live communications, document an existing device, or reproduce recorded request/response traffic in a test environment.
+Modbus Mapper Pro is a Windows tool for **Modbus RTU and Modbus ASCII monitoring, RS-485 traffic analysis, transparent serial bridging, and replay testing**. Use it to understand live communications, document an existing device, or reproduce recorded request/response traffic in a test environment.
 
 ![Modbus Mapper Pro](../../assets/screenshots/mapper/modbus-mapper-concept.webp){ .screenshot-center loading="lazy" }
 
+## Modbus RTU and Modbus ASCII Support
+
+Mapper Pro recognizes complete valid frames automatically on the selected serial port:
+
+- **Modbus RTU** frames are validated with their CRC.
+- **Modbus ASCII** frames begin with `:` and end with CR/LF; they are validated with their LRC.
+
+For Modbus ASCII, configure the serial port to match the device exactly. **9600, 7 data bits, Even parity, 1 stop bit (7E1)** is common, but the device documentation is authoritative. Mapper Pro applies the selected baud rate, data bits, parity, and stop bits exactly as configured.
+
+For map building and value display, a validated ASCII frame is normalized internally to the same Modbus unit-ID/function/PDU structure used by the RTU decoder. This is an internal decoding step only: Mapper Pro does **not** convert or rewrite traffic on the wire. Original ASCII bytes are retained for raw capture, bridge forwarding, and replay.
+
+If traffic contains both valid RTU and ASCII frames, Mapper Pro detects each frame independently. Invalid or incomplete data is retained only long enough to recover the next valid frame start, rather than permanently losing synchronization.
+
 ## What Modbus Mapper Pro Does
 
-- Passively monitor an existing RS-485 Modbus RTU network.
-- Decode frames into readable function codes, addresses, counts, values, and CRC status.
+- Passively monitor an existing RS-485 Modbus RTU or Modbus ASCII network.
+- Decode frames into readable function codes, addresses, counts, values, and CRC/LRC status.
 - Build a live Modbus map from observed traffic.
 - Bridge Client and Server serial ports while recording traffic for diagnostics.
 - Record request/response exchanges and save them as replay files.
@@ -80,7 +93,7 @@ The app checks subscription status using trusted HTTPS time. A valid perpetual o
 
 <!-- Screenshot suggestion: Operating Mode cards with RS-485 Monitor selected, then a second screenshot with Replay Emulator selected and its setup panel visible. -->
 
-### 1. RS-485 Monitor — Passive Modbus RTU Sniffing
+### 1. RS-485 Monitor — Passive Modbus RTU/ASCII Sniffing
 
 Use this mode when you need to observe an existing RS-485 network without inserting the PC into the data path.
 
@@ -95,7 +108,7 @@ Use this mode when you need to observe an existing RS-485 network without insert
 
     The application does not intentionally write in this mode. Your adapter and wiring must also be configured so the PC cannot drive the RS-485 bus. A passive tap sees a combined bus stream, so request/response direction is inferred from Modbus structure and timing rather than electrically proven.
 
-Use RS-485 Monitor for Modbus RTU troubleshooting, undocumented-device discovery, polling analysis, and safe production observation.
+Use RS-485 Monitor for Modbus RTU or ASCII troubleshooting, undocumented-device discovery, polling analysis, and safe production observation.
 
 <!-- Screenshot suggestion: RS-485 tap wiring diagram — Master and Slave remain connected; Mapper Pro receives on the Server port only. -->
 
@@ -145,7 +158,7 @@ Use this option only when you deliberately want the PC to answer requests on an 
 
 #### Fragmented Requests and Timing
 
-Serial receive callbacks do not always align with Modbus RTU frames. Mapper Pro retains partial request prefixes, supports concatenated requests, and sends a replay response only after a full replay-file request matches. The configurable fragment idle gap is a fallback cleanup value; it should be chosen for the baud rate and traffic pattern, not used as the primary definition of a replay frame.
+Serial receive callbacks do not always align with Modbus RTU or ASCII frames. Mapper Pro retains partial request prefixes, supports concatenated requests, and sends a replay response only after a full replay-file request matches. The configurable fragment idle gap is a fallback cleanup value; it should be chosen for the baud rate and traffic pattern, not used as the primary definition of a replay frame.
 
 <!-- Screenshot suggestion: Replay Setup panel with a loaded file, frame count, Client port(s) target, RS-485 Server target, and fragment idle gap setting. -->
 
