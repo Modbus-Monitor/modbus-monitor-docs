@@ -3,7 +3,12 @@
 
 # ThingSpeak Overview Guide
 
-**Cloud analytics and data visualization for Modbus Monitor. Works with both Windows (XPF) and Android.**
+!!! warning "Retired add-on — archived documentation"
+    The Modbus Monitor ThingSpeak add-on is retired and is not offered for new purchases. This page preserves historical instructions for existing installations, not a supported setup path for new projects. Continued compatibility is not guaranteed. This retirement applies to the Modbus Monitor add-on, not to the MathWorks ThingSpeak service.
+
+    For current integration documentation, see [MQTT](mqtt-addon.md) (XPF), [MQTT](android-mqtt-addon.md) (Android Advanced), or [Google Sheets](android-sheets-addon.md) (Android Advanced).
+
+**Archived reference for the retired Windows and Android ThingSpeak add-on.**
 
 ![ThingSpeak Channel](../assets/screenshots/xpf/xpf-iot-thingspeak.webp)
 ---
@@ -12,7 +17,7 @@
 
 **ThingSpeak** is a cloud platform (by MathWorks) designed for **IoT data collection, real-time monitoring, data storage, visualization, and basic analytics**.
 
-Both **Modbus Monitor XPF** (Windows) and **Modbus Monitor Advanced** (Android) can publish Modbus data directly to ThingSpeak using simple **HTTP**. On ThingSpeak, you create **Channels**, and each channel contains up to **8 data fields** (Field 1–Field 8). Each incoming update from your Modbus Monitor app becomes an **Entry**, shown in:
+The retired add-ons for **Modbus Monitor XPF** (Windows) and **Modbus Monitor Advanced** (Android) were designed to publish Modbus data directly to ThingSpeak using simple **HTTP**. On ThingSpeak, you create **Channels**, and each channel contains up to **8 data fields** (Field 1–Field 8). Each incoming update from your Modbus Monitor app becomes an **Entry**, shown in:
 
 - Line charts
 - Gauges
@@ -41,7 +46,7 @@ Both **Modbus Monitor XPF** (Windows) and **Modbus Monitor Advanced** (Android) 
 
 ## Why Use ThingSpeak with Modbus Monitor?
 
-Integrating ThingSpeak provides a ready-made cloud system that requires no servers, no database setup, and no programming. Your Modbus data becomes instantly accessible anywhere — on phone, tablet, or PC.
+This section records the purpose of the retired integration. It is retained for historical reference and is not a recommendation to purchase or configure a new Modbus Monitor ThingSpeak installation.
 
 Benefits Across Both Platforms
 
@@ -85,7 +90,7 @@ Benefits Across Both Platforms
 
 <div class="grid cards" markdown>
 
--   :material-microsoft-windows:{ .lg .middle } **Windows Setup**
+-   :material-microsoft-windows:{ .lg .middle } **Windows Setup (Archived)**
 
     ---
 
@@ -99,7 +104,7 @@ Benefits Across Both Platforms
 
     [:octicons-book-24: Windows Setup Guide](thingspeak-addon-windows.md){ .md-button .md-button--primary }
 
--   :material-android:{ .lg .middle } **Android Setup**
+-   :material-android:{ .lg .middle } **Android Setup (Archived)**
 
     ---
 

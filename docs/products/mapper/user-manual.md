@@ -58,13 +58,13 @@ Pro unlocks the active and advanced workflows:
 Select **Activate** and choose the purchase type that matches your confirmation:
 
 - **Perpetual Pro key** — one-time license.
-- **Monthly subscription key** — access remains active while the subscription is current.
+- **30-Day License** — a one-time purchase with no automatic renewal, available from the [QBS shop](https://quantumbitsolutions.com/shop/modbus-mapper-pro-subscription/). Some versions of the activation dialog still display **Monthly subscription key**; follow your purchase confirmation or contact support if the labels do not match your order.
 - **Legacy license file** — existing MSSniff license from an older purchase.
 - **Microsoft Store** — use Store activation when purchased there.
 
-The app checks subscription status using trusted HTTPS time. A valid perpetual or Microsoft Store license takes precedence over an expired subscription record.
+The app checks time-limited license expiration using trusted HTTPS time. A valid perpetual or Microsoft Store license takes precedence over an expired time-limited license record. See [Perpetual Pro License](https://quantumbitsolutions.com/shop/modbus-mapper-pro/) for the perpetual offer and [Mapper Pro product information](https://www.modbusmonitor.com/modbus-mapper-pro) for an overview.
 
-<!-- Screenshot suggestion: Activate Pro dialog showing Perpetual key, Monthly subscription, Legacy license file, and Microsoft Store cards. -->
+
 
 ## User Interface
 

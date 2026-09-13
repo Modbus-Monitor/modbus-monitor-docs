@@ -30,7 +30,7 @@ By the end of this guide, you'll have:
 
 === "Direct Download"
 
-    1. **Visit** [Download Page](https://quantumbitsolutions.com/purchase/)
+    1. **Visit** [Download Page](../../downloads-purchase.md)
     2. **Download** executable file
     3. **Run** the downloaded file
     4. **Start** using immediately (portable version)

@@ -43,4 +43,4 @@ Latest releases of Modbus Monitor XPF with features, bug fixes, and download inf
 
 ## Quick Links
 
-[📥 Download Latest](../downloads-purchase.md){ .md-button .md-button--primary } [🏪 Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } [🛒 Buy License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=releases){ .md-button }
+[📥 Download Latest](../downloads-purchase.md){ .md-button .md-button--primary } [🏪 Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button } [🛒 Buy License](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/?utm_source=docs&utm_campaign=releases){ .md-button }

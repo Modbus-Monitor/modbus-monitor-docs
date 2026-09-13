@@ -42,7 +42,7 @@ The MQTT Add-on enables Modbus Monitor XPF to publish and subscribe to MQTT brok
 - **Retained Messages**: Store last known values for new subscribers
 
 !!! info "Add-on vs Core Features"
-    **MQTT Add-on** provides general MQTT messaging capabilities for any broker, while **ThingSpeak Add-on** is specifically designed for ThingSpeak cloud platform integration with dedicated features for channel management.
+    **MQTT Add-on** provides general MQTT messaging capabilities. The Modbus Monitor **ThingSpeak Add-on is retired**; its [archived guide](thingspeak-addon.md) is retained for existing installations, not new purchases or setups.
 
 ## XPF's Revolutionary MQTT Capabilities
 
@@ -1706,7 +1706,7 @@ Cloud Publishing:
 
 This MQTT Add-on is part of a growing ecosystem of XPF add-ons:
 
-- **[ThingSpeak Add-on](thingspeak-addon.md)**: Dedicated ThingSpeak cloud integration
+- **[ThingSpeak Add-on (Retired)](thingspeak-addon.md)**: Archived reference for existing installations
 - **Custom Add-ons**: Contact us for specialized integration requirements
 
 ---
@@ -1729,4 +1729,4 @@ This MQTT Add-on is part of a growing ecosystem of XPF add-ons:
 **Next Steps:**
 - Return to [main user guide](../products/xpf/user-guide.md) for core XPF features
 - Explore [Monitor Points configuration](../products/xpf/user-guide.md#7-monitor-points-configuration)
-- Check out [ThingSpeak Add-on](thingspeak-addon.md) for cloud-specific features
+- For an existing ThingSpeak installation, consult the [archived guide](thingspeak-addon.md); the add-on is retired

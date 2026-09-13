@@ -1,6 +1,6 @@
 # Modbus Monitor Advanced - Complete User Manual
 
-**Professional mobile Modbus monitoring for advanced users and field engineers**
+**Paid Android app for professional Modbus monitoring and field diagnostics.** For the no-cost Android app, see [Modbus Monitor Free](free-guide.md).
 
 ![Modbus Monitor Advanced on Mobile](../../assets/screenshots/android-advanced/mma-modbus-monitor-android.webp){ .screenshot-center loading="lazy" }
 
@@ -9,7 +9,7 @@
     
     Professional mobile Modbus monitoring with unlimited monitor points, sensor publishing, cloud integration, and priority support.
     
-    Need desktop? Try [:material-monitor: Modbus Monitor XPF](https://quantumbitsolutions.com/windows-xpf-monitor/) for Windows.
+    Need desktop? Try [:material-monitor: Modbus Monitor XPF](https://www.modbusmonitor.com/) for Windows.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ The advantage of the Modbus Monitor Advanced is that it combines both modes in o
 
 - **⚙️ Settings** - Configure protocols, timing, and cloud integrations  
 - **📤 Export/Import** - CSV data management and email sharing
-- **☁️ Cloud Add-ons** - Log data to Google Sheets, ThingSpeak, or MQTT brokers with one-button setup
+- **☁️ Cloud Add-ons** - Log data to Google Sheets or MQTT brokers with one-button setup
 - **🔄 Data Management** - Real-time logging, statistics, and data transformations
 
 !!! tip "New to Cloud Logging?"
@@ -44,12 +44,12 @@ The advantage of the Modbus Monitor Advanced is that it combines both modes in o
 
 **Protocol Support (8)**:
 
-Modbus TCP, UDP, Serial RTU, Serial ASCII, RTU over TCP, ASCII over TCP, ThingSpeak, Google Sheets, and MQTT
+Modbus TCP, UDP, Serial RTU, Serial ASCII, RTU over TCP, ASCII over TCP, Google Sheets, and MQTT
 
 **Data Management**:
 
 - CSV import/export with timed intervals (second/minute/hour) — see [:octicons-database-24: Import & Export Guide](../../guides/import-export.md)
-- Email export and cloud integration (ThingSpeak, Google Sheets)
+- Email export and cloud integration (Google Sheets, MQTT)
 - Real-time logging and statistical analysis
 
 ### Cloud Add-ons (Separate In-App Purchases)
@@ -60,7 +60,7 @@ Extend your monitoring with cloud logging add-ons. Each add-on provides direct c
 |--------|--------------|----------|-------|
 | **Google Sheets** | Log data directly to private Google spreadsheets | Quick setup, team sharing, Excel export | [:material-table-arrow-right: Setup Guide](../../guides/android-sheets-addon.md) |
 | **MQTT** | Publish to MQTT brokers (AWS IoT, HiveMQ, etc.) | IoT platforms, Node-RED, Home Assistant | [:material-transit-connection-variant: MQTT Guide](../../guides/mqtt-addon.md) |
-| **ThingSpeak** | Send data to ThingSpeak cloud analytics | Live charts, MATLAB analysis, public dashboards | [:material-chart-line: ThingSpeak Guide](../../guides/thingspeak-addon.md) |
+| **ThingSpeak (retired)** | Historical add-on only | Not offered for new purchases | [Archived guide](../../guides/android-thingspeak-addon.md) |
 
 **Key Benefits:**
 
@@ -164,7 +164,7 @@ The main interface combines status indicators with action buttons for easy opera
 | **Compare with other tools** | [Ecosystem Tools](#modbus-ecosystem-complementary-tools) | QModMaster, pymodbus, ModScan, XPF |
 | **Troubleshoot issues** | [Troubleshooting](#troubleshooting) | Common problems and solutions ([Error Codes Guide](../../guides/error-codes.md)) |
 | **Learn about hardware** | [Hardware Requirements](#hardware-requirements) | USB, Bluetooth, network setup |
-| **Publish local data to cloud** | [Cloud Publishing FAQ](#cloud-publishing-faq) | MQTT / Sheets / ThingSpeak workflows |
+| **Publish local data to cloud** | [Cloud Publishing FAQ](#cloud-publishing-faq) | MQTT / Sheets workflows |
 
 ## Hamburger Menu
 
@@ -193,7 +193,7 @@ The main interface combines status indicators with action buttons for easy opera
     - **Import** - Load monitor points from CSV file in Downloads folder ([Import & Export Guide](../../guides/import-export.md))
     - **Export and Email** - Export all monitor points and configuration data to CSV in Downloads folder and send via email ([Import & Export Guide](../../guides/import-export.md))
     - **Google Sheets** - Real-time data publishing to spreadsheets (Add-on purchase required)
-    - **ThingSpeak** - IoT dashboard and data visualization (Add-on purchase required)
+    - **ThingSpeak** - Retired add-on; retained here as a historical menu reference, not a new purchase option
     - **MQTT** - Industrial IoT messaging protocol (Add-on purchase required)
     
     **Reset & Maintenance**
@@ -309,6 +309,9 @@ Access comprehensive app configuration through **[Hamburger Menu [1]](#hamburger
 
 === "ThingSpeak"
 
+    !!! warning "Retired add-on"
+        These settings are historical references for existing installations. The Modbus Monitor ThingSpeak add-on is retired and is not offered for new purchases. See the [archived guide](../../guides/android-thingspeak-addon.md).
+
     **IoT dashboard and data visualization platform (Add-on required).**
     
     | Setting | Type | Description | Default | Notes |
@@ -318,7 +321,7 @@ Access comprehensive app configuration through **[Hamburger Menu [1]](#hamburger
     | **Test Sample Data** | Button | Send test data to verify connection | - | Validates configuration |
     
     !!! info "IoT Platform"
-        ThingSpeak provides real-time charts, alerts, and data analysis. Requires ThingSpeak add-on and free/paid ThingSpeak account.
+        These controls belonged to the retired Modbus Monitor ThingSpeak add-on. Their presence in an older app does not indicate current availability or support.
 
 === "MQTT"
 
@@ -885,7 +888,7 @@ Turn your Android device into a **Modbus TCP Server** that other devices can pol
     When using Client and Server modes simultaneously as a protocol converter, ensure monitor points use compatible configurations. Only certain channel/protocol combinations are supported - test your specific setup thoroughly before final deployment.
 
 !!! note "Protocol Limitation"
-    Server mode supports **Modbus TCP only**. For multiple protocols, see [Modbus Monitor XPF](https://quantumbitsolutions.com/windows-xpf-monitor/).
+    Server mode supports **Modbus TCP only**. For multiple protocols, see [Modbus Monitor XPF](https://www.modbusmonitor.com/).
 
 ---
 
@@ -1649,7 +1652,7 @@ For complete write operation details, see the [Write Operations](#write-operatio
 - Use **[Math  Linear Transformation](#math-configuration)** to scale raw values
 - Apply **[Coded Messages](#coded-messages-configuration)** to translate numbers to text
 
-**Cloud Integration**: Enable real-time data logging to Google Sheets, ThingSpeak, or MQTT brokers (requires add-ons). Data is sent to the cloud after each complete monitoring loop through all configured points.
+**Cloud Integration**: Enable real-time data logging to Google Sheets or MQTT brokers (requires add-ons). Data is sent to the cloud after each complete monitoring loop through all configured points.
 
 #### Troubleshooting Client Mode
 
@@ -1847,10 +1850,10 @@ For detailed explanation, see [How Server Mode Works](#how-server-mode-works).
 
 ## Add-Ons Integration
 
-Modbus Monitor Advanced can be extended with cloud integration add-ons that enable real-time data logging, IoT dashboards, and remote monitoring capabilities. This section covers the three available add-ons.
+Modbus Monitor Advanced can be extended with cloud integration add-ons that enable real-time data logging, IoT dashboards, and remote monitoring capabilities. This section covers MQTT and Google Sheets, plus a historical reference for the retired ThingSpeak add-on.
 
 !!! info "Add-On Purchase Required"
-    The following features require separate add-on purchases from the app or [quantumbitsolutions.com](https://quantumbitsolutions.com/purchase/). Configuration options appear in Settings after purchase.
+    MQTT and Google Sheets are optional in-app purchases. Use the purchase options shown in your installed Android app. ThingSpeak is retired and is not available for new purchases.
 
 ### MQTT Integration
 
@@ -1867,7 +1870,8 @@ Modbus Monitor Advanced can be extended with cloud integration add-ons that enab
 
 ### ThingSpeak Integration  
 
-**ThingSpeak** is a cloud-based IoT analytics platform that provides instant visualizations, MATLAB analytics, and data export capabilities.
+!!! warning "Retired add-on — historical instructions"
+    The Modbus Monitor ThingSpeak add-on is retired. The settings below are retained for existing installations only, not new purchases or new projects. See the [archived guide](../../guides/android-thingspeak-addon.md).
 
 **Minimal Setup**:
 1. Create channel; copy Write API Key.
@@ -1896,27 +1900,27 @@ Modbus Monitor Advanced can be extended with cloud integration add-ons that enab
 | Add-On | Key Features | Best For |
 |--------|--------------|----------|
 | **📊 Google Sheets** | Real-time data publishing, automated reports, cloud storage | Data logging, sharing with teams, Excel-compatible exports |
-| **☁️ ThingSpeak** | IoT dashboards, API access, alerts and triggers, MATLAB analytics | Visualization, public data sharing, advanced analytics |
+| **☁️ ThingSpeak (retired)** | Historical add-on reference | Not offered for new purchases |
 | **📡 MQTT** | Industrial IoT integration, AWS/Azure/Google Cloud, pub/sub messaging | Enterprise systems, real-time streaming, distributed architectures |
 
 ### Cloud Publishing FAQ
 
-Use these FAQs to understand how locally collected data (Bluetooth, Serial, TCP/IP) is forwarded to remote cloud services (MQTT, Google Sheets, ThingSpeak).
+Use these FAQs to understand how locally collected data (Bluetooth, Serial, TCP/IP) is forwarded to remote cloud services (MQTT, Google Sheets).
 
 ??? question "How does local data reach the cloud?"
-    After each complete polling cycle (Client Mode) or after internal register updates (Server/Sensor Server), the app aggregates current monitor point values and triggers publishing routines for any enabled add-ons. Each add-on uses its own transport (HTTPS for Sheets/ThingSpeak, MQTT protocol for brokers).
+    After each complete polling cycle (Client Mode) or after internal register updates (Server/Sensor Server), the app aggregates current monitor point values and triggers publishing routines for any enabled add-ons. Each add-on uses its own transport (HTTPS for Sheets, MQTT protocol for brokers).
 
 ??? question "Do Bluetooth and Serial data publish the same as TCP/IP data?"
     Yes. Channel type is abstracted at the monitor point layer. Once a value is updated (Bluetooth, Serial RTU/ASCII, TCP/IP), it is treated uniformly for cloud publishing. Failed reads (displayed as `?????`) are skipped or sent as blank (configurable in future versions).
 
 ??? question "What is a good update interval for cloud publishing?"
-    Recommended polling interval: 1000–3000 ms for stable industrial devices. For Google Sheets use ≥5 s to avoid quota pressure; ThingSpeak free tier enforces 15 s minimum per channel; MQTT can handle high frequency but practical field deployments usually stay at 1–2 s unless streaming fast-changing data.
+    Recommended polling interval: 1000–3000 ms for stable industrial devices. For Google Sheets use ≥5 s to avoid quota pressure; MQTT can handle high frequency but practical field deployments usually stay at 1–2 s unless streaming fast-changing data.
 
 ??? question "How are Google Sheets columns mapped?"
     Each monitor point becomes a row append or a column update depending on configuration (planned enhancement). Present implementation appends a timestamp plus sequential monitor point values in fixed order. Name and Units help downstream identification—use descriptive Names.
 
 ??? question "How do I handle ThingSpeak's 8-field limit?"
-    Select up to 8 critical monitor points or aggregate related values into scaled/combined fields using Math Configuration. Create multiple channels if you need >8 distinct values; document mapping externally for traceability.
+    The Modbus Monitor ThingSpeak add-on is retired. For existing configurations, see the [archived field-mapping guide](../../guides/android-thingspeak-addon.md). Use MQTT or Google Sheets for new integration work.
 
 ??? question "What MQTT topic structure should I use?"
     Suggested pattern:
@@ -1943,11 +1947,11 @@ Use these FAQs to understand how locally collected data (Bluetooth, Serial, TCP/
 
 ??? question "What happens if the network drops?"
     MQTT: Messages fail and are retried automatically if the session can reconnect; offline periods lose non-retained telemetry.
-    Google Sheets / ThingSpeak: HTTP post fails silently; data is not cached for replay. For critical reliability consider an external buffering gateway or future app buffering feature.
+    Google Sheets: HTTP post fails silently; data is not cached for replay. For critical reliability consider an external buffering gateway or future app buffering feature.
 
 ??? question "Security considerations?"
     - Use TLS-enabled MQTT brokers (port 8883) where possible.
-    - Avoid publishing sensitive data to public ThingSpeak channels.
+    - Avoid publishing sensitive data to publicly accessible cloud destinations.
     - Limit Google Sheets sharing permissions; treat spreadsheet URL as semi-sensitive.
     - Keep Android device on trusted Wi‑Fi; avoid open networks for write-enabled points.
 
@@ -1958,7 +1962,7 @@ Use these FAQs to understand how locally collected data (Bluetooth, Serial, TCP/
     | Symptom | Likely Cause | Action |
     |---------|-------------|--------|
     | Empty rows in Google Sheets | Spreadsheet ID or auth missing | Re-enter credentials; verify sheet exists |
-    | ThingSpeak update refused | Interval below 15 s limit | Increase delay to ≥15 s; check API key |
+    | ThingSpeak update refused (legacy) | Retired add-on | Refer to the [archived guide](../../guides/android-thingspeak-addon.md); continued compatibility is not guaranteed |
     | MQTT broker disconnects | Wrong host/port or TLS mismatch | Verify broker settings; test with an external MQTT client |
     | Values are `?????` locally | Communication failure upstream | Fix channel/protocol config; publishing skips invalid values |
     | High data costs | Polling interval too low | Raise interval; batch MQTT messages |
@@ -1967,7 +1971,7 @@ Use these FAQs to understand how locally collected data (Bluetooth, Serial, TCP/
     | Need | Best Choice | Why |
     |------|------------|-----|
     | Real-time streaming & integration | MQTT | Low latency, flexible topics, enterprise brokers |
-    | Simple dashboard + public sharing | ThingSpeak | Built-in charts, MATLAB analytics, easy API |
+    | Existing ThingSpeak installation | Archived reference only | The add-on is retired; not recommended for new setups |
     | Spreadsheet logging & reporting | Google Sheets | Familiar interface, export to CSV/Excel |
     | Hybrid (live + archival) | MQTT + Sheets | Stream critical data; log periodic summaries |
 
@@ -1982,22 +1986,22 @@ Use these FAQs to understand how locally collected data (Bluetooth, Serial, TCP/
     "inLanguage": "en",
     "publisher": {"@type": "Organization","name": "Quantum Bit Solutions","url": "https://quantumbitsolutions.com/"},
     "isPartOf": {"@type": "WebSite","name": "Modbus Monitor Documentation","url": "https://docs.quantumbitsolutions.com/"},
-    "dateModified": "2025-11-25",
+    "dateModified": "2026-09-13",
     "about": [
         {"@type": "Thing", "name": "Modbus"},
         {"@type": "Thing", "name": "Android Modbus Client"},
         {"@type": "Thing", "name": "Android Modbus Server"},
         {"@type": "Thing", "name": "Sensor Server"},
         {"@type": "Thing", "name": "MQTT"},
-        {"@type": "Thing", "name": "ThingSpeak"},
+
         {"@type": "Thing", "name": "Google Sheets"}
     ],
-    "keywords": "Modbus Android app, sensor server, MQTT publishing, ThingSpeak integration, Google Sheets logging",
+    "keywords": "Modbus Android app, sensor server, MQTT publishing, Google Sheets logging",
     "mainEntity": [
-        {"@type": "Question","name": "How does local data reach the cloud?","acceptedAnswer": {"@type": "Answer","text": "After each polling cycle or register update the app aggregates current monitor point values and invokes enabled add-on publishers (MQTT, Google Sheets, ThingSpeak)."}},
+        {"@type": "Question","name": "How does local data reach the cloud?","acceptedAnswer": {"@type": "Answer","text": "After each polling cycle or register update the app aggregates current monitor point values and invokes enabled add-on publishers (MQTT, Google Sheets)."}},
         {"@type": "Question","name": "Do Bluetooth and Serial data publish the same as TCP/IP data?","acceptedAnswer": {"@type": "Answer","text": "Yes. All channels unify at the monitor point layer; once a value updates it is eligible for the same publishing workflow."}},
-        {"@type": "Question","name": "What is a good update interval for cloud publishing?","acceptedAnswer": {"@type": "Answer","text": "1–3 s for MQTT, ≥5 s for Google Sheets, ≥15 s for ThingSpeak free tier."}},
-        {"@type": "Question","name": "How do I handle ThingSpeak's 8-field limit?","acceptedAnswer": {"@type": "Answer","text": "Choose 8 critical points, aggregate related readings via math/scaling, or create multiple channels."}},
+        {"@type": "Question","name": "What is a good update interval for cloud publishing?","acceptedAnswer": {"@type": "Answer","text": "1–3 s for MQTT, ≥5 s for Google Sheets."}},
+        {"@type": "Question","name": "How do I handle ThingSpeak's 8-field limit?","acceptedAnswer": {"@type": "Answer","text": "The Modbus Monitor ThingSpeak add-on is retired. Existing users can consult the archived field-mapping guide; use MQTT or Google Sheets for new integration work."}},
         {"@type": "Question","name": "What MQTT topic structure should I use?","acceptedAnswer": {"@type": "Answer","text": "Use modbus/<deviceId>/<pointName>/<address> for single values and modbus/<deviceId>/batch for JSON arrays with name,address,value,units,timestamp."}},
         {"@type": "Question","name": "Can I publish Sensor Server values to MQTT?","acceptedAnswer": {"@type": "Answer","text": "Yes. Sensor-backed monitor points are floats and publish like any other; optionally prefix topics with sensor/ or include a type tag."}},
         {"@type": "Question","name": "How do I reduce data usage?","acceptedAnswer": {"@type": "Answer","text": "Increase polling interval, batch MQTT messages, publish only required/changed points, disable unused add-ons."}},
@@ -2157,7 +2161,7 @@ Understanding the broader Modbus tool ecosystem helps you choose the right tool 
     
     - On-site diagnostics with Android phone/tablet
     - Sensor Server Mode (accelerometer, gyroscope, GPS, etc.)
-    - Real-time cloud publishing (ThingSpeak, MQTT, Google Sheets)
+    - Real-time cloud publishing (MQTT, Google Sheets)
     - Multi-protocol support (TCP, RTU, ASCII, UDP, Bluetooth, USB-OTG)
     - Portable field testing without laptop
     
@@ -2229,7 +2233,7 @@ Android sensors  Modbus Monitor Advanced (Sensor Server)  pymodbus client  Data 
     - Server Mode (phone as Modbus slave)
     - Sensor Server Mode (expose phone sensors via Modbus)
     - Multi-protocol support (TCP, RTU, ASCII, UDP, Bluetooth, USB-OTG)
-    - Cloud integration (ThingSpeak, Google Sheets, MQTT)
+    - Cloud integration (Google Sheets, MQTT)
     - Real-time logging and statistics
     
     For desktop-only workflows on Linux/macOS, QModMaster offers basic testing capabilities.
@@ -2239,7 +2243,7 @@ Android sensors  Modbus Monitor Advanced (Sensor Server)  pymodbus client  Data 
     
     - **Mobile deployment**: Android phone/tablet field access
     - **Sensor Server Mode**: Expose accelerometer, gyroscope, GPS as Modbus registers
-    - **Cloud integration**: Real-time publishing to ThingSpeak, Google Sheets, MQTT
+    - **Cloud integration**: Real-time publishing to Google Sheets and MQTT
     - **Advanced logging**: CSV export with timed intervals, email sharing
     - **Multi-protocol**: Bluetooth, USB-OTG, in addition to TCP
     - **Professional support**: Documentation, updates, expert assistance
@@ -2367,7 +2371,7 @@ Android sensors  Modbus Monitor Advanced (Sensor Server)  pymodbus client  Data 
 !!! tip "Third-Party Modbus Tools"
     We provide these links for ecosystem awareness and complementary workflows. We are not affiliated with these projects.
     
-    - [Modbus Monitor XPF](https://quantumbitsolutions.com/purchase/){:target="_blank"} - Professional Windows desktop monitoring
+    - [Modbus Monitor XPF](https://www.modbusmonitor.com/){:target="_blank"} - Professional Windows desktop monitoring
     - [QModMaster GitHub](https://github.com/LeezQ/qmodmaster){:target="_blank" rel="nofollow"} - Cross-platform open source GUI
     - [pymodbus Documentation](https://pymodbus.readthedocs.io/){:target="_blank" rel="nofollow"} - Python Modbus library
     - [modbus-tk GitHub](https://github.com/ljean/modbus-tk){:target="_blank" rel="nofollow"} - Alternative Python library

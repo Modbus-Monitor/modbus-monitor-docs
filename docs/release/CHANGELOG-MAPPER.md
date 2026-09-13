@@ -19,7 +19,7 @@
 - Expanded automated regression coverage for RTU, ASCII, serial framing, replay, and write-function decoding.
 - Improved replay handling for fragmented, concatenated, and custom Modbus messages.
 - Replay and Modbus-map CSV exports can include serial-port and application settings.
-- Simplified license activation and improved subscription validation.
+- Simplified license activation and improved time-limited license validation.
 - Added clear Free/Pro limits for live map points and captured requests.
 
 ### Fixed

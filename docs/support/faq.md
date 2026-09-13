@@ -6,19 +6,19 @@ Beginner‑friendly answers to common questions across Windows (XPF), Android (A
 ## General
 
 ### What is Modbus Monitor XPF?
-Windows desktop application for professional Modbus TCP/RTU/ASCII monitoring, diagnostics, logging, charting and cloud publishing (MQTT / ThingSpeak).
+Windows desktop application for professional Modbus TCP/RTU/ASCII monitoring, diagnostics, logging, charting and MQTT connectivity. See [XPF product information](https://www.modbusmonitor.com/).
 
 ### What is Modbus Monitor Advanced (Android)?
-Full‑featured mobile client supporting TCP/IP, USB‑OTG serial, Bluetooth Classic / BLE, data logging, server modes, cloud add‑ons (MQTT, Google Sheets, ThingSpeak).
+Paid Android app with additional professional features, including data logging, server modes and optional MQTT and Google Sheets add-ons. See [Modbus Monitor Advanced](https://quantumbitsolutions.com/android-monitor-advance/).
 
-### What is Modbus Console (Free)?
-Lightweight Android tool for quick read/write tests. Ideal for simple field device checks. No cloud or advanced logging.
+### What is Modbus Monitor Free? {#what-is-modbus-console-free}
+[Modbus Monitor Free](https://quantumbitsolutions.com/android-monitor-free/) is an Android app available at no cost for basic read/write tests. Its **Modbus Console** screen is separate from the retired Windows utility, available on the [Modbus Console — Legacy Download page](../releases/modbus-console.md).
 
 ### What is Mapper Pro?
-Protocol sniffer and analyzer for discovering devices, decoding traffic, building maps and troubleshooting network issues.
+Windows tool for Modbus RTU/ASCII traffic analysis, mapping, bridging and replay. See [Mapper Pro product information](https://www.modbusmonitor.com/modbus-mapper-pro).
 
 ### Where do I download products?
-Windows XPF & Mapper Pro: directly via the online shop. Android apps: Google Play Store. Links are provided in the product sections and below under Purchasing.
+Use [Downloads & Purchase](../downloads-purchase.md) for XPF and Mapper downloads and the Google Play links for Android Free and Advanced.
 
 ---
 ## Purchasing & Licensing
@@ -26,23 +26,23 @@ Windows XPF & Mapper Pro: directly via the online shop. Android apps: Google Pla
 ### How can I purchase XPF?
 Two common flows:
     1. Microsoft Store (if available) – provides automatic updates and simplified license management.
-    2. Online Shop (preferred for bundles): https://quantumbitsolutions.com/shop
+    2. [XPF license in the QBS shop](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/).
 
 ### What license type do I get via the shop?
-Perpetual usage with version updates within a defined maintenance window (see invoice details). Renewal extends update eligibility; the software continues functioning after maintenance expiry.
+Check the product page and your order confirmation for terms: [XPF](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/), [Mapper Perpetual Pro License](https://quantumbitsolutions.com/shop/modbus-mapper-pro/), or [Mapper 30-Day License](https://quantumbitsolutions.com/shop/modbus-mapper-pro-subscription/). The Mapper 30-Day License is a one-time purchase with no automatic renewal.
 
 ### How do I activate an XPF license?
 
 1. Install XPF.
 2. Open the License/Activation dialog.
 3. Paste or enter the license key from your purchase email.
-4. Click Activate (internet required on first activation). Offline fallback usually requires a request/response file (see user guide).
+4. Click Activate (internet required on first activation). For Microsoft Store purchases, use Store activation. If activation fails, contact support with your purchase details.
 
 ### Can I transfer my license to another PC?
-Yes. Deactivate on the old machine (License dialog) then activate on the new machine using the same key. If hardware change blocks activation, contact support.
+Contact support with your order details before moving a license to another PC. Transfer eligibility and the required steps depend on the license and purchase channel.
 
 ### Microsoft Store vs Online Shop – which should I choose?
-Store: seamless updates & simplified install. Shop: bundles, promotions, and complementary tools (Mapper Pro). Choose the store for convenience; the shop for package deals.
+Microsoft Store manages installation and updates through your Microsoft account. The QBS shop provides direct license purchases. Follow the activation instructions for the channel you used; do not assume the two purchase methods are interchangeable.
 
 ### Where can I find invoices or download links?
 Online Shop order confirmation email + account dashboard. Microsoft Store order history inside your Microsoft account.
@@ -90,7 +90,7 @@ Legacy environments or noisy lines where printable characters aid diagnostics. H
 XPF: configure logging profile (interval, format) and destination folder; enable session. Android Advanced: enable logging in session settings (CSV or integrated cloud plugin).
 
 ### Export formats available?
-CSV, JSON (maps & data); cloud integrations stream directly to MQTT, Google Sheets, ThingSpeak.
+Export formats depend on the product. See its guide for CSV/JSON support and MQTT or Google Sheets integration.
 
 ### Large logs performance tips
 
@@ -112,10 +112,10 @@ CSV, JSON (maps & data); cloud integrations stream directly to MQTT, Google Shee
 Provide spreadsheet ID + sheet name; authorize account; ensure rate within Sheets API limits.
 
 ### ThingSpeak integration
-Channel API key + field mapping; validate update interval against channel rate limits; use MATLAB for analytics post‑ingestion.
+The Modbus Monitor ThingSpeak add-on is retired and is not offered for new purchases. The [archived guide](../guides/thingspeak-overview.md) remains available for historical reference, not new setups.
 
 ### Can I publish Modbus RTU data to cloud from Android?
-Yes. Poll via USB serial or Bluetooth → transform values → push via MQTT/Sheets/ThingSpeak add‑on.
+Modbus Monitor Advanced supports cloud publishing through optional [MQTT](../guides/android-mqtt-addon.md) and [Google Sheets](../guides/android-sheets-addon.md) add-ons. Modbus Monitor Free does not include these add-ons.
 
 ---
 ## Server & Sensor Modes
@@ -206,23 +206,25 @@ Email: 24–48h; forum: community dependent; urgent licensing: mark subject acco
 
 | Action | Link |
 |--------|------|
-| Purchase / Shop | https://quantumbitsolutions.com/shop |
-| License / Activation Help | (See product user guide) |
-| Download Android Advanced | Google Play Store (User Guide page) |
-| Download Android Free | Google Play Store (Free Guide page) |
-| Mapper Pro Info | Product manual & quick start |
+| Purchase / Shop | [QBS shop](https://quantumbitsolutions.com/shop/) |
+| Purchase XPF | [XPF license](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/) |
+| Purchase Mapper Pro | [Perpetual Pro License](https://quantumbitsolutions.com/shop/modbus-mapper-pro/) · [30-Day License](https://quantumbitsolutions.com/shop/modbus-mapper-pro-subscription/) |
+| License / Activation Help | [XPF licensing](../products/xpf/user-guide.md#licensing) · [Mapper activation](../products/mapper/user-manual.md#activating-pro) |
+| Download Android Advanced (paid) | [Google Play](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) |
+| Download Android Free (no cost) | [Google Play](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) |
+| Mapper Pro Info | [Product information](https://www.modbusmonitor.com/modbus-mapper-pro) · [User manual](../products/mapper/user-manual.md) |
 
 ---
 ## Best Practices Summary
 
-1. Keep purchasing on main domain for credibility & SEO continuity.
-2. Use docs for education, deep linking & structured FAQ answers.
-3. Add clear CTA buttons (Purchase, Try Free, Learn More) without replicating checkout.
-4. Stabilize slugs; add redirects only when strategic keyword opportunity is validated.
-5. Monitor GA4 redirect vs organic traffic to refine prominent FAQ entries.
+1. Choose your product on the [download page](../downloads-purchase.md).
+2. Follow its quick start or user guide before configuring a device.
+3. Confirm communication with one known register before adding more points.
+4. Keep your order confirmation and use the matching activation method.
+5. Include the product version and exact error message when contacting support.
 
 ---
 ## Still Need Help?
 See the Support Center index or contact support directly: [support@quantumbitsolutions.com](mailto:support@quantumbitsolutions.com)
 
-*Last updated: November 29, 2025*
+*Last updated: September 13, 2026*

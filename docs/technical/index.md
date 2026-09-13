@@ -81,7 +81,7 @@
     | **Modbus ASCII** | Serial | USB OTG, Bluetooth | Serial debugging and legacy devices |
     | **RTU over TCP** | Ethernet | TCP/IP | RTU encapsulation over network |
     | **ASCII over TCP** | Ethernet | TCP/IP | ASCII encapsulation over network |
-    | **ThingSpeak** | Cloud | HTTP API | IoT cloud logging and visualization |
+    | **ThingSpeak (retired)** | Historical reference | HTTP API | Retired Modbus Monitor add-on; no new purchases |
     | **Google Sheets** | Cloud | Google API | Real-time spreadsheet logging |
     | **MQTT** | IoT | TCP/IP (MQTT broker) | Industrial IoT messaging |
 
@@ -214,7 +214,9 @@
     
     [:octicons-arrow-right-24: MQTT Add-on Guide](../guides/android-mqtt-addon.md)
 
-    **ThingSpeak Add-on:**
+    **ThingSpeak Add-on (Retired):**
+
+    The following details are historical references, not a current purchase or setup recommendation.
 
     - **Protocol**: HTTPS REST API
     - **Update Rate**: 15 seconds minimum (free tier), 1 second (paid)
@@ -426,7 +428,7 @@ Scaled Value = (Raw Value × Multiplier) + Offset
 
 - **Statistics**: Good/bad packet counts, response times
 - **CSV Export**: Timestamped value logs
-- **Cloud Logging**: ThingSpeak, Sheets, MQTT real-time
+- **Cloud Logging**: Sheets and MQTT real-time
 - **Storage**: Internal storage or SD card
 
 ---
@@ -496,7 +498,7 @@ Scaled Value = (Raw Value × Multiplier) + Offset
   - **ModScan**: Commercial Windows Modbus scanner
   - **Node-RED**: Visual IoT flow programming (MQTT integration)
   - **Home Assistant**: Smart home automation (MQTT integration)
-  - **Grafana**: Visualization dashboards (ThingSpeak, Sheets data sources)
+  - **Grafana**: Visualization dashboards (Sheets data sources)
 
 **Protocol Compliance:**
 
@@ -538,7 +540,7 @@ Scaled Value = (Raw Value × Multiplier) + Offset
 
   - **Local Storage**: Data stored on device (not cloud by default)
   - **Cloud Add-ons**: User-controlled (opt-in)
-  - **Encryption**: MQTT TLS, Google API HTTPS, ThingSpeak HTTPS
+  - **Encryption**: MQTT TLS, Google API HTTPS
   - **Privacy**: No telemetry or analytics without consent
 
 ---
@@ -551,7 +553,7 @@ Scaled Value = (Raw Value × Multiplier) + Offset
   - **[Android Advanced Guide](../products/android/advanced-guide.md)** - Mobile app comprehensive documentation
   - **[Mapper Pro Manual](../products/mapper/user-manual.md)** - Register mapping tool
   - **[6-Digit Addressing Guide](../guides/6-digit-addressing.md)** - Extended address format
-  - **[Add-on Guides](../guides/mqtt-addon.md)** - MQTT, ThingSpeak, Google Sheets
+  - **[Add-on Guides](../guides/mqtt-addon.md)** - MQTT, Google Sheets
 
 ### Support Channels
 
@@ -571,7 +573,7 @@ Scaled Value = (Raw Value × Multiplier) + Offset
 | **Simultaneous Client+Server** | ✅ | ✅ | ❌ |
 | **Serial (RS485/232)** | ✅ (Native COM) | ✅ (USB OTG, BT) | ✅ |
 | **Ethernet (TCP/IP)** | ✅ | ✅ (Wi-Fi) | ✅ |
-| **Cloud Integration** | ❌ | ✅ (MQTT, Sheets, ThingSpeak) | ❌ |
+| **Cloud Integration** | ❌ | ✅ (MQTT, Sheets) | ❌ |
 | **Sensor Publishing** | ❌ | ✅ | ❌ |
 | **Device Scanner** | ✅ | ❌ | ✅ |
 | **Price** | $49.99 | $2.99 + Add-ons | $149.99 |

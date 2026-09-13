@@ -1,9 +1,9 @@
-﻿# Modbus Monitor - Modbus Console
+﻿# Modbus Monitor Free {#modbus-monitor-modbus-console}
 
 **Mobile Modbus monitoring for field technicians and engineers**
 
 !!! info "Free Version"
-    Modbus Console is the free version of Modbus Monitor for Android devices. For advanced features, see the [Advanced Guide](advanced-guide.md).
+    **Modbus Monitor Free** is available at no cost for Android. **Modbus Monitor Advanced** is a separate paid app; see the [Advanced Guide](advanced-guide.md). The Android app's **Modbus Console** screen is not the [legacy Windows Modbus Console utility](../../releases/modbus-console.md).
 
 <figure markdown style="text-align: center;">
 ![Modbus Monitor Android (free)](../../assets/screenshots/modbus-monitor-free-demo.webp){ .center loading="lazy" width="300" }

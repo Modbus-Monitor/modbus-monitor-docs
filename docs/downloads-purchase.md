@@ -46,16 +46,16 @@ Use **Portable** if you need no installation or lack admin rights.
 **Microsoft Store** (Auto-updates, easiest)  
 [Get XPF on Microsoft Store](https://www.microsoft.com/store/apps/9PG862WL5HSM){ .md-button .md-button--primary }
 
-**Online Shop** (Bundles, lifetime licenses, invoices)  
-[See Pricing & Get License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button .md-button--primary }  
-[XPF + Mapper Bundle (Save 20%)](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-bundle){ .md-button }
+**QBS Online Shop**
+[XPF License & Pricing](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/?utm_source=docs&utm_campaign=downloads-purchase&utm_content=xpf-shop){ .md-button .md-button--primary }
+
+[XPF product information](https://www.modbusmonitor.com/)
 
 ---
 
-### Activate Your License (2 Minutes)
+### Activate Your License {#activate-your-license-2-minutes}
 
-**Online:** Launch app → License menu → Paste key → Activate  
-**Offline:** Generate request file → Email support → Apply response  
+Use the activation method that matches your purchase: QBS license key or Microsoft Store. Follow the instructions in your purchase confirmation and the XPF licensing guide. For activation problems, [contact support](mailto:support@quantumbitsolutions.com).
 
 [Full activation guide →](products/xpf/user-guide.md#licensing){ .md-button }
 
@@ -71,7 +71,7 @@ Use **Portable** if you need no installation or lack admin rights.
 
 ## 📱 Modbus Monitor Advanced (Android)
 
-Full-featured mobile Modbus client with server mode & cloud integration.
+Paid Android app with additional professional features, including server mode and cloud integration. Cloud add-ons may require separate purchases.
 
 ✅ TCP/IP, UDP, Serial, Bluetooth  
 ✅ Server & Sensor modes  
@@ -83,11 +83,13 @@ Full-featured mobile Modbus client with server mode & cloud integration.
 
 ---
 
-## 📱 Modbus Console (Android) – Free
+## 📱 Modbus Monitor Free (Android) {#modbus-console-android-free}
 
-Lightweight testing & diagnostics app.
+Android app available at no cost for basic testing and diagnostics.
 
 [Install Free](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble&utm_source=docs&utm_campaign=downloads-purchase){ .md-button .md-button--primary }
+
+[User Guide](products/android/free-guide.md){ .md-button }
 
 ---
 
@@ -121,8 +123,11 @@ Advanced Modbus network analyzer & device discovery.
 
 ### Buy License
 
-[Single License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-shop){ .md-button .md-button--primary }  
+[Perpetual Pro License](https://quantumbitsolutions.com/shop/modbus-mapper-pro/?utm_source=docs&utm_campaign=downloads-purchase&utm_content=mapper-shop){ .md-button .md-button--primary }
+[30-Day License](https://quantumbitsolutions.com/shop/modbus-mapper-pro-subscription/){ .md-button }
 [User Manual](products/mapper/user-manual.md){ .md-button }
+
+The **30-Day License** is a one-time purchase with no automatic renewal. See the shop for current terms and [Mapper Pro product information](https://www.modbusmonitor.com/modbus-mapper-pro) for an overview.
 
 ---
 
@@ -130,8 +135,7 @@ Advanced Modbus network analyzer & device discovery.
 
 Modbus Console is a legacy Windows utility for existing users. It is no longer under active development and is not recommended for new projects. Use Modbus Monitor XPF for current Modbus testing and troubleshooting.
 
-[Download Modbus Console (Legacy)](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/modbus-console-v0.9.2.1/Modbus-Console-v0.9.2.1.exe){ .md-button .md-button--primary }
-[Legacy download details](releases/modbus-console.md){ .md-button }
+[Modbus Console — Legacy Download](releases/modbus-console.md){ .md-button }
 
 ---
 
@@ -144,10 +148,10 @@ A: Use x64 for most systems. x86 for very old PCs. ARM64 for Surface X / Copilot
 A: Installer = standard install. Portable = run from USB or without admin rights.
 
 **Q: Can I try before buying?**  
-A: Yes. Free version included with core features. Upgrade anytime.
+A: XPF includes a free version with core features. For Mapper, see the [Free Edition details](products/mapper/user-manual.md#free-edition). Android Free is available at no cost; Android Advanced is paid.
 
 **Q: How do I activate?**  
-A: Launch app → License menu → Paste key → Activate.
+A: Follow the activation instructions for your product and purchase channel. See the [XPF guide](products/xpf/user-guide.md#licensing) or [Mapper manual](products/mapper/user-manual.md#activating-pro).
 
 **Q: Where are older versions?**  
 A: [View all releases →](releases/index.md)
@@ -162,5 +166,5 @@ A: [View all releases →](releases/index.md)
 
 ---
 
-*Last updated: August 5, 2026*
+*Last updated: September 13, 2026*
 

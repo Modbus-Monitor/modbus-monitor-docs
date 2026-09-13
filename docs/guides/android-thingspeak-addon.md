@@ -3,11 +3,16 @@
 
 # ThingSpeak Add-on for Android
 
-**Mobile IoT data logging to ThingSpeak. Cloud charts, MATLAB analytics, real-time alerts.**
+!!! warning "Retired add-on — archived documentation"
+    The Modbus Monitor ThingSpeak add-on is retired and is not offered for new purchases. This page preserves historical instructions for existing installations, not a supported setup path for new projects. Continued compatibility is not guaranteed. This retirement applies to the Modbus Monitor add-on, not to the MathWorks ThingSpeak service.
+
+    For current integration documentation, see [MQTT](mqtt-addon.md) (XPF), [MQTT](android-mqtt-addon.md) (Android Advanced), or [Google Sheets](android-sheets-addon.md) (Android Advanced).
+
+**Archived setup reference for the retired Modbus Monitor ThingSpeak add-on.**
 
 ![ThingSpeak Integration](../assets/screenshots/xpf/xpf-iot-thingspeak.webp){ .screenshot-center loading="lazy" }
 
-⬆️ **New to ThingSpeak?** [See Overview Guide](thingspeak-overview.md) for platform-agnostic concepts, use cases, initial setup, and FAQ.
+[Archived overview](thingspeak-overview.md) — background for existing installations.
 
 ---
 
@@ -16,7 +21,7 @@
 ### Prerequisites
 
 - ✅ Modbus Monitor Advanced installed  
-- ✅ ThingSpeak Add-on purchased  
+- Existing ThingSpeak Add-on purchase (retired; no new purchases)
 - ✅ ThingSpeak channel created with Write API Key ([see Overview Guide](thingspeak-overview.md#getting-started-all-platforms))
 
 ### Step 1: Enter Your API Key

@@ -147,14 +147,10 @@ Beyond this user guide, additional resources are available:
 
 === "Enterprise Purchase"
 
-    **Volume licensing and site deployments**    
-    - **Multiple machine licenses** available
-    - **Offline licensing** for air-gapped networks
-    - **Volume discounts** for large deployments
-    - **Purchase orders** and invoice billing accepted
-    
+    For multiple installations, purchase orders, or air-gapped deployment requirements, contact sales before purchasing. Availability and terms must be confirmed for your deployment.
+
     [:material-email: Enterprise Sales](https://quantumbitsolutions.com/contact-us/){ .md-button }
-    [:material-cart: Browse License Options](https://quantumbitsolutions.com/shop/){ .md-button }
+    [:material-cart: XPF License Options](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/){ .md-button }
 
 !!! note "Which Version Should I Choose?"
     **Most users:** Choose the **64-bit version** - it works on modern Windows systems and handles large datasets better.
@@ -170,237 +166,49 @@ Beyond this user guide, additional resources are available:
 
 ### License Activation {#licensing}
 
-This section walks you through activating the license for your Modbus Monitor XPF software. The License window provides several buttons and fields to help you navigate the activation process.
+Use the activation method that matches your purchase: a QBS online license key or a Microsoft Store purchase. Open the License/Activation window from the app and follow your order instructions.
 
-**First Launch Experience:**
-
-When you launch Modbus Monitor XPF for the first time, the **License window appears automatically**. This window displays:
-
-- **UID (User Identification)** - Your unique identifier for license purchases
-- **License Information Panel** - Shows current license status (Trial or Licensed)
-- **Hardware ID (HWID)** - Used for certain license types
-- **Licensing Buttons** - Store, Shop, Activate, Load, Trial, Exit
-
-**Licensing Buttons Overview:**
-
-| Button | Purpose | When to Use |
-|--------|---------|-------------|
-| **Store** | Microsoft Store purchase & activation | Purchase through Microsoft Store or activate Store license |
-| **Shop** | Online shop page | Opens web browser to quantumbitsolutions.com/shop |
-| **Activate** | Enter license key | After purchasing online key-based license |
-| **Load** | Load license file | For `.lic` files (enterprise/offline licenses) |
-| **Trial** | Start trial mode | Begin evaluation period with full features |
-| **Exit** | Close license window | Exit the application |
-
-!!! info "Trial Version - Full Featured Evaluation"
-    **Free trial with ALL features unlocked** - No credit card required. Perfect for testing before purchase.
-    
-    **Starting Trial Mode:**
-    1. Launch XPF for the first time
-    2. License window appears automatically
-    3. Click **"Trial"** button to begin evaluation period
-    4. License Information Panel shows how many days are left in your evaluation period
-    5. Start using the application immediately with limited functionality. Runtime and some features are restricted and requires full license.
+!!! info "Free mode and legacy controls"
+    XPF includes a free mode with limited features. Legacy **Trial** and **Load** controls may appear in older dialogs or screenshots; they are not a promise of a full-feature trial or first-time offline activation. Use the current online or Microsoft Store activation path.
 
 **Main Steps to Activate the Software:**
 
-1. **Purchase License** - Click "Store" or "Shop" button to visit licensing store and complete purchase
-2. **Load or Enter Key** - After purchase, load license file (enterprise) or enter license key (online purchase)
-3. **Verify Activation** - License Information Panel confirms activation status and trial mode is disabled
-
-**Choose your activation method based on how you obtained the software:**
+1. Confirm the product and purchase channel in your order.
+2. Use the matching activation method below.
+3. Check the displayed license status after activation. If it does not match your purchase, contact support with your order details and the error message.
 
 === "Microsoft Store (Easiest)"
 
-    **Automatic activation with Microsoft Account**
-    
-    The Microsoft Store version handles licensing automatically - no manual activation needed!
-    
-    **Purchase & Activation Flow:**
-    
-    1. **Open License Window**
-       - Launch Modbus Monitor XPF
-       - The license dialog appears automatically on first launch
-       - Or go to **File Tab → About → Activate** button
-    
-    2. **Click "Store" Button**
-       - Opens Microsoft Store purchase page
-       - Your UID is automatically included in the purchase
-    
-    3. **Complete Purchase**
-       - Sign in with your Microsoft Account
-       - Complete payment in the Microsoft Store
-       - Purchase is linked to your Microsoft Account
-    
-    4. **Activate License**
-       - Return to XPF License window
-       - **Click "Store" button again** to activate
-       - System verifies purchase with Microsoft
-       - Status changes to "Licensed" immediately
-    
-    **Benefits:**
-    
-    - No manual license key entry required  
-    - Automatic renewal options available  
-    - License tied to Microsoft Account (not individual PC)  
-    - Easy reinstallation on any Windows device  
-    - Can be used on new computers with same Microsoft Account
-    
-    !!! tip "Multi-Computer Usage"
-        Microsoft Store licenses follow your Microsoft Account. Install on multiple devices and sign in with the same account - the Store button activates on each installation automatically!
-    
-    !!! note "License Window Location"
-        Access the license window through: **File Tab → About section → Activate button**
-    
-    <!-- Screenshot placeholder: xpf-store-activation.png -->
-    <!-- Shows: License window with Store button highlighted, UID field, License Information Panel -->
+    **Activate a Microsoft Store purchase**
+
+    1. Sign in to Microsoft Store with the account used to purchase XPF.
+    2. Open the app's License/Activation window and use the Microsoft Store activation option.
+    3. Check the resulting license status. If activation fails, confirm your purchase in Microsoft order history and contact support.
+
+    Device eligibility and usage rights follow the applicable Store terms. Do not assume a QBS shop key and a Store purchase are interchangeable.
 
 === "Online Purchase (Direct)"
 
-    **Manual activation with license key**
-    
-    For licenses purchased directly from quantumbitsolutions.com using online Shop or purchase buttons.
-    
-    **Step-by-Step Activation:**
-    
-    1. **Get Your UID (BEFORE Purchasing!)**
-       - Launch Modbus Monitor XPF
-       - Go to **File Tab → About → Activate** button
-       - License window opens showing your **UID (User Identification)**
-       - Format looks like: `ABC123-DEF456-GHI789` or similar alphanumeric code
-       - **Click "Copy" button** next to the UID field
-       - Save this UID - it's required for purchasing your license
-    
-    2. **Purchase License Online**
-       - Click the **"Shop"** button in the License window (opens shop page)
-       - Or visit [:material-cart: quantumbitsolutions.com/shop](https://quantumbitsolutions.com/shop/) directly
-       - Select **Modbus Monitor XPF** license
-       - **Enter your UID** in the order form (critical step!)
-       - Complete payment through the online system
-    
-    3. **Receive License Key via Email**
-       - Check your email inbox (usually arrives within minutes)
-       - License key format: `XXXX-XXXX-XXXX-XXXX-XXXX` (5 groups separated by dashes)
-       - **Save this email** - you'll need it for reinstallation on other computers
-       - Note: Key is permanently tied to your UID
-    
-    4. **Activate in XPF**
-       - Return to the License window (File Tab → About → Activate)
-       - Click **"Activate"** button in the Licensing Buttons section
-       - **Paste your complete license key** in the entry field
-       - System verifies the key online
-       - License Information Panel updates to show **"Licensed"** status
-    
-    !!! warning "Critical: Provide UID When Purchasing!"
-        Your license key is permanently bound to your UID. If you purchase without providing your UID, the key won't work and you'll need to contact support for a replacement key.
-    
-    **License Window Components:**
-    
-    | Component | Description |
-    |-----------|-------------|
-    | **UID Field** | Displays your unique User Identification code |
-    | **Copy Button** | Copies UID to clipboard for purchase form |
-    | **License Information Panel** | Shows current license status (Trial or Licensed) |
-    | **Activate Button** | Opens field to enter license key for activation |
-    | **Shop Button** | Opens online shop to purchase license |
-    
-    **Troubleshooting:**
-    
-    - **"Invalid Key" error:** Verify you copied the entire key including all dashes, no extra spaces
-    - **"UID Mismatch":** Key was purchased for different UID - contact support with both UID and key
-    - **"Connection Error":** Activation requires internet connection - check firewall settings
-    - **Key not working:** Ensure you're entering the key in the Activate dialog, not the Trial field
-    
+    **Activate a QBS license key**
+
+    1. Open the [XPF license product](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/) and follow its ordering instructions.
+    2. Keep your purchase confirmation and the license key supplied for your order.
+    3. Open the app's License/Activation window, select the online key activation option, and enter your complete key.
+    4. Connect to the internet for activation and check the displayed license status.
+
+    If the app or order form requests a UID, use the value shown by your installed app. Contact support if your order details and activation dialog do not match.
+
     ![License Activation Window](../../assets/screenshots/xpf/xpf-license-window.webp){ .screenshot-shadow loading="lazy" }
-    
-    <!-- Additional screenshot needs:
-         - xpf-license-dialog-annotated.png: Shows all buttons (Store, Shop, Activate, Load, Trial, Exit) with UID field and Copy button labeled
-         - xpf-enter-key-dialog.png: Shows Activate dialog with license key entry field
-         - xpf-activation-success.png: Shows License Information Panel with "Licensed" status
-    -->
 
 === "Enterprise/Site License"
 
-    **License file for multiple installations or air-gapped systems**
-    
-    For organizations needing multiple installations, offline activation, or centralized license management.
-    
-    **License Types:**
-    
-    | License Type | Use Case | Activation Method |
-    |--------------|----------|-------------------|
-    | **Site License** | Multiple PCs at one location | License file (`.lic`) or keys |
-    | **Volume License** | Many installations, any location | Multiple keys or license files |
-    | **Offline License** | Air-gapped networks, no internet | Special license file only |
-    | **OEM License** | Bundled with equipment | Custom activation method |
-    
-    **Activation with License File (`.lic`):**
-    
-    1. **Contact Sales for Enterprise Licensing**
-       - Email [:material-email: sales@quantumbitsolutions.com](mailto:sales@quantumbitsolutions.com)
-       - Provide: Number of seats needed, deployment location(s), offline requirements
-       - Discuss: Site license, volume pricing, offline activation needs
-       - Receive: Quote and purchase order details
-    
-    2. **Receive License File**
-       - Sales team provides special `.lic` license file after purchase
-       - File contains all activation data embedded
-       - **No internet connection required** for activation with license file
-       - Can be used on multiple PCs (based on license terms)
-    
-    3. **Load License File on Each Computer**
-       - Launch Modbus Monitor XPF
-       - Open License window: **File Tab → About → Activate**
-       - Click **"Load"** button in the Licensing Buttons section
-       - File browser opens
-       - Navigate to your `.lic` file location
-       - Select the license file and click Open
-       - License Information Panel immediately shows **"Licensed"** status
-       - **No internet verification needed** - file contains authorization
-    
-    4. **Deploy to Multiple Systems**
-       - Copy the same `.lic` file to all licensed computers (via USB, network share, etc.)
-       - Install XPF on each system
-       - Repeat Step 3 (Load License File) on each installation
-       - All systems activate instantly with the same file
-    
-    **Alternative: Offline Key Activation**
-    
-    If you need to activate with a license key on air-gapped systems:
-    
-    1. **Generate Activation Request**
-       - On offline PC: Open License window
-       - Note your **UID** and **Hardware ID (HWID)** shown in License Information Panel
-       - Provide these to support via email (from internet-connected PC)
-    
-    2. **Receive Offline License Key**
-       - Support generates special offline key tied to your UID/HWID
-       - Transfer key to offline system (USB drive, printed paper, etc.)
-    
-    3. **Enter Key on Offline System**
-       - Click **"Activate"** button in License window
-       - Enter the offline license key
-       - System validates locally without internet
-       - Status changes to "Licensed"
-    
-    **Enterprise Support Benefits:**
-    
-    - Priority email support response (24-hour guarantee)  
-    - Optional phone support available  
-    - Custom Service Level Agreements (SLAs)  
-    - Dedicated account management  
-    - Volume discount pricing  
-    - Flexible deployment options (offline, network, etc.)  
-    - Purchase order and invoice billing accepted
-    
-    !!! tip "Recommended for Industrial Environments"
-        License files (`.lic`) are ideal for secure facilities, air-gapped networks, or environments where internet access is restricted for security reasons.
-    
-    [:material-email: Contact Enterprise Sales](https://quantumbitsolutions.com/contact-us/){ .md-button .md-button--primary }
-    [:material-cart: View Volume License Options](https://quantumbitsolutions.com/shop/){ .md-button }
-    
-    <!-- Screenshot placeholder: xpf-load-license-file.png -->
-    <!-- Shows: License window with Load button highlighted, file browser dialog with .lic file selected -->
+    **Confirm deployment requirements before purchase**
+
+    For multiple PCs, restricted networks, or other deployment requirements, [contact sales](https://quantumbitsolutions.com/contact-us/). Provide the number of installations, purchase channel, and whether internet access is available.
+
+    First-time offline activation by license file or request/response file is not a documented current activation path. Do not assume that an older **Load** control provides this capability. Offline use after a prior online activation is a separate question; confirm requirements with support for your deployment.
+
+    Follow the terms and instructions supplied for your order. No site-license scope, transferable license file, support response time, or volume discount is promised by this guide.
 
 === "Troubleshooting"
 
@@ -455,7 +263,7 @@ When you launch Modbus Monitor XPF for the first time, the **License window appe
     **License shows "Expired" unexpectedly:**
     
     - Verify system clock is set correctly (wrong date can cause this)
-    - Check if subscription renewal payment failed
+    - Check your order details and purchase channel
     - Contact support to verify license status
     
     ### Performance Issues
@@ -482,15 +290,7 @@ When you launch Modbus Monitor XPF for the first time, the **License window appe
 
 **License Comparison:**
 
-| Feature | Trial | Standard | Enterprise |
-|---------|-------|----------|------------|
-| **Duration** | Time-limited | Perpetual | Perpetual |
-| **Full Features** | Yes | Yes | Yes |
-| **Updates** | During trial | 1 year included | Custom terms |
-| **Installations** | 1 PC | 1 PC per license | Multiple PCs |
-| **Support** | Community forum | Email support | Priority support |
-| **Offline Use** | Yes | Yes | Yes (special activation) |
-| **Price** | Free | [View pricing](https://quantumbitsolutions.com/shop/) | Contact sales |
+For current options and terms, see the [XPF license product](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/) or the [Microsoft Store listing](https://www.microsoft.com/store/apps/9PG862WL5HSM). For deployment-specific requirements, [contact sales](https://quantumbitsolutions.com/contact-us/).
 
 ## 3. GUI - Understanding the App Interface 
 
@@ -577,7 +377,7 @@ Below the Quick Access Toolbar, you'll find multiple tabs that organize all appl
 | **Home** | Main Operations | Copy/paste, Modbus Wizard, list management, filtering, evaluation |
 | **Client** | Modbus Client (Master) | Interface selection, timeouts, write functions, scanner, charts, poll controls |
 | **Server** | Modbus Server (Slave) | Interface config, Modbus TCP Server, Modbus RTU Server, traffic capture, simulation |
-| **IoT** | Cloud integration | ThingSpeak logging, MQTT messaging, cloud-to-device communication |
+| **IoT** | Cloud integration | MQTT messaging and cloud-to-device communication |
 | **HMI** | HMI dashboard design | Widget-based operator dashboard authoring and runtime view. See [HMI Guide](hmi.md) and [6A. HMI Tab and Widgets (v5.0.0.0+)](#hmi-tab-widgets) |
 
 
@@ -905,7 +705,7 @@ All log controls in one comprehensive table. Labels **1**, **2**, **3a-3h**, and
 | Group | Type | Purpose | Details |
 |-------|------|---------|---------|
 | **MQTT** | Requires License | Advanced MQTT messaging | Enhanced MQTT connectivity with enterprise features |
-| **ThingSpeak** | Requires License | ThingSpeak integration | ThingSpeak cloud logging with automatic field mapping |
+| **ThingSpeak (retired)** | Historical reference | Retired add-on | No new purchases; see the archived guide |
 
 
 **Licensed Features in IoT Tab:**
@@ -934,9 +734,11 @@ All log controls in one comprehensive table. Labels **1**, **2**, **3a-3h**, and
     
     **Setup Guide:** 📖 [Complete MQTT Feature Setup Guide](../../guides/mqtt-addon.md)
 
-=== "ThingSpeak Feature (Requires License)"
+=== "ThingSpeak Feature (Retired)"
 
-    **Specialized ThingSpeak cloud platform integration:**
+    **Retired add-on — historical reference only:**
+
+    The Modbus Monitor ThingSpeak add-on is retired and is not offered for new purchases. The following describes the older integration; continued compatibility is not guaranteed.
     
     - Automatic field mapping (Row 1→field1, Row 2→field2, etc.)
     - ThingSpeak-specific API optimization
@@ -945,28 +747,28 @@ All log controls in one comprehensive table. Labels **1**, **2**, **3a-3h**, and
     - MATLAB integration capabilities
     - **Publish Group**: Publishing controls and settings integrated with ThingSpeak
     
-    **Use for:** ThingSpeak cloud logging, automatic data visualization, professional dashboards
+    **Legacy purpose:** ThingSpeak cloud logging and visualization; not recommended for new projects
     
-    **License Required:** Purchase ThingSpeak feature license to unlock full functionality
+    **Availability:** Retired; no new purchases
     
-    **Setup Guide:** 📖 [Complete ThingSpeak Feature Setup Guide](../../guides/thingspeak-addon.md)
+    **Setup Guide:** 📖 [Archived ThingSpeak Feature Guide](../../guides/thingspeak-addon.md)
 
 **Choosing Your IoT Solution:**
 
 | Scenario | Recommended Feature | Reason |
 |----------|---------------------|--------|
-| **ThingSpeak cloud logging** | ThingSpeak Feature | Automatic field mapping, optimized for ThingSpeak platform |
+| **ThingSpeak cloud logging (legacy)** | Archived reference only | Retired add-on; not recommended for new setups |
 | **Multiple MQTT brokers** | MQTT Feature | Multi-broker support, flexible topic mapping |
 | **Enterprise IoT deployment** | MQTT Feature | Advanced security, persistence, enterprise features |
 | **AWS IoT / Azure IoT** | MQTT Feature | Pre-configured cloud templates |
 | **General MQTT messaging** | MQTT Feature | Professional MQTT connectivity with advanced features |
-| **Cloud analytics and visualization** | ThingSpeak Feature | Professional dashboards and MATLAB integration |
+| **Existing ThingSpeak dashboards** | Archived reference only | Retired add-on; continued compatibility is not guaranteed |
 
 **Quick Navigation:**
 
 - **MQTT Feature Setup**: [MQTT Feature Guide](../../guides/mqtt-addon.md) - Multi-broker connectivity and enterprise features
-- **ThingSpeak Feature Setup**: [ThingSpeak Feature Guide](../../guides/thingspeak-addon.md) - Cloud logging and visualization
-- **IoT Tab Configuration**: Use IoT Tab → MQTT/ThingSpeak Groups in ribbon for licensed feature access
+- **ThingSpeak (Retired)**: [Archived guide](../../guides/thingspeak-addon.md) - Historical reference
+- **IoT Tab Configuration**: Use the IoT tab for MQTT; ThingSpeak controls in older versions refer to the retired add-on
 - **Feature Licensing**: Purchase feature licenses to unlock IoT Tab functionality
 
 #### Key Concepts
@@ -3371,9 +3173,9 @@ Each instance:
 
 ### Available IoT Features
 
-**ThingSpeak Feature:** Specialized ThingSpeak cloud platform integration with automatic field mapping and professional visualization capabilities.
+**ThingSpeak Feature (Retired):** Historical integration retained in the archived documentation for existing installations. It is not offered for new purchases or recommended for new projects.
 
-📖 **[Complete ThingSpeak Feature Setup Guide](../../guides/thingspeak-addon.md)**
+📖 **[Archived ThingSpeak Feature Guide](../../guides/thingspeak-addon.md)**
 
 **MQTT Feature:** Advanced MQTT broker connectivity with multi-broker support, enterprise security, and cloud platform templates.
 

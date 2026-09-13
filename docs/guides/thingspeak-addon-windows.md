@@ -3,11 +3,16 @@
 
 # ThingSpeak Add-on for Windows XPF
 
-**Desktop IoT logging. Cloud charts, MATLAB analytics, real-time alerts from Modbus Monitor XPF.**
+!!! warning "Retired add-on — archived documentation"
+    The Modbus Monitor ThingSpeak add-on is retired and is not offered for new purchases. This page preserves historical instructions for existing installations, not a supported setup path for new projects. Continued compatibility is not guaranteed. This retirement applies to the Modbus Monitor add-on, not to the MathWorks ThingSpeak service.
+
+    For current integration documentation, see [MQTT](mqtt-addon.md) (XPF), [MQTT](android-mqtt-addon.md) (Android Advanced), or [Google Sheets](android-sheets-addon.md) (Android Advanced).
+
+**Archived setup reference for the retired Modbus Monitor ThingSpeak add-on.**
 
 ![ThingSpeak Integration](../assets/screenshots/xpf/xpf-iot-thingspeak.webp){ .screenshot-center loading="lazy" }
 
-⬆️ **New to ThingSpeak?** [See Overview Guide](thingspeak-overview.md) for platform-agnostic concepts, use cases, and general setup.
+[Archived overview](thingspeak-overview.md) — background for existing installations.
 
 ---
 
@@ -16,7 +21,7 @@
 ### Prerequisites
 
 - ✅ Modbus Monitor XPF installed  
-- ✅ ThingSpeak Add-on purchased  
+- Existing ThingSpeak Add-on purchase (retired; no new purchases)
 - ✅ ThingSpeak channel created with Write API Key ([see Overview Guide](thingspeak-overview.md#getting-started-all-platforms))
 
 ### Step 1: Configure ThingSpeak Add-On

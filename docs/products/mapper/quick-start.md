@@ -40,13 +40,13 @@ Optional: A physical RS485 cable "tap" if you want to spy on existing cables wit
 
     **For older systems and embedded PCs:**
     
-    [:material-shopping: Purchase 32-bit](https://quantumbitsolutions.com/shop){ .md-button }
+    [:material-shopping: Purchase 32-bit](https://quantumbitsolutions.com/shop/modbus-mapper-pro/){ .md-button }
 
 === "64-bit Version"  
 
     **For modern Windows systems:**
     
-    [:material-shopping: Purchase 64-bit](https://quantumbitsolutions.com/shop){ .md-button }
+    [:material-shopping: Purchase 64-bit](https://quantumbitsolutions.com/shop/modbus-mapper-pro/){ .md-button }
 
 === "Microsoft Store"
 

@@ -50,12 +50,12 @@ Description: Professional Modbus documentation for automation engineers, includi
     
     [Import/Export Guide](guides/import-export.md){ .md-button }
     
-    [Cloud Integration](guides/thingspeak-overview.md){ .md-button }
+    [Cloud Integration](guides/mqtt-addon.md){ .md-button }
 
 </div>
 
 <div class="admonition success" markdown>
-**✅ Pro Tip:** Free version available with feature lock. XPF includes a 14-day full-featured trial (no credit card). Android apps are completely free.
+**Android editions:** **Modbus Monitor Free** is available at no cost. **Modbus Monitor Advanced** is a paid Android app with additional professional features.
 </div>
 
 ---
@@ -66,10 +66,12 @@ Description: Professional Modbus documentation for automation engineers, includi
 
 | Product | What It Does | Get Started |
 |---------|--------------|-------------|
-| **🪟 Modbus Monitor XPF** (Windows) | Professional monitoring, logging, diagnostics & cloud integration | [📖 Guide](products/xpf/user-guide.md) · [⚡ Quick Start](products/xpf/quick-start.md) · [⬇️ Download](downloads-purchase.md) |
-| **📱 Modbus Advanced** (Android) | Full-featured mobile client with server mode & cloud connectivity | [📖 Guide](products/android/advanced-guide.md) · [📥 Get it on Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) |
-| **📱 Modbus Console** (Android Free) | Lightweight testing tool for quick verification & troubleshooting | [📖 Guide](products/android/free-guide.md) · [📥 Get it on Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) |
-| **🔍 Mapper Pro** (Windows) | Protocol analyzer & network explorer for device discovery | [📖 Manual](products/mapper/user-manual.md) · [⬇️ Download](downloads-purchase.md#mapper-pro-windows) · [🛒 Shop](downloads-purchase.md) |
+| **🪟 [Modbus Monitor XPF](https://www.modbusmonitor.com/)** (Windows) | Professional monitoring, logging, diagnostics & cloud integration | [📖 Guide](products/xpf/user-guide.md) · [⚡ Quick Start](products/xpf/quick-start.md) · [⬇️ Download](downloads-purchase.md) |
+| **📱 Modbus Monitor Advanced** (Android, paid) | Mobile client with server mode & cloud connectivity | [📖 Guide](products/android/advanced-guide.md) · [📥 Get it on Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Galex) |
+| **📱 Modbus Monitor Free** (Android, no cost) | Lightweight testing tool for quick verification & troubleshooting | [📖 Guide](products/android/free-guide.md) · [📥 Get it on Play Store](https://play.google.com/store/apps/details?id=com.Bhavan.Hubble) |
+| **🔍 [Mapper Pro](https://www.modbusmonitor.com/modbus-mapper-pro)** (Windows) | Modbus RTU/ASCII traffic analysis, mapping, bridging & replay | [📖 Manual](products/mapper/user-manual.md) · [⬇️ Download](downloads-purchase.md#mapper-pro-windows) · [🛒 License](https://quantumbitsolutions.com/shop/modbus-mapper-pro/) |
+
+For purchases and license options, visit the [QBS shop](https://quantumbitsolutions.com/shop/).
 
 ---
 
@@ -77,9 +79,9 @@ Description: Professional Modbus documentation for automation engineers, includi
 
 | Platform | Available Add-ons | Get Started |
 |----------|------------------|-------------|
-| **Android** | MQTT · Google Sheets · ThingSpeak | [MQTT Setup](guides/android-mqtt-addon.md) · [Sheets](guides/android-sheets-addon.md) · [ThingSpeak](guides/android-thingspeak-addon.md) |
-| **Windows (XPF)** | MQTT · ThingSpeak | [MQTT Setup](guides/mqtt-addon.md) · [ThingSpeak](guides/thingspeak-addon-windows.md) · [Full Guide](guides/thingspeak-overview.md) |
-| **Getting Started** | Overview & Best Practices | [ThingSpeak Overview](guides/thingspeak-overview.md) · [MQTT Basics](guides/mqtt-addon.md) · [Data Export](guides/import-export.md) |
+| **Android Advanced** | MQTT · Google Sheets | [MQTT Setup](guides/android-mqtt-addon.md) · [Sheets](guides/android-sheets-addon.md) |
+| **Windows (XPF)** | MQTT | [MQTT Setup](guides/mqtt-addon.md) |
+| **Getting Started** | Overview & Best Practices | [MQTT Basics](guides/mqtt-addon.md) · [Data Export](guides/import-export.md) |
 
 ---
 
@@ -100,7 +102,7 @@ Description: Professional Modbus documentation for automation engineers, includi
 |---------|:-------------:|:------------------:|:--------------:|:----------:|
 | Real-time Monitoring | ✅ | ✅ | ✅ | ✅ |
 | Data Logging | ✅ Advanced | ✅ | ❌ | ✅ Traffic |
-| Cloud Integration | ✅ MQTT/ThingSpeak | ✅ MQTT/Sheets/ThingSpeak | ❌ | ❌ |
+| Cloud Integration | ✅ MQTT | ✅ MQTT/Sheets | ❌ | ❌ |
 | Network Analysis | ✅ | ❌ | ❌ | ✅ Advanced |
 | Multiple Connections | ✅ | ✅ | ⚠️ Limited | ✅ |
 | Data Export | ✅ CSV/JSON | ✅ CSV | ❌ | ✅ CSV |
@@ -112,7 +114,7 @@ Description: Professional Modbus documentation for automation engineers, includi
 | I Want to... | Start with... |
 |-------------|-----------------|
 | **Monitor Modbus devices** | [XPF Quick Start](products/xpf/quick-start.md) or [Android Guide](products/android/advanced-guide.md) |
-| **Send data to cloud** | [ThingSpeak](guides/thingspeak-overview.md) or [MQTT](guides/mqtt-addon.md) |
+| **Send data to cloud** | [MQTT](guides/mqtt-addon.md) or [Google Sheets (Android Advanced)](guides/android-sheets-addon.md) |
 | **Analyze network traffic** | [Mapper Pro](products/mapper/user-manual.md) |
 | **Find hardware** | [Hardware Guide](guides/android-hardware.md) |
 | **Fix errors** | [Error Codes](guides/error-codes.md) |

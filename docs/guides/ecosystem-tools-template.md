@@ -37,7 +37,7 @@ Understanding the broader Modbus tool ecosystem helps you choose the right tool 
     **[Your Product Name]**
     
     - Real-time monitoring with logging and statistics
-    - Integrated cloud publishing (ThingSpeak, MQTT, Google Sheets)
+    - Integrated cloud publishing (MQTT, Google Sheets)
     - Advanced data transformations and scaling
     - Multi-protocol support (TCP, RTU, ASCII, UDP)
     - [Your unique features]
@@ -99,7 +99,7 @@ QModMaster (Linux dev) → Modbus Monitor [Your Product] (Production) → Cloud 
     While QModMaster is excellent for basic manual testing, **[Your Product]** adds:
     
     - Real-time logging with CSV export
-    - Cloud integration (ThingSpeak, Google Sheets, MQTT)
+    - Cloud integration (Google Sheets, MQTT)
     - Advanced data transformations and math functions
     - [Your unique features]
     - Professional support and documentation

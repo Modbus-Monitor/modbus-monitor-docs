@@ -33,7 +33,7 @@ All official releases of Modbus Monitor XPF with download links and release note
 
 ## Quick Links
 
-[📥 Quick Download](../downloads-purchase.md){ .md-button .md-button--primary } [📖 Full Changelog](../release/CHANGELOG-XPF.md){ .md-button } [🛒 Buy License](https://quantumbitsolutions.com/shop?utm_source=docs&utm_campaign=releases){ .md-button }
+[📥 Quick Download](../downloads-purchase.md){ .md-button .md-button--primary } [📖 Full Changelog](../release/CHANGELOG-XPF.md){ .md-button } [🛒 Buy License](https://quantumbitsolutions.com/shop/modbus-monitor-xpf/?utm_source=docs&utm_campaign=releases){ .md-button }
 
 ---
 
