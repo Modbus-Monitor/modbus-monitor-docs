@@ -128,7 +128,7 @@ markdown_extensions:
   - footnotes
 
 copyright: |
-  Documentation Version 1.3.117  Last Updated: September 13, 2026
+  Documentation Version 1.3.118  Last Updated: September 13, 2026
 
 nav:
   - Home: index.md
