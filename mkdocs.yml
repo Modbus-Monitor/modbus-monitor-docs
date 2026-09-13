@@ -3,6 +3,7 @@ site_name: Modbus Monitor Documentation
 exclude_docs: |
   assets/screenshots/README.md
   assets/screenshots/android-advanced/README.md
+  release/Modbus-Console-*.exe
 
 site_url: https://docs.quantumbitsolutions.com/
 use_directory_urls: true
@@ -132,7 +133,9 @@ copyright: |
 nav:
   - Home: index.md
   - Modbus Device Maps: modbus-device-maps/index.md
-  - Downloads & Purchase: downloads-purchase.md
+  - Downloads & Purchase:
+    - Downloads & Purchase: downloads-purchase.md
+    - Modbus Console (Legacy): releases/modbus-console.md
   - Products:
     - Overview: products/index.md
     - Modbus Monitor XPF:

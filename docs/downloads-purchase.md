@@ -126,6 +126,15 @@ Advanced Modbus network analyzer & device discovery.
 
 ---
 
+## Modbus Console (Windows) — Legacy
+
+Modbus Console is a legacy Windows utility for existing users. It is no longer under active development and is not recommended for new projects. Use Modbus Monitor XPF for current Modbus testing and troubleshooting.
+
+[Download Modbus Console (Legacy)](https://github.com/Modbus-Monitor/modbus-monitor-docs/releases/download/modbus-console-v0.9.2.1/Modbus-Console-v0.9.2.1.exe){ .md-button .md-button--primary }
+[Legacy download details](releases/modbus-console.md){ .md-button }
+
+---
+
 ## FAQ
 
 **Q: Which version should I download?**  
