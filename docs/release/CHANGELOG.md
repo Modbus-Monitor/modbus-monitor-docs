@@ -4,7 +4,7 @@ Latest releases of Modbus Monitor XPF with features, bug fixes, and download inf
 
 ## Development Update
 
-### [Unreleased (main branch) - February 28, 2026](CHANGELOG-XPF.md#unreleased-main-branch--february-28-2026)
+### [Unreleased (main branch) - February 28, 2026](CHANGELOG-XPF.md#unreleased-main-branch-february-28-2026)
 
 - Added Line widget for HMI dashboard design
 - Added Rounded Square widget for HMI dashboard design
@@ -16,7 +16,7 @@ Latest releases of Modbus Monitor XPF with features, bug fixes, and download inf
 
 ## Current Release
 
-### [v4.4.1.0 - December 23, 2025](CHANGELOG-XPF.md#v4411-december-23-2025)
+### [v4.4.1.0 - December 23, 2025](CHANGELOG-XPF.md#v4410-december-23-2025)
 
 - Enhanced performance optimizations  
 - Fixed licensing window persisting after license activation

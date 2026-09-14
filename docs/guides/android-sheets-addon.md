@@ -37,7 +37,7 @@ The Google Sheets Add‑on logs your Modbus data directly to a Google spreadshee
 - **Mobile & Desktop** - Access from any device
 
 !!! success "Quick Links"
-    [:material-rocket-launch-outline: **Quick Start**](#quick-start-setup) | [:material-table: **Data Format**](#data-format) | [:material-frequently-asked-questions: **FAQ**](#frequently-asked-questions)
+    [:material-rocket-launch-outline: **Quick Start**](#log-data-in-google-sheets) | [:material-table: **Data Format**](#data-format) | [:material-frequently-asked-questions: **FAQ**](#frequently-asked-questions)
 
 ---
 
@@ -242,8 +242,8 @@ Before enabling auto-logging, ensure your monitoring points are properly configu
 
 For a deeper walkthrough of monitoring point setup (including addressing formats, data types, and common pitfalls), see the Advanced Guide:
 
-- [:octicons-arrow-right-24: Advanced Guide — Monitoring Points](../products/android/advanced-guide.md#monitoring-points)
-- [:octicons-arrow-right-24: Advanced Guide — Client Mode Setup](../products/android/advanced-guide.md#client-mode-setup)
+- [:octicons-arrow-right-24: Advanced Guide — Monitoring Points](../products/android/advanced-guide.md#monitor-points-core-concept)
+- [:octicons-arrow-right-24: Advanced Guide — Client Mode Setup](../products/android/advanced-guide.md#client-mode-polling-remote-devices)
 
 You can also reuse the monitoring point screenshots from the Advanced Guide in this section, or click through for step-by-step visuals.
 

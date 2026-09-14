@@ -97,7 +97,7 @@ Android app available at no cost for basic testing and diagnostics.
 
 Advanced Modbus network analyzer & device discovery.
 
-**Current Version:** v2.0.0.0 (August 5, 2026)
+**Current Version:** v2.1.0.0 (August 5, 2026)
 
 ✅ Real-time traffic capture  
 ✅ Auto-discovery  
@@ -119,7 +119,7 @@ Advanced Modbus network analyzer & device discovery.
 
 **Not sure which version?** Use **x64** for most PCs. Use **ARM64** only on Windows on ARM devices; use **x86** only for legacy 32-bit Windows.
 
-[What’s new in v2.0.0.0](release/CHANGELOG-MAPPER.md){ .md-button }
+[What’s new in v2.1.0.0](release/CHANGELOG-MAPPER.md){ .md-button }
 
 ### Buy License
 

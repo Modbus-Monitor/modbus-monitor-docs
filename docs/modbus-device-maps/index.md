@@ -47,7 +47,7 @@ See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/d
     <option value="SolarEdge">SolarEdge</option>
   </select>
   <p style="margin-top:0.8rem;"><strong><span id="mapCount" data-app-count="339"></span></strong></p>
-  <p style="margin:0.25rem 0 0.35rem 0;color:#4b5563;">Need the full library? <a href="../downloads-purchase.md">Download Modbus Monitor XPF</a> and import 339+ bundled maps.</p>
+  <p style="margin:0.25rem 0 0.35rem 0;color:#4b5563;">Need the full library? <a href="../downloads-purchase/">Download Modbus Monitor XPF</a> and import 339+ bundled maps.</p>
 </div>
 
 ## All Device Maps

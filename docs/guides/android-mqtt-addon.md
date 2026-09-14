@@ -27,7 +27,7 @@ Dashboards, Analytics, Mobile Apps, Alerts
 ```
 
 !!! success "Quick Links"
-    [:material-rocket-launch-outline: **Get Started (5 min)**](#quick-start-setup) | [:material-play-circle: **Step-by-Step Guide**](#mqtt-in-action-step-by-step-workflow) | [:material-table: **Expert Reference**](#detailed-configuration)
+    [:material-rocket-launch-outline: **Get Started (5 min)**](#quick-start-setup-5-minutes) | [:material-play-circle: **Step-by-Step Guide**](#mqtt-in-action-step-by-step-workflow) | [:material-table: **Expert Reference**](#expert-reference-detailed-configuration)
 
 !!! tip "YouTube Walkthrough"
     Watch the complete MQTT setup and live publishing demo: [:material-youtube: MQTT Publisher Video](https://youtu.be/vhivTbEz7hY?si=9dGFPTGUoaKHLWSc){:target="_blank"}
@@ -59,7 +59,7 @@ Dashboards, Analytics, Mobile Apps, Alerts
 
 ![Monitor Point MQTT Topic ](../assets/screenshots/android-advanced/mma-addon-mqtt-monitoring-point-topic.webp){ .screenshot-center loading="lazy" }
 
-💡 **Need help?** See [:octicons-book-24: Advanced Guide → Creating Monitor Points](../products/android/advanced-guide.md#monitor-points) for detailed explanations of each field.
+💡 **Need help?** See [:octicons-book-24: Advanced Guide → Creating Monitor Points](../products/android/advanced-guide.md#monitor-points-core-concept) for detailed explanations of each field.
 
 **Step 2: Enable MQTT (60 seconds)**
 
@@ -220,7 +220,7 @@ MQTT Explorer (or other subscribers)
 3. Confirm TCP/IP, Modbus TCP, and data type settings are correct
 4. Tap **OK** to return to list
 
-💡 **Tip**: If your values aren't updating correctly, review [:octicons-book-24: Advanced Guide → Troubleshooting Monitor Points](../products/android/advanced-guide.md#troubleshooting-monitor-points)
+💡 **Tip**: If your values aren't updating correctly, review [:octicons-book-24: Advanced Guide → Troubleshooting Monitor Points](../products/android/advanced-guide.md#common-issues-solutions)
 
 5. Open **Hamburger Menu** → **Settings** → **MQTT**
 6. Configure MQTT settings:
@@ -277,7 +277,7 @@ MQTT Explorer (or other subscribers)
 
 Modbus Monitor Advanced can read data from **any of three communication channels**, and MQTT will seamlessly publish all data to your cloud broker without any additional configuration.
 
-📖 **For complete channel documentation**, see [:octicons-book-24: Advanced Guide → Communication Channels](../products/android/advanced-guide.md#communication-channels)
+📖 **For complete channel documentation**, see [:octicons-book-24: Advanced Guide → Communication Channels](../products/android/advanced-guide.md#channel-settings)
 
 ### Channel 1: TCP/IP (WiFi/Ethernet)
 

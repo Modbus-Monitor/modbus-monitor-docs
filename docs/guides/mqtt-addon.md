@@ -303,7 +303,7 @@ To verify that your XPF MQTT connection is working correctly, use **MQTT Explore
     - **MQTT Explorer**: Requires topic subscriptions in the Advanced section BEFORE connecting
     - **Other MQTT clients**: May allow subscriptions after connecting (varies by software)
     
-    **Always check your specific MQTT client's requirements.** Our examples use MQTT Explorer, which needs pre-connection setup. See [Step 2: Configure Topics](#step-2-configure-topics) for detailed XPF topic configuration.
+    **Always check your specific MQTT client's requirements.** Our examples use MQTT Explorer, which needs pre-connection setup. See [Step 2: Configure Topics](#advanced-topic-configuration) for detailed XPF topic configuration.
 
 ---
 
@@ -399,7 +399,7 @@ Now that you have basic MQTT communication working, you can explore advanced fea
 
 - **🔐 [Secure Setup Guide](#secure-setup-guide)** - TLS/SSL encryption, WebSocket, and certificate authentication
 - **📡 [MQTT Data Reception Guide](#mqtt-data-reception-guide-real-time-monitor-point-updates)** - Receive MQTT data and update monitor points in real-time
-- **🏭 [Advanced Configuration](#step-2-configure-topics)** - Custom topic structures and message formatting  
+- **🏭 [Advanced Configuration](#advanced-topic-configuration)** - Custom topic structures and message formatting
 - **🛠️ [Production Examples](#complete-setup-examples)** - Real-world configuration examples with detailed steps
 
 ---
@@ -1719,7 +1719,7 @@ This MQTT Add-on is part of a growing ecosystem of XPF add-ons:
     **This Guide's Key Sections:**
     - [Quick Setup Tutorial](#quick-setup-tutorial) - Complete beginner walkthrough
     - [Secure Setup Guide](#secure-setup-guide) - TLS/SSL and production security
-    - [Server Mode Guide](#server-mode-guide-mqtt-command-reception) - Bidirectional MQTT control
+    - [Server Mode Guide](#mqtt-data-reception-guide-real-time-monitor-point-updates) - Bidirectional MQTT control
     
     **Related User Guide Sections:**
     - [Monitor Points Configuration](../products/xpf/user-guide.md#7-monitor-points-configuration) - Configure data sources

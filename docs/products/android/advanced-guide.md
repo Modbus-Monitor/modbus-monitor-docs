@@ -119,7 +119,7 @@ The main interface combines status indicators with action buttons for easy opera
 |---------|-----------|-------------|----------|
 | **[Hamburger Menu](#hamburger-menu)** | [1] | Main application menu | Access settings, import/export, cloud setup |
 | **[Server Mode](#modbus-server-mode-slave)** | [2] | Server status/toggle | Start/stop Modbus TCP server functionality |
-| **[Client Mode](#client-mode---polling-remote-devices)** | [3] | Client status/toggle | Start/stop Modbus client polling |
+| **[Client Mode](#client-mode-polling-remote-devices)** | [3] | Client status/toggle | Start/stop Modbus client polling |
 | **Bluetooth Status** | [4] | Communication indicators | Bluetooth control and status |
 | **Serial Status** | [5] | USB Serial indicators | USB and USB-OTG connected device control panel and connection status. Shows status or click to see available USB devices that can be used |
 | **IoT** | [6] | IoT status | IoT controls and status |
@@ -157,10 +157,10 @@ The main interface combines status indicators with action buttons for easy opera
 |---------------------|---------------|--------------|
 | **Navigate the app interface** | [Hamburger Menu](#hamburger-menu) | Settings, import/export, cloud setup |
 | **Configure app behavior** | [Settings](#settings) | Protocol settings, timing, cloud integration |
-| **Read data from devices** | [Client Mode](#client-mode---polling-remote-devices) | Poll remote servers, multiple protocols |
+| **Read data from devices** | [Client Mode](#client-mode-polling-remote-devices) | Poll remote servers, multiple protocols |
 | **Let others read your data** | [Server Mode](#modbus-server-mode-slave) | Turn phone into Modbus server |
 | **Expose phone sensors** | [Sensor Server Mode](#sensor-server-mode) | Share accelerometer, gyro, etc. via Modbus |
-| **Understand data organization** | [Monitor Points](#monitor-points---core-concept) | Core configuration concepts |
+| **Understand data organization** | [Monitor Points](#monitor-points-core-concept) | Core configuration concepts |
 | **Compare with other tools** | [Ecosystem Tools](#modbus-ecosystem-complementary-tools) | QModMaster, pymodbus, ModScan, XPF |
 | **Troubleshoot issues** | [Troubleshooting](#troubleshooting) | Common problems and solutions ([Error Codes Guide](../../guides/error-codes.md)) |
 | **Learn about hardware** | [Hardware Requirements](#hardware-requirements) | USB, Bluetooth, network setup |
@@ -208,6 +208,9 @@ The main interface combines status indicators with action buttons for easy opera
     - **Exit** - Close application completely
 
 </div>
+
+<span id="server-configuration"></span>
+<span id="timing-settings"></span>
 
 ## Settings
 
@@ -345,7 +348,7 @@ Access comprehensive app configuration through **[Hamburger Menu [1]](#hamburger
 
 **Client Mode** transforms your Android device into a powerful **Modbus Master** that can poll multiple remote devices for live data. This is the primary mode for field engineers and technicians who need to monitor, troubleshoot, and analyze industrial systems.
 
-**Advanced Multi-Channel Capability**: Each [Monitor Point](#monitor-points---core-concept) becomes a powerful data source with its own independent communication channel (Serial, TCP/IP, or Bluetooth). This allows you to collect data from different devices using different protocols simultaneously, enabling you to configure and monitor systems from various sources and build comprehensive system-level information from a single interface.
+**Advanced Multi-Channel Capability**: Each [Monitor Point](#monitor-points-core-concept) becomes a powerful data source with its own independent communication channel (Serial, TCP/IP, or Bluetooth). This allows you to collect data from different devices using different protocols simultaneously, enabling you to configure and monitor systems from various sources and build comprehensive system-level information from a single interface.
 
 
 ### Configuration Essentials
@@ -479,6 +482,9 @@ Monitor point configuration defines how your app connects to and interprets data
     - **Device Pairing**: Previously paired devices work best (especially older EDR devices)
     - **Connection Range**: Typical range 10-30 feet depending on Bluetooth class 
     
+
+<span id="basic-settings"></span>
+<span id="data-types"></span>
 
 #### Modbus Configuration
 
@@ -949,6 +955,8 @@ These are **global server configuration settings** located in the main menu Sett
     - **Avoid**: Port 5060 (VoIP conflicts), "0" (auto-select is unpredictable)
 
 ---
+
+<span id="server-monitor-point-configuration"></span>
 
 #### B. Add Monitor Points
 
@@ -1799,7 +1807,7 @@ Server mode stores data in internal memory. You have two options:
 4. **Response**: App retrieves value from memory and responds to client
 5. **Write Support**: Clients can also write values to your server (if enabled)
 
-For detailed explanation, see [How Server Mode Works](#how-server-mode-works).
+For detailed explanation, see [How Server Mode Works](#understanding-server-data-flow).
 
 #### Testing Your Server
 

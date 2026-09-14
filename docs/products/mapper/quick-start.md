@@ -72,7 +72,7 @@ For this quick start guide, we'll use **Mode 1 - Listen Only** — it's the safe
 3. You're ready to connect!
 
 !!! note "Other Modes"
-    Once you're comfortable, explore **Mode 2 (Pass-Through)** and **Mode 3 (Multiplex)** — see [User Manual: Operating Modes](user-manual.md#operating-modes-complete-guide) for details. Note: These modes require network reconfiguration.
+    Once you're comfortable, explore **Mode 2 (Pass-Through)** and **Mode 3 (Multiplex)** — see [User Manual: Operating Modes](user-manual.md#choose-an-operating-mode) for details. Note: These modes require network reconfiguration.
 
 ### Step 3: Connect Your RS485 Adapter & Start Listening
 
