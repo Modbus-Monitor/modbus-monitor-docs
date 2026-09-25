@@ -113,6 +113,9 @@ jobs:
       - name: Preflight MkDocs build
         run: mkdocs build --strict
 
+      - name: Validate map migration targets and site links
+        run: python tools/device-maps/validate_consolidation.py --site-dir site
+
       # ────────────────────────────────
       # 3️⃣e Commit version updates back to repo
       # ────────────────────────────────

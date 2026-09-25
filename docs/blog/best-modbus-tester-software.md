@@ -116,7 +116,7 @@ Benefits include:
 - faster commissioning  
 - consistent deployments  
 
->  Browse supported devices:  [Modbus device maps library](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
+>  Browse supported devices:  [Modbus device maps library](https://docs.quantumbitsolutions.com/modbus-device-maps/)
 
 ---
 

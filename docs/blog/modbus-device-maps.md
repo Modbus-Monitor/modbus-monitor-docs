@@ -93,7 +93,7 @@ Modern Modbus device map libraries include:
 - Energy monitoring systems  
 
 👉 Browse supported devices:  
-[Modbus device maps library](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
+[Modbus device maps library](https://docs.quantumbitsolutions.com/modbus-device-maps/)
 
 ---
 
@@ -175,5 +175,5 @@ When combined with modern tools that include visualization and interaction, engi
 - [Best Modbus Tester Software (2026)](./best-modbus-tester-software.md)  
 - [Modbus HMI Software](./modbus-hmi-software.md)  
 - [Device Maps Library (Search/Filter)](../modbus-device-maps/index.md)
-- [XPF Device Maps Hub](../products/xpf/device-maps/index.md)
+- [XPF Device Maps Hub](https://docs.quantumbitsolutions.com/modbus-device-maps/)
 - [Compare Modbus tools](https://www.modbusmonitor.com/compare)

@@ -14,7 +14,7 @@ Windows desktop tool for Modbus testing, simulation, monitoring, and HMI dashboa
 - [User Guide](xpf/user-guide.md)
 - [Quick Modbus Test](xpf/quick-modbus-test.md)
 - [Quick Start](xpf/quick-start.md)
-- [Device Maps](xpf/device-maps/index.md)
+- [Device Maps](https://docs.quantumbitsolutions.com/modbus-device-maps/)
 
 ### Modbus Monitor Android
 

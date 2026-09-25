@@ -92,7 +92,7 @@ For purchases and license options, visit the [QBS shop](https://quantumbitsoluti
 | **🔌 Hardware & Adapters** | [USB-OTG Serial](guides/android-hardware.md#usb-otg-serial-adapters) · [Bluetooth](guides/android-hardware.md) · [Network Equipment](guides/android-hardware.md) |
 | **🌐 Modbus Protocol** | [6-Digit Addressing](guides/6-digit-addressing.md) · [Error Codes](guides/error-codes.md) · [Protocol Reference](technical/index.md) |
 | **📊 Data & Integration** | [Import/Export](guides/import-export.md) · [Google Sheets](guides/android-sheets-addon.md) · [CSV Management](guides/import-export.md) |
-| **🎓 Learning & Demos** | [Engineering Blog](blog/index.md) · [Arduino Server](technical/arduino-server.md) · [XPF Device Maps](products/xpf/device-maps/index.md) |
+| **🎓 Learning & Demos** | [Engineering Blog](blog/index.md) · [Arduino Server](technical/arduino-server.md) · [XPF Device Maps](https://docs.quantumbitsolutions.com/modbus-device-maps/) |
 
 ---
 

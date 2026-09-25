@@ -299,4 +299,4 @@ Quick Modbus Test confirms one point. Modbus Monitor XPF can then monitor multip
 - [Modbus Client Operations](user-guide.md#modbus-client-operations)
 - [Monitor Points Configuration](user-guide.md#monitor-points-configuration)
 - [HMI Dashboard Guide](hmi.md)
-- [Modbus Device Maps](device-maps/index.md)
+- [Modbus Device Maps](https://docs.quantumbitsolutions.com/modbus-device-maps/)
