@@ -490,7 +490,7 @@ def build_intro(manufacturer: str, model: str, device_type: str) -> str:
 
 
 def build_preview_note() -> str:
-    return "This page shows a preview subset of the full device map available in Modbus Monitor XPF."
+    return "This page shows a public register preview. Check the catalog in your installed XPF version for complete-map availability and licensing."
 
 
 def normalize_device_type(device_type: str) -> str:
@@ -498,16 +498,7 @@ def normalize_device_type(device_type: str) -> str:
 
 
 def build_device_meta_description(manufacturer: str, model: str, device_type: str) -> str:
-    device_type_lower = normalize_device_type(device_type)
-    base = (
-        f"{manufacturer} {model} Modbus map and register map with sample Modbus registers, "
-        f"register addresses, and {device_type_lower} overview for engineers. "
-        "Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app."
-    )
-    extras = build_search_intent_terms(manufacturer, model, device_type)
-    if extras:
-        return f"{base} Common searches: {', '.join(extras[:2])}."
-    return base
+    return f"{manufacturer} {model} sample Modbus register addresses and data types. Check model, firmware and addressing before use with Modbus Monitor XPF."
 
 
 def build_search_intent_terms(manufacturer: str, model: str, device_type: str) -> list[str]:
@@ -542,15 +533,7 @@ def build_search_intent_terms(manufacturer: str, model: str, device_type: str) -
 
 
 def build_search_sentence(manufacturer: str, model: str, device_type: str) -> str:
-    base = (
-        f"Engineers searching for {manufacturer} {model} Modbus map, "
-        f"{manufacturer} {model} register map, or {manufacturer} {model} Modbus registers "
-        "can use this page as a compatibility snapshot before importing the full map into Modbus Monitor XPF."
-    )
-    extras = build_search_intent_terms(manufacturer, model, device_type)
-    if extras:
-        return f"{base} Also aligns to search intent around {', '.join(extras[:2])}."
-    return base
+    return "Confirm the exact model and firmware, address base, register function, word order, scaling and units against the manufacturer manual before polling. This preview does not establish hardware validation."
 
 
 def build_manufacturer_meta_description(manufacturer: str, devices: list[dict[str, str]]) -> str:
@@ -691,21 +674,20 @@ def write_device_page(
         "",
         f"- **Device:** {manufacturer} {model}",
         f"- **Type:** {device_type}",
-        "- **Protocol:** Modbus RTU / Modbus TCP",
+        "- **Protocol:** Confirm the supported transport for the exact device and firmware in the manufacturer manual.",
         f"- **Use case:** {typical_use}",
         "- **Works with:** Modbus Monitor XPF (import directly)",
         "",
         "## Download Modbus Map",
         "",
-        f"The full {manufacturer} {model} Modbus register map is available inside Modbus Monitor XPF "
-        "as a pre-built device map. Download the free feature-locked version to access and export the complete map.",
+        "The sample below is a public preview. Check the catalog in your installed XPF version for current availability, access and licensing.",
         "",
-        "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
+        "- [Get Modbus Monitor XPF](https://www.modbusmonitor.com/download)",
         "",
         "## Register Table (Sample)",
         "",
         f"Sample registers from the {manufacturer} {model} Modbus map. "
-        "Import the full map in Modbus Monitor XPF to access all registers.",
+        "Confirm the sample against the exact device and firmware before use.",
         "",
         "| Signal | Address | Type | Units | Category |",
         "|---|---:|---|---|---|",
@@ -723,14 +705,14 @@ def write_device_page(
             "## How to Use This Map",
             "",
             f"1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).",
-            f"2. **Select the {manufacturer} {model} device map** — pre-built maps are bundled and ready to load.",
-            "3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.",
+            f"2. **Select the {manufacturer} {model} device map** — check availability and access in the installed application catalog.",
+            "3. **Connect to your device** — confirm transport, addressing and data types before starting a read operation.",
             "4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.",
             "",
             "## Why Use Pre-Built Maps",
             "",
             "- **Saves time** — no need to manually look up or enter register addresses",
-            "- **Reduces errors** — pre-validated maps eliminate mis-typed addresses and wrong data types",
+            "- **Reduces errors** — reusable maps reduce repeated manual entry; validate addresses and data types for your device",
             "- **Speeds commissioning** — connect and poll within minutes instead of hours",
             "- **Reusable across projects** — use the same map across multiple sites and installations",
             "",
@@ -759,7 +741,7 @@ def write_device_page(
     if related_links:
         for label, rel_link in related_links:
             lines.append(f"- [{label}]({rel_link})")
-    lines.append(f"- [All {manufacturer} Modbus Register Maps](../index.md)")
+    lines.append(f"- [All {manufacturer} Modbus Register Maps](./index.md)")
     lines.append("- [All XPF Device Maps](../../../../modbus-device-maps/index.md)")
 
     lines.append("")
@@ -795,250 +777,6 @@ def write_manufacturer_index(output_path: Path, manufacturer: str, devices: list
     lines.append("")
     output_path.write_text("\n".join(lines), encoding="utf-8")
 
-
-def write_main_index(
-    output_path: Path,
-    grouped: dict[str, list[dict[str, str]]],
-    newly_added: list[dict[str, str]],
-) -> None:
-    flat = [device for devices in grouped.values() for device in devices]
-    all_ordered = sorted(flat, key=lambda d: d["order"])
-    device_count = len(flat)
-
-    by_manufacturer: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for d in all_ordered:
-        by_manufacturer[d["manufacturer"]].append(d)
-
-    category_buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for d in all_ordered:
-        bucket = infer_category_bucket(d.get("device_type", ""))
-        category_buckets[bucket].append(d)
-
-    alphabetic = sorted(flat, key=lambda d: (d["manufacturer"].lower(), d["model"].lower()))
-
-    lines = [
-        "---",
-        "title: Modbus Device Maps for Modbus Monitor XPF",
-        f"description: {build_main_index_meta_description(device_count)}",
-        "---",
-        "",
-        "# Modbus Device Maps for Modbus Monitor XPF",
-        "",
-        "Use these pre-built Modbus map previews to validate device compatibility before commissioning. Each page includes a practical register subset, common categories, and links back to Modbus Monitor XPF.",
-        "",
-        f"Browse {device_count} pre-built Modbus device map previews for power meters, inverters, UPS systems, and industrial equipment.",
-        (
-            f"{device_count} maps are shown here, while {APP_MAP_COUNT_CTA}+ maps are available in the actual app. "
-            "Download Modbus Monitor XPF to access the complete bundled map library."
-        ),
-        "",
-        "## Start Here {#start-here}",
-        "",
-        "- [Search and Filter All Device Maps](../../../modbus-device-maps/index.md)",
-        "- [Popular Device Maps](#popular-device-maps)",
-        "- [Recently Added](#recently-added)",
-        "- [Categories](#categories)",
-        "- [Browse by Manufacturer](#browse-by-manufacturer)",
-        "- [Full List](#full-list)",
-        "",
-        "## Why These Pages Help",
-        "",
-        "- Reduce startup time by reusing pre-built device maps",
-        "- Confirm available telemetry before full integration",
-        "- Compare supported manufacturers and model families quickly",
-        "",
-        "## Popular Device Maps {#popular-device-maps}",
-        "",
-        "- [Schneider Electric PM8000 Modbus Register Map](./schneider-electric/pm8000.md)",
-        "- [Siemens PAC4200 Modbus Register Map](./siemens/sentron-pac-4200.md)",
-        "- [ABB M4M Modbus Register Map](./abb/m4m.md)",
-        "- [SolarEdge SE5000 Modbus Register Map](./solaredge/se5000.md)",
-        "- [Eaton 93PM Modbus Register Map](./eaton/93pm.md)",
-        "",
-        "## Recently Added {#recently-added}",
-        "",
-    ]
-
-    if newly_added:
-        for d in newly_added:
-            man_slug = slugify(d["manufacturer"])
-            lines.append(f"- [{d['manufacturer']} {d['model']} Modbus Register Map](./{man_slug}/{d['slug']}.md)")
-    else:
-        lines.append("- No new maps were added in this release run.")
-
-    lines.extend(
-        [
-            "",
-            "## Categories {#categories}",
-            "",
-        ]
-    )
-
-    for bucket in ("Energy Meters", "Solar Inverters", "PLCs", "Other Devices"):
-        bucket_devices = category_buckets.get(bucket, [])
-        if not bucket_devices:
-            continue
-        lines.append(f"### {bucket}")
-        for d in bucket_devices:
-            man_slug = slugify(d["manufacturer"])
-            lines.append(f"- [{d['manufacturer']} {d['model']}](./{man_slug}/{d['slug']}.md)")
-        lines.append("")
-
-    lines.extend(
-        [
-        "## Browse by Manufacturer {#browse-by-manufacturer}",
-        "",
-        ]
-    )
-
-    for manufacturer, devices in by_manufacturer.items():
-        man_slug = slugify(manufacturer)
-        devices = sorted(devices, key=lambda d: d["order"])
-        model_links = ", ".join(f"[{d['model']}](./{man_slug}/{d['slug']}.md)" for d in devices)
-        lines.append(f"- [{manufacturer}](./{man_slug}/index.md): {model_links}")
-
-    lines.extend(["", "## Full List {#full-list}", ""])
-    for d in alphabetic:
-        man_slug = slugify(d["manufacturer"])
-        lines.append(f"- [{d['manufacturer']} {d['model']} Modbus Register Map](./{man_slug}/{d['slug']}.md)")
-
-    lines.extend(
-        [
-            "",
-            "## Use Device Maps in Modbus Monitor XPF",
-            "",
-            "Start with the device maps hub, then open the free feature-locked version of Modbus Monitor XPF to test and import faster.",
-            "",
-            "- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)",
-            "- [Compare Modbus Monitor XPF with Other Tools](https://www.modbusmonitor.com/compare)",
-            "- [Modbus Tester for Windows](https://www.modbusmonitor.com/modbus-tester)",
-            "",
-        ]
-    )
-
-    output_path.write_text("\n".join(lines), encoding="utf-8")
-
-
-def write_public_maps_alias_index(output_path: Path, grouped: dict[str, list[dict[str, str]]]) -> None:
-    flat = sorted((device for devices in grouped.values() for device in devices), key=lambda d: d["order"])
-    manufacturers = sorted({device["manufacturer"] for device in flat})
-
-    lines = [
-        "---",
-        "title: Modbus Device Maps",
-        (
-            "description: Search and filter Modbus device maps by manufacturer and model. "
-            "Open all map previews and import directly into Modbus Monitor XPF."
-        ),
-        "---",
-        "",
-        "# Modbus Device Maps",
-        "",
-        "Search and filter all generated device maps in one place.",
-        "",
-        (
-            f"{len(flat)} maps are shown here, while {APP_MAP_COUNT_CTA}+ maps are available in the actual app. "
-            "Download Modbus Monitor XPF to access the full bundled map library."
-        ),
-        "",
-        "## Start Here {#start-here}",
-        "",
-        "- [Map Hub (Popular, Categories, Full List)](../products/xpf/device-maps/index.md)",
-        "- [Device Maps Guide Blog Post](../blog/modbus-device-maps.md)",
-        "- [XPF User Guide](../products/xpf/user-guide.md)",
-        "",
-        "See all maps here: [Modbus Device Maps for Modbus Monitor XPF](../products/xpf/device-maps/index.md)",
-        "",
-        "<div class=\"mdx-device-map-filter\">",
-        "  <div style=\"max-width:720px;border:1px solid #9ca3af;border-radius:10px;padding:0.9rem 1rem;background:#f8fafc;\">",
-        "    <p style=\"margin:0 0 0.35rem 0;font-size:0.88rem;letter-spacing:0.02em;color:#374151;\"><strong>Filter by typing</strong></p>",
-        "    <p style=\"margin:0 0 0.6rem 0;color:#4b5563;\">Find a map by model, manufacturer, or keyword.</p>",
-        "    <input id=\"mapSearch\" type=\"search\" placeholder=\"Filter by typing model, manufacturer, or keyword...\" style=\"width:100%;padding:0.7rem;border:1px solid #6b7280;border-radius:8px;background:#ffffff;\" />",
-        "  </div>",
-        "  <p style=\"margin-top:0.8rem;\"><label for=\"manufacturerFilter\"><strong>Filter by manufacturer</strong></label></p>",
-        "  <select id=\"manufacturerFilter\" style=\"width:100%;max-width:420px;padding:0.5rem;\">",
-        "    <option value=\"\">All manufacturers</option>",
-    ]
-
-    for manufacturer in manufacturers:
-        lines.append(f"    <option value=\"{manufacturer}\">{manufacturer}</option>")
-
-    lines.extend(
-        [
-            "  </select>",
-            "  <p style=\"margin-top:0.8rem;\"><strong><span id=\"mapCount\" data-app-count=\"{0}\"></span></strong></p>".format(APP_MAP_COUNT_CTA),
-            "  <p style=\"margin:0.25rem 0 0.35rem 0;color:#4b5563;\">Need the full library? <a href=\"../downloads-purchase.md\">Download Modbus Monitor XPF</a> and import {0}+ bundled maps.</p>".format(APP_MAP_COUNT_CTA),
-            "</div>",
-            "",
-            "## All Device Maps",
-            "",
-            "<ul id=\"deviceMapList\">",
-        ]
-    )
-
-    for device in flat:
-        manufacturer = device["manufacturer"]
-        model = device["model"]
-        device_type = device["device_type"]
-        man_slug = slugify(manufacturer)
-        link = f"../products/xpf/device-maps/{man_slug}/{device['slug']}/"
-        search_blob = f"{manufacturer} {model} {device_type} modbus map register map modbus registers"
-        lines.append(
-            "  <li "
-            f"data-manufacturer=\"{manufacturer}\" "
-            f"data-search=\"{search_blob.lower()}\""
-            ">"
-            f"<a href=\"{link}\">{manufacturer} {model} Modbus Register Map</a>"
-            f" - {device_type}"
-            "</li>"
-        )
-
-    lines.extend(
-        [
-            "</ul>",
-            "",
-            "<script>",
-            "(function () {",
-            "  const searchInput = document.getElementById('mapSearch');",
-            "  const manufacturerFilter = document.getElementById('manufacturerFilter');",
-            "  const list = document.getElementById('deviceMapList');",
-            "  const count = document.getElementById('mapCount');",
-            "  if (!searchInput || !manufacturerFilter || !list || !count) return;",
-            "",
-            "  const items = Array.from(list.querySelectorAll('li'));",
-            "",
-            "  function applyFilter() {",
-            "    const q = searchInput.value.trim().toLowerCase();",
-            "    const manufacturer = manufacturerFilter.value;",
-            "    const appCount = count.dataset.appCount || '';",
-            "    let visible = 0;",
-            "",
-            "    for (const item of items) {",
-            "      const matchesManufacturer = !manufacturer || item.dataset.manufacturer === manufacturer;",
-            "      const haystack = item.dataset.search || '';",
-            "      const matchesSearch = !q || haystack.includes(q);",
-            "      const show = matchesManufacturer && matchesSearch;",
-            "      item.style.display = show ? '' : 'none';",
-            "      if (show) visible += 1;",
-            "    }",
-            "",
-            "    count.textContent = visible + ' map(s) shown on this page';",
-            "    if (appCount) {",
-            "      count.textContent += '  |  ' + appCount + '+ available in app';",
-            "    }",
-            "  }",
-            "",
-            "  searchInput.addEventListener('input', applyFilter);",
-            "  manufacturerFilter.addEventListener('change', applyFilter);",
-            "  applyFilter();",
-            "})();",
-            "</script>",
-            "",
-        ]
-    )
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> None:
@@ -1204,7 +942,7 @@ def main() -> None:
         if f"{d['manufacturer_slug']}/{d['slug']}" in newly_added_key_set
     ]
 
-    write_main_index(docs_output / "index.md", grouped, newly_added_records)
+    # The old hub is now an exact redirect owned by mkdocs.yml.
 
     release_date_value = release_date if release_date else ""
     if publish_next_batch and successful_new_keys:
@@ -1239,7 +977,7 @@ def main() -> None:
         print(f"- {key}")
 
     docs_root = docs_output.parents[2]
-    write_public_maps_alias_index(docs_root / "modbus-device-maps" / "index.md", grouped)
+    print("Refresh the public browsing hub with tools/device-maps/build_public_previews.py after reviewing the public catalog.")
     save_published_state(
         published_state_path,
         final_published_keys,

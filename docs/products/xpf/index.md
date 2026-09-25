@@ -12,4 +12,4 @@ If you are not redirected automatically:
 - [User Guide](./user-guide.md)
 - [Quick Start](./quick-start.md)
 - [HMI Guide](./hmi.md)
-- [Device Maps](./device-maps/index.md)
+- [Device Maps](https://docs.quantumbitsolutions.com/modbus-device-maps/)

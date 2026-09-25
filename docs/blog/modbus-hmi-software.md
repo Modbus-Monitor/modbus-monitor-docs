@@ -119,7 +119,7 @@ Instead of manually mapping registers, you can:
 - Reduce setup errors  
 - Speed up commissioning  
 
-> Browse device maps:  [Modbus device maps library](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
+> Browse device maps:  [Modbus device maps library](https://docs.quantumbitsolutions.com/modbus-device-maps/)
 
 ---
 

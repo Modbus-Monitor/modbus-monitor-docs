@@ -72,5 +72,5 @@ This shift is driving the adoption of tools that combine:
 - [Compare Modbus tools](https://www.modbusmonitor.com/compare)  
 - [Download Modbus Monitor XPF](https://www.modbusmonitor.com/download)  
 - [View HMI dashboards](https://www.modbusmonitor.com/modbus-hmi)
-- [Device Maps Hub](https://docs.quantumbitsolutions.com/products/xpf/device-maps/)
+- [Device Maps Hub](https://docs.quantumbitsolutions.com/modbus-device-maps/)
 - [Device Maps Library (Search/Filter)](https://docs.quantumbitsolutions.com/modbus-device-maps/)

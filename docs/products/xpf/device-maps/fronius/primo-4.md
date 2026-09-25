@@ -1,33 +1,35 @@
 ---
 title: Fronius Primo 4 Modbus Register Map
-description: Fronius Primo 4 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Fronius Primo 4 Modbus registers, Fronius Primo 4 Modbus TCP.
+description: Fronius Primo 4 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Includes sample addresses and data types for review before use with Modbus Monitor XPF.
 ---
 
 # Fronius Primo 4 Modbus Register Map
 
 The Fronius Primo 4 is a solar inverter used for PV production monitoring, inverter diagnostics, and energy analytics. This page provides a sample Modbus register map with addresses, data types, and signal categories to help engineers commission, troubleshoot, and monitor the device. For Fronius Primo 4 deployments, teams often use this map to surface power, voltage, and current data in solar inverter monitoring and renewable energy systems.
 
-This page shows a preview subset of the full device map available in Modbus Monitor XPF.
+This page shows a public register preview. Check the catalog in your installed XPF version for complete-map availability and licensing.
 
-Engineers searching for Fronius Primo 4 Modbus map, Fronius Primo 4 register map, or Fronius Primo 4 Modbus registers can use this page as a compatibility snapshot before importing the full map into Modbus Monitor XPF. Also aligns to search intent around Fronius Primo 4 Modbus registers, Fronius Primo 4 Modbus TCP.
+Confirm the exact model and firmware, address base, register function, word order, scaling and units against the manufacturer manual before polling. This preview does not establish hardware validation.
 
 ## Overview
 
 - **Device:** Fronius Primo 4
 - **Type:** Solar Inverter
-- **Protocol:** Modbus RTU / Modbus TCP
+- **Protocol:** Confirm the supported transport for the exact device and firmware in the manufacturer manual.
 - **Use case:** PV production monitoring, inverter diagnostics, and energy analytics
 - **Works with:** Modbus Monitor XPF (import directly)
 
 ## Download Modbus Map
 
-The full Fronius Primo 4 Modbus register map is available inside Modbus Monitor XPF as a pre-built device map. Download the free feature-locked version to access and export the complete map.
+The sample below is a public preview. Check the catalog in your installed XPF version for current availability, access and licensing.
 
-- [Download Modbus Monitor XPF Free](https://www.modbusmonitor.com/download)
+- [Get Modbus Monitor XPF](https://www.modbusmonitor.com/download)
+
+[Public JSON preview](https://modbus-monitor.github.io/modbus-device-maps/maps/fronius/primo-4.json) · [Preview data terms](https://modbus-monitor.github.io/modbus-device-maps/data-license/)
 
 ## Register Table (Sample)
 
-Sample registers from the Fronius Primo 4 Modbus map. Import the full map in Modbus Monitor XPF to access all registers.
+Sample registers from the Fronius Primo 4 Modbus map. Confirm the sample against the exact device and firmware before use.
 
 | Signal | Address | Type | Units | Category |
 |---|---:|---|---|---|
@@ -47,14 +49,14 @@ Sample registers from the Fronius Primo 4 Modbus map. Import the full map in Mod
 ## How to Use This Map
 
 1. **Download Modbus Monitor XPF** — [Get the free version](https://www.modbusmonitor.com/download).
-2. **Select the Fronius Primo 4 device map** — pre-built maps are bundled and ready to load.
-3. **Connect to your device** — enter the device IP or COM port and start polling registers immediately.
+2. **Select the Fronius Primo 4 device map** — check availability and access in the installed application catalog.
+3. **Connect to your device** — confirm transport, addressing and data types before starting a read operation.
 4. **Visualise and log** — build dashboards, trend data, and export readings without manual register entry.
 
 ## Why Use Pre-Built Maps
 
 - **Saves time** — no need to manually look up or enter register addresses
-- **Reduces errors** — pre-validated maps eliminate mis-typed addresses and wrong data types
+- **Reduces errors** — reusable maps reduce repeated manual entry; validate addresses and data types for your device
 - **Speeds commissioning** — connect and poll within minutes instead of hours
 - **Reusable across projects** — use the same map across multiple sites and installations
 
@@ -77,5 +79,9 @@ Sample registers from the Fronius Primo 4 Modbus map. Import the full map in Mod
 
 - [Fronius Primo 5 Modbus Register Map](./primo-5.md)
 - [Fronius Symo 6 Modbus Register Map](./symo-6.md)
-- [All Fronius Modbus Register Maps](../index.md)
+- [All Fronius Modbus Register Maps](./index.md)
 - [All XPF Device Maps](../../../../modbus-device-maps/index.md)
+
+<!-- public-preview-metadata -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Fronius Primo 4 public register preview", "description": "Sample register addresses and data types; not a complete map or hardware verification.", "url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/fronius/primo-4/", "license": "https://modbus-monitor.github.io/modbus-device-maps/data-license/", "creator": {"@type": "Organization", "name": "Quantum Bit Solutions", "url": "https://quantumbitsolutions.com/"}, "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://modbus-monitor.github.io/modbus-device-maps/maps/fronius/primo-4.json"}}</script>
+<!-- /public-preview-metadata -->

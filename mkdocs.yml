@@ -73,6 +73,7 @@ extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid-init.js
   - javascripts/search-optimize.js
+  - javascripts/device-map-filter.js
 
 extra_css:
   - stylesheets/extra.css
@@ -88,6 +89,7 @@ plugins:
   - redirects:
       redirect_maps:
         'xpf-users-guide.md': 'products/xpf/user-guide.md'
+        'products/xpf/device-maps/index.md': 'modbus-device-maps/index.md'
 
 markdown_extensions:
   - meta
@@ -145,7 +147,7 @@ nav:
       - Quick Modbus Test: products/xpf/quick-modbus-test.md
       - User Guide: products/xpf/user-guide.md
       - HMI Guide: products/xpf/hmi.md
-      - Device Maps: products/xpf/device-maps/index.md
+      - Device Maps: https://docs.quantumbitsolutions.com/modbus-device-maps/
     - Modbus Monitor Android:
       - Advanced Guide: products/android/advanced-guide.md
       - Free Guide: products/android/free-guide.md
